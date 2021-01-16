@@ -32,7 +32,7 @@ For now, it's just a Linux Mint 20 Cinnamon virtual machine with some extra pack
 The packages I've made are not in the Ubuntu repository:
 - mint-gnome: The distribution base package (welcome screen, Gnome extensions and .desktop files)
 - gnome-customization: 'gnome-tweaks', only better (customize gnome, themes, extensions, qt5, gdm, plymouth and grub)
-- mint-wallpapers: It contains the sames wallpapers as Linux Mint ones, it's just to avoid the heavy 'mint-artwork'
+- mint-wallpapers: It contains the sames wallpapers as Linux Mint ones, it's just to avoid the heavy 'mint-artwork' package
 - plymouth-theme-mint: Boot screen wich support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's "Paper" icon theme
 - libreoffice-style-papirus: The same, this package is just not available without a PPA
@@ -45,3 +45,7 @@ The packages I've made are not in the Ubuntu repository:
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
+
+PS: Does somebody knows how to remove the ugly ~~~~~~~~~~ I've add after each screenshot without screw up the README?
+Without this, the README interpretor associate the picture with the next title :/
+Yes, I'm a noob! I'm a new Github user
