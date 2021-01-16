@@ -9,23 +9,23 @@ For now, it's just a Linux Mint 20 Cinnamon virtual machine with some extra pack
 
 ### Plymouth boot screen
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/1_boot.png" align="left"/> 
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/1_boot.png" align="left"/>~~~~~~~~~~
 
 ### GDM3 login screen
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/2_gdm3.png" align="left"/> 
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/2_gdm3.png" align="left"/>~~~~~~~~~~
 
 ### Gnome-shell desktop
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/3_desktop.png" align="left"/> 
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/3_desktop.png" align="left"/>~~~~~~~~~~
 
 ### Nautilus file manager
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/4_nautilus.png" align="left"/> 
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/4_nautilus.png" align="left"/>~~~~~~~~~~
 
 ### Gnome-shell app grid
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/5_apps.png" align="left"/> 
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/5_apps.png" align="left"/>~~~~~~~~~~
 
 ## New packages
 
