@@ -9,23 +9,23 @@ For now, it's just a Linux Mint 20 Cinnamon virtual machine with some extra pack
 
 ### Plymouth boot screen
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/1_boot.png" align="left"/>Plymouth boot screen
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/1_boot.png" align="left"/> 
 
 ### GDM3 login screen
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/2_gdm3.png" align="left"/>GDM3 login screen
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/2_gdm3.png" align="left"/> 
 
 ### Gnome-shell desktop
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/3_desktop.png" align="left"/>Gnome-shell desktop
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/3_desktop.png" align="left"/> 
 
 ### Nautilus file manager
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/4_nautilus.png" align="left"/>Nautilus file manager
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/4_nautilus.png" align="left"/> 
 
 ### Gnome-shell app grid
 
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/5_apps.png" align="left"/>Gnome-shell app grid
+<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/5_apps.png" align="left"/> 
 
 ## New packages
 
@@ -39,7 +39,6 @@ The packages I've made are not in the Ubuntu repository:
 
 ## Remaining work
 
-Now, I want to:
 - Make this distribution available (I can't just upload a 8Go .img or .vdi file, so there is nothing in this git for now)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Publish these new .deb files (eventualy in a repository, a PPA or just in Git... I don't know)
