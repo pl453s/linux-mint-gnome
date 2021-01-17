@@ -8,24 +8,19 @@ For now, it's just a Linux Mint 20 Cinnamon virtual machine with some extra pack
 ## Screenshots
 
 ### Plymouth boot screen
-
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/1_boot.png" align="left"/>~~~~~~~~~~
+![Plymouth boot screen](1_boot.png)
 
 ### GDM3 login screen
-
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/2_gdm3.png" align="left"/>~~~~~~~~~~
+![GDM3 login screen](2_gdm3.png)
 
 ### Gnome-shell desktop
-
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/3_desktop.png" align="left"/>~~~~~~~~~~
+![Gnome-shell desktop](3_desktop.png)
 
 ### Nautilus file manager
-
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/4_nautilus.png" align="left"/>~~~~~~~~~~
+![Nautilus file manager](4_nautilus.png)
 
 ### Gnome-shell app grid
-
-<img src="https://github.com/pl453s/linux-mint-gnome/blob/main/5_apps.png" align="left"/>~~~~~~~~~~
+![Gnome-shell app grid](5_apps.png)
 
 ## New packages
 
