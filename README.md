@@ -40,7 +40,3 @@ The packages I've made are not in the Ubuntu repository:
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
-
-PS: Does somebody knows how to remove the ugly ~~~~~~~~~~ I've add after each screenshot without screw up the README?
-Without this, the README interpretor associate the picture with the next title :/
-Yes, I'm a noob! I'm a new Github user
