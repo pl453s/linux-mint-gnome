@@ -25,7 +25,7 @@ For now, it's just a Linux Mint 20 Cinnamon virtual machine with some extra pack
 ## New packages
 
 - mint-gnome: The distribution base package (welcome screen, Gnome extensions and .desktop files)
-- gnome-customization: 'gnome-tweaks', only better (customize gnome, themes, extensions, qt5, gdm, plymouth and grub)
+- gnome-customization: 'gnome-tweaks', only better (customize Gnome, themes, extensions, QT5, GDM3, Plymouth and Grub)
 - mint-wallpapers: It contains the sames wallpapers as Linux Mint ones, it's just to avoid the heavy 'mint-artwork' package
 - plymouth-theme-mint: Boot screen wich support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
