@@ -5,7 +5,7 @@ This distribution embed 'dash-to-panel', 'dash-to-dock' and others Gnome extensi
 
 On first login, you can choose between a 'panel style' (Windows like), a 'dock style' (MacOS like) or a 'dash style' (Gnome default).
 
-You also choose to display desktop icons or not, and use a light theme or a dark theme.
+You also choose to display desktop icons or not, and use a light theme or a dark theme (everything can be changed later in 'Customization').
 
 I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any pretension.
 
