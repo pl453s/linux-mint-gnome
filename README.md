@@ -11,9 +11,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots (dock style)
 
-[![Panel style](3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/panel.md)
-[![Dock style](3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/dock.md)
-[![Dash style](3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/dash.md)
+[![Panel style](img/panel.png)](https://github.com/pl453s/linux-mint-gnome/panel.md)
+[![Dock style](img/dock.png)](https://github.com/pl453s/linux-mint-gnome/dock.md)
+[![Dash style](img/dash.png)](https://github.com/pl453s/linux-mint-gnome/dash.md)
 
 ## Installation
 
