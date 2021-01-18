@@ -51,9 +51,9 @@ sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cin
 
 ## Remaining work
 
-- Publish an autoremove script which also remove the Mate and XFCE packages (to avoid to type the hyper long autoremove command)
+- Create an autoremove script which also remove the Mate and XFCE packages (to avoid to type the hyper long autoremove command)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
-- Publish these new .deb files (eventualy in a repository, a PPA or just in Git... I don't know)
+- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
