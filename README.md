@@ -11,20 +11,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots (dock style)
 
-### Plymouth boot screen
-![Plymouth boot screen](1_boot.png)
-
-### GDM3 login screen
-![GDM3 login screen](2_gdm3.png)
-
-### Gnome-shell desktop
-![Gnome-shell desktop](3_desktop.png)
-
-### Nautilus file manager
-![Nautilus file manager](4_nautilus.png)
-
-### Gnome-shell app grid
-![Gnome-shell app grid](5_apps.png)
+[![Panel style](https://github.com/pl453s/linux-mint-gnome/3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/panel.md)
+[![Dock style](https://github.com/pl453s/linux-mint-gnome/3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/dock.md)
+[![Dash style](https://github.com/pl453s/linux-mint-gnome/3_desktop.png)](https://github.com/pl453s/linux-mint-gnome/dash.md)
 
 ## Installation
 
