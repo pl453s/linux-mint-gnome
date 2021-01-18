@@ -10,7 +10,7 @@
 ![Gnome-shell desktop](img/3_desktop_panel.png)
 
 ## Nautilus file manager
-![Nautilus file manager](4_nautilus_panel.png)
+![Nautilus file manager](img/4_nautilus_panel.png)
 
 ## Gnome-shell app grid
-![Gnome-shell app grid](5_apps_panel.png)
+![Gnome-shell app grid](img/5_apps_panel.png)
