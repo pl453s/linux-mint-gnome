@@ -34,7 +34,7 @@ sudo reboot
 - You should now get the GDM3 login screen, log in
 - Re-open a terminal
 ```bash
-sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cinnamon-control-center-data cinnamon-control-center-dbg cinnamon-desktop-data cinnamon-l10n cinnamon-screensaver cinnamon-session cinnamon-session-common cinnamon-settings-daemon dmz-cursor-theme gnome-power-manager gnote gucharmap hexchat humanity-icon-theme lightdm lightdm-settings mint-themes mint-x-icons mint-y-icons mintlocale mintwelcome nemo nemo-data nemo-emblems onboard pix redshift redshift-gtk rhythmbox transmission-common transmission-gtk ubuntu-mono ubuntu-session warpinator xed xreader xviewer yaru-theme-gnome-shell
+sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cinnamon-control-center-data cinnamon-control-center-dbg cinnamon-desktop-data cinnamon-l10n cinnamon-screensaver cinnamon-session cinnamon-session-common cinnamon-settings-daemon dmz-cursor-theme gnome-power-manager gnote gucharmap hexchat humanity-icon-theme lightdm lightdm-settings mintlocale mintwelcome nemo nemo-data nemo-emblems onboard pix redshift redshift-gtk rhythmbox transmission-common transmission-gtk ubuntu-mono ubuntu-session warpinator xed xreader xviewer yaru-theme-gnome-shell
 ```
 - Log out and log in again
 - Enjoy!
@@ -43,7 +43,7 @@ sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cin
 
 - mint-gnome-desktop: A package which embed all the necessary to install Mint Gnome from any official edition of Mint 20
 - mint-gnome-core: The distribution base package (welcome screen, Gnome extensions and .desktop files)
-- mint-gnome-wallpapers: It contains the sames wallpapers as Linux Mint ones. 'mint-artwork' doesn't works in Gnome.
+- ~~mint-gnome-wallpapers: It contains the sames wallpapers as Linux Mint ones. 'mint-artwork' doesn't works in Gnome.~~ Doesn't exists anymore, merged with 'mint-gnome-core' and uses 'mint-artwork'
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, themes, extensions, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Boot screen which support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
