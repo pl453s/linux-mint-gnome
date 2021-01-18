@@ -29,7 +29,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ```bash
 sudo apt update
 sudo gdebi /path/to/mint-gnome-desktop.deb # Select 'gdm3' instead of 'lightdm' when asked
-sudo reboot # Alternatively, you cant switch to an console TTY, stop 'lightdm.service' and start 'gdm.service'
+sudo reboot # Alternatively, you cant switch to a console TTY, stop 'lightdm.service' and start 'gdm.service'
 ```
 - You should now get the GDM3 login screen, log in
 - Re-open a terminal
