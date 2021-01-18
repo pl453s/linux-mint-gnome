@@ -43,7 +43,6 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 
 - mint-gnome-desktop: A package which embed all the necessary to install Mint Gnome from any official edition of Mint 20
 - mint-gnome-core: The distribution base package (welcome screen, Gnome extensions and .desktop files)
-- ~~mint-gnome-wallpapers: It contains the sames wallpapers as Linux Mint ones. 'mint-artwork' doesn't works in Gnome.~~ Doesn't exists anymore, merged with 'mint-gnome-core' and uses 'mint-artwork'
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, themes, extensions, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Boot screen which support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
