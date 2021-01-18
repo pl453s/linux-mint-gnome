@@ -3,7 +3,13 @@ Who needs a description? Everything is in the title!
 
 I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any pretension.
 
-## Screenshots
+This distribution embedded 'dash-to-panel', 'dash-to-dock' and others Gnome extensions.
+
+On first login, you can choose between a 'panel style' (Windows like), a 'dock style' (MacOS like) or a 'dash style' (Gnome default).
+
+You also choose to display desktop icons or not, and use a light theme or a dark theme.
+
+## Screenshots (dock style only)
 
 ### Plymouth boot screen
 ![Plymouth boot screen](1_boot.png)
