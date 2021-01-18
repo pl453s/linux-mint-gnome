@@ -24,7 +24,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 - Get a Linux Mint 20 Cinnamon ISO (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages)
 - Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)
-- Download the 'mint-gnome-desktop.deb' package in the 'Realeases' section of this Git (you dont need the others .deb, they are embeded in 'mint-gnome-desktop')
+- Download the 'mint-gnome-desktop.deb' package in the 'Releases' section of this Git (you dont need the others .deb, they are embedded in 'mint-gnome-desktop')
 - On the Mint installed machine, open a terminal
 ```bash
 sudo apt update
@@ -51,7 +51,7 @@ sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cin
 
 ## Remaining work
 
-- Publish an autoremove script in the 'Releases' section, to avoid to type the hyper long autoremove command
+- Publish an autoremove script which also remove the Mate and XFCE packages (to avoid to type the hyper long autoremove command)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Publish these new .deb files (eventualy in a repository, a PPA or just in Git... I don't know)
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
