@@ -1,4 +1,4 @@
-# Panel style (Gnome default)
+# Dash style (Gnome default)
 
 ## Plymouth boot screen
 ![Plymouth boot screen](img/1_boot.png)
