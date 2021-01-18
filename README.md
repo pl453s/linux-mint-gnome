@@ -9,7 +9,7 @@ On first login, you can choose between a 'panel style' (Windows like), a 'dock s
 
 You also choose to display desktop icons or not, and use a light theme or a dark theme.
 
-## Screenshots (dock style only)
+## Screenshots (dock style)
 
 ### Plymouth boot screen
 ![Plymouth boot screen](1_boot.png)
