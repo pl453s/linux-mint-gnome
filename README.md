@@ -11,7 +11,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
-*Click on one of the three styles below ( [ Panel ] / [ Dock ] / [ Dash ] )*
+*Click on one of the three styles below ( PANEL / DOCK / DASH )*
 
 [![Panel style](img/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/panel.md)
 [![Dock style](img/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/dock.md)
