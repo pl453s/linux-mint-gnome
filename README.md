@@ -22,7 +22,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Installation
 
-- Get a Linux Mint 20 Cinnamon ISO (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages)
+- Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages)
 - Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)
 - Download the 'mint-gnome-desktop.deb' package in the 'Releases' section of this Git (you dont need the others .deb, they are embedded in 'mint-gnome-desktop')
 - On the Mint installed machine, open a terminal
