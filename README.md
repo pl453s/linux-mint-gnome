@@ -52,6 +52,7 @@ sudo apt autoremove --purge cinnamom cinnamon-common cinnamon-control-center cin
 ## Remaining work
 
 - Create an autoremove script which also remove the Mate and XFCE packages (to avoid to type the hyper long autoremove command)
+- Set default applications if needed (Firefox, Thunderbird, Eye of Gnome, Celluloid)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
