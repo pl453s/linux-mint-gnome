@@ -37,7 +37,7 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 
 ## Future instructions (DON'T USE THESE COMMANDS FOR NOW!)
 
-- ~~Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (I strongly advise against migrate from a live session, install Mint permanently)~~
+- ~~Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (I strongly recommand to NOT migrate from a live session, install Mint permanently)~~
 - ~~Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)~~
 - ~~Download the lastest release packages and scripts~~
 ```bash
