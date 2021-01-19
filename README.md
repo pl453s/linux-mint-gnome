@@ -40,7 +40,7 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 ~~- Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38~~
 ~~- Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)~~
 ~~- Download the lastest release packages and scripts~~
-~~```bash
+```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-info-gnome.deb
@@ -50,17 +50,17 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/pa
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/libreoffice-style-papirus.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
-```~~
+```
 ~~- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)~~
-~~```bash
+```bash
 bash script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
 reboot
-```~~
+```
 ~~- You should now get the GDM3 login screen, log in and re-open a terminal~~
-~~```bash
+```bash
 bash script_install_2.sh # Confirm uninstallation
 reboot
-```~~
+```
 ~~- Log in again, and enjoy!~~
 
 ## New packages
