@@ -36,7 +36,8 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 - Enjoy!
 
 ## Future instructions (please ignore for now)
-- On the Mint installed machine, open a terminal (BE SURE TO HAVE AN INTERNET CONNEXION ON YOUR MACHINE!)
+
+- Download the lastest release packages and scripts
 ```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
@@ -47,6 +48,10 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/pa
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/libreoffice-style-papirus.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
+```
+
+- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)
+```bash
 bash script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
 reboot
 ```
