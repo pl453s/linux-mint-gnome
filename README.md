@@ -19,10 +19,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Installation
 
-- Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages)
+- Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages, should be fixed soon)
 - Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)
 - Download the 'mint-gnome-desktop.deb' package in the 'Releases' section of this Git (you dont need the others .deb, they are embedded in 'mint-gnome-desktop')
-- On the Mint installed machine, open a terminal
+- On the Mint installed machine, open a terminal (BE SURE TO HAVE AN INTERNET CONNEXION ON YOUR MACHINE!)
 ```bash
 sudo apt update
 sudo gdebi /path/to/mint-gnome-desktop.deb # Select 'gdm3' instead of 'lightdm' when asked
@@ -36,10 +36,30 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 - Log out and log in again
 - Enjoy!
 
+~~```bash
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-info-gnome.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/gnome-customization.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/plymouth-theme-mint.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/papirus-cursor-theme.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/libreoffice-style-papirus.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
+bash script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
+reboot
+```~~
+
+~~```bash
+bash script_install_2.sh # Confirm uninstallation
+reboot
+```~~
+
 ## New packages
 
-- mint-gnome-desktop: A package which embed all the necessary to install Mint Gnome from any official edition of Mint 20
+- mint-gnome-desktop: A package which migrate to Linux Mint Gnome from any official edition of Mint 20
 - mint-gnome-core: The distribution base package (welcome screen, Gnome extensions and .desktop files)
+- mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, themes, extensions, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Boot screen which support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
@@ -47,8 +67,6 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 
 ## Remaining work
 
-- Create an autoremove script which also remove the Mate and XFCE packages (to avoid to type the hyper long autoremove command)
-- Set default applications if needed (Firefox, Thunderbird, Eye of Gnome, Celluloid)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Hide 'boot-repair' and 'ubiquity' in the app grid, put 'boot-repair' (use 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for LiveCD and block 'hide desktop icons' in 'welcome screen' in a live session
