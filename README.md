@@ -35,7 +35,7 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 - Log out and log in again
 - Enjoy!
 
-## Future instructions
+## Future instructions (please ignore for now)
 - On the Mint installed machine, open a terminal (BE SURE TO HAVE AN INTERNET CONNEXION ON YOUR MACHINE!)
 ```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
@@ -55,6 +55,7 @@ reboot
 bash script_install_2.sh # Confirm uninstallation
 reboot
 ```
+- Log in again, and enjoy!
 
 ## New packages
 
