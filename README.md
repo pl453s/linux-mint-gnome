@@ -17,29 +17,11 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Installation
 
-- Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (theoricaly, it can work with any edition, but only tested on Cinnamon for now, and the uninstall command does not remove the Mate and XFCE packages, should be fixed soon)
-- Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)
-- Download the 'mint-gnome-desktop.deb' package in the 'Releases' section of this Git (you dont need the others .deb, they are embedded in 'mint-gnome-desktop')
-- On the Mint installed machine, open a terminal (BE SURE TO HAVE AN INTERNET CONNEXION ON YOUR MACHINE!)
-```bash
-sudo apt update
-sudo gdebi /path/to/mint-gnome-desktop.deb # Select 'gdm3' instead of 'lightdm' when asked
-sudo reboot # Alternatively, you cant switch to a console TTY, stop 'lightdm.service' and start 'gdm.service'
-```
-- You should now get the GDM3 login screen, log in and re-open a terminal
-```bash
-sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cinnamon-control-center-data cinnamon-control-center-dbg cinnamon-desktop-data cinnamon-l10n cinnamon-screensaver cinnamon-session cinnamon-session-common cinnamon-settings-daemon dmz-cursor-theme gnome-power-manager gnote gucharmap hexchat humanity-icon-theme lightdm lightdm-settings mintlocale mintwelcome nemo nemo-data nemo-emblems onboard pix redshift redshift-gtk rhythmbox transmission-common transmission-gtk ubuntu-mono ubuntu-session warpinator xed xreader xviewer yaru-theme-gnome-shell
-```
-- Log out and log in again
-- Enjoy!
-
-## Future instructions (DON'T USE THESE COMMANDS FOR NOW!)
-
-~~**WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**~~  
-~~**WARNING: I strongly recommand to NOT migrate from a live session, install Mint permanently.**~~  
-- ~~Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38~~
-- ~~Use this ISO to install Mint on a computer or a virtual machine~~
-- ~~Download the lastest release packages and scripts~~
+**WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
+**WARNING: I strongly recommand to NOT migrate from a live session, install Mint permanently.**  
+- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38
+- Use this ISO to install Mint on a computer or a virtual machine
+- Download the lastest release packages and scripts
 ```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
@@ -51,17 +33,17 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/li
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
 ```
-- ~~On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)~~
+- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)
 ```bash
 bash /path/to/script_install_1.sh # Confirm every installation and select 'gdm3' instead of 'lightdm'
 reboot
 ```
-- ~~You should now get the GDM3 login screen, log in and re-open a terminal~~
+- You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
 bash /path/to/script_install_2.sh # Confirm uninstallation
 reboot
 ```
-- ~~Log in again, and enjoy!~~
+- Log in again, and enjoy!
 
 ## New packages
 
@@ -75,7 +57,8 @@ reboot
 
 ## Remaining work
 
-- Check migration works from Mate and XFCE --> publish v1.1 release
+- Check migration works from Mate and XFCE
+- Create an interactive tour in this Git
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - LiveCD: Put 'boot-repair' (with 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for and block 'hide desktop icons'
