@@ -53,12 +53,12 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/sc
 ```
 - ~~On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)~~
 ```bash
-bash script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
+bash /path/to/script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
 reboot
 ```
 - ~~You should now get the GDM3 login screen, log in and re-open a terminal~~
 ```bash
-bash script_install_2.sh # Confirm uninstallation
+bash /path/to/script_install_2.sh # Confirm uninstallation
 reboot
 ```
 - ~~Log in again, and enjoy!~~
