@@ -37,7 +37,7 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 
 ## Future instructions (DON'T USE THESE COMMANDS FOR NOW!)
 
-- ~~Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38~~
+- ~~Get a Linux Mint 20 Cinnamon ISO https://linuxmint.com/release.php?id=38 (I strongly advise against migrate from a live session, install Mint permanently)~~
 - ~~Use this ISO to install Mint on a computer or a virtual machine (WARNING: your computer may be wiped, depending of what you choose to do at the installation)~~
 - ~~Download the lastest release packages and scripts~~
 ```bash
@@ -75,6 +75,7 @@ reboot
 
 ## Remaining work
 
+- Check it works from Mate and XFCE, fix DashToPanel arrow bug, set DashToPanel margin to 4 --> publish v1.1 release)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Hide 'boot-repair' and 'ubiquity' in the app grid, put 'boot-repair' (use 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for LiveCD and block 'hide desktop icons' in 'welcome screen' in a live session
