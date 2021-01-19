@@ -78,7 +78,7 @@ reboot
 - Check it works from Mate and XFCE, fix DashToPanel arrow bug, set DashToPanel margin to 4 --> publish v1.1 release)
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
-- Hide 'boot-repair' and 'ubiquity' in the app grid, put 'boot-repair' (use 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for LiveCD and block 'hide desktop icons' in 'welcome screen' in a live session
+- LiveCD: Put 'boot-repair' (with 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for and block 'hide desktop icons'
 - Replace 'Linux Mint 20 Cinnamon' by 'Linux Mint 20 Gnome' (in Grub entries for example)
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
