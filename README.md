@@ -28,8 +28,7 @@ sudo apt update
 sudo gdebi /path/to/mint-gnome-desktop.deb # Select 'gdm3' instead of 'lightdm' when asked
 sudo reboot # Alternatively, you cant switch to a console TTY, stop 'lightdm.service' and start 'gdm.service'
 ```
-- You should now get the GDM3 login screen, log in
-- Re-open a terminal
+- You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
 sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cinnamon-control-center-data cinnamon-control-center-dbg cinnamon-desktop-data cinnamon-l10n cinnamon-screensaver cinnamon-session cinnamon-session-common cinnamon-settings-daemon dmz-cursor-theme gnome-power-manager gnote gucharmap hexchat humanity-icon-theme lightdm lightdm-settings mintlocale mintwelcome nemo nemo-data nemo-emblems onboard pix redshift redshift-gtk rhythmbox transmission-common transmission-gtk ubuntu-mono ubuntu-session warpinator xed xreader xviewer yaru-theme-gnome-shell
 ```
@@ -37,7 +36,7 @@ sudo apt autoremove --purge cinnamon cinnamon-common cinnamon-control-center cin
 - Enjoy!
 
 ## Future instructions
-
+- On the Mint installed machine, open a terminal (BE SURE TO HAVE AN INTERNET CONNEXION ON YOUR MACHINE!)
 ```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
@@ -54,7 +53,7 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/sc
 bash script_install_1.sh # Confirm every installation and select gdm3 instead of lightdm when asked
 reboot
 ```
-
+- You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
 bash script_install_2.sh # Confirm uninstallation
 reboot
