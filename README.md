@@ -9,6 +9,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
+**NEW --> [INTERACTIVE TOUR](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/panel.md)**
+
 *Click on one of the three styles below ( PANEL / DOCK / DASH )*
 
 [![Panel style](img/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/panel.md)
