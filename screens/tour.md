@@ -825,10 +825,10 @@
 
 [![Back](../img/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-2dwh)
 [![Next](../img/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-4dwh)
+![Spacer](../img/spacer.png)
 [![Dark](../img/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-3lwh)
 ![Spacer](../img/spacer.png)
 [![Panel](../img/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-3dwh)
-![Spacer](../img/spacer.png)
 [![Dock](../img/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-3dmh)
 [![Dash](../img/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-3dgh)
 ![Spacer](../img/spacer.png)
