@@ -2,23 +2,22 @@
 
 [![Begin](../img/button_begin)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-boot)
 
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 
 # Interactive tour (boot)
 
