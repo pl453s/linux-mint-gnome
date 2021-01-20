@@ -60,7 +60,7 @@ reboot
 
 ## Remaining work
 
-- Check migration works from Mate and XFCE
+- Check migration fully works from Mate and XFCE
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - LiveCD: Put 'boot-repair' (with 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for and block 'hide desktop icons'
