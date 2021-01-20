@@ -11,3 +11,5 @@
 
 ## Applications grid
 ![Gnome-shell app grid](../img/4_appsgrid_panel.png)
+
+reset
