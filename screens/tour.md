@@ -26,22 +26,22 @@
 [![Back](../img/button_back_1)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-boot)
 [![Next](../img/button_next_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-gdm3)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Interactive tour (gdm3)
 
@@ -50,22 +50,22 @@
 [![Back](../img/button_back_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-boot)
 [![Next](../img/button_next_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwsd)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Interactive tour (dwsl)
 
@@ -79,22 +79,22 @@
 [![Icons](../img/button_icons_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwhl)
 [![Dark](../img/button_dark_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwsd)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Interactive tour (dwsd)
 
@@ -108,22 +108,22 @@
 [![Icons](../img/button_icons_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwhd)
 [![Dark](../img/button_dark_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwsl)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Interactive tour (dwhl)
 
@@ -137,22 +137,22 @@
 [![Icons](../img/button_icons_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwsl)
 [![Dark](../img/button_dark_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwhd)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Interactive tour (dwhd)
 
@@ -166,19 +166,19 @@
 [![Icons](../img/button_icons_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwsd)
 [![Dark](../img/button_dark_2)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-dwhl)
 
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
