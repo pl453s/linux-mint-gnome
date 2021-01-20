@@ -1,3 +1,24 @@
+# Interactive tour
+
+[![Begin](../img/button_begin.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-1dms)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # Interactive tour (1lws)
 
 ![boot](../img/1_boot.png)
