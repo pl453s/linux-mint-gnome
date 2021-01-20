@@ -60,6 +60,7 @@ reboot
 
 ## Remaining work
 
+- Disable new instance by default on Dash style
 - Check migration fully works from Mate and XFCE
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
