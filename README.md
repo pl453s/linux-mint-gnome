@@ -36,7 +36,7 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/li
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
 ```
-- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine!)
+- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
 bash /path/to/script_install_1.sh # Confirm every installation and select 'gdm3' instead of 'lightdm'
 reboot
