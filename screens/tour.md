@@ -1,6 +1,6 @@
 # Interactive tour
 
-[![Begin](../img/button_begin)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#1dms)
+[![Begin](../img/button_begin)](https://github.com/pl453s/linux-mint-gnome/blob/main/screens/tour.md#interactive-tour-1dms)
 
 <br>
 <br>
