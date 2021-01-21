@@ -21,7 +21,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Migrate from Mate : Do NOT migrate from a live session, install Mint permanently**  
-**WARNING: Migrate from Mate : REBOOT WHEN ASKED, DO NOT just restart 'display.manager.service'**  
+**WARNING: Migrate from Mate : REBOOT WHEN ASKED, do NOT just restart 'display.manager.service'**  
 **WARNING: Migrate from XFCE : NO WARRANTY --> NOT TESTED YET**  
 - Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
