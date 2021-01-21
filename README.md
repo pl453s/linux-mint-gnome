@@ -60,6 +60,7 @@ reboot
 
 ## Remaining work
 
+- Gnome Terminal change defaut blinking cursor + Uninstall Yelp in 'script_installation_2.sh')
 - Check migration fully works from Mate and XFCE (and remove comments on 'script_install_2.sh')
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
