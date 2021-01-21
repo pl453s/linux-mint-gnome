@@ -65,5 +65,5 @@ reboot
 - LiveCD: Put 'boot-repair' (with 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for and block 'hide desktop icons'
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
-- Screenshots: Rework gdm3 screenshot and the 3 screenshots buttons
+- Screenshots: Rework gdm3 screenshot (show password entry) and the 3 screenshots buttons
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
