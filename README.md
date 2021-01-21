@@ -25,15 +25,15 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts
 ```bash
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-desktop.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-gnome-core.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/mint-info-gnome.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/gnome-customization.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/plymouth-theme-mint.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/papirus-cursor-theme.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/libreoffice-style-papirus.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_1.sh
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/script_install_2.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-gnome-desktop.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-gnome-core.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-info-gnome.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/gnome-customization.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/plymouth-theme-mint.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/papirus-cursor-theme.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/libreoffice-style-papirus.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/script_install_1.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/script_install_2.sh
 ```
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
