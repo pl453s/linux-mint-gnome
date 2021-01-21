@@ -60,10 +60,10 @@ reboot
 
 ## Remaining work
 
-- Welcome: Disable "new instance" extension by default on Dash style
 - Check migration fully works from Mate and XFCE (and remove comments on 'script_install_2.sh')
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
+- LiveCD: Begin to develop the welcome screen (select keyboard layout and choose between test or install the distribution)
 - LiveCD: Put 'boot-repair' (with 'mx-boot-repair' Papirus icon) and 'ubiquity' on the desktop for and block 'hide desktop icons'
 - Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
