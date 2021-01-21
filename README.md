@@ -40,12 +40,12 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/sc
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
 bash /path/to/script_install_1.sh # Confirm every installation and select 'gdm3' instead of 'lightdm'
-reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service'
+reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service' (NOT WITH MATE!)
 ```
 - You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
 bash /path/to/script_install_2.sh # Confirm uninstallation
-reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service'
+reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service' (NOT WITH MATE!)
 ```
 - Log in again, and enjoy!
 
