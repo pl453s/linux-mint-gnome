@@ -61,7 +61,8 @@ reboot # Alternatively, you can switch to a console TTY and restart 'display-man
 
 ## Remaining work
 
-- Check migration fully works from XFCE + Uninstall Yelp in 'script_installation_2.sh' and remove commments 
+- Hide 'yelp.desktop' and 'org.gnome.PowerStats.desktop' from app-grid'
+- Check migration fully works from XFCE --> Remove commments from 'script_installation_2.sh'
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit, Terminal...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - LiveCD: Begin to develop the welcome screen (select keyboard layout and choose between test or install the distribution)
