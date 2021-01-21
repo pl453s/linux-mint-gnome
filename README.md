@@ -20,10 +20,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Installation
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
-**WARNING: Migrate from Mate : Do NOT migrate from a live session, install Mint permanently**  
-**WARNING: Migrate from Mate : REBOOT WHEN ASKED, do NOT just restart 'display.manager.service'**  
-**WARNING: Migrate from XFCE : NO WARRANTY --> NOT TESTED YET (should be tested soon)**  
-- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38
+**WARNING: I strongly recommands to NOT migrate from a live session (which is possible by restarting 'display-manager.service' instead of rebooting when asked)**
+- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38 (it should works from Cinnamon, Mate and XFCE, everything has been tested)
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts
 ```bash
@@ -40,12 +38,12 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.1-mint20/sc
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
 bash /path/to/script_install_1.sh # Confirm every installation and select 'gdm3' instead of 'lightdm'
-reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service' (NOT WITH MATE!)
+reboot
 ```
 - You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
 bash /path/to/script_install_2.sh # Confirm uninstallation
-reboot # Alternatively, you can switch to a console TTY and restart 'display-manager.service' (NOT WITH MATE!)
+reboot
 ```
 - Log in again, and enjoy!
 
@@ -61,7 +59,6 @@ reboot # Alternatively, you can switch to a console TTY and restart 'display-man
 
 ## Remaining work
 
-- Check migration fully works from XFCE --> Remove comments from 'script_install_2.sh'
 - Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit, Terminal...)
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - LiveCD: Begin to develop the welcome screen (select keyboard layout and choose between test or install the distribution)
