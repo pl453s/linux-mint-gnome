@@ -17,7 +17,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](img/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](img/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-## Install from the LiveCD ISO
+## Test / Install with a LiveCD
 
 *A 'Linux Mint 20 Gnome 64-bit' autonomous LiveCD ISO file should be available soon...*  
 *A working ISO has already been created, but as it takes about 2Go, I prefer tweaking it before uploading it*  
