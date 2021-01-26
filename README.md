@@ -72,5 +72,5 @@ reboot
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
-- Screenshots: Rework gdm3 screenshot (show password entry) and the 3 screenshots buttons
+- Screenshots: Rework the GDM3 screenshot (show password entry) and the 3 screenshots buttons
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
