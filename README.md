@@ -65,10 +65,9 @@ reboot
 
 ## Remaining work
 
-- Accelerate boot animation + loglevel=0
 - Ubiquity hide close button + remove system menu
 - Translate 'Trash' desktop icon + right click + tap to click
-- Create a default configuration for new users (Templates folder, Firefox, Thunderbird, LibreOffice, Terminal...)
+- Create a default configuration for new users (Gnome extensions, Templates folder, Firefox, Thunderbird, LibreOffice, Terminal...)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
