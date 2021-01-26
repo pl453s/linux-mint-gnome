@@ -20,6 +20,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Installation
 
 *A 'Linux Mint 20 Gnome 64-bit' autonomous LiveCD ISO file should be available soon...*
+*A working ISO has already been created, but as it takes about 2Go, I prefer tweaking it before uploading it**
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: I strongly recommands to NOT migrate from a live session (which is possible by restarting 'display-manager.service' instead of rebooting when asked)**
