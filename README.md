@@ -26,8 +26,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Migrate from an official edition
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
-**WARNING: I strongly recommands to NOT migrate from a live session (which is possible by restarting 'display-manager.service' instead of rebooting when asked)**
-- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38 (it should works from Cinnamon, Mate and XFCE, everything has been tested)
+**WARNING: I strongly recommands to NOT migrate from a live session, reboot when asked**
+- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts
 ```bash
