@@ -19,6 +19,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Installation
 
+*A 'Linux Mint 20 Gnome 64-bit' autonomous LiveCD ISO file should be available soon...*
+
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: I strongly recommands to NOT migrate from a live session (which is possible by restarting 'display-manager.service' instead of rebooting when asked)**
 - Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38 (it should works from Cinnamon, Mate and XFCE, everything has been tested)
@@ -59,9 +61,12 @@ reboot
 
 ## Remaining work
 
-- Create a default configuration for new users (Templates folder, Gnome, Firefox, Thunderbird, LibreOffice, Nautilus, Gedit, Terminal...)
+- Accelerate boot animation + loglevel=0
+- Ubiquity hide close button + remove system menu
+- Translate 'Trash' desktop icon + right click + tap to click
+- Create a default configuration for new users (Templates folder, Firefox, Thunderbird, LibreOffice, Terminal...)
+- ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
-- Create an autonomous LiveCD ISO (at this stage I would have already made good progress)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
 - Screenshots: Rework gdm3 screenshot (show password entry) and the 3 screenshots buttons
 - Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
