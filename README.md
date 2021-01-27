@@ -65,11 +65,10 @@ reboot
 
 ## Remaining work
 
-- Downgrade firefox-locales and thunderbird-locales + delete extra packages
 - Right click + tap to click + enabled extensions + gnome-shell theme + gnome-terminal + "System Tools" translation
 - Create a default configuration for new users (XDG dirs names, Templates folder, Firefox, Thunderbird, LibreOffice)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
-- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
-- Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
+- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... IDK)
+- Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
 - Screenshots: Rework the GDM3 screenshot (show password entry) and the 3 screenshots buttons
-- Develop the welcome screen and develop 'gnome-customization' (for now, these are just Zenity info boxes)
+- Develop the welcome screen and 'gnome-customization' (for now, these are just Zenity boxes)
