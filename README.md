@@ -13,9 +13,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 *Click on one of the three styles below ( PANEL / DOCK / DASH )*
 
-[![Panel style](img/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)
-[![Dock style](img/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
-[![Dash style](img/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
+[![Panel style](btn/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)
+[![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
+[![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
 ## Test / Install with a LiveCD
 
