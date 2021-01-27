@@ -65,8 +65,8 @@ reboot
 
 ## Remaining work
 
-- Downgrade firefox-locales + delete extra packages
-- Right click + tap to click + enabled extensions + gnome-shell theme + gnome-terminal
+- Downgrade firefox-locales and thunderbird-locales + delete extra packages
+- Right click + tap to click + enabled extensions + gnome-shell theme + gnome-terminal + "System Tools" translation
 - Create a default configuration for new users (XDG dirs names, Templates folder, Firefox, Thunderbird, LibreOffice)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
