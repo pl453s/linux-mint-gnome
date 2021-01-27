@@ -65,10 +65,11 @@ reboot
 
 ## Remaining work
 
-- Ubiquity hide close button + remove system menu
+- Downgrade firefox-locales
+- Ubiquity: gnome-shell mode remove system menu
 - Bug: Translate 'Trash' desktop icon
 - Default Schemas: Right click + tap to click + enabled extensions + gnome-shell theme + terminal
-- Create a default configuration for new users (Templates folder, Firefox, Thunderbird, LibreOffice)
+- Skel: Create a default configuration for new users (Templates folder, Firefox, Thunderbird, LibreOffice)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Make the GDM3 login screen themable (for now, GDM3 crashes when I link 'gdm3-theme.gresource' with a third party gnome-shell theme)
