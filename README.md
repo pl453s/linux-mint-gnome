@@ -65,7 +65,7 @@ reboot
 
 ## Remaining work
 
-- Downgrade firefox-locales
+- Downgrade firefox-locales + delete extra packages
 - Ubiquity: gnome-shell mode remove system menu
 - Bug: Translate 'Trash' desktop icon
 - Default Schemas: Right click + tap to click + enabled extensions + gnome-shell theme + terminal
