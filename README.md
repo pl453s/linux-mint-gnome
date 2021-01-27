@@ -58,8 +58,8 @@ reboot
 - mint-gnome-desktop: A package which migrate to Linux Mint Gnome from any official edition of Mint 20
 - mint-gnome-core: The distribution base package (welcome screen, Gnome extensions and .desktop files)
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
-- gnome-customization: 'gnome-tweaks', only better (customize Gnome, themes, extensions, QT5, GDM3, Plymouth and Grub)
-- plymouth-theme-mint: Boot screen which support UEFI manufacturer logo (BGRT), based on and requires 'plymouth-theme-spinner'
+- gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
+- plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
 - libreoffice-style-papirus: The same, this package is just not available without a PPA
 
