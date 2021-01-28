@@ -62,11 +62,15 @@ reboot
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
 - libreoffice-style-papirus: The same, this package is just not available without a PPA
+- mint-themes: Delete Mint themes without breaking 'mint-arkwork'
+- mint-x-icons: Delete Mint-X icons without breaking 'mint-arkwork'
+- mint-y-icons: Delete Mint-Y icons without breaking 'mint-arkwork'
 
 ## Remaining work
 
-- Tap to click + right click + enabled extensions + gnome-shell theme + gnome-terminal cursor
-- Default new users '/etc/skel' (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)
+- *Tap to click + right click + enabled extensions + gnome-shell theme + gnome-terminal cursor* TESTING...
+- *Default new users '/etc/skel' (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)* TESTING...
+- Delete help packs
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... IDK)
 - Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
