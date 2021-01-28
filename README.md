@@ -65,8 +65,9 @@ reboot
 
 ## Remaining work
 
-- Tap to click + enabled extensions + gnome-shell theme + gnome-terminal + "System Tools" translation
-- Create a default configuration for new users (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)
+- 'System Tools' app-folder translation + 'Customization' .desktop translation
+- Tap to click + right click + enabled extensions + gnome-shell theme + gnome-terminal cursor
+- Default new users '/etc/skel' (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... IDK)
 - Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
