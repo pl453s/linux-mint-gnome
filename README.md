@@ -65,7 +65,6 @@ reboot
 
 ## Remaining work
 
-- 'System Tools' app-folder translation + 'Customization' .desktop translation + Fix autostart (mkdir -p)
 - Tap to click + right click + enabled extensions + gnome-shell theme + gnome-terminal cursor
 - Default new users '/etc/skel' (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)
 - ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
