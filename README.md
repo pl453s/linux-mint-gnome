@@ -82,8 +82,8 @@ reboot
 
 ## Credits
 
-- 'Dash to Panel extension' has been created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
-- 'Dash to Dock extension' has been created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
-- 'Papirus icon theme' has been created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-- 'Paper icon theme' has been created by 'snwh' --> https://github.com/snwh/paper-icon-theme
-- 'Materia GTK theme' has been created by 'nana-4' --> https://github.com/nana-4/materia-theme
+- 'Dash to Panel extension' created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
+- 'Dash to Dock extension' created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
+- 'Papirus icon theme' created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+- 'Paper icon theme' created by 'snwh' --> https://github.com/snwh/paper-icon-theme
+- 'Materia GTK theme' created by 'nana-4' --> https://github.com/nana-4/materia-theme
