@@ -21,7 +21,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
-- Download the ISO https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/linux-mint-20-gnome-64-bit-v1.3.iso
+- Download the ISO https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, now you can test or install the distribution
 
