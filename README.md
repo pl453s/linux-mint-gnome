@@ -29,7 +29,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 The desktop icons configuration appears once Linux Mint is installed.*  
 
 *For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
-Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
+Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*  
+
+*For some reason, the keyboard layout can be wrong with Firefox and Thunderbird.
+To avoid this, select a layout without variant at the installation, or actualize the layout in 'Settings' (remove and add the layout again).*
 
 ## Migrate from an official edition
 
@@ -74,7 +77,6 @@ reboot
 
 ## Remaining work
 
-- ISO: Update initrd --> TEST AND PUBLISH THE 1.4 RELEASE WITH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
 - Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
 - Develop the welcome screen and 'gnome-customization' (for now, these are just Zenity boxes)
