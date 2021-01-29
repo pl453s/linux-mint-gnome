@@ -23,14 +23,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
 - Download the ISO https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
-- Boot your disk or your USB flash drive, now you can test or install the distribution
+- Boot your disk or your USB flash drive, and you can test or install the distribution
 
-*In a live session, the welcome screen doesn't allows you to hide desktop icons,*  
-*it's to keep access to 'Install Linux Mint' and 'Boot-repair' on the desktop.*
-
-*For now, to change the desktop style after the welcome screen validated,*  
-*go to 'Customization' > 'Extensions' and enable/disable the correponding extensions,*  
-*but of course, do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
+*In a live session, the welcome screen doesn't allows you to hide desktop icons, it's to keep access to 'Install Linux Mint' and 'Boot-repair' on the desktop, the desktop icons configuration appears once Linux Mint is installed.*  
+*For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions, but of course, do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
 
 ## Migrate from an official edition
 
