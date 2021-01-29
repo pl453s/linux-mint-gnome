@@ -29,7 +29,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 The desktop icons configuration appears once Linux Mint is installed.*  
 
 *For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
-Do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
+Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
 
 ## Migrate from an official edition
 
