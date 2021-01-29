@@ -35,7 +35,7 @@ Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
 To avoid this, select a layout without variant at the installation, or actualize the layout in 'Settings' (remove and add the layout again).*
 
 *The user folders names localisation is intentionally disabled.
-A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (name, icon, hide...).*
+A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
 
 ## Migrate from an official edition
 
