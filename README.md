@@ -78,7 +78,6 @@ reboot
 - ISO: Update initrd --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... IDK)
 - Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
-- Screenshots: Rework the GDM3 screenshot (show password entry) and the 3 screenshots buttons
 - Develop the welcome screen and 'gnome-customization' (for now, these are just Zenity boxes)
 
 ## Credits
