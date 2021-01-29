@@ -21,7 +21,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
-- Download the ISO https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
+- Download the ISO: https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
@@ -35,7 +35,7 @@ Do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**
-- Get the ISO of any edition of Linux Mint 20 https://linuxmint.com/release.php?id=38
+- Get the ISO of any edition of Linux Mint 20: https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts
 ```bash
