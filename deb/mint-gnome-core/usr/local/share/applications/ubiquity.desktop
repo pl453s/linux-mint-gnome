@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Type=Application
+Name=Install Linux Mint
+Exec=ubiquity gtk_ui
+Icon=ubiquity

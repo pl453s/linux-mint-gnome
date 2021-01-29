@@ -1,0 +1,54 @@
+[org.gnome.desktop.interface]
+cursor-theme='Papirus-Cursors'
+document-font-name="Sans 10"
+font-name="Ubuntu 10"
+gtk-key-theme='Default'
+gtk-theme='Materia-dark'
+icon-theme='Papirus-Dark'
+monospace-font-name="Monospace 10"
+
+[org.gnome.desktop.background]
+color-shading-type="solid"
+picture-options="zoom"
+picture-uri='file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg'
+primary-color="#000000"
+secondary-color="#000000"
+show-desktop-icons=true
+
+[org.gnome.desktop.wm.preferences]
+button-layout=':close'
+theme='Materia-dark'
+titlebar-font="Ubuntu Medium 10"
+titlebar-uses-system-font=false
+
+[org.gnome.desktop.peripherals.touchpad]
+click-method='fingers'
+middle-click-emulation=true
+natural-scroll=true
+tap-and-drag=true
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org.gnome.desktop.a11y]
+always-show-universal-access-status=true
+
+[org.gnome.shell]
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'RemoveAppMenu@Dragon8oy.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
+
+[org.gnome.shell.extensions.user-theme]
+name='Materia-dark'
+
+[org.gnome.login-screen]
+logo='/usr/share/plymouth/themes/mint-spinner/watermark.png'
+
+[org.gnome.desktop.privacy]
+remember-recent-files=false
+
+[org.gtk.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gnome.nautilus.icon-view]
+default-zoom-level='standard'
+
+[org.gnome.gedit.preferences.editor]
+highlight-current-line=false

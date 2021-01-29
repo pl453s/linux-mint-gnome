@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Tweaks
+Icon=org.gnome.tweaks
+Exec=gnome-tweaks
+Type=Application

@@ -1,0 +1,152 @@
+#!/bin/bash
+
+if [ "$XDG_CURRENT_DESKTOP" != "GNOME" ]
+then
+        exit
+fi
+if $(df | grep -w / | grep -q 'cow')
+then
+	live=true
+else
+	live=false
+fi
+
+style1="Panel (Windows like)"
+style2="Dock (MacOS like)"
+style3="Dash (Gnome default)"
+desktop1="Show desktop icons"
+desktop2="Hide desktop icons"
+theme1="Light (Materia + Papirus)"
+theme2="Dark (Materia + Papirus)"
+
+gnome_panel="dash-to-panel@jderose9.github.com"
+gnome_dock="dash-to-dock@micxgx.gmail.com"
+gnome_desktop="desktop-icons@csoriano"
+theme_gnome1="Materia-light"
+theme_gnome2="Materia-dark"
+theme_gtk1="Materia-light"
+theme_gtk2="Materia-dark"
+theme_icon1="Papirus-Light"
+theme_icon2="Papirus-Dark"
+theme_cursor="Papirus-Cursors"
+
+favorite_apps="['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']"
+system_tools="['ca.desrt.dconf-editor.desktop', 'gnome-control-center.desktop', 'gnome-customization.desktop', 'gnome-system-monitor.desktop', 'gparted.desktop', 'gufw.desktop', 'mintbackup.desktop', 'mintdrivers.desktop', 'mintreport.desktop', 'mintsources.desktop', 'mintstick.desktop', 'mintstick-format.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop']"
+
+gsettings set org.gnome.desktop.background picture-options zoom
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg
+
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable RemoveAppMenu@Dragon8oy.com
+gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions disable launch-new-instance@gnome-shell-extensions.gcampax.github.com
+
+gnome-extensions enable $gnome_desktop
+gnome-extensions disable $gnome_panel
+gnome-extensions disable $gnome_dock
+
+gsettings set org.gnome.desktop.a11y always-show-universal-access-status true
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
+gsettings set org.gnome.desktop.interface gtk-theme $theme_gtk2
+gsettings set org.gnome.desktop.interface icon-theme $theme_icon2
+gsettings set org.gnome.desktop.interface cursor-theme $theme_cursor
+gsettings set org.gnome.shell.extensions.user-theme name $theme_gnome2
+
+gsettings set org.gnome.shell favorite-apps "$favorite_apps"
+
+gsettings set org.gnome.desktop.app-folders folder-children "['System-Tools']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ name 'System-Tools.directory'
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ translate true
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ apps "$system_tools"
+
+gsettings set org.gnome.Terminal.Legacy.Settings theme-variant 'dark'
+
+gsettings set org.gnome.Terminal.ProfilesList list "['00000000-0000-0000-0000-000000000000']"
+gsettings set org.gnome.Terminal.ProfilesList default '00000000-0000-0000-0000-000000000000'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:00000000-0000-0000-0000-000000000000/ visible-name 'Linux Mint Gnome'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:00000000-0000-0000-0000-000000000000/ cursor-shape 'ibeam'
+
+message="You can change this later in 'Customization'"
+
+while true
+do
+
+	if [ $live == true ]
+	then
+		STR=$(zenity --title="Welcome" --forms --text="$message" \
+		--add-combo="Style" --combo-values="$style1|$style2|$style3" \
+		--add-combo="Theme" --combo-values="$theme1|$theme2")
+	else
+		STR=$(zenity --title="Welcome" --forms --text="$message" \
+                --add-combo="Style" --combo-values="$style1|$style2|$style3" \
+                --add-combo="Desktop" --combo-values="$desktop1|$desktop2" \
+                --add-combo="Theme" --combo-values="$theme1|$theme2")
+	fi
+
+	if [ "$STR" == "" ]
+	then
+		break
+	fi
+
+	IFS='|' read -ra COMBO <<< "$STR"
+	IFS='|' read -ra COMBO <<< "$STR"
+	IFS='|' read -ra COMBO <<< "$STR"
+
+	if [ $live == true ]
+	then
+		style=${COMBO[0]}
+		desktop=$desktop1
+		theme=${COMBO[1]}
+	else
+		style=${COMBO[0]}
+                desktop=${COMBO[1]}
+                theme=${COMBO[2]}
+	fi
+
+	if [ "$style" != " " ] && [ "$desktop" != " " ] && [ "$theme" != " " ]
+	then
+		break
+	fi
+
+	message="You must fill all the fields!"
+
+done
+
+if [ "$STR" == "" ]
+then
+	zenity --width=300 --title="Welcome" --info --text="You can skip this and use Gnome as it, but this configuration box will reappear on next login."
+else
+	if [ "$style" == "$style1" ]
+	then
+		gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
+		gnome-extensions enable $gnome_panel
+		gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
+	fi
+	if [ "$style" == "$style2" ]
+	then
+		gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
+		gnome-extensions enable $gnome_dock
+		gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
+	fi
+	if [ "$desktop" == "$desktop2" ]
+	then
+		gnome-extensions disable $gnome_desktop
+	fi
+	if [ "$theme" == "$theme1" ]
+	then
+		gsettings set org.gnome.desktop.interface gtk-theme $theme_gtk1
+		gsettings set org.gnome.desktop.interface icon-theme $theme_icon1
+		gsettings set org.gnome.shell.extensions.user-theme name $theme_gnome1
+	fi
+	if [ "$theme" == "$theme2" ]
+	then
+		gsettings set org.gnome.desktop.interface gtk-theme $theme_gtk2
+		gsettings set org.gnome.desktop.interface icon-theme $theme_icon2
+		gsettings set org.gnome.shell.extensions.user-theme name $theme_gnome2
+	fi
+	mkdir -p ~/.config/autostart
+	cp /etc/xdg/autostart/mint-gnome-welcome.desktop ~/.config/autostart/mint-gnome-welcome.desktop
+	echo >> ~/.config/autostart/mint-gnome-welcome.desktop
+	echo X-GNOME-Autostart-enabled=false >> ~/.config/autostart/mint-gnome-welcome.desktop
+	zenity --width=300 --title="Welcome" --info --text="Your desktop is ready\n\nKeep in mind that Linux Mint Gnome is a beta project. Do not expect too much from it.\n\nGood Luck Have Fun!"
+fi

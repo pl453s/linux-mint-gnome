@@ -1,0 +1,7 @@
+Package: gnome-customization
+Version: 1.0
+Architecture: all
+Maintainer: nobody-for-now <null@null.null>
+Description: The future gnome tweaks ++
+ A GUI project to customize gnome, themes, extensions, qt5, gdm, plymouth and grub
+Depends: gnome-tweaks, zenity

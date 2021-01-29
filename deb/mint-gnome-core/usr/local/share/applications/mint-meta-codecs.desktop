@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Install Multimedia Codecs
+Exec=apturl apt://mint-meta-codecs?refresh=yes
+Icon=applications-multimedia
+Type=Application

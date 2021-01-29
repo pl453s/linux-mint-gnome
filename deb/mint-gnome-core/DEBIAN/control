@@ -1,0 +1,8 @@
+Package: mint-gnome-core
+Version: 1.0
+Architecture: all
+Essential: yes
+Maintainer: nobody-for-now <null@null.null>
+Description: Linux Mint Gnome base package
+ Contains welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
+Depends: gdm3, gnome-session, gnome-session-common, gnome-shell, gnome-shell-common, gnome-shell-extension-desktop-icons, gnome-shell-extension-prefs, gnome-shell-extensions, mint-artwork, mint-info-gnome, nautilus, ubuntu-wallpapers, ubuntu-wallpapers-focal, zenity

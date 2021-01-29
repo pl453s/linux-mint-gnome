@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Customization
+Name[de]=Anpassung
+Name[en]=Customization
+Name[es]=Personalización
+Name[fr]=Personalisation
+Name[it]=Personalizzazione
+Name[pt]=Customização
+Name[ru]=Настройка
+Name[zh]=客制化
+Icon=cs-cat-appearance
+Exec=gnome-customization
+Terminal=false
+Categories=GNOME;GTK;Settings;

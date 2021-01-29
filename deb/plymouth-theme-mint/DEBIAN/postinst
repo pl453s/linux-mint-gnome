@@ -1,0 +1,2 @@
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/mint-bgrt/mint-bgrt.plymouth 300
+update-initramfs -u

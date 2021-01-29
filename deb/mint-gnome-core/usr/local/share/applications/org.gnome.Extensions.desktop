@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Type=Application
+Name=Extensions
+Icon=org.gnome.Extensions
+Exec=/usr/bin/gnome-shell-extension-prefs

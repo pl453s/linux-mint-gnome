@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Language Support
+Exec=/usr/bin/gnome-language-selector
+Icon=preferences-desktop-locale
+Type=Application

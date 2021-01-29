@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Power Statistics
+Icon=org.gnome.PowerStats
+Exec=gnome-power-statistics
+Type=Application

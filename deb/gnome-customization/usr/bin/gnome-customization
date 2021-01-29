@@ -1,0 +1,3 @@
+#!/bin/bash
+zenity --info --width=400 --title="Customization" --text="This is the future project 'gnome-customization', a GUI to customize Gnome, themes, extensions, QT5, GDM3, Plymouth, Grub and maybe more...\n\nBut for now, it will just launch the already existing Gnome Tweaks, which already allows you a lot of things."
+gnome-tweaks

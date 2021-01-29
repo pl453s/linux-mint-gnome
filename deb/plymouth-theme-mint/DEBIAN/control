@@ -1,0 +1,6 @@
+Package: plymouth-theme-mint
+Version: 1.0
+Architecture: all
+Maintainer: nobody-for-now <null@null.null>
+Description: Linux Mint boot screen with BGRT support
+Depends: plymouth-theme-spinner

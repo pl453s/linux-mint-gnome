@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+
+<wallpaper deleted="true">
+    <name>Mint Default</name>
+    <filename>/usr/share/backgrounds/linuxmint/linuxmint.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>eDesigner</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint eDesigner</name>
+    <filename>/usr/share/backgrounds/linuxmint/edesigner_linuxmint.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>eDesigner</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Sele Ring</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_ring.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Sele Ring Center</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_ring_center.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Lime Ring</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_ring_green.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Lime Ring Center</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_ring_center_green.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Sele Classic</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_linuxmint.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Sele Classic Center</name>
+    <filename>/usr/share/backgrounds/linuxmint/sele_linuxmint_center.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Sele</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Bookwood Ring</name>
+    <filename>/usr/share/backgrounds/linuxmint/bookwood_ring.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Bookwood</artist>
+</wallpaper>
+
+<wallpaper deleted="false">
+    <name>Mint Bookwood Classic</name>
+    <filename>/usr/share/backgrounds/linuxmint/bookwood_linuxmint.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Bookwood</artist>
+</wallpaper>
+
+<wallpaper deleted="true">
+    <name>Mint Artwork</name>
+    <filename>/usr/share/backgrounds/linuxmint/ktee_linuxmint.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>Kevin Tee</artist>
+</wallpaper>
+
+</wallpapers>
