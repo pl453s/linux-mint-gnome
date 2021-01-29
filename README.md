@@ -1,7 +1,7 @@
 # Linux Mint Gnome
 Who needs a description? Everything is in the title!
 
-This distribution embed 'dash-to-panel', 'dash-to-dock' and others Gnome extensions.
+This distribution embed 'Dash to Panel', 'Dash to Dock' and others Gnome extensions.
 On first login, you can choose between a 'panel style' (Windows like), a 'dock style' (MacOS like) or a 'dash style' (Gnome default).
 You also choose to display desktop icons or not, and use a light or a dark theme (everything can be changed later in 'Customization').
 
@@ -19,9 +19,22 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Test / Install with a LiveCD
 
-*A 'Linux Mint 20 Gnome 64-bit' autonomous LiveCD ISO file should be available soon...*  
-*A working ISO has already been created, but as it takes about 2Go, I prefer tweaking it before uploading it.*  
-*Meanwhile, you can migrate to Linux Mint Gnome from an official Linux Mint edition.*
+**WARNING: Your computer may be wiped, depending of what you choose to do at the installation**
+- Download the ISO
+```bash
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/linux-mint-20-gnome-64-bit-v1.3.iso
+```
+- Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
+- Boot your disk or your USB flash drive, now you can test or install the distribution
+
+*Updates has not been tested yet, you are warned, be very careful.*  
+
+*In a live session, the welcome screen doesn't allows you to hide desktop icons,*  
+*it's to keep access to 'Install Linux Mint' and 'Boot-repair' on the desktop.*  
+
+*For now, to change the desktop style after the welcome screen validated,*  
+*go to 'Customization' > 'Extensions' and enable/disable the correponding extensions,*  
+*but of course, do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
 
 ## Migrate from an official edition
 
@@ -31,15 +44,14 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts
 ```bash
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-gnome-desktop.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-gnome-core.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/mint-info-gnome.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/gnome-customization.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/plymouth-theme-mint.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/papirus-cursor-theme.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/libreoffice-style-papirus.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/script_install_1.sh
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.2-mint20/script_install_2.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-gnome-core.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-info-gnome.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/gnome-customization.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/plymouth-theme-mint.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/papirus-cursor-theme.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/libreoffice-style-papirus.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/script_install_1.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/script_install_2.sh
 ```
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
@@ -59,19 +71,24 @@ reboot
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
-- papirus-cursor-theme: I did not do anything, those are the cursors from snwh's 'Paper' icon theme
-- libreoffice-style-papirus: The same, this package is just not available without a PPA
+- papirus-cursor-theme: Cursors from 'Paper' icon theme
+- libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
 - mint-themes: Delete Mint themes without breaking 'mint-arkwork'
 - mint-x-icons: Delete Mint-X icons without breaking 'mint-arkwork'
 - mint-y-icons: Delete Mint-Y icons without breaking 'mint-arkwork'
 
 ## Remaining work
 
-- *Tap to click + right click + enabled extensions + gnome-shell theme + gnome-terminal cursor* TESTING...
-- *Default new users '/etc/skel' (XDG dirs, Templates folder, Firefox, Thunderbird, LibreOffice)* TESTING...
-- *Delete help packs + create XDG dirs + firefox default language + gnome-terminal dark theme* TESTING..
-- ISO: Update squashfs with updated initramfs --> TEST AND PUBLISH THE .ISO FILE
+- ISO: Update initrd --> TEST AND PUBLISH THE .ISO FILE
 - Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... IDK)
 - Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
 - Screenshots: Rework the GDM3 screenshot (show password entry) and the 3 screenshots buttons
 - Develop the welcome screen and 'gnome-customization' (for now, these are just Zenity boxes)
+
+## Credits
+
+- 'Dash to Panel extension' has been created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
+- 'Dash to Dock extension' has been created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
+- 'Papirus icon theme' has been created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+- 'Paper icon theme' has been created by 'snwh' --> https://github.com/snwh/paper-icon-theme
+- 'Materia GTK theme' has been created by 'nana-4' --> https://github.com/nana-4/materia-theme
