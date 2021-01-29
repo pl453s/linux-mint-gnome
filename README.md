@@ -55,8 +55,7 @@ reboot
 
 ## New packages
 
-- mint-gnome-desktop: A package which migrate to Linux Mint Gnome from any official edition of Mint 20
-- mint-gnome-core: The distribution base package (welcome screen, Gnome extensions and .desktop files)
+- mint-gnome-core: Welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
