@@ -27,6 +27,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 *In a live session, the welcome screen doesn't allows you to hide desktop icons, it's to keep access to 'Install Linux Mint' and 'Boot-repair' on the desktop.
 The desktop icons configuration appears once Linux Mint is installed.*  
+
 *For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
 Of course, do not activate at the same time 'Dash to Panel' and 'Dash to Dock'!*
 
