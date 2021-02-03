@@ -35,7 +35,7 @@ To avoid this, select a layout without variant at the installation, or actualize
 *The user folders names localisation is intentionally disabled.
 A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
 
-**NEW --> Until 'gnome-customization' is developed, I created a set of basic tools to more easily customize GDM3**
+**NEW --> Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3**
 ```bash
 wget thing1
 wget thing2
