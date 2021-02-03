@@ -89,7 +89,6 @@ reboot
 
 ## Remaining work
 
-- Publish gdm3-tools and rework GDM3 screenshot
 - Develop the welcome screen and 'gnome-customization' (these are just Zenity boxs for now)
 - 'Customization' features: Gnome, GDM3, Plymouth, Grub, App-grid, User folders names, QT5
 - Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
