@@ -40,7 +40,10 @@ A section to change these names is planned in the 'Customization' tool, as well 
 wget thing1 # I didn't upload yet!
 wget thing2 # I didn't upload yet!
 wget thing3 # I didn't upload yet!
+# Now, run for example:
 bash gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+# If the patch crashes GDM, login to another TTY and run:
+bash gdm3-reset
 ```
 
 ## Migrate from an official edition
