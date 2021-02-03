@@ -52,7 +52,7 @@ bash gdm3-reset
 **WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**
 - Get the ISO of any edition of Linux Mint 20: https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
-- Download the lastest release packages and scripts
+- Download the lastest release packages and scripts:
 ```bash
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-gnome-core.deb
 wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-info-gnome.deb
