@@ -9,20 +9,15 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
-**NEW --> [INTERACTIVE TOUR](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md)**
-
 *Click on one of the three styles below ( PANEL / DOCK / DASH )*
 
 [![Panel style](btn/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-## Test / Install with a LiveCD
+**NEW --> [INTERACTIVE TOUR](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md)**
 
-**NEW --> Now, you can use these command-line tools to change the GDM3 theme: https://github.com/pl453s/linux-mint-gnome/tree/main/gdm3**  
-```bash
-/path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
-```
+## Test / Install with a LiveCD
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
@@ -41,6 +36,11 @@ To avoid this, select a layout without variant at the installation, or actualize
 
 *The user folders names localisation is intentionally disabled.
 A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
+
+**NEW --> Now, you can use these command-line tools to change the GDM3 theme: https://github.com/pl453s/linux-mint-gnome/tree/main/gdm3**  
+```bash
+/path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+```
 
 ## Migrate from an official edition
 
@@ -86,9 +86,9 @@ reboot
 ## Remaining work
 
 - Publish gdm3-tools and rework GDM3 screenshot
-- Develop the welcome screen (just a Zenity box for now) and 'gnome-customization' (just launch 'gnome-tweaks' for now)
-- Customization: makes easily customizable Gnome, Extensions, GDM3, Plymouth, Grub, App-grid, User folders names, QT5
-- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know), and maintain them
+- Develop the welcome screen and 'gnome-customization' (these are just Zenity boxs for now)
+- 'Customization' features: Gnome, GDM3, Plymouth, Grub, App-grid, User folders names, QT5
+- Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
 - PUBLISH A NEW ISO FILE
 
 ## Credits
