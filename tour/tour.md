@@ -3,9 +3,9 @@
 <br>
 <br>
 
-Text is boring isn't it?  
-This is fine, you can also just explore through this "interactive tour".  
-It's a bit more "concrete" and visual!
+**Text is boring isn't it?**  
+**This is fine, you can also just explore through this "interactive tour".**  
+**It's a bit more "concrete" and visual!**
 
 <br>
 <br>
