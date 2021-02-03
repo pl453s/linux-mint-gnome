@@ -89,8 +89,8 @@ reboot
 
 ## Remaining work
 
-- Develop the welcome screen and 'gnome-customization' (these are just Zenity boxs for now)
-- 'Customization' features: Gnome, GDM3, Plymouth, Grub, App-grid, User folders names, QT5
+- Develop the welcome screen and 'gnome-customization' (these are just Zenity boxes for now)
+- 'Customization' features: Gnome, GDM3, Plymouth, Grub, App-grid, User folders names and QT5
 - Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
 - PUBLISH A NEW ISO FILE
 
