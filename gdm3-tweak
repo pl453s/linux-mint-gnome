@@ -1,0 +1,54 @@
+#!/bin/bash
+sudo true
+
+echo "Get the current and default configurations"
+echo " Usage: gdm3-tweak"
+echo
+echo "Set new GDM3 configuration"
+echo " Usage: gdm3-tweak <battery %?> <weekday?> <date?> <seconds?> <week n°?> <GTK theme> <icons> <cursors> [watermark]"
+echo " ('<...?>' should be 'true' or 'false' ; [watermark] should be a path to an image, or nothing to remove the watermark)"
+echo
+echo
+
+if [ "$#" == "0" ]
+then
+
+	echo "Parameter: current value (default value)"
+	echo
+	echo "Battery %: $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface show-battery-percentage 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface show-battery-percentage))"
+	echo "Weekday  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-weekday 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-weekday))"
+	echo "Date     : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-date 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-date))"
+	echo "Seconds  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-seconds 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-seconds))"
+	echo "Week N°  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.calendar show-weekdate 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.calendar show-weekdate))"
+	echo "GTK theme: $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface gtk-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface gtk-theme))" | sed "s/'//g"
+	echo "Icons    : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface icon-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface icon-theme))" | sed "s/'//g"
+	echo "Cursors  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface cursor-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface cursor-theme))" | sed "s/'//g"
+	echo "Watermark: $(sudo -u gdm dbus-launch gsettings get org.gnome.login-screen logo 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.login-screen logo))" | sed "s/'//g"
+
+elif [ "$#" == "8" ] || [ "$#" == "9" ]
+then
+
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface show-battery-percentage $1 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface clock-show-weekday $2 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface clock-show-date $3 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface clock-show-seconds $4 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.calendar show-weekdate $5 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface gtk-theme \'$6\' 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface icon-theme \'$7\' 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme \'$8\' 2> /dev/null
+	sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo \'$9\' 2> /dev/null
+
+	while true
+	do
+		read -p "Restart GDM3? [Y/n] " yn
+		case $yn in
+			[Yy]* ) sudo systemctl restart gdm3.service; break;;
+			[Nn]* ) break;;
+		esac
+	done
+
+else
+
+	echo "Syntaxt error!"
+
+fi
