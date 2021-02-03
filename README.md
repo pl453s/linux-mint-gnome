@@ -70,7 +70,7 @@ reboot
 ```
 - You should now get the GDM3 login screen, log in and re-open a terminal
 ```bash
-bash /path/to/script_install_2.sh # Confirm uninstallation
+bash /path/to/script_install_2.sh # Confirm every uninstallation and every installation
 reboot
 ```
 - Log in again, and enjoy!
