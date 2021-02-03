@@ -42,7 +42,7 @@ wget thing2 # I didn't upload yet!
 wget thing3 # I didn't upload yet!
 # Now, run for example:
 bash gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
-# If GDM3 crashes, login to another TTY and run:
+# If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 bash gdm3-reset
 ```
 
