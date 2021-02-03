@@ -37,9 +37,9 @@ A section to change these names is planned in the 'Customization' tool, as well 
 
 **NEW --> Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:**
 ```bash
-wget thing1 # I didn't upload yet!
-wget thing2 # I didn't upload yet!
-wget thing3 # I didn't upload yet!
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-patch.sh
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-reset.sh
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-tweak.sh
 # Now, run for example:
 bash gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
