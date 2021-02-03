@@ -19,6 +19,11 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Test / Install with a LiveCD
 
+**NEW --> Now, you can use these command-line tools to change the GDM3 theme: https://github.com/pl453s/linux-mint-gnome/tree/main/gdm3**  
+```bash
+/path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+```
+
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
 - Download the ISO: https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
@@ -80,9 +85,11 @@ reboot
 
 ## Remaining work
 
-- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know)
-- Make GDM3 themable (GDM3 crashes when I link 'gdm3-theme.gresource' with a third-party theme)
-- Develop the welcome screen and 'gnome-customization' (for now, these are just Zenity boxes)
+- Publish gdm3-tools and rework GDM3 screenshot
+- Develop the welcome screen (just a Zenity box for now) and 'gnome-customization' (just launch 'gnome-tweaks' for now)
+- Customization: makes easily customizable Gnome, Extensions, GDM3, Plymouth, Grub, App-grid, User folders names, QT5
+- Host the new packages somewhere (eventualy in a repository, a PPA or just in Git... I don't know), and maintain them
+- PUBLISH A NEW ISO FILE
 
 ## Credits
 
