@@ -35,10 +35,12 @@ To avoid this, select a layout without variant at the installation, or actualize
 *The user folders names localisation is intentionally disabled.
 A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
 
-**NEW --> Use these command-line tools to more easily change the GDM3 theme:**  
-**https://github.com/pl453s/linux-mint-gnome/tree/main/gdm3**  
+**NEW --> Until 'gnome-customization' is developed, I created a set of basic tools to more easily customize GDM3**
 ```bash
-/path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+wget thing1
+wget thing2
+wget thing3
+bash gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 ```
 
 ## Migrate from an official edition
