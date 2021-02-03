@@ -29,8 +29,8 @@ The desktop icons configuration appears once Linux Mint is installed.*
 *For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
 Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
 
-*For some reason, the keyboard layout may be incorrect with Firefox and Thunderbird.
-To avoid this, select a layout without variant at the installation, or actualize the layout in 'Settings' (remove and add the layout again).*
+*For some reason, the keyboard layout may be incorrect with Firefox and Thunderbird (with a special variant of a keybard layout).
+To avoid this, select a layout without variant at the installation, or in 'Settings'.*
 
 *The user folders names localisation is intentionally disabled.
 A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
