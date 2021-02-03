@@ -41,9 +41,9 @@ wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-pa
 wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-reset
 wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-tweak
 # Now, run for example:
-bash gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
-bash gdm3-reset
+bash /path/to/gdm3-reset
 ```
 
 ## Migrate from an official edition
