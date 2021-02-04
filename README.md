@@ -30,7 +30,7 @@ The desktop icons configuration appears once Linux Mint is installed.*
 Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
 
 *For some reason, the keyboard layout can be incorrect with Firefox and Thunderbird UNDER WAYLAND.
-To avoid this, login with a Xorg session if you uses Firefox or Thunderbird.*
+To avoid this, login with a Xorg session or run 'setxkbmap -layout <layout>' at login.*
 
 *The user folders names localisation is intentionally disabled.
 A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
