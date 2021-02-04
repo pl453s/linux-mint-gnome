@@ -24,7 +24,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
 *For some reason, the keyboard layout can be incorrect with Firefox and Thunderbird UNDER WAYLAND.  
-To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout\>' at login.*
+To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout\>' on each login.*
 
 ## Migrate from an official edition
 
