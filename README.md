@@ -74,7 +74,7 @@ Styles, extensions, appearance, applications-grid, user folders names, Gnome, QT
 - For now, it's just a Zenity info box which launch 'Gnome Tweaks'.
 - For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
 Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.
-- The user folders names localisation is intentionally disabled. A section to change these names is planned in this tool.
+- The user folders names localisation is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
 wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-patch
@@ -85,6 +85,7 @@ bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 bash /path/to/gdm3-reset
 ```
+- These tools will be embeed in the 'gnome-customization' package soon.
 
 ## Remaining work
 
