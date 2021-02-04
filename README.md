@@ -85,7 +85,7 @@ bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 bash /path/to/gdm3-reset
 ```
-- These tools will be embeed in the 'gnome-customization' package soon.
+*These command-line tools will be embedded in the 'gnome-customization' package soon.*
 
 ## Remaining work
 
