@@ -23,28 +23,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
-*In a live session, the welcome screen doesn't allows you to hide desktop icons, it's to keep access to 'Install Linux Mint' and 'Boot-repair' on the desktop.
-The desktop icons configuration appears once Linux Mint is installed.*
-
-*For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
-Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.*
-
 *For some reason, the keyboard layout can be incorrect with Firefox and Thunderbird UNDER WAYLAND.
 To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout\>' at login.*
-
-*The user folders names localisation is intentionally disabled.
-A section to change these names is planned in the 'Customization' tool, as well as a section to customize the application grid (change names, icons, hide...).*
-
-**NEW --> Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:**
-```bash
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-patch
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-reset
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-tweak
-# Now, run for example:
-bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
-# If a theme is incompatible and makes crash GDM3, login to another TTY and run:
-bash /path/to/gdm3-reset
-```
 
 ## Migrate from an official edition
 
@@ -87,10 +67,29 @@ reboot
 - mint-x-icons: Delete Mint-X icons without breaking 'mint-arkwork'
 - mint-y-icons: Delete Mint-Y icons without breaking 'mint-arkwork'
 
+## Gnome Customization
+
+- This a the big project, create a central GUI to customize:  
+Styles, extensions, appearance, applications-grid, user folders names, Gnome, QT5, GDM3, Plymouth and Grub  
+- For now, it's just a Zenity info box which launch 'Gnome Tweaks'.
+- For now, to change the desktop style after the welcome screen passed, go to 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
+Do not enable at the same time 'Dash to Panel' and 'Dash to Dock'.
+- The user folders names localisation is intentionally disabled. A section to change these names is planned in this tool.
+- Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
+```bash
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-patch
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-reset
+wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-tweak
+# Now, run for example:
+bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+# If a theme is incompatible and makes crash GDM3, login to another TTY and run:
+bash /path/to/gdm3-reset
+```
+
 ## Remaining work
 
 - Publish a new release (Layout bug fix, GTK Welcome screen, Materia on GDM3, GDM3 tools...)
-- Develop 'Customization': Gnome, GDM3, Plymouth, Grub, app-grid, user folders names and QT5
+- Develop Gnome Customization
 - Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
 - PUBLISH A NEW ISO FILE
 
