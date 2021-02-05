@@ -70,8 +70,8 @@ reboot
 ## Gnome Customization
 
 - For now, it's just a Zenity box which launch 'Gnome Tweaks'. The project is to create a central GUI to customize:  
-styles, extensions, appearance, applications-grid, user folders names, Gnome, QT5, GDM3, Plymouth and Grub  
-- Currently, to change desktop style after the welcome screen passed, open 'Customization' > 'Extensions' and enable/disable the corresponding extensions.
+styles, extensions, appearance, applications-grid, user folders names, Gnome, QT5, GDM3, Plymouth and Grub.
+- Currently, to change desktop style after the welcome screen passed, open 'Customization' > 'Extensions' and toggle the corresponding extensions.
 Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - The user folders names localisation is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
