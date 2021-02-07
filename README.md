@@ -95,6 +95,9 @@ bash /path/to/gdm3-reset
 
 ## Credits
 
+- 'Gnome Shell extensions' created by 'gcampax' --> https://github.com/gcampax/gnome-shell-extensions
+- 'Top Indicator extension' created by 'quiro9' --> https://github.com/ubuntu/gnome-shell-extension-appindicator
+- 'Desktop Icons extension' created by 'csoriano' --> https://gitlab.gnome.org/World/ShellExtensions/desktop-icons
 - 'Dash to Panel extension' created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
 - 'Dash to Dock extension' created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
 - 'Papirus icon theme' created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
