@@ -86,7 +86,7 @@
       <description>DEFAULT: .... DOTS: ....</description>
     </key>
     <key type="b" name="running-indicator-dominant-color">
-      <default>true</default>
+      <default>false</default>
       <summary>Use application icon dominant color for the indicator color</summary>
       <description></description>
     </key>
@@ -171,7 +171,7 @@
       <description>TODO</description>
     </key>
     <key type="b" name="custom-theme-customize-running-dots">
-      <default>false</default>
+      <default>true</default>
       <summary>Customize the style of the running application indicators.</summary>
       <description>Customize the style of the running application indicators.</description>
     </key>

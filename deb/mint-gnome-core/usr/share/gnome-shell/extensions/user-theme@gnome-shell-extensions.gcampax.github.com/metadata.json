@@ -1,0 +1,11 @@
+{
+ "uuid": "user-theme@gnome-shell-extensions.gcampax.github.com",
+ "extension-id": "user-theme",
+ "settings-schema": "org.gnome.shell.extensions.user-theme",
+ "gettext-domain": "gnome-shell-extensions",
+ "name": "User Themes",
+ "description": "Load shell themes from user directory.",
+ "shell-version": [ "3.36" ],
+ "original-authors": [ "john.stowers@gmail.com" ],
+ "url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions"
+}
