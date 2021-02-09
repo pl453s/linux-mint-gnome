@@ -48,6 +48,7 @@ two-finger-scrolling-enabled=true
 
 [org.gnome.shell]
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'topindicatorapp@quiro9.com', 'desktop-icons@csoriano']
+favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
 app-picker-view=1
 
 [org.gnome.shell.extensions.user-theme]
@@ -70,3 +71,9 @@ default-zoom-level='standard'
 
 [org.gnome.gedit.preferences.editor]
 highlight-current-line=false
+
+[org.gnome.Terminal.Legacy.Settings]
+theme-variant='dark'
+
+[org.gnome.Terminal.Legacy.Profile]
+cursor-shape='ibeam'

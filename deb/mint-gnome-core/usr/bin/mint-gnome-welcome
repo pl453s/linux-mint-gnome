@@ -2,30 +2,18 @@
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
-from os import system
+from os import system, getenv
+from os.path import exists
 
 
 
-favorite_apps = "'org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop'"
 system_tools = "'ca.desrt.dconf-editor.desktop', 'gnome-control-center.desktop', 'gnome-customization.desktop', 'gnome-system-monitor.desktop', 'gparted.desktop', 'gufw.desktop', 'mintbackup.desktop', 'mintdrivers.desktop', 'mintreport.desktop', 'mintsources.desktop', 'mintstick.desktop', 'mintstick-format.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
 
-extensions_all    = []
 extensions_panel  = ["dash-to-panel@jderose9.github.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
 extensions_dock   = ["dash-to-dock@micxgx.gmail.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
 extensions_dash   = []
 extensions_show   = ["desktop-icons@csoriano"]
 extensions_hide   = []
-
-gsettings_all     = ["org.gnome.shell favorite-apps \"[" + favorite_apps + "]\"",
-                     "org.gnome.desktop.app-folders folder-children \"['System-Tools']\"",
-                     "org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ name 'System-Tools.directory'",
-                     "org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ translate true",
-                     "org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/System-Tools/ apps \"[" + system_tools + "]\"",
-                     "org.gnome.Terminal.Legacy.Settings theme-variant 'dark'",
-                     "org.gnome.Terminal.ProfilesList list \"['00000000-0000-0000-0000-000000000000']\"",
-                     "org.gnome.Terminal.ProfilesList default '00000000-0000-0000-0000-000000000000'",
-                     "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:00000000-0000-0000-0000-000000000000/ visible-name 'Linux Mint Gnome'",
-                     "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:00000000-0000-0000-0000-000000000000/ cursor-shape 'ibeam'"]
 
 gsettings_panel   = ["org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close"]
 gsettings_dock    = ["org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close"]
@@ -55,18 +43,6 @@ def gsettings(gsettings):
 	for gsetting in gsettings:
 		system("gsettings set " + gsetting)
 
-def theme(dark):
-	if dark:
-		system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_dark)
-		system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_dark)
-		system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark)
-		system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_dark)
-	else:
-		system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_light)
-		system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_light)
-		system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light)
-		system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_light)
-
 
 
 class WelcomeWindow(Gtk.Window):
@@ -88,11 +64,11 @@ class WelcomeWindow(Gtk.Window):
 		self.add(self.box)
 
 		self.header = Gtk.HeaderBar()
-		self.header.set_title("Welcome")
-		self.button_skip = Gtk.Button(label = "Skip")
-		self.button_skip.connect("clicked", self.action_skip)
+		self.header.set_title(locale[0])
+		self.button_skip = Gtk.Button(label = locale[1])
+		self.button_skip.connect("clicked", Gtk.main_quit)
 		self.header.pack_start(self.button_skip)
-		self.button_confirm = Gtk.Button(label = "Confirm")
+		self.button_confirm = Gtk.Button(label = locale[2])
 		self.button_confirm.get_style_context().add_class("suggested-action")
 		self.button_confirm.connect("clicked", self.action_confirm)
 		self.header.pack_end(self.button_confirm)
@@ -107,55 +83,62 @@ class WelcomeWindow(Gtk.Window):
 		self.box_theme = Gtk.Box(spacing = 8)
 		self.box_options.pack_start(self.box_theme, True, False, 0)
 
-		self.button_panel = Gtk.Button(label = "\nPanel style (Windows like)")
+		self.button_panel = Gtk.Button(label = "\n" + locale[3])
 		self.button_panel.set_always_show_image(True)
 		self.button_panel.set_image(self.image_panel)
 		self.button_panel.set_image_position(Gtk.PositionType.TOP)
+		if style == "panel":
+			self.button_panel.get_style_context().add_class("suggested-action")
 		self.button_panel.connect("clicked", self.action_panel)
 		self.box_styles.pack_start(self.button_panel, True, True, 0)
 
-		self.button_dock = Gtk.Button(label = "\nDock style (MacOS like)")
+		self.button_dock = Gtk.Button(label = "\n" + locale[4])
 		self.button_dock.set_always_show_image(True)
 		self.button_dock.set_image(self.image_dock)
 		self.button_dock.set_image_position(Gtk.PositionType.TOP)
+		if style == "dock":
+			self.button_dock.get_style_context().add_class("suggested-action")
 		self.button_dock.connect("clicked", self.action_dock)
 		self.box_styles.pack_start(self.button_dock, True, True, 0)
 
-		self.button_dash = Gtk.Button(label = "\nDash style (Gnome default)")
+		self.button_dash = Gtk.Button(label = "\n" + locale[5])
 		self.button_dash.set_always_show_image(True)
 		self.button_dash.set_image(self.image_dash)
 		self.button_dash.set_image_position(Gtk.PositionType.TOP)
-		self.button_dash.get_style_context().add_class("suggested-action")
+		if style == "dash":
+			self.button_dash.get_style_context().add_class("suggested-action")
 		self.button_dash.connect("clicked", self.action_dash)
 		self.box_styles.pack_start(self.button_dash, True, True, 0)
 
-		self.text_hide = Gtk.Label(label = "Hide desktop icons")
-		self.box_desktop.pack_start(self.text_hide, False, False, 0)
-		self.switch_desktop = Gtk.Switch()
-		self.switch_desktop.set_state(True)
-		self.switch_desktop.connect("state_set", self.action_desktop)
-		self.box_desktop.pack_start(self.switch_desktop, False, False, 0)
-		self.text_show = Gtk.Label(label = "Show desktop icons")
-		self.box_desktop.pack_start(self.text_show, False, False, 0)
+		if live:
+			self.text_live = Gtk.Label(label = locale[6])
+			self.box_desktop.pack_start(self.text_live, False, False, 0)
+		else:
+			self.text_hide = Gtk.Label(label = locale[7])
+			self.box_desktop.pack_start(self.text_hide, False, False, 0)
+			self.switch_desktop = Gtk.Switch()
+			if icons:
+				self.switch_desktop.set_state(True)
+			self.switch_desktop.connect("state_set", self.action_desktop)
+			self.box_desktop.pack_start(self.switch_desktop, False, False, 0)
+			self.text_show = Gtk.Label(label = locale[8])
+			self.box_desktop.pack_start(self.text_show, False, False, 0)
 
-		#self.text_live = Gtk.Label(label = "Can't hide desktop icons in live session")
-		#self.box_desktop.pack_start(self.text_live, False, False, 0)
-
-		self.text_light = Gtk.Label(label = "Light theme")
+		self.text_light = Gtk.Label(label = locale[9])
 		self.box_theme.pack_start(self.text_light, False, False, 0)
 		self.switch_theme = Gtk.Switch()
-		self.switch_theme.set_state(True)
+		if dark:
+			self.switch_theme.set_state(True)
 		self.switch_theme.connect("state_set", self.action_theme)
 		self.box_theme.pack_start(self.switch_theme, False, False, 0)
-		self.text_dark = Gtk.Label(label = "Dark theme")
+		self.text_dark = Gtk.Label(label = locale[10])
 		self.box_theme.pack_start(self.text_dark, False, False, 0)
 
 
-	def action_skip(self, widget):
-		Gtk.main_quit()
 
 	def action_confirm(self, widget):
-		print("Dont show again")
+		system("echo >> ~/.config/autostart/mint-gnome-welcome.desktop")
+		system("echo X-GNOME-Autostart-enabled=false >> ~/.config/autostart/mint-gnome-welcome.desktop")
 		Gtk.main_quit()
 
 	def action_panel(self, widget):
@@ -195,19 +178,55 @@ class WelcomeWindow(Gtk.Window):
 
 	def action_theme(self, widget, state):
 		if state:
-			theme(True)
+			system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_dark)
+			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_dark)
+			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark)
+			system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_dark)
 		else:
-			theme(False)
+			system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_light)
+			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_light)
+			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light)
+			system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_light)
 
 
 
-extensions(extensions_all, True)
-extensions(extensions_panel, False)
-extensions(extensions_dock, False)
-extensions(extensions_dash, True)
-gsettings(gsettings_all)
-gsettings(gsettings_dash)
-theme(True)
+live = system("df | grep -w / | grep -qv 'cow'")
+lang = getenv("LANGUAGE")
+locale = []
+if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
+	file = open("/usr/share/mint-gnome-welcome/locale/" + lang, "r")
+	for line in file:
+		locale.append(line[:-1])
+	file.close()
+if len(locale) < 11:
+	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows like)", "Dock style (MacOS like)", "Dash style (Gnome default)", "Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
+
+if exists("~/.config/autostart/linux-mint-gnome.desktop"):
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_panel[0] + "'"):
+		style = "panel"
+	elif system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_dock[0] + "'"):
+		style = "dock"
+	else:
+		style = "dash"
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_show[0] + "'"):
+		icons = True
+	else:
+		icons = False
+	if system("gsettings get org.gnome.shell.extensions.user-theme name | grep -qv '" + theme_gnome_dark + "'"):
+		dark = True
+	else:
+		dark = False
+else:
+	system("dconf write /org/gnome/desktop/app-folders/folder-children \"['System-Tools']\"")
+	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/name \"'System-Tools.directory'\"")
+	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/translate true")
+	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/apps \"[" + system_tools + "]\"")
+	style = "dash"
+	icons = True
+	dark = True
+	system("mkdir -p ~/.config/autostart")
+	system("cat /etc/xdg/autostart/mint-gnome-welcome.desktop > ~/.config/autostart/mint-gnome-welcome.desktop")
+
 win = WelcomeWindow()
 win.connect("destroy", Gtk.main_quit)
 win.show_all()

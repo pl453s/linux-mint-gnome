@@ -233,7 +233,7 @@
       <description>Custom background color for the panel</description>
     </key>
     <key type="b" name="trans-use-custom-opacity">
-      <default>false</default>
+      <default>true</default>
       <summary>Custom background color</summary>
       <description>Replace current theme background color for the panel</description>
     </key>
@@ -243,7 +243,7 @@
       <description>Enable dynamic opacity</description>
     </key>
     <key type="d" name="trans-panel-opacity">
-      <default>0.4</default>
+      <default>1</default>
       <summary>Panel opacity</summary>
       <description>Custom opacity for the panel</description>
     </key>
