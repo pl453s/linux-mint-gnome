@@ -30,7 +30,7 @@ To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**  
-**WARNING: Migrate from a personal or an already installation is DANGEROUS!**  
+**WARNING: Migrate from a personal or an already used installation is DANGEROUS!**  
 **It could break your system or cause data loss. You should always migrate from a clean installation**
 - Get the ISO of any edition of Linux Mint 20: https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
