@@ -23,7 +23,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
-*Yhe keyboard layout can be incorrect with Firefox and Thunderbird under Wayland. To avoid this, you can:  
+*The keyboard layout can be incorrect with Firefox and Thunderbird under Wayland. To avoid this, you can:  
 - *Run these softwares with 'MOZ_ENABLE_WAYLAND=1'*
 - *OR, run 'setxkbmap -layout \<your layout\>' on each login*
 - *OR, just select 'Gnome on Xorg' on login screen*
