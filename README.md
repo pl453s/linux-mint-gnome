@@ -34,14 +34,14 @@ To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts:
 ```bash
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-gnome-core.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/mint-info-gnome.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/gnome-customization.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/plymouth-theme-mint.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/papirus-cursor-theme.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/libreoffice-style-papirus.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/script_install_1.sh
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/script_install_2.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/mint-gnome-core.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/mint-info-gnome.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/gnome-customization.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/plymouth-theme-mint.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/papirus-cursor-theme.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/libreoffice-style-papirus.deb
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/script_install_1.sh
+wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/script_install_2.sh
 ```
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
@@ -76,19 +76,14 @@ Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - The user folders names localisation is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-patch
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-reset
-wget https://raw.githubusercontent.com/pl453s/linux-mint-gnome/main/gdm3/gdm3-tweak
-# Now, run for example:
-bash /path/to/gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
+# With 'gnome-customization' installed (lastest release), run for example:
+gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
-bash /path/to/gdm3-reset
+gdm3-reset
 ```
-*These command-line tools will be embedded in the 'gnome-customization' package soon.*
 
 ## Remaining work
 
-- Publish a new release (Layout bug fix, GTK Welcome screen, Materia on GDM3, GDM3 tools...)
 - Develop Gnome Customization
 - Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
 - PUBLISH A NEW ISO FILE
