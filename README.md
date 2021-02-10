@@ -29,7 +29,9 @@ To avoid this, login with a Xorg session or run 'setxkbmap -layout \<your layout
 ## Migrate from an official edition
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
-**WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**
+**WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**  
+**WARNING: Migrate from a personal or an already installation is DANGEROUS!**  
+**It could break your system or cause data loss. You should always migrate from a clean installation**
 - Get the ISO of any edition of Linux Mint 20: https://linuxmint.com/release.php?id=38
 - Use this ISO to install Mint on a computer or a virtual machine
 - Download the lastest release packages and scripts:
@@ -45,7 +47,7 @@ wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.4-mint20/sc
 ```
 - On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
 ```bash
-bash /path/to/script_install_1.sh # Confirm every installation and select 'gdm3' instead of 'lightdm'
+bash /path/to/script_install_1.sh # Confirm every installation, select 'gdm3' instead of 'lightdm'
 reboot
 ```
 - You should now get the GDM3 login screen, log in and re-open a terminal
