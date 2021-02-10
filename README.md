@@ -26,7 +26,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 *The keyboard layout can be incorrect with Firefox and Thunderbird under Wayland. To avoid this, you can:*
 - *Run these softwares with 'MOZ_ENABLE_WAYLAND=1'*
 - *OR, run 'setxkbmap -layout \<your layout\>' on each login*
-- *OR, just select 'Gnome on Xorg' on login screen*
+- *OR, just select 'Gnome on Xorg' session on login screen*
 
 ## Migrate from an official edition
 
