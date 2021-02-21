@@ -1,0 +1,8 @@
+Package: mint-gnome-theme
+Version: 1.4
+Architecture: all
+Maintainer: nobody-for-now <null@null.null>
+Depends: gnome-themes-extra, gtk2-engines-murrine, libgtk-3-common, libgtk2.0-common
+Description: Theme from nana4' Materia theme
+Breaks: materia-gtk-theme
+Replaces: materia-gtk-theme

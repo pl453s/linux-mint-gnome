@@ -7,7 +7,8 @@ from os.path import exists
 
 
 
-system_tools = "'ca.desrt.dconf-editor.desktop', 'gnome-control-center.desktop', 'gnome-customization.desktop', 'gnome-system-monitor.desktop', 'gparted.desktop', 'gufw.desktop', 'mintbackup.desktop', 'mintdrivers.desktop', 'mintreport.desktop', 'mintsources.desktop', 'mintstick.desktop', 'mintstick-format.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
+utility = "'gnome-system-monitor.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'mintstick.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Characters.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop'"
+system_tools = "'ca.desrt.dconf-editor.desktop', 'gparted.desktop', 'gufw.desktop', 'mintbackup.desktop', 'mintdrivers.desktop', 'mintreport.desktop', 'mintsources.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
 
 extensions_panel  = ["dash-to-panel@jderose9.github.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
 extensions_dock   = ["dash-to-dock@micxgx.gmail.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
@@ -21,10 +22,10 @@ gsettings_dash    = ["org.gnome.desktop.wm.preferences button-layout appmenu:clo
 gsettings_show    = []
 gsettings_hide    = []
 
-theme_gnome_light = "Materia-light"
-theme_gnome_dark  = "Materia-dark"
-theme_gtk_light   = "Materia-light"
-theme_gtk_dark    = "Materia-dark"
+theme_gnome_light = "Materia-Light"
+theme_gnome_dark  = "Materia-Dark"
+theme_gtk_light   = "Materia-Light"
+theme_gtk_dark    = "Materia-Dark"
 theme_icons_light = "Papirus-Light"
 theme_icons_dark  = "Papirus-Dark"
 theme_curs_light  = "Papirus-Cursors"
@@ -137,6 +138,8 @@ class WelcomeWindow(Gtk.Window):
 
 
 	def action_confirm(self, widget):
+		system("mkdir -p ~/.config/autostart")
+		system("cat /etc/xdg/autostart/mint-gnome-welcome.desktop > ~/.config/autostart/mint-gnome-welcome.desktop")
 		system("echo >> ~/.config/autostart/mint-gnome-welcome.desktop")
 		system("echo X-GNOME-Autostart-enabled=false >> ~/.config/autostart/mint-gnome-welcome.desktop")
 		Gtk.main_quit()
@@ -191,7 +194,7 @@ class WelcomeWindow(Gtk.Window):
 
 
 live = system("df | grep -w / | grep -qv 'cow'")
-lang = getenv("LANGUAGE")
+lang = getenv("LANG").split("_")[0]
 locale = []
 if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
 	file = open("/usr/share/mint-gnome-welcome/locale/" + lang, "r")
@@ -201,7 +204,7 @@ if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
 if len(locale) < 11:
 	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows like)", "Dock style (MacOS like)", "Dash style (Gnome default)", "Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
 
-if exists("~/.config/autostart/linux-mint-gnome.desktop"):
+if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
 	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_panel[0] + "'"):
 		style = "panel"
 	elif system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_dock[0] + "'"):
@@ -217,7 +220,10 @@ if exists("~/.config/autostart/linux-mint-gnome.desktop"):
 	else:
 		dark = False
 else:
-	system("dconf write /org/gnome/desktop/app-folders/folder-children \"['System-Tools']\"")
+	system("dconf write /org/gnome/desktop/app-folders/folder-children \"['Utility', 'System-Tools']\"")
+	system("dconf write /org/gnome/desktop/app-folders/folders/Utility/name \"'Utility.directory'\"")
+	system("dconf write /org/gnome/desktop/app-folders/folders/Utility/translate true")
+	system("dconf write /org/gnome/desktop/app-folders/folders/Utility/apps \"[" + utility + "]\"")
 	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/name \"'System-Tools.directory'\"")
 	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/translate true")
 	system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/apps \"[" + system_tools + "]\"")

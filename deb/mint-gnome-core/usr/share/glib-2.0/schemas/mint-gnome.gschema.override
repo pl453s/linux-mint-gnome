@@ -3,7 +3,7 @@ cursor-theme='Papirus-Cursors'
 document-font-name="Sans 10"
 font-name="Ubuntu 10"
 gtk-key-theme='Default'
-gtk-theme='Materia-dark'
+gtk-theme='Materia-Dark'
 icon-theme='Papirus-Dark'
 monospace-font-name="Monospace 10"
 
@@ -17,7 +17,7 @@ show-desktop-icons=true
 
 [org.gnome.desktop.wm.preferences]
 button-layout=':close'
-theme='Materia-dark'
+theme='Materia-Dark'
 titlebar-font="Ubuntu Medium 10"
 titlebar-uses-system-font=false
 
@@ -52,7 +52,7 @@ favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.g
 app-picker-view=1
 
 [org.gnome.shell.extensions.user-theme]
-name='Materia-dark'
+name='Materia-Dark'
 
 [org.gnome.desktop.a11y]
 always-show-universal-access-status=true
