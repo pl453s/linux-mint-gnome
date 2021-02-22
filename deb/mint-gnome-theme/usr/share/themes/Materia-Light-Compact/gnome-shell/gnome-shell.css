@@ -1744,7 +1744,7 @@ StScrollBar StButton#hhandle:active {
 
 /* OVERVIEW */
 #overview {
-  spacing: 24px;
+  spacing: 8px; /*bak=24px*/
   background-color: transparent;
   color: white;
 }
@@ -2054,9 +2054,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .app-folder-dialog-container {
-  width: 800px;
+  width: 700px; /*bak=800px*/
   height: 600px;
-  padding: 12px;
+  padding: 0px; /*bak=12px*/
 }
 
 .app-folder-icon {
@@ -2100,7 +2100,7 @@ StScrollBar StButton#hhandle:active {
 
 .all-apps,
 .frequent-apps > StBoxLayout {
-  padding: 0 88px 10px;
+  padding: 0 32px 0px; /*bak=0;88px;10px*/
 }
 
 .system-action-icon {

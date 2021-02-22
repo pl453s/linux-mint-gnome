@@ -5,7 +5,7 @@ Essential: yes
 Maintainer: nobody-for-now <null@null.null>
 Description: Linux Mint Gnome base package
  Contains welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
-Depends: gdm3, gir1.2-atk-1.0, gir1.2-clutter-1.0, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gmenu-3.0, gir1.2-gtk-3.0, gir1.2-pango-1.0, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, gnome-shell-extension-prefs, mint-artwork, mint-info-gnome, nautilus, python3, python3-gi, ubuntu-wallpapers, ubuntu-wallpapers-focal, zenity
+Depends: gdm3, gir1.2-atk-1.0, gir1.2-clutter-1.0, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gmenu-3.0, gir1.2-gtk-3.0, gir1.2-pango-1.0, gnome-menus, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, gnome-shell-extension-prefs, mint-artwork, mint-info-gnome, nautilus, python3, python3-gi, ubuntu-wallpapers, ubuntu-wallpapers-focal, zenity
 Breaks: gnome-session, gnome-shell-extensions, gnome-shell-extension-desktop-icons, gnome-shell-extension-top-icons-plus
 Replaces: gnome-session, gnome-shell-extensions, gnome-shell-extension-desktop-icons, gnome-shell-extension-top-icons-plus
 Provides: x-session-manager
