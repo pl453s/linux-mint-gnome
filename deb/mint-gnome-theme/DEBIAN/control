@@ -1,5 +1,5 @@
 Package: mint-gnome-theme
-Version: 1.4
+Version: 1.5
 Architecture: all
 Maintainer: nobody-for-now <null@null.null>
 Depends: gnome-themes-extra, gtk2-engines-murrine, libgtk-3-common, libgtk2.0-common
