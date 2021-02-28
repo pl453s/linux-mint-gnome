@@ -69,9 +69,6 @@ reboot
 - mint-gnome-theme: 'Materia' theme with some fixes
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
-- mint-themes: Delete Mint themes without breaking 'mint-arkwork'
-- mint-x-icons: Delete Mint-X icons without breaking 'mint-arkwork'
-- mint-y-icons: Delete Mint-Y icons without breaking 'mint-arkwork'
 
 ## Gnome Customization
 
@@ -90,15 +87,24 @@ gdm3-reset
 
 ## Remaining work
 
+- Check Desktop Icons NG works with live session
+- Include Always Show Workspaces in Gnome
+- Include Launch New Instance in DashTo*
+- Improve script_install_?.sh to works in any case
+- PopOS inspiration: custom settings categories
+- PopOS inspiration: remove settings diagnotics
+- PopOS inspiration: custom settings distr logo
+- PopOS inspiration: custom app-folders
+- Begin Gnome Customization
 - Develop Gnome Customization
-- Host and maintain the new packages somewhere (in a repository, a PPA or just in Git... IDK)
+- Create an Ubuntu PPA
 - PUBLISH A NEW ISO FILE
 
 ## Credits
 
 - 'Gnome Shell extensions' created by 'gcampax' --> https://github.com/gcampax/gnome-shell-extensions
 - 'Top Indicator extension' created by 'quiro9' --> https://github.com/ubuntu/gnome-shell-extension-appindicator
-- 'Desktop Icons extension' created by 'csoriano' --> https://gitlab.gnome.org/World/ShellExtensions/desktop-icons
+- 'Desktop Icons NG extension' created by 'rastersoft' --> https://gitlab.com/rastersoft/desktop-icons-ng
 - 'Dash to Panel extension' created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
 - 'Dash to Dock extension' created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
 - 'Papirus icon theme' created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
