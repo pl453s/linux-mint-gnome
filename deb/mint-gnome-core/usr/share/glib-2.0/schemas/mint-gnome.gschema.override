@@ -1,3 +1,6 @@
+[org.gnome.desktop.session]
+session-name='mint'
+
 [org.gnome.desktop.interface]
 cursor-theme='Papirus-Cursors'
 document-font-name="Sans 10"
@@ -14,6 +17,13 @@ picture-uri='file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg'
 primary-color="#000000"
 secondary-color="#000000"
 show-desktop-icons=true
+
+[org.gnome.desktop.screensaver]
+color-shading-type="solid"
+picture-options="zoom"
+picture-uri='file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg'
+primary-color="#000000"
+secondary-color="#000000"
 
 [org.gnome.desktop.wm.preferences]
 button-layout=':close'
@@ -47,8 +57,9 @@ tap-to-click=true
 two-finger-scrolling-enabled=true
 
 [org.gnome.shell]
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'topindicatorapp@quiro9.com', 'desktop-icons@csoriano']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'always-show-workspaces@system76.com', 'topindicatorapp@quiro9.com', 'ding@rastersoft.com']
 favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
+always-show-log-out=true
 
 [org.gnome.shell.extensions.user-theme]
 name='Materia-Dark'
@@ -62,6 +73,7 @@ logo='/usr/share/plymouth/themes/mint-spinner/watermark.png'
 [org.gnome.desktop.privacy]
 remember-app-usage=false
 remember-recent-files=false
+report-technical-problems=false
 
 [org.gtk.Settings.FileChooser]
 sort-directories-first=true

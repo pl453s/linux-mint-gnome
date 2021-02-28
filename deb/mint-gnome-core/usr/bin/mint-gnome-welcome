@@ -10,10 +10,10 @@ from os.path import exists
 utility = "'gnome-system-monitor.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'mintstick.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Characters.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop'"
 system_tools = "'ca.desrt.dconf-editor.desktop', 'gparted.desktop', 'gufw.desktop', 'mintbackup.desktop', 'mintdrivers.desktop', 'mintreport.desktop', 'mintsources.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
 
-extensions_panel  = ["dash-to-panel@jderose9.github.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
-extensions_dock   = ["dash-to-dock@micxgx.gmail.com", "launch-new-instance@gnome-shell-extensions.gcampax.github.com"]
+extensions_panel  = ["dash-to-panel@jderose9.github.com"]
+extensions_dock   = ["dash-to-dock@micxgx.gmail.com"]
 extensions_dash   = []
-extensions_show   = ["desktop-icons@csoriano"]
+extensions_show   = ["ding@rastersoft.com"]
 extensions_hide   = []
 
 gsettings_panel   = ["org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close"]

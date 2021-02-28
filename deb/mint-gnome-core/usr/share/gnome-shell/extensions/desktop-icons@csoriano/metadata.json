@@ -1,6 +1,0 @@
-{
-    "name": "Desktop Icons",
-    "description": "Add icons to the desktop",
-    "uuid": "desktop-icons@csoriano",
-    "shell-version": ["3.34.0"]
-}
