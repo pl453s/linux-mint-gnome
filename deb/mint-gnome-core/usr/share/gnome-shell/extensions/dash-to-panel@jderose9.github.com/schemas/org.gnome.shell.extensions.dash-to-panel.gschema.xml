@@ -1230,5 +1230,10 @@
       <summary>Show badge count on app icon</summary>
       <description>Whether to show badge count overlay on app icon, for supported applications.</description>
     </key>
+    <key type="b" name="launch-new-instance">
+      <default>true</default>
+      <summary>Launch new instance</summary>
+      <description>Always launch a new instance when clicking in the dash or the application view.</description>
+    </key>
   </schema>
 </schemalist>

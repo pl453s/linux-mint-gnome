@@ -1844,6 +1844,11 @@ const Settings = new Lang.Class({
 
         }));
 
+        this._settings.bind('launch-new-instance',
+                            this._builder.get_object('launch_new_instance_switch'),
+                            'active',
+                            Gio.SettingsBindFlags.DEFAULT);
+
         // Fine-tune panel
 
         let sizeScales = [

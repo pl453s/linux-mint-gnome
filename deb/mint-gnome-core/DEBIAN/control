@@ -6,7 +6,5 @@ Maintainer: nobody-for-now <null@null.null>
 Description: Linux Mint Gnome base package
  Contains welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
 Depends: gdm3, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, gnome-shell-extension-prefs, mint-artwork, mint-info-gnome, nautilus, python3, python3-gi, zenity
-Breaks: gnome-session, gnome-shell-extensions
-Replaces: gnome-session, gnome-shell-extensions
 Provides: x-session-manager, ubuntu-wallpapers, mint-themes, mint-x-icons, mint-y-icons
 Section: gnome

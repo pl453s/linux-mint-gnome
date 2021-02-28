@@ -526,6 +526,11 @@ var Settings = class DashToDock_Settings {
                             'sensitive',
                             Gio.SettingsBindFlags.DEFAULT);
 
+        this._settings.bind('launch-new-instance',
+                            this._builder.get_object('launch_new_instance_switch'),
+                            'active',
+                            Gio.SettingsBindFlags.DEFAULT);
+
         this._builder.get_object('click_action_combo').set_active(this._settings.get_enum('click-action'));
         this._builder.get_object('click_action_combo').connect('changed', (widget) => {
             this._settings.set_enum('click-action', widget.get_active());

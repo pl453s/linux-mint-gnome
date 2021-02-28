@@ -1,5 +1,5 @@
 {
- "uuid": "user-theme@gnome-shell-extensions.gcampax.github.com",
+ "uuid": "user-theme@gcampax.github.com",
  "extension-id": "user-theme",
  "settings-schema": "org.gnome.shell.extensions.user-theme",
  "name": "User Themes",

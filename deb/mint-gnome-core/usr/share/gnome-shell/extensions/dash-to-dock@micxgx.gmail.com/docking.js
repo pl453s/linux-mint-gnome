@@ -46,6 +46,10 @@ const scrollAction = {
     SWITCH_WORKSPACE: 2
 };
 
+// Launch new instance extension addition
+const AppDisplay = imports.ui.appDisplay;
+const _activateOriginal = AppDisplay.AppIcon.prototype.activate;
+
 /**
  * A simple St.Widget with one child whose allocation takes into account the
  * slide out of its child via the _slidex parameter ([0:1]).
@@ -1616,6 +1620,9 @@ var DockManager = class DashToDock_DockManager {
 
         // Connect relevant signals to the toggling function
         this._bindSettingsChanges();
+        
+        // Apply "Launch new instance" setting
+        this._launchNewInstance();
     }
 
     static getDefault() {
@@ -1715,7 +1722,22 @@ var DockManager = class DashToDock_DockManager {
             this._settings,
             'changed::show-mounts',
             () => this._ensureFileManagerClient()
+        ], [
+            this._settings,
+            'changed::launch-new-instance',
+            () => this._launchNewInstance()
         ], );
+    }
+    
+    // Launch new instance Setting Function
+    _launchNewInstance() {
+        if (this._settings.get_boolean('launch-new-instance')) {
+            AppDisplay.AppIcon.prototype.activate = function () {
+                _activateOriginal.call(this, 2);
+            };
+        } else {
+            AppDisplay.AppIcon.prototype.activate = _activateOriginal;
+        }
     }
 
     _createDocks() {
@@ -1982,6 +2004,9 @@ var DockManager = class DashToDock_DockManager {
         this._oldDash = null;
 
         Me.imports.extension.dockManager = null;
+        
+        // Reset "Launch new instance" setting
+        AppDisplay.AppIcon.prototype.activate = _activateOriginal;
     }
 
     /**

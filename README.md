@@ -87,9 +87,6 @@ gdm3-reset
 
 ## Remaining work
 
-- Check Desktop Icons NG works with live session
-- Include Always Show Workspaces in Gnome
-- Include Launch New Instance in DashTo*
 - Improve script_install_?.sh to works in any case
 - PopOS inspiration: custom settings categories
 - PopOS inspiration: remove settings diagnotics

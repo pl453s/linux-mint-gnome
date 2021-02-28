@@ -55,6 +55,9 @@ const Layout = imports.ui.layout;
 const WM = imports.ui.windowManager;
 const WorkspacesView = imports.ui.workspacesView;
 
+// Launch new instance extension addition
+const _activateOriginal = AppDisplay.AppIcon.prototype.activate;
+
 var dtpPanelManager = Utils.defineClass({
     Name: 'DashToPanel.PanelManager',
 
@@ -263,6 +266,11 @@ var dtpPanelManager = Utils.defineClass({
                         this._reset();
                     }
                 }
+            ],
+            [
+                Me.settings,
+                'changed::launch-new-instance',
+                () => this._launchNewInstance()
             ]
         );
 
@@ -271,6 +279,9 @@ var dtpPanelManager = Utils.defineClass({
         ));
 
         this._setKeyBindings(true);
+        
+        // Apply "Launch new instance" setting
+        this._launchNewInstance();
     },
 
     disable: function(reset) {
@@ -366,7 +377,10 @@ var dtpPanelManager = Utils.defineClass({
         delete LookingGlass.LookingGlass.prototype._oldResize;
 
         LookingGlass.LookingGlass.prototype.open = LookingGlass.LookingGlass.prototype._oldOpen;
-        delete LookingGlass.LookingGlass.prototype._oldOpen
+        delete LookingGlass.LookingGlass.prototype._oldOpen;
+        
+        // Reset "Launch new instance" setting
+        AppDisplay.AppIcon.prototype.activate = _activateOriginal;
     },
 
     setFocusedMonitor: function(monitor, ignoreRelayout) {
@@ -381,6 +395,17 @@ var dtpPanelManager = Utils.defineClass({
             if (ignoreRelayout) return;
 
             this._newOverviewRelayout.call(Main.overview);
+        }
+    },
+
+    // Launch new instance Setting Function
+    _launchNewInstance: function() {
+        if (Me.settings.get_boolean('launch-new-instance')) {
+            AppDisplay.AppIcon.prototype.activate = function () {
+                _activateOriginal.call(this, 2);
+            };
+        } else {
+            AppDisplay.AppIcon.prototype.activate = _activateOriginal;
         }
     },
 

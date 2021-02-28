@@ -546,5 +546,10 @@
       <summary>Enable unity7 like glossy backlit items</summary>
       <description>Emulate the unity7 backlit glossy items behaviour</description>
     </key>
+    <key name="launch-new-instance" type="b">
+      <default>true</default>
+      <summary>Launch new instance</summary>
+      <description>Always launch a new instance when clicking in the dash or the application view.</description>
+    </key>
   </schema>
 </schemalist>

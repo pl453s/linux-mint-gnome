@@ -57,7 +57,7 @@ tap-to-click=true
 two-finger-scrolling-enabled=true
 
 [org.gnome.shell]
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'always-show-workspaces@system76.com', 'topindicatorapp@quiro9.com', 'ding@rastersoft.com']
+enabled-extensions=['user-theme@gcampax.github.com', 'topindicatorapp@quiro9.com', 'ding@rastersoft.com']
 favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
 always-show-log-out=true
 
