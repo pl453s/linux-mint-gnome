@@ -323,8 +323,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lws)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dws)
 
 <br>
 <br>
@@ -349,8 +348,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lwh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dwh)
 
 <br>
 <br>
@@ -375,8 +373,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lms)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dms)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dms)
 
 <br>
 <br>
@@ -401,8 +398,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lmh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dmh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dmh)
 
 <br>
 <br>
@@ -427,8 +423,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lgs)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgs)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgs)
 
 <br>
 <br>
@@ -453,8 +448,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1lgh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgh)
 
 <br>
 <br>
@@ -479,8 +473,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dws)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lws)
 
 <br>
 <br>
@@ -505,8 +498,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dwh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lwh)
 
 <br>
 <br>
@@ -531,8 +523,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dms)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lms)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lms)
 
 <br>
 <br>
@@ -557,8 +548,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dmh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lmh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lmh)
 
 <br>
 <br>
@@ -583,8 +573,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dgs)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgs)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgs)
 
 <br>
 <br>
@@ -609,8 +598,7 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-1dgh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgh)
 
 <br>
 <br>
@@ -635,14 +623,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lws)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
 
 <br>
 <br>
@@ -667,14 +652,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lwh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
 
 <br>
 <br>
@@ -699,14 +681,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lms)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
 
 <br>
 <br>
@@ -731,14 +710,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lmh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
 
 <br>
 <br>
@@ -763,14 +739,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgs)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
 
 <br>
 <br>
@@ -795,14 +768,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2lgh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
 
 <br>
 <br>
@@ -827,14 +797,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dws)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
 
 <br>
 <br>
@@ -859,14 +826,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dwh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
 
 <br>
 <br>
@@ -891,14 +855,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dms)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
 
 <br>
 <br>
@@ -923,14 +884,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dmh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
 
 <br>
 <br>
@@ -955,14 +913,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgs)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
 
 <br>
 <br>
@@ -987,14 +942,11 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-2dgh)
 [![Next](../btn/button_next_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
-![Spacer](../btn/spacer.png)
-[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
+&emsp;&emsp;&emsp;[![Icons](../btn/button_icons_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
 
 <br>
 <br>
@@ -1019,10 +971,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lws)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
 
@@ -1049,10 +999,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lwh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
 
@@ -1079,10 +1027,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lms)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
 
@@ -1109,10 +1055,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lmh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
 
@@ -1139,10 +1083,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgs)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
 
@@ -1169,10 +1111,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3lgh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
 
@@ -1199,10 +1139,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dws)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lws)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
 
@@ -1229,10 +1167,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dwh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lwh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
 
@@ -1259,10 +1195,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dms)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lms)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
 
@@ -1289,10 +1223,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dmh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lmh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
 [![Dock](../btn/button_dock_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
 [![Dash](../btn/button_dash_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
 
@@ -1319,10 +1251,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgs)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgs)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dws)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dms)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgs)
 
@@ -1349,10 +1279,8 @@
 
 [![Back](../btn/button_back_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-3dgh)
 [![Next](../btn/button_next_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
-![Spacer](../btn/spacer.png)
-[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
-![Spacer](../btn/spacer.png)
-[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
+&emsp;&emsp;&emsp;[![Dark](../btn/button_dark_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4lgh)
+&emsp;&emsp;&emsp;[![Panel](../btn/button_panel_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dwh)
 [![Dock](../btn/button_dock_off.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dmh)
 [![Dash](../btn/button_dash_on.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#interactive-tour-4dgh)
 
