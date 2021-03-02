@@ -30,9 +30,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Migration / Upgrade (1.5 -> 1.6 comming)
 
-The Linux Mint Gnome development has became too complex to continue to support scripted migration from official Linux Mint editions.  
-Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Linux Mint Gnome installation.  
+The Linux Mint Gnome development has became too complex to continue to support scripted migration from official Linux Mint editions.
+Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Linux Mint Gnome installation.
 A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
+
 Lastest release: https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20
 
 ## Project packages
