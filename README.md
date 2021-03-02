@@ -89,12 +89,14 @@ gdm3-reset
 
 ## Remaining work
 
+- Check why GitHub Pages build failed
 - Improve 'script_install_?.sh' to works in any case
-- Create distribution updater (from GitHub releases)
 - PUBLISH A NEW RELEASE
+- Create a distribution updater
+- Create an Ubuntu PPA
+- PUBLISH A NEW ISO FILE
 - Begin Gnome Customization
 - Develop Gnome Customization
-- Create an Ubuntu PPA
 - PUBLISH A NEW ISO FILE
 
 ## Credits
