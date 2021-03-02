@@ -15,7 +15,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-## Installation (1.3 -> 1.6 comming)
+## Installation (1.3 -> 1.6 coming)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
@@ -28,10 +28,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - *OR, run 'setxkbmap -layout \<your layout\>' on each login*
 - *OR, just select 'Gnome on Xorg' session on login screen*
 
-## Migration / Upgrade (1.5 -> 1.6 comming)
+## Migration / Upgrade (1.5 -> 1.6 coming)
 
-The Linux Mint Gnome development has became too complex to continue to support scripted migration from official Linux Mint editions.
-Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Linux Mint Gnome installation.
+The Mint Gnome development has became too complex to continue to support scripted migration from official Mint editions.  
+Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome install.  
 A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
 
 Lastest release: https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20
