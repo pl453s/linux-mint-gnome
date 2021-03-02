@@ -89,7 +89,6 @@ gdm3-reset
 
 ## Remaining work
 
-- Check why GitHub Pages build failed
 - Improve 'script_install_?.sh' to works in any case
 - PUBLISH A NEW RELEASE
 - Create a distribution updater
@@ -109,4 +108,3 @@ gdm3-reset
 - 'Papirus icon theme' created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 - 'Paper icon theme' created by 'snwh' --> https://github.com/snwh/paper-icon-theme
 - 'Materia GTK theme' created by 'nana-4' --> https://github.com/nana-4/materia-theme
-
