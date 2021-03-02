@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Welcome
-Icon=mintwelcome
+Icon=preferences-desktop-user
 Exec=mint-gnome-welcome
 Terminal=false
 Type=Application

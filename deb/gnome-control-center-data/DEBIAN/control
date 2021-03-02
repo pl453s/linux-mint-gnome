@@ -1,0 +1,16 @@
+Package: gnome-control-center-data
+Source: gnome-control-center
+Version: 1:3.36.4-linuxmintgnome
+Architecture: all
+Maintainer: nobody-for-now <null@null.null>
+Installed-Size: 948
+Depends: dconf-gsettings-backend | gsettings-backend, session-migration
+Breaks: gnome-control-center (<< 1:3.7.92-2~)
+Replaces: gnome-control-center (<< 1:3.7.92-2~)
+Section: gnome
+Priority: optional
+Multi-Arch: foreign
+Description: configuration applets for GNOME - data files
+ This package contains data files (icons, pixmaps, locales files) needed by
+ the configuration applets in the gnome-control-center package.
+

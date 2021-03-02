@@ -88,10 +88,8 @@ gdm3-reset
 ## Remaining work
 
 - Improve 'script_install_?.sh' to works in any case
-- PopOS inspiration: settings custom categories
-- PopOS inspiration: settings remove diagnotics
-- PopOS inspiration: settings custom distr logo
-- PopOS inspiration: custom app-folders
+- Create distr updater (from GitHub releases)
+- PUBLISH A NEW RELEASE
 - Begin Gnome Customization
 - Develop Gnome Customization
 - Create an Ubuntu PPA

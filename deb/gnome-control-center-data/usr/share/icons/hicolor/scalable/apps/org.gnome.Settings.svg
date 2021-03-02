@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg11300" width="128" height="128" style="enable-background:new" version="1.0" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title id="title4162">Adwaita Icon Template</title>
+ <defs id="defs3">
+  <linearGradient id="linearGradient1099" x1="32" x2="96" y1="236" y2="236" gradientTransform="translate(172 -300)" gradientUnits="userSpaceOnUse">
+   <stop id="stop1032" style="stop-color:#d5d3cf" offset="0"/>
+   <stop id="stop1034" style="stop-color:#f6f5f4" offset="1"/>
+  </linearGradient>
+  <radialGradient id="radialGradient1103" cx="-244" cy="-76" r="32" gradientTransform="matrix(.88333 0 0 .88333 -27.533 -7.4667)" gradientUnits="userSpaceOnUse">
+   <stop id="stop1065" style="stop-color:#d5d3cf" offset="0"/>
+   <stop id="stop1067" style="stop-color:#949390" offset="1"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1027" x1="64" x2="64" y1="262.5" y2="232" gradientUnits="userSpaceOnUse">
+   <stop id="stop1021" style="stop-color:#9a9996" offset="0"/>
+   <stop id="stop1023" style="stop-color:#77767b" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata id="metadata4">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>GNOME Design Team</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:source/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    <dc:title>Adwaita Icon Template</dc:title>
+    <dc:subject>
+     <rdf:Bag/>
+    </dc:subject>
+    <dc:date/>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:rights>
+    <dc:publisher>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:publisher>
+    <dc:identifier/>
+    <dc:relation/>
+    <dc:language/>
+    <dc:coverage/>
+    <dc:description/>
+    <dc:contributor>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:contributor>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0,-172)">
+  <g id="layer2" style="display:none">
+   <text id="context" x="7.906189" y="145.34863" style="display:inline;enable-background:new;fill:#000000;font-family:Cantarell;font-size:11.774px;line-height:125%;stroke-width:.64332" xml:space="preserve"><tspan id="tspan2716" x="7.906189" y="145.34863" style="stroke-width:.64332">apps</tspan></text>
+   <text id="text3021" x="7.5258484" y="161.94572" style="display:inline;enable-background:new;fill:#000000;font-family:Cantarell;font-size:11.774px;font-weight:bold;line-height:125%;stroke-width:.64332" xml:space="preserve"><tspan id="tspan3023" x="7.5258484" y="161.94572" style="stroke-width:.64332">org.gnome.Settings</tspan></text>
+   <rect id="rect13805" y="172" width="128" height="128" style="display:inline;enable-background:accumulate;fill:#f0f0f0"/>
+   <g id="g1168" transform="matrix(.25 0 0 .25 -9.3066e-6 225)" style="display:inline;enable-background:new">
+    <rect id="rect1110" x="96" y="-180" width="320" height="448" rx="32" ry="32" style="fill:#2864b0;opacity:.1;paint-order:normal"/>
+    <rect id="rect1110-8" x="48" y="-164" width="416" height="416" rx="32" ry="32" style="display:inline;enable-background:new;fill:#2864b0;opacity:.1;paint-order:normal"/>
+    <rect id="rect1110-8-9" x="32" y="-116" width="448" height="320" rx="32" ry="32" style="display:inline;enable-background:new;fill:#2864b0;opacity:.1;paint-order:normal"/>
+    <circle id="path1142" cx="256" cy="44" r="240" style="fill:#2864b0;opacity:.1;paint-order:normal"/>
+   </g>
+  </g>
+  <g id="layer9">
+   <g id="g1084" transform="translate(140,2)" style="fill:#77767b">
+    <rect id="rect1068" x="-88" y="176" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1070" x="-88" y="272" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1072" transform="rotate(-45)" x="-232.62" y="53.137" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1074" transform="rotate(-45)" x="-232.62" y="149.14" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1076" transform="rotate(-90)" x="-248" y="-136" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1078" transform="rotate(-90)" x="-248" y="-40" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1080" transform="rotate(225)" x="-125.14" y="-280.62" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+    <rect id="rect1082" transform="rotate(225)" x="-125.14" y="-184.62" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#77767b;paint-order:normal"/>
+   </g>
+   <g id="g1066" transform="translate(140)" style="fill:#f6f5f4">
+    <rect id="rect991-5-3" x="-88" y="176" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1023" x="-88" y="272" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1029" transform="rotate(-45)" x="-232.62" y="53.137" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1031" transform="rotate(-45)" x="-232.62" y="149.14" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1035" transform="rotate(-90)" x="-248" y="-136" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1037" transform="rotate(-90)" x="-248" y="-40" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1041" transform="rotate(225)" x="-125.14" y="-280.62" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+    <rect id="rect1043" transform="rotate(225)" x="-125.14" y="-184.62" width="24" height="24" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+   </g>
+   <ellipse id="ellipse1093" cx="64" cy="238" rx="36" ry="36" style="enable-background:new;fill:none;paint-order:normal;stroke-width:24;stroke:url(#linearGradient1027)"/>
+   <ellipse id="path1023-6-6" cx="64" cy="236" rx="38" ry="38" style="enable-background:new;fill:none;paint-order:normal;stroke-width:20;stroke:#f6f5f4"/>
+   <circle id="circle1101" transform="matrix(0,-1,-1,0,0,0)" cx="-236" cy="-64" r="26.5" style="fill:none;stroke-linecap:square;stroke-linejoin:round;stroke-width:5;stroke:url(#radialGradient1103)"/>
+   <circle id="circle1097" transform="rotate(90)" cx="236" cy="-64" r="32" style="fill:none;stroke-linecap:square;stroke-linejoin:round;stroke-width:8;stroke:url(#linearGradient1099)"/>
+  </g>
+ </g>
+</svg>

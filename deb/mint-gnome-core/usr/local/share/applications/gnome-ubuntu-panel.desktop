@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name= 
-Exec=gnome-control-center ubuntu
-Icon=preferences-ubuntu-panel
-Type=Application
-NoDisplay=true
-Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-PersonalizationSettings;

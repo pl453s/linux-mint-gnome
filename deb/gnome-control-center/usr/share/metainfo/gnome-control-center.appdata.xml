@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Richard Hughes <richard@hughsie.com> -->
+<component type="desktop">
+  <id>gnome-control-center.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>GNOME Settings</name>
+  <name xml:lang="zh_TW">GNOME 設定</name>
+  <name xml:lang="zh_CN">GNOME 设置</name>
+  <name xml:lang="uk">Параметри GNOME</name>
+  <name xml:lang="tr">GNOME Ayarlar</name>
+  <name xml:lang="sv">GNOME Inställningar</name>
+  <name xml:lang="sr">Гномова Подешавања</name>
+  <name xml:lang="sl">Nastavitve GNOME</name>
+  <name xml:lang="sk">Nastavenia prostredia GNOME</name>
+  <name xml:lang="ru">Настройки GNOME</name>
+  <name xml:lang="ro">Configurări GNOME</name>
+  <name xml:lang="pt_BR">Configurações do GNOME</name>
+  <name xml:lang="pl">Ustawienia GNOME</name>
+  <name xml:lang="pa">ਗਨੋਮ ਸੈਟਿੰਗਾਂ</name>
+  <name xml:lang="oc">Paramètres GNOME</name>
+  <name xml:lang="nl">Gnome-instellingen</name>
+  <name xml:lang="nb">GNOME kontrollpanel</name>
+  <name xml:lang="ms">Tetapan GNOME</name>
+  <name xml:lang="mjw">GNOME Settings</name>
+  <name xml:lang="lv">GNOME iestatījumi</name>
+  <name xml:lang="lt">GNOME nustatymai</name>
+  <name xml:lang="ko">그놈 설정</name>
+  <name xml:lang="kk">GNOME баптаулары</name>
+  <name xml:lang="ja">GNOME Settings</name>
+  <name xml:lang="it">Impostazioni GNOME</name>
+  <name xml:lang="is">GNOME-stillingar</name>
+  <name xml:lang="id">GNOME Pengaturan</name>
+  <name xml:lang="hu">GNOME Beállítások</name>
+  <name xml:lang="hr">GNOME postavke</name>
+  <name xml:lang="he">הגדרות GNOME</name>
+  <name xml:lang="gl">Preferencias de GNOME</name>
+  <name xml:lang="fur">Impostazions di GNOME</name>
+  <name xml:lang="fr">Paramètres GNOME</name>
+  <name xml:lang="fi">Gnomen asetukset</name>
+  <name xml:lang="fa">تنظیمات گنوم</name>
+  <name xml:lang="eu">GNOME ezarpenak</name>
+  <name xml:lang="es">Configuración de GNOME</name>
+  <name xml:lang="eo">GNOME Agordoj</name>
+  <name xml:lang="en_GB">GNOME Settings</name>
+  <name xml:lang="el">Ρυθμίσεις GNOME</name>
+  <name xml:lang="de">GNOME-Einstellungen</name>
+  <name xml:lang="da">GNOME Indstillinger</name>
+  <name xml:lang="cs">Nastavení GNOME</name>
+  <name xml:lang="ckb">ڕێکخستنەکانی گنۆم</name>
+  <name xml:lang="ca">Paràmetres del GNOME</name>
+  <name xml:lang="ar">إعدادات جنوم</name>
+  <summary>Utility to configure the GNOME desktop</summary>
+  <summary xml:lang="zh_TW">設定 GNOME 桌面的工具程式</summary>
+  <summary xml:lang="zh_CN">用来配置 GNOME 桌面的工具</summary>
+  <summary xml:lang="uk">Програма для налаштовування середовища GNOME</summary>
+  <summary xml:lang="tr">GNOME masaüstünü yapılandırma aracı</summary>
+  <summary xml:lang="sv">Verktyg för att konfigurera GNOME-skrivbordet</summary>
+  <summary xml:lang="sr">Алатка за подешавање Гномовог радног окружења</summary>
+  <summary xml:lang="sl">Orodje za nastavljanje namizja GNOME</summary>
+  <summary xml:lang="sk">Nástroj na konfiguráciu prostredia GNOME</summary>
+  <summary xml:lang="ru">Инструмент для настройки рабочего стола GNOME</summary>
+  <summary xml:lang="ro">Utilitate de configurare pentru desktopul GNOME</summary>
+  <summary xml:lang="pt_BR">Utilitário para configurar o ambiente GNOME</summary>
+  <summary xml:lang="pl">Narzędzie do konfigurowania środowiska GNOME</summary>
+  <summary xml:lang="pa">ਗਨੋਮ ਡੈਸਕਟਾਪ ਦੀ ਸੰਰਚਨਾ ਵਾਸਤੇ ਸਹੂਲਤ</summary>
+  <summary xml:lang="oc">Utilitari per configurar l’environament GNOME</summary>
+  <summary xml:lang="nl">Hulpprogramma om het Gnome-bureaublad te configureren</summary>
+  <summary xml:lang="nb">Verktøy som lar deg tilpasse GNOME-skrivebordet</summary>
+  <summary xml:lang="ms">Utiliti untuk mengkonfigur atas meja GNOME</summary>
+  <summary xml:lang="lv">Utilītprogramma GNOME darbvirsmas konfigurēšanai</summary>
+  <summary xml:lang="lt">Įrankis GNOME grafinės aplinkos konfigūravimui</summary>
+  <summary xml:lang="ko">그놈 데스크톱 설정 프로그램</summary>
+  <summary xml:lang="kk">GNOME жұмыс үстелін баптау утилитасы</summary>
+  <summary xml:lang="ja">GNOME デスクトップの設定ユーティリティ</summary>
+  <summary xml:lang="it">Applicazione per configurare l'ambiente grafico GNOME</summary>
+  <summary xml:lang="is">Tól til að stilla GNOME skjáborðsumhverfið</summary>
+  <summary xml:lang="id">Utilitas untuk mengonfigurasi destop GNOME</summary>
+  <summary xml:lang="hu">Segédprogram a GNOME asztali környezet személyre szabásához</summary>
+  <summary xml:lang="hr">Pomagalo za podešavanje GNOME radne površine</summary>
+  <summary xml:lang="he">כלים להגדרת שולחן העבודה GNOME</summary>
+  <summary xml:lang="gl">Utilidades para configurar o escritorio GNOME</summary>
+  <summary xml:lang="fur">Utilitât par configurâ l'ambient grafic GNOME</summary>
+  <summary xml:lang="fr">Utilitaire pour configurer l’environnement GNOME</summary>
+  <summary xml:lang="fi">Työkalu Gnome-työpöydän asetusten muokkaukseen</summary>
+  <summary xml:lang="fa">ابزاری برای پیکربندی میزکار گنوم</summary>
+  <summary xml:lang="eu">GNOME mahaigaina konfiguratzeko utilitatea</summary>
+  <summary xml:lang="es">Utilidad para configurar el escritorio GNOME</summary>
+  <summary xml:lang="eo">Ilo por agordi la labortablon de GNOME</summary>
+  <summary xml:lang="en_GB">Utility to configure the GNOME desktop</summary>
+  <summary xml:lang="el">Εργαλείο για τη ρύθμιση του GNOME</summary>
+  <summary xml:lang="de">Dienstprogramme zur Einrichtung der GNOME Arbeitsumgebung</summary>
+  <summary xml:lang="da">Redskab til at konfigurere GNOME-skrivebordet</summary>
+  <summary xml:lang="cs">Nástroj pro nastavení uživatelského prostředí GNOME</summary>
+  <summary xml:lang="ckb">ئامرازێکە بۆ ڕێکخستنی ڕوومێزی گنۆم</summary>
+  <summary xml:lang="ca">Utilitats per configurar l'escriptori GNOME</summary>
+  <summary xml:lang="ar">أدوات لضبط سطح مكتب جنوم</summary>
+  <description>
+    <p>
+      Settings is the primary interface for configuring your system.
+    </p>
+    <p xml:lang="zh_TW">《設定》是設定系統的主要介面。</p>
+    <p xml:lang="zh_CN">“设置”是配置您的系统的主要界面。</p>
+    <p xml:lang="uk">«Параметри» є основним інтерфейсом для налаштовування вашої системи.</p>
+    <p xml:lang="tr">Ayarlar, sisteminizi yapılandırmak için birincil arayüzdür.</p>
+    <p xml:lang="sv">Inställningar är det primära gränssnittet för att konfigurera ditt system.</p>
+    <p xml:lang="sr">Подешавања су главно средство за подешавање вашег система.</p>
+    <p xml:lang="sl">Program je osnovni vmesnik za prilagajanje nastavitev sistema.</p>
+    <p xml:lang="sk">Aplikácia Nastavenia je hlavným rozhraním na konfiguráciu vášho systému.</p>
+    <p xml:lang="ru">Настройки — основной интерфейс для настройки вашей системы.</p>
+    <p xml:lang="ro">Configurări este interfața primară pentru a vă configura sistemul.</p>
+    <p xml:lang="pt_BR">Configurações é a interface primária para configurar seu sistema.</p>
+    <p xml:lang="pl">Główny interfejs do konfigurowania komputera.</p>
+    <p xml:lang="pa">ਸੈਟਿੰਗਾਂ ਤੁਹਾਡੇ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਕਰਨ ਲਈ ਮੁੱਢਲਾ ਦਰ ਹੈ।</p>
+    <p xml:lang="oc">Paramètres es l’interfàcia principala de configuracion del sistèma.</p>
+    <p xml:lang="nl">Instellingen is de hoofdinterface voor de configuratie van uw systeem.</p>
+    <p xml:lang="nb">Innstillinger er primærgrensesnittet for å konfigurere systemet ditt.</p>
+    <p xml:lang="ms">Tetapan ialah antara muka utama untuk Mengkonfigur sistem anda.</p>
+    <p xml:lang="lv">“Iestatījumi” ir galvenā sistēmas konfigurēšanas saskarne.</p>
+    <p xml:lang="lt">Nustatymai yra pirminė sąsaja jūsų sistemos konfigūravimui.</p>
+    <p xml:lang="ko">설정은 시스템을 설정하는 주요 인터페이스 프로그램입니다.</p>
+    <p xml:lang="kk">Баптаулар қолданбасы жүйеңізді баптаудың негізгі сайманы болып табылады.</p>
+    <p xml:lang="ja">“設定”はシステム設定用のプライマリインターフェースです。</p>
+    <p xml:lang="it">«Impostazioni» è il programma principale per la configurazione del sistema.</p>
+    <p xml:lang="id">Pengaturan adalah antarmuka utama untuk mengkonfigurasi sistem Anda.</p>
+    <p xml:lang="hu">A Beállítások az elsődleges felület a rendszer beállításához.</p>
+    <p xml:lang="hr">Postavke su glavno sučelje za podešavanje vašeg sustava.</p>
+    <p xml:lang="he">הגדרות הוא הממשק העיקרי להגדיר את המערכת שלך.</p>
+    <p xml:lang="gl">Preferencias é a interface principal para configurar o seu sistema.</p>
+    <p xml:lang="fur">Impostazions e je la interface principâl par configurâ il sisteme.</p>
+    <p xml:lang="fr">Paramètres est l’interface principale de configuration du système.</p>
+    <p xml:lang="fi">Asetukset on ensisijainen käyttöliittymä järjestelmäsi asetusten määrittämiseen.</p>
+    <p xml:lang="fa">تنظیمات، واسط اصلی برای پیکربندی سامانه‌تان است.</p>
+    <p xml:lang="eu">Ezarpenak zure sistema konfiguratzeko interfaze nagusia da.</p>
+    <p xml:lang="es">Configuración es la interfaz principal para configurar su sistema.</p>
+    <p xml:lang="eo">Agordoj estas la ĉefa fasado por agordi vian sistemon.</p>
+    <p xml:lang="en_GB">Settings is the primary interface for configuring your system.</p>
+    <p xml:lang="el">Οι ρυθμίσεις είναι η κύρια διεπαφή για τη διαμόρφωση του συστήματός σας.</p>
+    <p xml:lang="de">Einstellungen ist die wichtigste Komponente zur Einrichtung Ihres Systems.</p>
+    <p xml:lang="da">Indstillinger er den primære grænseflade til konfigurering af dit system.</p>
+    <p xml:lang="cs">Aplikace Nastavení je hlavním rozhraním pro nastavení vašeho systému.</p>
+    <p xml:lang="ca">El Paràmetres és la interfície principal per configurar el sistema.</p>
+  </description>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-control-center/issues/</url>
+  <url type="donation">https://www.gnome.org/friends/</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <update_contact>gnomecc-list_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <launchable type="desktop-id">gnome-control-center.desktop</launchable>
+  <developer_name>The GNOME Project</developer_name>
+  <compulsory_for_desktop>GNOME</compulsory_for_desktop>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">gnome-control-center-2.0</translation>
+</component>
