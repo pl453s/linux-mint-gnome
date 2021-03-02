@@ -64,9 +64,11 @@ reboot
 
 - mint-gnome-core: Welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
+- mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
+- gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
+- gnome-control-center-data: 'Settings' application with some fixes (use Linux Mint logo icon)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
-- mint-gnome-theme: 'Materia' theme with some fixes
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
 
@@ -88,7 +90,7 @@ gdm3-reset
 ## Remaining work
 
 - Improve 'script_install_?.sh' to works in any case
-- Create distr updater (from GitHub releases)
+- Create distribution updater (from GitHub releases)
 - PUBLISH A NEW RELEASE
 - Begin Gnome Customization
 - Develop Gnome Customization

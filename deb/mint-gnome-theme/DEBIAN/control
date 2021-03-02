@@ -3,6 +3,6 @@ Version: 1.6
 Architecture: all
 Maintainer: nobody-for-now <null@null.null>
 Depends: gnome-themes-extra, gtk2-engines-murrine, libgtk-3-common, libgtk2.0-common
-Description: Materia theme with some fixes
+Description: Materia theme with some fixes (on screen keyboard icons + app-folder bug)
 Breaks: materia-gtk-theme
 Replaces: materia-gtk-theme
