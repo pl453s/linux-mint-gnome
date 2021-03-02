@@ -15,7 +15,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-## Test / Install with a LiveCD
+## Installation (1.3 -> 1.6 comming)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
@@ -28,45 +28,20 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - *OR, run 'setxkbmap -layout \<your layout\>' on each login*
 - *OR, just select 'Gnome on Xorg' session on login screen*
 
-## Migrate from an official edition
+## Migration / Upgrade (1.5 -> 1.6 comming)
 
-**WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
-**WARNING: I strongly recommand to NOT migrate from a live session, reboot when asked**  
-**WARNING: Migrate from a personal or an already used installation is DANGEROUS!**  
-**It could break your system or cause data loss, you should always migrate from a clean installation**
-- Get the ISO of any edition of Linux Mint 20: https://linuxmint.com/release.php?id=38
-- Use this ISO to install Mint on a computer or a virtual machine
-- Download the lastest release packages and scripts:
-```bash
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/mint-gnome-core.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/mint-info-gnome.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/gnome-customization.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/plymouth-theme-mint.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/mint-gnome-theme.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/papirus-cursor-theme.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/libreoffice-style-papirus.deb
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/script_install_1.sh
-wget https://github.com/pl453s/linux-mint-gnome/releases/download/v1.5-mint20/script_install_2.sh
-```
-- On the Mint installed machine, open a terminal (be sure to have an Internet connection on your machine)
-```bash
-bash /path/to/script_install_1.sh # Confirm every installation, select 'gdm3' instead of 'lightdm'
-reboot
-```
-- You should now get the GDM3 login screen, log in and re-open a terminal
-```bash
-bash /path/to/script_install_2.sh # Confirm every installation and every uninstallation
-reboot
-```
-- Log in again, and enjoy!
+The Linux Mint Gnome development has became too complex to continue to support scripted migration from official Linux Mint editions.  
+Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Linux Mint Gnome installation.  
+A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
+Lastest release: https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20
 
-## New packages
+## Project packages
 
 - mint-gnome-core: Welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 - mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
-- gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
-- gnome-control-center-data: 'Settings' application with some fixes (use Linux Mint logo icon)
+- mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
+- mint-gnome-control-center-data: 'Settings' application with some fixes (use Linux Mint logo icon)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
@@ -82,19 +57,15 @@ Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
 # With 'gnome-customization' installed (lastest release), run for example:
-gdm3-patch /usr/share/themes/Materia-dark gnome-shell.css # 'Materia-Dark' for recent versions
+gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css # 'Materia-dark' for old versions
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 gdm3-reset
 ```
 
 ## Remaining work
 
-- Improve 'script_install_?.sh' to works in any case
-- PUBLISH A NEW RELEASE
-- Create a distribution updater
-- Create an Ubuntu PPA
+- Change GitHub publication
 - PUBLISH A NEW ISO FILE
-- Begin Gnome Customization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
 
