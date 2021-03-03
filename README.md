@@ -15,26 +15,21 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-## Installation (1.3 -> 1.6 coming)
+## Installation (1.6)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
-- Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso)
+- Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
-*The keyboard layout can be incorrect with Firefox and Thunderbird under Wayland. To avoid this, you can:*
-- *Run these softwares with 'MOZ_ENABLE_WAYLAND=1'*
-- *OR, run 'setxkbmap -layout \<your layout\>' on each login*
-- *OR, just select 'Gnome on Xorg' session on login screen*
-
-## Migration / Upgrade (1.5 -> 1.6 coming)
+## Migration / Upgrade (1.6)
 
 Mint Gnome development has become too complex to support scripted migration from official Mint editions anymore.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
 
-Lastest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20)
+Lastest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
 
 ## Project packages
 
@@ -58,15 +53,13 @@ Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
 # With 'gnome-customization' installed (lastest release), run for example:
-gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css # 'Materia-dark' for old versions
+gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 gdm3-reset
 ```
 
 ## Remaining work
 
-- Change GitHub publication
-- PUBLISH A NEW ISO FILE
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
 
