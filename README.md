@@ -42,7 +42,7 @@ Lastest release: https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mi
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 - mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
-- mint-gnome-control-center-data: 'Settings' application with some fixes (use Linux Mint logo icon)
+- mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
