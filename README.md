@@ -30,7 +30,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Migration / Upgrade (1.5 -> 1.6 coming)
 
-Mint Gnome development has become too complex to continue to support scripted migration from official Mint editions.  
+Mint Gnome development has become too complex to support scripted migration from official Mint editions anymore.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
 
