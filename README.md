@@ -19,7 +19,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
-- Download the ISO: https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso
+- Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/v1.3-mint20/lmg.iso)
 - Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
@@ -34,7 +34,7 @@ Mint Gnome development has become too complex to continue to support scripted mi
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
 
-Lastest release: https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20
+Lastest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.5-mint20)
 
 ## Project packages
 
@@ -72,11 +72,11 @@ gdm3-reset
 
 ## Credits
 
-- 'Gnome Shell extensions' created by 'gcampax' --> https://github.com/gcampax/gnome-shell-extensions
-- 'Top Indicator extension' created by 'quiro9' --> https://github.com/ubuntu/gnome-shell-extension-appindicator
-- 'Desktop Icons NG extension' created by 'rastersoft' --> https://gitlab.com/rastersoft/desktop-icons-ng
-- 'Dash to Panel extension' created by 'jderose9' --> https://github.com/home-sweet-gnome/dash-to-panel
-- 'Dash to Dock extension' created by 'micheleg' --> https://github.com/micheleg/dash-to-dock/
-- 'Papirus icon theme' created by 'varlesh' --> https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-- 'Paper icon theme' created by 'snwh' --> https://github.com/snwh/paper-icon-theme
-- 'Materia GTK theme' created by 'nana-4' --> https://github.com/nana-4/materia-theme
+- 'Gnome Shell extensions' created by 'gcampax' --> [https://github.com/gcampax/gnome-shell-extensions](https://github.com/gcampax/gnome-shell-extensions)
+- 'Top Indicator extension' created by 'quiro9' --> [https://github.com/ubuntu/gnome-shell-extension-appindicator](https://github.com/ubuntu/gnome-shell-extension-appindicator)
+- 'Desktop Icons NG extension' created by 'rastersoft' --> [https://gitlab.com/rastersoft/desktop-icons-ng](https://gitlab.com/rastersoft/desktop-icons-ng)
+- 'Dash to Panel extension' created by 'jderose9' --> [https://github.com/home-sweet-gnome/dash-to-panel](https://github.com/home-sweet-gnome/dash-to-panel)
+- 'Dash to Dock extension' created by 'micheleg' --> [https://github.com/micheleg/dash-to-dock](https://github.com/micheleg/dash-to-dock)
+- 'Papirus icon theme' created by 'varlesh' --> [https://github.com/PapirusDevelopmentTeam/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- 'Paper icon theme' created by 'snwh' --> [https://github.com/snwh/paper-icon-theme](https://github.com/snwh/paper-icon-theme)
+- 'Materia GTK theme' created by 'nana-4' --> [https://github.com/nana-4/materia-theme](https://github.com/nana-4/materia-theme)
