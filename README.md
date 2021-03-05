@@ -60,13 +60,16 @@ gdm3-reset
 
 ## Remaining work
 
+- GitHub issue #1: Terminal issue?
+- SKEL: Delete Thunderbird .bak file
+- Ubiquity and Boot-repair window icons
+- Improve Desktop Icons NG localization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
 
 ## Credits
 
-- 'Gnome Shell extensions' created by 'gcampax' --> [https://github.com/gcampax/gnome-shell-extensions](https://github.com/gcampax/gnome-shell-extensions)
-- 'Top Indicator extension' created by 'quiro9' --> [https://github.com/ubuntu/gnome-shell-extension-appindicator](https://github.com/ubuntu/gnome-shell-extension-appindicator)
+- 'Top Indicator extension' forked by 'quiro9' --> [https://github.com/ubuntu/gnome-shell-extension-appindicator](https://github.com/ubuntu/gnome-shell-extension-appindicator)
 - 'Desktop Icons NG extension' created by 'rastersoft' --> [https://gitlab.com/rastersoft/desktop-icons-ng](https://gitlab.com/rastersoft/desktop-icons-ng)
 - 'Dash to Panel extension' created by 'jderose9' --> [https://github.com/home-sweet-gnome/dash-to-panel](https://github.com/home-sweet-gnome/dash-to-panel)
 - 'Dash to Dock extension' created by 'micheleg' --> [https://github.com/micheleg/dash-to-dock](https://github.com/micheleg/dash-to-dock)
