@@ -17,7 +17,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Installation (1.6)
 
-**WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
+**WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
 - Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
 - Burn it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
@@ -45,7 +45,7 @@ Latest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mi
 
 ## Gnome Customization
 
-- For now, it's just a Zenity box which launches 'Gnome Tweaks'. The final aim is to create a central GUI to customize:  
+- For now, it just launches 'Gnome Tweaks'. The final aim is to create a central GUI to customize:  
 styles, extensions, appearance, applications grid, user's folders paths, Gnome, QT5, GDM3, Plymouth and Grub.
 - Currently, to change desktop style after the welcome screen passed, open 'Customization' > 'Extensions' and toggle the corresponding extensions.
 Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
