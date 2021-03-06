@@ -1,4 +1,5 @@
 # Linux Mint Gnome
+
 Who needs a description? Everything is in the title!
 
 This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions.
