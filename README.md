@@ -1,9 +1,9 @@
 # Linux Mint Gnome
 Who needs a description? Everything is in the title!
 
-This distribution embed 'Dash to Panel', 'Dash to Dock' and others Gnome extensions.
-On first login, you can choose between a 'panel style' (Windows like), a 'dock style' (MacOS like) or a 'dash style' (Gnome default).
-You also choose to display desktop icons or not, and use a light or a dark theme (everything can be changed later in 'Customization').
+This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions.
+On first login, you can choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 'dash style' (Gnome's defaults).
+You can also choose whether or not to display desktop icons, and can choose between a light or a dark theme (everything can be changed later in 'Customization').
 
 I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any pretension.
 
@@ -18,18 +18,18 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Installation (1.6)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation**  
-**WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do**
+**WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
 - Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
-- Burn-it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
+- Burn it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
 ## Migration / Upgrade (1.6)
 
-Mint Gnome development has become too complex to support scripted migration from official Mint editions anymore.  
+Mint Gnome development has become too complex to support scripted migration from official Mint editions.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
-A separate ISO file will be published, once at a time, each time the project has evoluate enough and is stable enough.
+A separate ISO file will be published, once at a time, each time the project has evolved enough and is stable enough.
 
-Lastest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
+Latest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
 
 ## Project packages
 
@@ -39,17 +39,17 @@ Lastest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-m
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
-- plymouth-theme-mint: Spinner boot screen which support UEFI manufacturer logo (BGRT)
+- plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
 
 ## Gnome Customization
 
-- For now, it's just a Zenity box which launch 'Gnome Tweaks'. The project is to create a central GUI to customize:  
-styles, extensions, appearance, applications grid, user-folders paths, Gnome, QT5, GDM3, Plymouth and Grub.
+- For now, it's just a Zenity box which launches 'Gnome Tweaks'. The final aim is to create a central GUI to customize:  
+styles, extensions, appearance, applications grid, user's folders paths, Gnome, QT5, GDM3, Plymouth and Grub.
 - Currently, to change desktop style after the welcome screen passed, open 'Customization' > 'Extensions' and toggle the corresponding extensions.
 Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
-- The user folders names localisation is intentionally disabled. A section to change these names is planned.
+- The user's folders names localization is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
 # With 'gnome-customization' installed (lastest release), run for example:
