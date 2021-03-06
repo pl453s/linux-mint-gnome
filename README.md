@@ -20,7 +20,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
 - Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
-- Burn it on a disk, or flash-it on an USB flash drive, or just insert-it in a virtual machine
+- Burn it on a disk, or flash it on an USB flash drive, or just insert it in a virtual machine
 - Boot your disk or your USB flash drive, and you can test or install the distribution
 
 ## Migration / Upgrade (1.6)
