@@ -63,6 +63,7 @@ gdm3-reset
 - Materia Gnome Shell theme: Custom "Activities" button (Arc-like button "...")
 - SKEL: Delete Thunderbird .bak file
 - Ubiquity and Boot-repair window icons
+- Test installing updates
 - Improve Desktop Icons NG localization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
