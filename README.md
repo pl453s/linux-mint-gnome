@@ -60,7 +60,7 @@ gdm3-reset
 
 ## Remaining work
 
-- GitHub issue #1: Terminal issue?
+- Materia Gnome Shell theme: Custom "Activities" button (Arc-like button "...")
 - SKEL: Delete Thunderbird .bak file
 - Ubiquity and Boot-repair window icons
 - Improve Desktop Icons NG localization
