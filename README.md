@@ -60,13 +60,14 @@ gdm3-reset
 
 ## Remaining work
 
-- Fix Nautilus "Paste Into Folder" bug?
-- Desktop Icons NG: Fix separator problems
-- Nemo folder color switch extension
 - Materia custom "Activities" button "..."
 - SKEL: Delete Thunderbird .bak file
 - Ubiquity and Boot-repair window icons
 - Test installing updates
+- Nautilus extension: folder color switch
+- Nautilus extension: fix "Paste Into Folder" bug
+- Nautilus extension: open as administrator
+- Desktop Icons NG: Fix separator problems
 - Desktop Icons NG: Improve localization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
