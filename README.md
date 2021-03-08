@@ -60,11 +60,13 @@ gdm3-reset
 
 ## Remaining work
 
-- Materia Gnome Shell theme: Custom "Activities" button (Arc-like button "...")
+- Desktop Icons NG: Fix separator problems
+- Nemo folder color switch extension
+- Materia custom "Activities" button "..."
 - SKEL: Delete Thunderbird .bak file
 - Ubiquity and Boot-repair window icons
 - Test installing updates
-- Improve Desktop Icons NG localization
+- Desktop Icons NG: Improve localization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
 
