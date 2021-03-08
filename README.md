@@ -60,6 +60,7 @@ gdm3-reset
 
 ## Remaining work
 
+- Fix Nautilus "Paste Into Folder" bug?
 - Desktop Icons NG: Fix separator problems
 - Nemo folder color switch extension
 - Materia custom "Activities" button "..."
