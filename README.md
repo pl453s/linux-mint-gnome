@@ -61,8 +61,7 @@ gdm3-reset
 ## Remaining work
 
 - Materia custom "Activities" button "..."
-- SKEL: Delete Thunderbird .bak file
-- Ubiquity and Boot-repair window icons
+- Boot-repair window icon
 - Test installing updates
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug

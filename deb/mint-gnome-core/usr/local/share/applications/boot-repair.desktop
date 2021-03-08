@@ -3,4 +3,4 @@ NoDisplay=true
 Type=Application
 Name=Boot Repair
 Exec=boot-repair-pkexec
-Icon=/usr/share/boot-sav/x-boot-repair.png
+Icon=mx-boot-repair
