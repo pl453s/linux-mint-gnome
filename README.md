@@ -64,9 +64,9 @@ gdm3-reset
 - SKEL: Delete Thunderbird .bak file
 - Ubiquity and Boot-repair window icons
 - Test installing updates
-- Nautilus extension: folder color switch
-- Nautilus extension: fix "Paste Into Folder" bug
-- Nautilus extension: open as administrator
+- Nautilus extension: Folder color switch
+- Nautilus extension: Fix "Paste Into Folder" bug
+- Nautilus extension: Open as administrator
 - Desktop Icons NG: Fix separator problems
 - Desktop Icons NG: Improve localization
 - Develop Gnome Customization
