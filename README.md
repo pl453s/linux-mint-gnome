@@ -61,7 +61,6 @@ gdm3-reset
 ## Remaining work
 
 - Begin Gnome Customization development
-- Change "Activities" button on screenshots
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
