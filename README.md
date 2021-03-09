@@ -58,9 +58,8 @@ gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css
 gdm3-reset
 
 # And some GDM3 settings:
-gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursors
-# Parameters: <battery %?> <weekday?> <date?> <seconds?> <week n°?>
-# <GTK theme> <icons theme> <cursors theme> [watermark path]
+gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursors /usr/share/plymouth/themes/mint-spinner/watermark.png
+# Parameters: <battery %?> <weekday?> <date?> <seconds?> <week n°?> <GTK theme> <icons theme> <cursors theme> [watermark path]
 ```
 
 ## Remaining work
