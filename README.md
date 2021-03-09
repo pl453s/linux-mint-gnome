@@ -61,8 +61,7 @@ gdm3-reset
 ## Remaining work
 
 - Materia custom "Activities" button "..."
-- Boot-repair window icon
-- Test installing updates
+- ISO full test + test installing updates
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
