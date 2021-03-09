@@ -52,7 +52,7 @@ Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - The user's folders names localization is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
-# With 'gnome-customization' installed (lastest release), run for example:
+# With 'gnome-customization' installed, run for example:
 gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 gdm3-reset
@@ -65,6 +65,7 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
+- Begin Gnome Customization development
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
