@@ -61,11 +61,11 @@ gdm3-reset
 ## Remaining work
 
 - Materia custom "Activities" button "..."
-- ISO full test + test installing updates
+- ISO full test + Test installing updates
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
-- Desktop Icons NG: Fix separator problems
+- Desktop Icons NG: Fix separator issues
 - Desktop Icons NG: Improve localization
 - Develop Gnome Customization
 - PUBLISH A NEW ISO FILE
