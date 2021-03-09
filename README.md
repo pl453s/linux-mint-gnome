@@ -56,11 +56,15 @@ Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css
 # If a theme is incompatible and makes crash GDM3, login to another TTY and run:
 gdm3-reset
+
+# And some GDM3 settings:
+gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursors
+# Parameters: <battery %?> <weekday?> <date?> <seconds?> <week n°?>
+# <GTK theme> <icons theme> <cursors theme> [watermark path]
 ```
 
 ## Remaining work
 
-- Begin Gnome Customization development
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator

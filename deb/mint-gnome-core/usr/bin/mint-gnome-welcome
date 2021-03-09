@@ -202,7 +202,7 @@ if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
 		locale.append(line[:-1])
 	file.close()
 if len(locale) < 11:
-	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows like)", "Dock style (MacOS like)", "Dash style (Gnome default)", "Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
+	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows-like)", "Dock style (MacOS-like)", "Dash style (Gnome's defaults)", "Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
 
 if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
 	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_panel[0] + "'"):

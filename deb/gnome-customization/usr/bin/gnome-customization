@@ -1,3 +1,11 @@
-#!/bin/bash
-zenity --info --width=400 --title="Customization" --text="This is the future project 'gnome-customization', a GUI to customize styles, extensions, appearance, applications grid, user-folders paths, Gnome, QT5, GDM3, Plymouth and Grub.\n\nBut for now, it will just launch the already existing Gnome Tweaks, which already allows you a lot of things."
-gnome-tweaks
+#!/usr/bin/python3
+
+#  #!/bin/bash
+#  zenity --info --width=400 --title="Customization" --text="This is the future project 'gnome-customization', 
+#      a GUI to customize styles, extensions, appearance, applications grid, user-folders paths, Gnome, QT5, GDM3, Plymouth and Grub.\n\n
+#      But for now, it will just launch the already existing Gnome Tweaks, which already allows you a lot of things."
+#  gnome-tweaks
+
+from os import system
+system("zenity --info --width=400 --title=\"Customization\" --text=\"Hello Python3!\"")
+
