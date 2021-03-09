@@ -60,6 +60,7 @@ gdm3-reset
 # And some GDM3 settings:
 gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursors /usr/share/plymouth/themes/mint-spinner/watermark.png
 # Parameters: <battery %?> <weekday?> <date?> <seconds?> <week n°?> <GTK theme> <icons theme> <cursors theme> [watermark path]
+# '<...?>' should be 'true' or 'false' ; [watermark path] should be a path to an image, or nothing to remove the watermark
 ```
 
 ## Remaining work
