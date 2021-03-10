@@ -64,6 +64,7 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 ## Remaining work
 
 - Begin Gnome Customization development
+- MintTools Gnome integration
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
