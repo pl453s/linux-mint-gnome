@@ -38,8 +38,8 @@ def gsettings(gsettings):
 
 
 class DraftWindow(Gtk.Window):
-	def __init__(self):		
-		
+	def __init__(self):
+
 		Gtk.Window.__init__(self, title = "Customization")
 		self.set_icon_name("preferences-color")
 		self.set_position(Gtk.WindowPosition.CENTER)
@@ -56,7 +56,7 @@ class DraftWindow(Gtk.Window):
 		self.box.pack_start(self.box_styles, True, False, 0)
 		self.box.pack_start(Gtk.Separator(), True, False, 0)
 		self.box.pack_start(self.box_options, True, False, 0)
-		
+
 		self.box_desktop = Gtk.Box(spacing = 8)
 		self.box_indicator = Gtk.Box(spacing = 8)
 		self.box_shell = Gtk.Box(spacing = 8)
@@ -76,9 +76,9 @@ class DraftWindow(Gtk.Window):
 		self.box_options.pack_start(self.box_infos, False, False, 0)
 		self.box_options.pack_start(Gtk.Separator(), False, False, 0)
 		self.box_options.pack_end(self.box_more, False, False, 0)
-		
+
 		self.button_panel = Gtk.Button(label = "Panel style")
-		self.button_dock = Gtk.Button(label = "Dock Style")
+		self.button_dock = Gtk.Button(label = "Dock style")
 		self.button_dash = Gtk.Button(label = "Dash style")
 		self.button_panel.set_always_show_image(True)
 		self.button_dock.set_always_show_image(True)
@@ -101,7 +101,7 @@ class DraftWindow(Gtk.Window):
 		self.box_styles.pack_start(self.button_panel, True, False, 0)
 		self.box_styles.pack_start(self.button_dock, True, False, 0)
 		self.box_styles.pack_start(self.button_dash, True, False, 0)
-		
+
 		self.text_desktop = Gtk.Label()
 		self.text_indicator = Gtk.Label()
 		self.text_desktop.set_markup("Desktop Icons NG extension\n<small><i>To configure: Right clic on the desktop > Properties</i></small>")
@@ -114,7 +114,7 @@ class DraftWindow(Gtk.Window):
 		self.box_indicator.pack_start(self.text_indicator, False, False, 0)
 		self.box_desktop.pack_end(self.switch_desktop, False, False, 0)
 		self.box_indicator.pack_end(self.switch_indicator, False, False, 0)
-		
+
 		self.text_shell = Gtk.Label(label = "Gnome Shell theme")
 		self.text_gtk = Gtk.Label(label = "Applications theme")
 		self.text_icons = Gtk.Label(label = "Icons theme")
@@ -131,7 +131,7 @@ class DraftWindow(Gtk.Window):
 		self.box_gtk.pack_end(self.combo_gtk, False, False, 0)
 		self.box_icons.pack_end(self.combo_icons, False, False, 0)
 		self.box_cursor.pack_end(self.combo_cursor, False, False, 0)
-		
+
 		self.text_infos = Gtk.Label(label = "\n"
 		"This is a first \"Customization\" GUI. In the future, this window\n"
 		"should be splited in many tabs, allowing you to customize:\n\n"
@@ -142,7 +142,7 @@ class DraftWindow(Gtk.Window):
 		" - QT5 and advanced Gnome settings\n"
 		" - Plymouth theme and Grub theme\n")
 		self.box_infos.pack_start(self.text_infos, False, False, 0)
-		
+
 		self.button_extensions = Gtk.Button(label = "Extensions")
 		self.button_startup = Gtk.Button(label = "Startup")
 		self.button_tweaks = Gtk.Button(label = "Tweaks")
@@ -204,7 +204,7 @@ class DraftWindow(Gtk.Window):
 			extensions(extensions_full, False)
 			extensions(extensions_base, True)
 			gsettings(gsettings_base)
-	
+
 	def action_launch(self, widget, command):
 		system(command + "&")
 
