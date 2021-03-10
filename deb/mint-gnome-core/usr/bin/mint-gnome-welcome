@@ -49,13 +49,6 @@ def gsettings(gsettings):
 class WelcomeWindow(Gtk.Window):
 	def __init__(self):
 
-		self.image_panel = Gtk.Image()
-		self.image_panel.set_from_file("/usr/share/mint-gnome-welcome/panel.png")
-		self.image_dock = Gtk.Image()
-		self.image_dock.set_from_file("/usr/share/mint-gnome-welcome/dock.png")
-		self.image_dash = Gtk.Image()
-		self.image_dash.set_from_file("/usr/share/mint-gnome-welcome/dash.png")
-
 		Gtk.Window.__init__(self, title = "Welcome")
 		self.set_icon_name("preferences-desktop-user")
 		self.set_position(Gtk.WindowPosition.CENTER)
@@ -84,6 +77,8 @@ class WelcomeWindow(Gtk.Window):
 		self.box_theme = Gtk.Box(spacing = 8)
 		self.box_options.pack_start(self.box_theme, True, False, 0)
 
+		self.image_panel = Gtk.Image()
+		self.image_panel.set_from_file("/usr/share/mint-gnome-welcome/panel.png")
 		self.button_panel = Gtk.Button(label = "\n" + locale[3])
 		self.button_panel.set_always_show_image(True)
 		self.button_panel.set_image(self.image_panel)
@@ -93,6 +88,8 @@ class WelcomeWindow(Gtk.Window):
 		self.button_panel.connect("clicked", self.action_panel)
 		self.box_styles.pack_start(self.button_panel, True, True, 0)
 
+		self.image_dock = Gtk.Image()
+		self.image_dock.set_from_file("/usr/share/mint-gnome-welcome/dock.png")
 		self.button_dock = Gtk.Button(label = "\n" + locale[4])
 		self.button_dock.set_always_show_image(True)
 		self.button_dock.set_image(self.image_dock)
@@ -102,6 +99,8 @@ class WelcomeWindow(Gtk.Window):
 		self.button_dock.connect("clicked", self.action_dock)
 		self.box_styles.pack_start(self.button_dock, True, True, 0)
 
+		self.image_dash = Gtk.Image()
+		self.image_dash.set_from_file("/usr/share/mint-gnome-welcome/dash.png")
 		self.button_dash = Gtk.Button(label = "\n" + locale[5])
 		self.button_dash.set_always_show_image(True)
 		self.button_dash.set_image(self.image_dash)
@@ -175,9 +174,11 @@ class WelcomeWindow(Gtk.Window):
 		if state:
 			extensions(extensions_hide, False)
 			extensions(extensions_show, True)
+			gsettings(gsettings_show)
 		else:
 			extensions(extensions_show, False)
 			extensions(extensions_hide, True)
+			gsettings(gsettings_hide)
 
 	def action_theme(self, widget, state):
 		if state:
