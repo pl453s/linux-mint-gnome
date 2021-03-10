@@ -45,10 +45,8 @@ Latest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mi
 
 ## Gnome Customization
 
-- For now, it just launches 'Gnome Tweaks'. The final aim is to create a central GUI to customize:  
+- A first draft window has been created. The final aim is to create a central GUI to customize:  
 styles, extensions, appearance, applications grid, user's folders paths, Gnome, QT5, GDM3, Plymouth and Grub.
-- Currently, to change desktop style after the welcome screen passed, open 'Customization' > 'Extensions' and toggle the corresponding extensions.
-Do not enable 'Dash to Panel' and 'Dash to Dock' at the same time.
 - The user's folders names localization is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
