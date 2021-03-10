@@ -206,20 +206,17 @@ if len(locale) < 11:
 	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows-like)", "Dock style (MacOS-like)", "Dash style (Gnome's defaults)", "Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
 
 if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
+	style = "dash"
+	icons = False
+	dark = False
 	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_panel[0] + "'"):
 		style = "panel"
-	elif system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_dock[0] + "'"):
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_dock[0] + "'"):
 		style = "dock"
-	else:
-		style = "dash"
 	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_show[0] + "'"):
 		icons = True
-	else:
-		icons = False
 	if system("gsettings get org.gnome.shell.extensions.user-theme name | grep -qv '" + theme_gnome_dark + "'"):
 		dark = True
-	else:
-		dark = False
 else:
 	system("dconf write /org/gnome/desktop/app-folders/folder-children \"['Utility', 'System-Tools']\"")
 	system("dconf write /org/gnome/desktop/app-folders/folders/Utility/name \"'Utility.directory'\"")
