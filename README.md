@@ -12,6 +12,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
       <td colspan="3"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
@@ -27,6 +30,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 <table>
   <tbody>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
     <tr>
       <td colspan="2"> <i>Python GTK windows ("Welcome" and "Customization")</i> </td>
       <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
