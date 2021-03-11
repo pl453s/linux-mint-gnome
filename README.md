@@ -20,7 +20,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
       <td> <img src="btn/dash.png"> </td>
     </tr>
   </tbody>
-  </table>
+</table>
+
 <table>
   <tbody>
     <tr>
