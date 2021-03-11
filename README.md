@@ -11,7 +11,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 <table border=1>
   <tbody>
-    <tr style='visibility:collapse'>
+    <tr>
       <td colspan="3"></td>
     </tr>
     <tr>
