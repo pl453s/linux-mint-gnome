@@ -10,3 +10,4 @@ Description: Necessary information about the Linux Mint release and edition.
  Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
 Conflicts: mint-info-cinnamon, mint-info-mate, mint-info-xfce
 Replaces: mint-info-cinnamon, mint-info-mate, mint-info-xfce
+z
