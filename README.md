@@ -11,13 +11,13 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 <table>
   <tbody>
-    <tr border=0>
-      <td colspan="3"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+    <tr>
+      <td colspan="3" border=0> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
-      <td> <a href="tour/panel.md"><img src="btn/panel.png"></a> </td>
-      <td> <a href="tour/dock.md"><img src="btn/dock.png"></a> </td>
-      <td> <a href="tour/dash.md"><img src="btn/dash.png"></a> </td>
+      <td border=0> <a href="tour/panel.md"><img src="btn/panel.png"></a> </td>
+      <td border=0> <a href="tour/dock.md"><img src="btn/dock.png"></a> </td>
+      <td border=0> <a href="tour/dash.md"><img src="btn/dash.png"></a> </td>
     </tr>
   </tbody>
 </table>
