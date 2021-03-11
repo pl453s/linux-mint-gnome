@@ -24,8 +24,6 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   </tbody>
 </table>
 
-## Created GUI
-
 <table>
   <tbody>
     <tr>
@@ -40,15 +38,13 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   </tbody>
 </table>
 
-## Installation (1.6)
+## Installation
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
 - Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
 - Burn it on a disk, or flash it on an USB flash drive, or just insert it in a virtual machine
 - Boot your disk or your USB flash drive, and test or install the distribution
-
-## Migration / Upgrade (1.6)
 
 Mint Gnome development has become too complex to support scripted migration from official Mint editions.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
