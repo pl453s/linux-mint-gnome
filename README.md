@@ -9,7 +9,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
-<table frame=5 border=3>
+<table border=3>
   <tbody>
     <tr>
       <td colspan="3"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
