@@ -11,7 +11,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 *Click on one of the three styles below (PANEL / DOCK / DASH), or check the **[INTERACTIVE TOUR](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md)***
 
-<table style="undefined;table-layout: fixed; width: 181px">
+<table>
 <tbody>
   <tr>
     <td colspan="3">note</td>
