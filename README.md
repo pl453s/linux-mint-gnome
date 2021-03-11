@@ -45,7 +45,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 - Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
 - Burn it on a disk, or flash it on an USB flash drive, or just insert it in a virtual machine
 - Boot your disk or your USB flash drive, and test or install the distribution
-  
+
+<br/>
 
 **You can also migrate from an official Linux Mint edition installation or upgrade your Mint Gnome installation:**
 
