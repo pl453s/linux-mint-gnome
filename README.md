@@ -25,7 +25,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="2"> Python GTK Windows (<b>WELCOME</b> and <b>CUSTOMIZATION</b>) </td>
+      <td colspan="2"> <i>Python GTK Windows (<b>WELCOME</b> and <b>CUSTOMIZATION</b>)</i> </td>
       <td rowspan="2"> <img src="img/customization.png"> </td>
     </tr>
     <tr>
