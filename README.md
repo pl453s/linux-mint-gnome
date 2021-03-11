@@ -11,8 +11,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 <table border=1>
   <tbody>
-    <tr cellpadding=0px>
-      <td cellpadding=0px colspan="3"></td>
+    <tr>
+      <td colspan="3"></td>
     </tr>
     <tr>
       <td colspan="3"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
