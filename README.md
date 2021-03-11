@@ -9,7 +9,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
-<table>
+<table border=1>
   <tbody>
     <tr>
       <td colspan="3"></td>
@@ -28,7 +28,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   </tbody>
 </table>
 
-<table>
+<table border=1>
   <tbody>
     <tr>
       <td colspan="3"></td>
