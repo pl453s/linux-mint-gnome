@@ -10,23 +10,27 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Screenshots
 
 <table>
-<tbody>
-  <tr>
-    <td colspan="3"> <i>Click on one of the three styles below (PANEL / DOCK / DASH), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
-  </tr>
-  <tr>
-    <td> <img src="btn/panel.png"> </td>
-    <td> <img src="btn/dock.png"> </td>
-    <td> <img src="btn/dash.png"> </td>
-  </tr>
-  <tr>
-    <td colspan="2"> Python GTK Windows </td>
-    <td rowspan="2"> <img src="img/customization.png"> </td>
-  </tr>
-  <tr>
-    <td colspan="2"> <img src="img/welcome.png"> </td>
-  </tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td colspan="3"> <i>Click on one of the three styles below (PANEL / DOCK / DASH), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+    </tr>
+    <tr>
+      <td> <img src="btn/panel.png"> </td>
+      <td> <img src="btn/dock.png"> </td>
+      <td> <img src="btn/dash.png"> </td>
+    </tr>
+  </tbody>
+  </table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2"> Python GTK Windows </td>
+      <td rowspan="2"> <img src="img/customization.png"> </td>
+    </tr>
+    <tr>
+      <td colspan="2"> <img src="img/welcome.png"> </td>
+    </tr>
+  </tbody>
 </table>
 
 ## Installation (1.6)
