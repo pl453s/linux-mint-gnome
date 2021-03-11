@@ -38,7 +38,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
       <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
     </tr>
     <tr>
-      <td colspan="3"></td>
+      <td colspan="2"></td>
     </tr>
     <tr>
       <td colspan="2"> <a href="btn/welcome.png"><img src="btn/welcome.png"></a> </td>
