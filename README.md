@@ -12,7 +12,12 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="3"> <i>Click on one of the three styles below (PANEL / DOCK / DASH), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+      <td colspan="3"> <i>Click on one of the three styles below, or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+    </tr>
+    <tr>
+      <td> PANEL </td>
+      <td> DOCK </td>
+      <td> DASH </td>
     </tr>
     <tr>
       <td> <img src="btn/panel.png"> </td>
