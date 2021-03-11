@@ -12,9 +12,6 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table border=1>
   <tbody>
     <tr>
-      <td colspan="3"></td>
-    </tr>
-    <tr>
       <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
@@ -24,17 +21,11 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
       <td> <a href="tour/dock.md"><img src="btn/dock.png"></a> </td>
       <td> <a href="tour/dash.md"><img src="btn/dash.png"></a> </td>
     </tr>
-    <tr>
-      <td colspan="3"></td>
-    </tr>
   </tbody>
 </table>
 
 <table border=1>
   <tbody>
-    <tr>
-      <td colspan="3"></td>
-    </tr>
     <tr>
       <td colspan="2" rowspan="2"> <i>Python GTK windows ("Welcome" and "Customization")</i> </td>
       <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
@@ -43,9 +34,6 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
     </tr>
     <tr>
       <td colspan="2"> <a href="btn/welcome.png"><img src="btn/welcome.png"></a> </td>
-    </tr>
-    <tr>
-      <td colspan="3"></td>
     </tr>
   </tbody>
 </table>
