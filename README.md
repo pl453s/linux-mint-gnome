@@ -11,7 +11,26 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 *Click on one of the three styles below (PANEL / DOCK / DASH), or check the **[INTERACTIVE TOUR](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md)***
 
-<table>
+<table class="tg" style="undefined;table-layout: fixed; width: 181px">
+<tbody>
+  <tr>
+    <th class="tg-0pky" colspan="3">note</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">pic1</td>
+    <td class="tg-0pky">pic2</td>
+    <td class="tg-0pky">pic3</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">python<br></td>
+    <td class="tg-0pky" rowspan="2">cust</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">welcome</td>
+  </tr>
+</tbody>
+</table>
+
 [![Panel style](btn/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
