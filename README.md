@@ -10,7 +10,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 ## Screenshots
 
 <table>
-  <tbody>
+  <tbody border=0>
     <tr border=0>
       <td colspan="3" border=0> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
