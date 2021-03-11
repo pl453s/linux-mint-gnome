@@ -17,9 +17,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
     <td colspan="3">note</td>
   </tr>
   <tr>
-    <td>pic1</td>
-    <td>pic2</td>
-    <td>pic3</td>
+    <td>[![Panel style](btn/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)</td>
+    <td>[![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)</td>
+    <td>[![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)</td>
   </tr>
   <tr>
     <td colspan="2">python<br></td>
@@ -30,10 +30,6 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   </tr>
 </tbody>
 </table>
-
-[![Panel style](btn/panel.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/panel.md)
-[![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
-[![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
 ![Python GTK Windows](img/python.png) | [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md) |
 
