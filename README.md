@@ -38,7 +38,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   </tbody>
 </table>
 
-## Installation
+## Installation (1.6)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
@@ -52,7 +52,7 @@ Mint Gnome development has become too complex to support scripted migration from
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evolved enough and is stable enough.
 
-Latest release: [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
+Latest release (1.6): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
 
 ## Project packages
 
