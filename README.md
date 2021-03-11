@@ -15,6 +15,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
+![Welcome Screen](img/welcome.png)
+![Gnome Customization](img/customization.png)
+
 ## Installation (1.6)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
