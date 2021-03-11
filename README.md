@@ -9,6 +9,10 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 ## Screenshots
 
+table {
+  border: 1px solid black;
+}
+
 <table>
   <tbody>
     <tr>
