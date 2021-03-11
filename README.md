@@ -14,7 +14,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table class="tg" style="undefined;table-layout: fixed; width: 181px">
 <tbody>
   <tr>
-    <th class="tg-0pky" colspan="3">note</th>
+    <td class="tg-0pky" colspan="3">note</td>
   </tr>
   <tr>
     <td class="tg-0pky">pic1</td>
