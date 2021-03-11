@@ -82,7 +82,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Materia ComboBox last item bug
 - MintTools Gnome integration
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
