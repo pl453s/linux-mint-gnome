@@ -15,8 +15,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 [![Dock style](btn/dock.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dock.md)
 [![Dash style](btn/dash.png)](https://github.com/pl453s/linux-mint-gnome/blob/main/tour/dash.md)
 
-![Welcome Screen](img/welcome.png)
-![Gnome Customization](img/customization.png)
+![Python GTK Windows](img/python.png)
 
 ## Installation (1.6)
 
