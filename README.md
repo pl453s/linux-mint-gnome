@@ -25,6 +25,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
       <td> <a href="tour/dock.md"><img src="btn/dock.png"></a> </td>
       <td> <a href="tour/dash.md"><img src="btn/dash.png"></a> </td>
     </tr>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
   </tbody>
 </table>
 
@@ -42,6 +45,9 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
     </tr>
     <tr>
       <td colspan="2"> <a href="btn/welcome.png"><img src="btn/welcome.png"></a> </td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
     </tr>
   </tbody>
 </table>
