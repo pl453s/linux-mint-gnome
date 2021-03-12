@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Type=Application
-Name=Boot Repair
-Exec=boot-repair-pkexec
-Icon=mx-boot-repair

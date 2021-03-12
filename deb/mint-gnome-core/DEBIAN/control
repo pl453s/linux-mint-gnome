@@ -5,6 +5,6 @@ Essential: yes
 Maintainer: nobody-for-now <null@null.null>
 Description: Linux Mint Gnome base package
  Contains welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
-Depends: dconf-cli, gdm3, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, gnome-shell-extension-prefs, libglib2.0-bin, mint-artwork, mint-info-gnome, nautilus, python3, python3-gi, zenity
+Depends: dconf-cli, gdm3, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, libglib2.0-bin, mint-artwork, mint-gnome-control-center, mint-gnome-control-center-data, mint-info-gnome, nautilus, python3, python3-gi, zenity
 Provides: x-session-manager, ubuntu-wallpapers, mint-themes, mint-x-icons, mint-y-icons
 Section: gnome

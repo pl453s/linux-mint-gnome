@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="128"
+   viewBox="0 0 33.865 33.865"
+   width="128"
+   version="1.1"
+   id="svg178"
+   sodipodi:docname="mintstick.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata184">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs182" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     id="namedview180"
+     showgrid="false"
+     inkscape:zoom="0.921875"
+     inkscape:cx="-123.11864"
+     inkscape:cy="128"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg178" />
+  <linearGradient
+     id="linearGradient992"
+     gradientTransform="matrix(0.06459307,0,0,0.06463919,0.39683188,13.949099)"
+     gradientUnits="userSpaceOnUse"
+     x1="48"
+     x2="464"
+     y1="44"
+     y2="44">
+    <stop
+       offset="0"
+       stop-color="#babdb6"
+       id="stop150" />
+    <stop
+       offset=".04166667"
+       stop-color="#f6f5f4"
+       id="stop152" />
+    <stop
+       offset=".08333334"
+       stop-color="#d5d3cf"
+       id="stop154" />
+    <stop
+       offset=".91666669"
+       stop-color="#deddda"
+       id="stop156" />
+    <stop
+       offset=".95833331"
+       stop-color="#f6f5f4"
+       id="stop158" />
+    <stop
+       offset="1"
+       stop-color="#babdb6"
+       id="stop160" />
+  </linearGradient>
+  <filter
+     id="filter12480"
+     height="1.024"
+     width="1.024"
+     x="-0.012"
+     y="-0.012"
+     style="color-interpolation-filters:sRGB">
+    <feGaussianBlur
+       stdDeviation="2.08"
+       id="feGaussianBlur163" />
+  </filter>
+  <path
+     d="m 104,-186 c -17.728,0 -32,14.272 -32,32 v 80 200 72 c 0,17.728 14.272,32 32,32 h 352 c 17.728,0 32,-14.272 32,-32 v -72 -200 -80 c 0,-17.728 -14.272,-32 -32,-32 z"
+     transform="matrix(0.06459307,0,0,0.06463919,-1.1534087,15.500462)"
+     id="path166"
+     inkscape:connector-curvature="0"
+     style="opacity:0.4;fill:#20221f;filter:url(#filter12480)" />
+  <rect
+     height="21.718761"
+     rx="2.066978"
+     ry="2.068454"
+     width="26.870714"
+     x="3.4973049"
+     y="8.5194111"
+     id="rect168"
+     style="fill:url(#linearGradient992);stroke-width:0.5486027" />
+  <rect
+     height="22.235903"
+     rx="2.066978"
+     ry="2.068454"
+     width="26.870714"
+     x="3.4973049"
+     y="3.3482718"
+     id="rect170"
+     style="fill:#f6f5f4;stroke-width:0.5486027" />
+  <rect
+     height="1.5478709"
+     rx="0.7992987"
+     ry="0.79986894"
+     width="21.703266"
+     x="6.0810132"
+     y="26.62188"
+     id="rect172"
+     style="fill:#ffffff;stroke-width:0.58149028;stroke-linejoin:round" />
+  <rect
+     height="1.0826248"
+     rx="0.54092622"
+     ry="0.5413124"
+     width="21.703266"
+     x="6.0810132"
+     y="26.62188"
+     id="rect174"
+     style="fill:#5e5c64;stroke-width:0.58149028;stroke-linejoin:round" />
+  <path
+     d="m 5.56427,3.3483058 c -1.1451072,0 -2.0669788,0.9225266 -2.0669788,2.0684507 V 22.481504 H 30.368005 V 5.4167565 c 0,-1.1459241 -0.921873,-2.0684507 -2.066979,-2.0684507 z"
+     id="path176"
+     inkscape:connector-curvature="0"
+     style="fill:#ffa348;stroke-width:0.5486027" />
+</svg>

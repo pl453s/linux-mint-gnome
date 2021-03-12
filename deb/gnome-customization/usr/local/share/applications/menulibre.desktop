@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Type=Application
+Name=Menu Editor
+Icon=menulibre
+Exec=/usr/bin/menulibre

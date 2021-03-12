@@ -68,7 +68,7 @@ class DraftWindow(Gtk.Window):
 			self.tray = True
 
 		Gtk.Window.__init__(self, title = "Customization")
-		self.set_icon_name("preferences-color")
+		self.set_icon_name("gnome-color-manager")
 		self.set_position(Gtk.WindowPosition.CENTER)
 		self.set_resizable(False)
 		self.set_border_width(32)
@@ -204,16 +204,16 @@ class DraftWindow(Gtk.Window):
 		" - Plymouth theme and Grub theme\n")
 		self.box_infos.pack_start(self.text_infos, False, False, 0)
 
-		self.button_extensions = Gtk.Button(label = "Extensions")
-		self.button_startup    = Gtk.Button(label = "Startup")
-		self.button_tweaks     = Gtk.Button(label = "Tweaks")
-		self.button_qt5ct      = Gtk.Button(label = "QT5 (slow)")
-		self.button_extensions.connect("clicked", self.action_launch, "gnome-extensions-app")
-		self.button_startup.connect("clicked", self.action_launch, "gnome-session-properties")
+		self.button_apps   = Gtk.Button(label = "Applications")
+		self.button_start  = Gtk.Button(label = "Startup")
+		self.button_tweaks = Gtk.Button(label = "Tweaks")
+		self.button_qt5ct  = Gtk.Button(label = "QT5 (slow)")
+		self.button_apps.connect("clicked", self.action_launch, "menulibre")
+		self.button_start.connect("clicked", self.action_launch, "gnome-session-properties")
 		self.button_tweaks.connect("clicked", self.action_launch, "gnome-tweaks")
 		self.button_qt5ct.connect("clicked", self.action_launch, "qt5ct")
-		self.box_more.pack_start(self.button_extensions, True, True, 0)
-		self.box_more.pack_start(self.button_startup, True, True, 0)
+		self.box_more.pack_start(self.button_apps, True, True, 0)
+		self.box_more.pack_start(self.button_start, True, True, 0)
 		self.box_more.pack_start(self.button_tweaks, True, True, 0)
 		self.box_more.pack_start(self.button_qt5ct, True, True, 0)
 

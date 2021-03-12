@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=System Reports
+Exec=mintreport
+Icon=mintreport
+Type=Application

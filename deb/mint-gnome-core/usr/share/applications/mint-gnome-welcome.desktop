@@ -2,5 +2,5 @@
 NoDisplay=true
 Name=Welcome
 Exec=mint-gnome-welcome
-Icon=preferences-desktop-user
+Icon=lmg-os-logo-icon
 Type=Application

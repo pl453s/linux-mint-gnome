@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Welcome
-Icon=preferences-desktop-user
+Icon=lmg-os-logo-icon
 Exec=mint-gnome-welcome
 Terminal=false
 Type=Application

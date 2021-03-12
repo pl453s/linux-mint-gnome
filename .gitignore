@@ -1,1 +1,8 @@
-/deb/mint-gnome-core/usr/local/share/applications/com.linuxmint.mintinstall.desktop
+./deb/mint-gnome-core/usr/lib/linuxmint/mintreport/mintreport.py
+./deb/mint-gnome-core/usr/local/share/applications/mintupdate.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintreport.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintstick.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintinstall.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintsources.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintbackup.py.desktop
+./deb/mint-gnome-core/usr/local/share/applications/mintdrivers.py.desktop

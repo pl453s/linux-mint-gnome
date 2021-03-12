@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Software Sources
+Exec=pkexec mintsources
+Icon=mintsources
+Type=Application
