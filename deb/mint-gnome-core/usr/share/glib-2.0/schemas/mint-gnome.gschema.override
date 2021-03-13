@@ -2,13 +2,13 @@
 session-name='mint'
 
 [org.gnome.desktop.interface]
-cursor-theme='Papirus-Cursors'
-document-font-name="Sans 10"
 font-name="Ubuntu 10"
+document-font-name="Sans 10"
+monospace-font-name="Monospace 10"
 gtk-key-theme='Default'
 gtk-theme='Materia-Dark'
-icon-theme='Papirus-Dark'
-monospace-font-name="Monospace 10"
+icon-theme='Papirus'
+cursor-theme='Papirus'
 
 [org.gnome.desktop.background]
 color-shading-type="solid"
@@ -16,7 +16,6 @@ picture-options="zoom"
 picture-uri='file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg'
 primary-color="#000000"
 secondary-color="#000000"
-show-desktop-icons=true
 
 [org.gnome.desktop.screensaver]
 color-shading-type="solid"
@@ -27,7 +26,6 @@ secondary-color="#000000"
 
 [org.gnome.desktop.wm.preferences]
 button-layout=':close'
-theme='Materia-Dark'
 titlebar-font="Ubuntu Medium 10"
 titlebar-uses-system-font=false
 
@@ -57,7 +55,7 @@ tap-to-click=true
 two-finger-scrolling-enabled=true
 
 [org.gnome.shell]
-enabled-extensions=['user-theme@gcampax.github.com', 'topindicatorapp@quiro9.com', 'ding@rastersoft.com']
+enabled-extensions=['user-theme@gcampax.github.com', 'topindicatorapp@quiro9.com', 'ding@rastersoft.com', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
 always-show-log-out=true
 
