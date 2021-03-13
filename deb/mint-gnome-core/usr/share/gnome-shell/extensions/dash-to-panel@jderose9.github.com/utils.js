@@ -48,7 +48,7 @@ if (Config.PACKAGE_VERSION < '3.34') {
 
 var defineClass = function (classDef) {
     let parentProto = classDef.Extends ? classDef.Extends.prototype : null;
-    
+
     if (Config.PACKAGE_VERSION < '3.31.9') {
         if (parentProto && (classDef.Extends.name || classDef.Extends.toString()).indexOf('DashToPanel.') < 0) {
             classDef.callParent = function() {
@@ -70,7 +70,7 @@ var defineClass = function (classDef) {
         (classDef.ParentConstrParams || parentArgs).forEach(p => {
             if (p.constructor === Array) {
                 let param = args[p[0]];
-                
+
                 parentArgs.push(p[1] ? param[p[1]] : param);
             } else {
                 parentArgs.push(p);
@@ -79,7 +79,7 @@ var defineClass = function (classDef) {
 
         return parentArgs;
     };
-    
+
     let C = eval(
         '(class C ' + (needsSuper ? 'extends Object' : '') + ' { ' +
         '     constructor(...args) { ' +
@@ -90,24 +90,24 @@ var defineClass = function (classDef) {
         '         let func = args.shift(); ' +
         '         if (!(func === \'_init\' && needsSuper))' +
         '             super[func](...args); ' +
-        '     }' +    
+        '     }' +
         '})'
     );
 
     if (parentProto) {
         Object.setPrototypeOf(C.prototype, parentProto);
         Object.setPrototypeOf(C, classDef.Extends);
-    } 
-    
+    }
+
     Object.defineProperty(C, 'name', { value: classDef.Name });
     Object.keys(classDef)
           .filter(k => classDef.hasOwnProperty(k) && classDef[k] instanceof Function)
           .forEach(k => C.prototype[k] = classDef[k]);
 
-    if (isGObject) { 
+    if (isGObject) {
         C = GObject.registerClass({ Signals: classDef.Signals || {} }, C);
     }
-    
+
     return C;
 };
 
@@ -345,7 +345,7 @@ var hookVfunc = function(proto, symbol, func) {
         proto[Gi.hook_up_vfunc_symbol](symbol, func);
     } else {
         //On older gjs, this is how to hook vfunc. It is buggy and can't be used reliably to replace
-        //already hooked functions. Since it's our only use for it, disabled for now (and probably forever) 
+        //already hooked functions. Since it's our only use for it, disabled for now (and probably forever)
         //Gi.hook_up_vfunc(proto, symbol, func);
     }
 };
@@ -502,12 +502,12 @@ var animateWindowOpacity = function(window, tweenOpts) {
 
         if (!windowActor.visible && visible) {
             windowActor.visible = visible;
-        } 
+        }
 
         window = windowActor.get_first_child() || windowActor;
         tweenOpts.onComplete = () => windowActor.visible = visible;
     } else if (Config.PACKAGE_VERSION > '3.33') {
-        //the workaround only works on 3.35+, so on 3.34, let's just hide the 
+        //the workaround only works on 3.35+, so on 3.34, let's just hide the
         //window without animation
         return window.visible = (tweenOpts.opacity == 255);
     }
@@ -520,8 +520,8 @@ var animate = function(actor, options) {
         return Tweener.addTween(actor, options);
     }
 
-    //to support both Tweener and Clutter animations, we use Tweener "time" 
-    //and "delay" properties defined in seconds, as opposed to Clutter animations 
+    //to support both Tweener and Clutter animations, we use Tweener "time"
+    //and "delay" properties defined in seconds, as opposed to Clutter animations
     //"duration" and "delay" which are defined in milliseconds
     if (options.delay) {
         options.delay = options.delay * 1000;
@@ -564,7 +564,7 @@ var stopAnimations = function(actor) {
     if (Tweener) {
         return Tweener.removeTweens(actor);
     }
-    
+
     actor.remove_all_transitions();
 }
 
@@ -596,12 +596,12 @@ var notify = function(text, iconName, action, isTransient) {
     let source = new MessageTray.SystemNotificationSource();
     let notification = new MessageTray.Notification(source, 'Dash to Panel', text);
     let notifyFunc = source.showNotification || source.notify;
-    
+
     if (iconName) {
         source.createIcon = function() {
             return new St.Icon({ icon_name: iconName });
         };
-    }   
+    }
 
     if (action) {
         if (!(action instanceof Array)) {
@@ -633,7 +633,7 @@ var ensureActorVisibleInScrollView = function(scrollView, actor, fadeSize, onCom
 
     let voffset = fadeSize;
     let hoffset = fadeSize;
-    
+
     let box = actor.get_allocation_box();
     let y1 = box.y1, y2 = box.y2, x1 = box.x1, x2 = box.x2;
 
@@ -676,7 +676,7 @@ var ensureActorVisibleInScrollView = function(scrollView, actor, fadeSize, onCom
 
     return [hvalue- hvalue0, vvalue - vvalue0];
 }
- 
+
 /**
  *  ColorUtils is adapted from https://github.com/micheleg/dash-to-dock
  */
@@ -972,12 +972,12 @@ var drawRoundedLine = function(cr, x, y, width, height, isRoundLeft, isRoundRigh
         y += Math.floor((height - width) / 2.0);
         height = width;
     }
-    
+
     height = 2.0 * Math.floor(height / 2.0);
-    
+
     var leftRadius = isRoundLeft ? height / 2.0 : 0.0;
     var rightRadius = isRoundRight ? height / 2.0 : 0.0;
-    
+
     cr.moveTo(x + width - rightRadius, y);
     cr.lineTo(x + leftRadius, y);
     if (isRoundLeft)
@@ -990,7 +990,7 @@ var drawRoundedLine = function(cr, x, y, width, height, isRoundLeft, isRoundRigh
     else
         cr.lineTo(x + width, y);
     cr.closePath();
-    
+
     if (fill != null) {
         cr.setSource(fill);
         cr.fillPreserve();

@@ -93,7 +93,7 @@ var ProximityManager = Utils.defineClass({
 
         this._watches[this._counter] = watch;
         this.update();
-        
+
         return this._counter++;
     },
 
@@ -157,7 +157,7 @@ var ProximityManager = Utils.defineClass({
             if (focusedWindowInfo && this._checkIfHandledWindowType(focusedWindowInfo.metaWindow)) {
                 focusedWindowInfo.allocationId = focusedWindowInfo.window.connect('notify::allocation', () => this._queueUpdate());
                 focusedWindowInfo.destroyId = focusedWindowInfo.window.connect('destroy', () => this._disconnectFocusedWindow(true));
-                
+
                 this._focusedWindowInfo = focusedWindowInfo;
             }
         }
@@ -223,7 +223,7 @@ var ProximityManager = Utils.defineClass({
         this._timeoutsHandler.add([T1, MIN_UPDATE_MS, () => this._endLimitUpdate()]);
 
         let metaWindows = this._getHandledWindows();
-        
+
         Object.keys(this._watches).forEach(id => {
             let watch = this._watches[id];
             let overlap = this._update(watch, metaWindows);
@@ -251,7 +251,7 @@ var ProximityManager = Utils.defineClass({
             return metaWindows.some(mw => mw.maximized_vertically && mw.maximized_horizontally && 
                                           mw.get_monitor() == watch.monitorIndex);
         }
-        
+
         //Mode.ALL_WINDOWS
         return metaWindows.some(mw => this._checkProximity(mw, watch));
     },
@@ -260,3 +260,4 @@ var ProximityManager = Utils.defineClass({
         return metaWindow.get_frame_rect().overlap(watch.rect);
     },
 });
+

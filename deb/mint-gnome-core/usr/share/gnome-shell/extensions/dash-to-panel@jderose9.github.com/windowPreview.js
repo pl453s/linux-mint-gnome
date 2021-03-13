@@ -110,7 +110,7 @@ var PreviewMenu = Utils.defineClass({
 
         Main.layoutManager.addChrome(this, { affectsInputRegion: false });
         Main.layoutManager.trackChrome(this.menu, { affectsInputRegion: true });
-        
+
         this._resetHiddenState();
         this._refreshGlobals();
         this._updateClip();
@@ -189,10 +189,10 @@ var PreviewMenu = Utils.defineClass({
 
             if (!this.opened) {
                 this._refreshGlobals();
-                
+
                 this.set_height(this.clipHeight);
                 this.menu.show();
-                
+
                 setStyle(this.menu, 'background: ' + Utils.getrgbaColor(this.panel.dynamicTransparency.backgroundColorRgb, alphaBg));
             }
 
@@ -209,7 +209,7 @@ var PreviewMenu = Utils.defineClass({
         this._endOpenCloseTimeouts();
         this._removeFocus();
         this._endPeek();
-        
+
         if (immediate) {
             Utils.stopAnimations(this.menu);
             this._resetHiddenState();
@@ -240,7 +240,7 @@ var PreviewMenu = Utils.defineClass({
         let previews = this._box.get_children();
         let currentIndex = this._focusedPreview ? previews.indexOf(this._focusedPreview) : -1;
         let nextIndex = currentIndex + 1;
-        
+
         nextIndex = previews[nextIndex] ? nextIndex : 0;
 
         if (previews[nextIndex]) {
@@ -276,7 +276,7 @@ var PreviewMenu = Utils.defineClass({
 
     ensureVisible: function(preview) {
         let [ , upper, pageSize] = this._getScrollAdjustmentValues();
-        
+
         if (upper > pageSize) {
             this._timeoutsHandler.add([
                 T4, 
@@ -319,7 +319,7 @@ var PreviewMenu = Utils.defineClass({
     _mergeWindows: function(appIcon, windows) {
         windows = windows || (appIcon.window ? [appIcon.window] : appIcon.getAppIconInterestingWindows());
         windows.sort(Taskbar.sortWindowsCompareFunction);
-    
+
         let currentPreviews = this._box.get_children();
         let l = Math.max(windows.length, currentPreviews.length);
 
@@ -341,7 +341,7 @@ var PreviewMenu = Utils.defineClass({
 
         for (let i = 0, l = windows.length; i < l; ++i) {
             let currentIndex = Utils.findIndex(currentPreviews, c => c.window == windows[i]);
-            
+
             if (currentIndex < 0) {
                 this._addNewPreview(windows[i]);
             } else {
@@ -381,7 +381,7 @@ var PreviewMenu = Utils.defineClass({
     _onScrollEvent: function(actor, event) {
         if (!event.is_pointer_emulated()) {
             let vOrh = this.isVertical ? 'v' : 'h';
-            let adjustment = this._scrollView['get_' + vOrh + 'scroll_bar']().get_adjustment(); 
+            let adjustment = this._scrollView['get_' + vOrh + 'scroll_bar']().get_adjustment();
             let increment = adjustment.step_increment;
             let delta = increment;
 
@@ -395,7 +395,7 @@ var PreviewMenu = Utils.defineClass({
                     delta += dx * increment;
                     break;
             }
-            
+
             adjustment.set_value(adjustment.get_value() + delta);
             this._updateScrollFade();
         }
@@ -424,7 +424,7 @@ var PreviewMenu = Utils.defineClass({
             size: Me.settings.get_int('window-preview-aspect-ratio-y'),
             fixed: Me.settings.get_boolean('window-preview-fixed-y')
         };
-        
+
         alphaBg = Me.settings.get_boolean('preview-use-custom-opacity') ? 
                   Me.settings.get_int('preview-custom-opacity') * .01 : 
                   this.panel.dynamicTransparency.alpha;
@@ -436,7 +436,7 @@ var PreviewMenu = Utils.defineClass({
         let panelBoxTheme = this.panel.panelBox.get_theme_node();
         let previewSize = (Me.settings.get_int('window-preview-size') + 
                            Me.settings.get_int('window-preview-padding') * 2) * scaleFactor;
-        
+
         if (this.isVertical) {
             w = previewSize;
             this.clipHeight = this.panel.monitor.height;
@@ -471,7 +471,7 @@ var PreviewMenu = Utils.defineClass({
         previewsWidth = Math.min(previewsWidth, this.panel.monitor.width);
         previewsHeight = Math.min(previewsHeight, this.panel.monitor.height);
         this._updateScrollFade(previewsWidth < this.panel.monitor.width && previewsHeight < this.panel.monitor.height);
-        
+
         if (this.isVertical) {
             y = sourceAllocation.y1 + appIconMargin - this.panel.monitor.y + (sourceContentBox.y2 - sourceContentBox.y1 - previewsHeight) * .5;
             y = Math.max(y, 0);
@@ -494,16 +494,16 @@ var PreviewMenu = Utils.defineClass({
         let [value, upper, pageSize] = this._getScrollAdjustmentValues();
         let needsFade = Math.round(upper) > Math.round(pageSize);
         let fadeWidgets = this.menu.get_children().filter(c => c != this._scrollView);
-        
+
         if (!remove && needsFade) {
             if (!fadeWidgets.length) {
                 fadeWidgets.push(this._getFadeWidget());
                 fadeWidgets.push(this._getFadeWidget(true));
-    
+
                 this.menu.add_child(fadeWidgets[0]);
                 this.menu.add_child(fadeWidgets[1]);
             }
-            
+
             fadeWidgets[0].visible = value > 0;
             fadeWidgets[1].visible = value + pageSize < upper;
         } else if (remove || (!needsFade && fadeWidgets.length)) {
@@ -574,7 +574,7 @@ var PreviewMenu = Utils.defineClass({
                 if (isTranslationAnimation) {
                     Main.layoutManager._queueUpdateRegions();
                 }
-                
+
                 (onComplete || (() => {}))();
             }
         };
@@ -588,10 +588,10 @@ var PreviewMenu = Utils.defineClass({
         let currentWorkspace = Utils.getCurrentWorkspace();
         let windowWorkspace = window.get_workspace();
         let focusWindow = () => this._focusMetaWindow(Me.settings.get_int('peek-mode-opacity'), window);
-        
+
         this._restorePeekedWindowStack();
         this._peekedWindow = window;
-        
+
         if (currentWorkspace != windowWorkspace) {
             this._switchToWorkspaceImmediate(windowWorkspace.index());
             this._timeoutsHandler.add([T3, 100, focusWindow]);
@@ -654,14 +654,14 @@ var PreviewMenu = Utils.defineClass({
                 if (isFocused && mw.minimized) {
                     wa.show();
                 }
-                
+
                 if (!mw.minimized) {
                     let tweenOpts = getTweenOpts({ opacity: isFocused ? 255 : dimOpacity });
-    
+
                     if (immediate && !mw.is_on_all_workspaces()) {
                         tweenOpts.time = 0;
                     }
-                    
+
                     Utils.animateWindowOpacity(wa, tweenOpts);
                 }
             }
@@ -733,7 +733,7 @@ var Preview = Utils.defineClass({
         this._previewBin.set_size(previewBinWidth, previewBinHeight);
 
         box.add_child(this._previewBin);
-        
+
         if (headerHeight) {
             let headerBox = new St.Widget({
                 style_class: 'preview-header-box',
@@ -741,14 +741,14 @@ var Preview = Utils.defineClass({
                 x_expand: true, 
                 y_align: Clutter.ActorAlign[isTopHeader ? 'START' : 'END']
             });
-            
+
             setStyle(headerBox, this._getBackgroundColor(HEADER_COLOR_OFFSET, 1));
             this._workspaceIndicator = new St.Label({ y_align: Clutter.ActorAlign.CENTER });
             this._windowTitle = new St.Label({ y_align: Clutter.ActorAlign.CENTER, x_expand: true });
 
             this._iconBin = new St.Widget({ layout_manager: new Clutter.BinLayout() });
             this._iconBin.set_size(headerHeight, headerHeight);
-    
+
             headerBox.add_child(this._iconBin);
             headerBox.insert_child_at_index(this._workspaceIndicator, isLeftButtons ? 0 : 1);
             headerBox.insert_child_at_index(this._windowTitle, isLeftButtons ? 1 : 2);
@@ -778,7 +778,7 @@ var Preview = Utils.defineClass({
 
         if (!headerHeight) {
             closeButtonBorderRadius = 'border-radius: ';
-            
+
             if (isTopHeader) {
                 closeButtonBorderRadius += (isLeftButtons ? '0 0 4px 0;' : '0 0 0 4px;');
             } else {
@@ -799,7 +799,7 @@ var Preview = Utils.defineClass({
             let _assignWindowClone = () => {
                 if (window.get_compositor_private()) {
                     let cloneBin = this._getWindowCloneBin(window);
-                    
+
                     this._resizeClone(cloneBin, window);
                     this._addClone(cloneBin, animateSize);
                     this._previewMenu.updatePosition();
@@ -960,7 +960,7 @@ var Preview = Utils.defineClass({
             let commonTitleStyles = 'color: ' + Me.settings.get_string('window-preview-title-font-color') + ';' +
                                     'font-size: ' + Me.settings.get_int('window-preview-title-font-size') * fontScale + 'px;' +
                                     'font-weight: ' + Me.settings.get_string('window-preview-title-font-weight') + ';';
-            
+
             this._iconBin.destroy_all_children();
             this._iconBin.add_child(icon);
 
@@ -969,7 +969,7 @@ var Preview = Utils.defineClass({
                 workspaceStyle = 'margin: 0 4px 0 ' + (isLeftButtons ? Math.round((headerHeight - icon.width) * .5) + 'px' : '0') + '; padding: 0 4px;' +  
                                  'border: 2px solid ' + this._getRgbaColor(FOCUSED_COLOR_OFFSET, .8) + 'border-radius: 2px;' + commonTitleStyles;
             }
-    
+
             this._workspaceIndicator.text = workspaceIndex; 
             setStyle(this._workspaceIndicator, workspaceStyle);
 
@@ -1007,7 +1007,7 @@ var Preview = Utils.defineClass({
     _addClone: function(newCloneBin, animateSize) {
         let currentClones = this._previewBin.get_children();
         let newCloneOpts = getTweenOpts({ opacity: 255 });
-        
+
         this._previewBin.add_child(newCloneBin);
 
         if (currentClones.length) {
@@ -1039,7 +1039,7 @@ var Preview = Utils.defineClass({
 
         Utils.animate(newCloneBin, newCloneOpts);
     },
-    
+
     _getWindowCloneBin: function(window) {
         let frameRect = window.get_frame_rect();
         let bufferRect = window.get_buffer_rect();
@@ -1051,7 +1051,7 @@ var Preview = Utils.defineClass({
                             new WindowCloneLayout(frameRect, bufferRect) :
                             new Clutter.BinLayout()
         });
-        
+
         cloneBin.add_child(clone);
 
         return cloneBin;
@@ -1072,12 +1072,12 @@ var Preview = Utils.defineClass({
         let ratio = Math.min(fixedWidth / frameRect.width, fixedHeight / frameRect.height, 1);
         let cloneWidth = frameRect.width * ratio;
         let cloneHeight = frameRect.height * ratio;
-        
+
         let clonePaddingTB = cloneHeight < MIN_DIMENSION ? MIN_DIMENSION - cloneHeight : 0;
         let clonePaddingLR = cloneWidth < MIN_DIMENSION ? MIN_DIMENSION - cloneWidth : 0;
         let clonePaddingTop = clonePaddingTB * .5;
         let clonePaddingLeft = clonePaddingLR * .5;
-        
+
         this.cloneWidth = cloneWidth + clonePaddingLR * scaleFactor;
         this.cloneHeight = cloneHeight + clonePaddingTB * scaleFactor;
 

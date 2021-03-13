@@ -45,7 +45,7 @@ let extensionSystem = (Main.extensionManager || imports.ui.extensionSystem);
 
 function init() {
     Convenience.initTranslations(Utils.TRANSLATION_DOMAIN);
-    
+
     //create an object that persists until gnome-shell is restarted, even if the extension is disabled
     Me.persistentStorage = {};
 }
@@ -61,7 +61,7 @@ function enable() {
     //create a global object that can emit signals and conveniently expose functionalities to other extensions 
     global.dashToPanel = {};
     Signals.addSignalMethods(global.dashToPanel);
-    
+
     _enable();
 }
 
@@ -95,7 +95,7 @@ function _enable() {
     panelManager = new PanelManager.dtpPanelManager();
 
     panelManager.enable();
-    
+
     Utils.removeKeybinding('open-application-menu');
     Utils.addKeybinding(
         'open-application-menu',
@@ -124,7 +124,7 @@ function disable(reset) {
     delete Me.settings;
     oldDash = null;
     panelManager = null;
-    
+
     Utils.removeKeybinding('open-application-menu');
     Utils.addKeybinding(
         'open-application-menu',

@@ -1620,7 +1620,7 @@ var DockManager = class DashToDock_DockManager {
 
         // Connect relevant signals to the toggling function
         this._bindSettingsChanges();
-        
+
         // Apply "Launch new instance" setting
         this._launchNewInstance();
     }
@@ -1728,7 +1728,7 @@ var DockManager = class DashToDock_DockManager {
             () => this._launchNewInstance()
         ], );
     }
-    
+
     // Launch new instance Setting Function
     _launchNewInstance() {
         if (this._settings.get_boolean('launch-new-instance')) {
@@ -2004,7 +2004,7 @@ var DockManager = class DashToDock_DockManager {
         this._oldDash = null;
 
         Me.imports.extension.dockManager = null;
-        
+
         // Reset "Launch new instance" setting
         AppDisplay.AppIcon.prototype.activate = _activateOriginal;
     }

@@ -2,5 +2,5 @@
 NoDisplay=true
 Name=Qt5 Settings
 Exec=qt5ct
-Icon=preferences-desktop-theme
+Icon=qt5ct
 Type=Application

@@ -35,7 +35,7 @@ const Utils = Me.imports.utils;
 //timeout intervals
 const CHECK_POINTER_MS = 200;
 const CHECK_GRAB_MS = 400;
-const POST_ANIMATE_MS = 50; 
+const POST_ANIMATE_MS = 50;
 const MIN_UPDATE_MS = 250;
 
 //timeout names
@@ -61,7 +61,7 @@ var Intellihide = Utils.defineClass({
         this._panelManager = dtpPanel.panelManager;
         this._proximityManager = this._panelManager.proximityManager;
         this._holdStatus = Hold.NONE;
-        
+
         this._signalsHandler = new Utils.GlobalSignalsHandler();
         this._timeoutsHandler = new Utils.TimeoutsHandler();
 
@@ -116,14 +116,14 @@ var Intellihide = Utils.defineClass({
         this._removeRevealMechanism();
 
         this._revealPanel(!reset);
-        
+
         this.enabled = false;
     },
 
     destroy: function() {
         Me.settings.disconnect(this._intellihideChangedId);
         Me.settings.disconnect(this._intellihideOnlySecondaryChangedId);
-        
+
         if (this.enabled) {
             this.disable();
         }
@@ -137,7 +137,7 @@ var Intellihide = Utils.defineClass({
         if (this.enabled && !this._holdStatus) {
             this._revealPanel();
         }
-        
+
         this._holdStatus |= holdStatus;
     },
 
@@ -211,14 +211,14 @@ var Intellihide = Utils.defineClass({
     _setTrackPanel: function(enable) {
         let trackedIndex = Main.layoutManager._findActor(this._panelBox);
         let actorData = Main.layoutManager._trackedActors[trackedIndex]
-            
+
         actorData.affectsStruts = !enable;
         actorData.trackFullscreen = !enable;
 
         this._panelBox.track_hover = enable;
         this._panelBox.reactive = enable;
         this._panelBox.visible = enable ? enable : this._panelBox.visible;
-        
+
         Main.layoutManager._queueUpdateRegions();
     },
 
@@ -318,7 +318,7 @@ var Intellihide = Utils.defineClass({
 
         if (fromRevealMechanism) {
             let mouseBtnIsPressed = global.get_pointer()[2] & Clutter.ModifierType.BUTTON1_MASK;
-            
+
             //the user is trying to reveal the panel
             if (this._monitor.inFullscreen && !mouseBtnIsPressed) {
                 return Me.settings.get_boolean('intellihide-show-in-fullscreen');

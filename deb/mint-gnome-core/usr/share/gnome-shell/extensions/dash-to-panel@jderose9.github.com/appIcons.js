@@ -144,16 +144,16 @@ var taskbarAppIcon = Utils.defineClass({
 
         Utils.wrapActor(this.icon);
         Utils.wrapActor(this);
-        
+
         this._dot.set_width(0);
         this._isGroupApps = Me.settings.get_boolean('group-apps');
-        
+
         this._container = new St.Widget({ style_class: 'dtp-container', layout_manager: new Clutter.BinLayout() });
         this._dotsContainer = new St.Widget({ layout_manager: new Clutter.BinLayout() });
         this._dtpIconContainer = new St.Widget({ layout_manager: new Clutter.BinLayout(), style: getIconContainerStyle(panel.checkIfVertical()) });
 
         this.actor.remove_actor(this._iconContainer);
-        
+
         this._dtpIconContainer.add_child(this._iconContainer);
 
         if (appInfo.window) {
@@ -164,7 +164,7 @@ var taskbarAppIcon = Utils.defineClass({
                 x_align: Clutter.ActorAlign.START, 
                 style_class: 'overview-label' 
             });
-            
+
             this._updateWindowTitle();
             this._updateWindowTitleStyle();
 
@@ -206,7 +206,7 @@ var taskbarAppIcon = Utils.defineClass({
                 this._windowEnteredMonitorId = Utils.DisplayWrapper.getScreen().connect('window-entered-monitor', this.onWindowEnteredOrLeft.bind(this));
                 this._windowLeftMonitorId = Utils.DisplayWrapper.getScreen().connect('window-left-monitor', this.onWindowEnteredOrLeft.bind(this));
             }
-            
+
             this._titleWindowChangeId = 0;
             this._minimizedWindowChangeId = 0;
         } else {
@@ -216,7 +216,7 @@ var taskbarAppIcon = Utils.defineClass({
             this._minimizedWindowChangeId = this.window.connect('notify::minimized',
                                                 Lang.bind(this, this._updateWindowTitleStyle));
         }
-        
+
         this._scrollEventId = this.actor.connect('scroll-event', this._onMouseScroll.bind(this));
 
         this._overviewWindowDragEndId = Main.overview.connect('window-drag-end',
@@ -226,7 +226,7 @@ var taskbarAppIcon = Utils.defineClass({
                                                 Lang.bind(this, this._onSwitchWorkspace));
 
         this._hoverChangeId = this.actor.connect('notify::hover', () => this._onAppIconHoverChanged());
-        
+
         this._dtpSettingsSignalIds = [
             Me.settings.connect('changed::dot-position', Lang.bind(this, this._settingsChangeRefresh)),
             Me.settings.connect('changed::dot-size', Lang.bind(this, this._settingsChangeRefresh)),
@@ -302,7 +302,7 @@ var taskbarAppIcon = Utils.defineClass({
 
         // Disconect global signals
         // stateChangedId is already handled by parent)
-        
+
         if(this._overviewWindowDragEndId)
             Main.overview.disconnect(this._overviewWindowDragEndId);
 

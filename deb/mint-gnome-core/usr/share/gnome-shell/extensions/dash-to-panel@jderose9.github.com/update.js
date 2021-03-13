@@ -50,4 +50,3 @@ function notifyError(err) {
 function notify(msg, action) {
     Me.imports.utils.notify(msg, 'dialog-information', action, true);
 }
-

@@ -578,12 +578,12 @@ var DesktopManager = class {
         this._menu.add(this._openTerminalMenuItem);
 
         this._menu.add(new Gtk.SeparatorMenuItem());
-        
+
         this._propertiesMenuItem = new Gtk.MenuItem({label: _("Properties")});
         this._propertiesMenuItem.connect("activate", () => Prefs.showPreferences());
         this._menu.add(this._propertiesMenuItem);
         this._menu.show_all();
-        
+
         this._menu.add(new Gtk.SeparatorMenuItem());
 
         this._changeBackgroundMenuItem = new Gtk.MenuItem({label: _("Change Background…")});

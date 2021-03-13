@@ -38,7 +38,7 @@ var DynamicTransparency = Utils.defineClass({
         this.currentBackgroundColor = 0;
 
         this._initialPanelStyle = dtpPanel.panel.actor.get_style();
-        
+
         if (this._dtpPanel.geom.position == St.Side.TOP) {
             this._initialPanelCornerStyle = dtpPanel.panel._leftCorner.actor.get_style();
         }
@@ -56,7 +56,7 @@ var DynamicTransparency = Utils.defineClass({
         this._proximityManager.removeWatch(this._proximityWatchId);
 
         this._dtpPanel.panel.actor.set_style(this._initialPanelStyle);
-        
+
         if (this._dtpPanel.geom.position == St.Side.TOP) {
             this._dtpPanel.panel._leftCorner.actor.set_style(this._initialPanelCornerStyle);
             this._dtpPanel.panel._rightCorner.actor.set_style(this._initialPanelCornerStyle);
@@ -221,7 +221,7 @@ var DynamicTransparency = Utils.defineClass({
         let cornerStyle = '-panel-corner-background-color: ' + this.currentBackgroundColor + transition;
 
         this._dtpPanel.set_style('background-color: ' + this.currentBackgroundColor + transition + this._complementaryStyles);
-        
+
         if (this._dtpPanel.geom.position == St.Side.TOP) {
             this._dtpPanel.panel._leftCorner.actor.set_style(cornerStyle);
             this._dtpPanel.panel._rightCorner.actor.set_style(cornerStyle);

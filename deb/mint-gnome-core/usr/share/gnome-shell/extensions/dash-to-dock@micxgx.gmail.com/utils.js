@@ -254,12 +254,12 @@ function drawRoundedLine(cr, x, y, width, height, isRoundLeft, isRoundRight, str
         y += Math.floor((height - width) / 2.0);
         height = width;
     }
-    
+
     height = 2.0 * Math.floor(height / 2.0);
-    
+
     var leftRadius = isRoundLeft ? height / 2.0 : 0.0;
     var rightRadius = isRoundRight ? height / 2.0 : 0.0;
-    
+
     cr.moveTo(x + width - rightRadius, y);
     cr.lineTo(x + leftRadius, y);
     if (isRoundLeft)
@@ -272,7 +272,7 @@ function drawRoundedLine(cr, x, y, width, height, isRoundLeft, isRoundRight, str
     else
         cr.lineTo(x + width, y);
     cr.closePath();
-    
+
     if (fill != null) {
         cr.setSource(fill);
         cr.fillPreserve();

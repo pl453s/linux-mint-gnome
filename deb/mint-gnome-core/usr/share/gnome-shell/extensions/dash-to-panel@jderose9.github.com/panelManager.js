@@ -17,13 +17,13 @@
  * Credits:
  * This file is based on code from the Dash to Dock extension by micheleg
  * and code from the Taskbar extension by Zorin OS
- * 
+ *
  * Code to re-anchor the panel was taken from Thoma5 BottomPanel:
  * https://github.com/Thoma5/gnome-shell-extension-bottompanel
- * 
+ *
  * Pattern for moving clock based on Frippery Move Clock by R M Yorston
  * http://frippery.org/extensions/
- * 
+ *
  * Some code was also adapted from the upstream Gnome Shell source code.
  */
 
@@ -75,7 +75,7 @@ var dtpPanelManager = Utils.defineClass({
 
     enable: function(reset) {
         let dtpPrimaryIndex = Me.settings.get_int('primary-monitor');
-        
+
         this.panelPositions = Pos.getSettingsPositions(Me.settings, 'panel-positions');
         this.dtpPrimaryMonitor = Main.layoutManager.monitors[dtpPrimaryIndex] || Main.layoutManager.primaryMonitor;
         this.proximityManager = new Proximity.ProximityManager();
@@ -85,7 +85,7 @@ var dtpPanelManager = Utils.defineClass({
 
         this.primaryPanel = this._createPanel(this.dtpPrimaryMonitor, Me.settings.get_boolean('stockgs-keep-top-panel'));
         this.allPanels = [ this.primaryPanel ];
-        
+
         this.overview.enable(this.primaryPanel);
 
         if (Me.settings.get_boolean('multi-monitors')) {
@@ -100,7 +100,7 @@ var dtpPanelManager = Utils.defineClass({
         this.allPanels.forEach(p => {
             let panelPosition = p.getPosition();
             let leftOrRight = (panelPosition == St.Side.LEFT || panelPosition == St.Side.RIGHT);
-            
+
             p.panelBox.set_size(
                 leftOrRight ? -1 : p.geom.w + p.geom.lrPadding, 
                 leftOrRight ? p.geom.h + p.geom.tbPadding : -1
@@ -115,7 +115,7 @@ var dtpPanelManager = Utils.defineClass({
 
             Utils.hookVfunc(BoxPointer.BoxPointer.prototype, 'get_preferred_height', function(forWidth) {
                 let alloc = { min_size: 0, natural_size: 0 };
-                
+
                 [alloc.min_size, alloc.natural_size] = this.vfunc_get_preferred_height(forWidth);
 
                 return panelManager._getBoxPointerPreferredHeight(this, alloc);
@@ -124,11 +124,11 @@ var dtpPanelManager = Utils.defineClass({
 
         this._updatePanelElementPositions();
         this.setFocusedMonitor(this.dtpPrimaryMonitor);
-        
+
         if (this.primaryPanel.checkIfVertical()) {
             Main.wm._getPositionForDirection = newGetPositionForDirection;
         }
-        
+
         if (reset) return;
 
         this._oldViewSelectorAnimateIn = Main.overview.viewSelector._animateIn;
@@ -173,7 +173,7 @@ var dtpPanelManager = Utils.defineClass({
         if (this._needsDashItemContainerAllocate) {
             Utils.hookVfunc(Dash.DashItemContainer.prototype, 'allocate', this._newDashItemContainerAllocate);
         }
-            
+
         // Since Gnome 3.8 dragging an app without having opened the overview before cause the attemp to
         //animate a null target since some variables are not initialized when the viewSelector is created
         if(Main.overview.viewSelector._activePage == null)
@@ -259,7 +259,7 @@ var dtpPanelManager = Utils.defineClass({
             ],
             [
                 Utils.DisplayWrapper.getMonitorManager(),
-                'monitors-changed', 
+                'monitors-changed',
                 () => {
                     if (Main.layoutManager.primaryMonitor) {
                         this._saveMonitors();
@@ -279,7 +279,7 @@ var dtpPanelManager = Utils.defineClass({
         ));
 
         this._setKeyBindings(true);
-        
+
         // Apply "Launch new instance" setting
         this._launchNewInstance();
     },
@@ -334,7 +334,7 @@ var dtpPanelManager = Utils.defineClass({
         }
 
         if (reset) return;
-        
+
         this._setKeyBindings(false);
 
         this._signalsHandler.destroy();
@@ -378,20 +378,20 @@ var dtpPanelManager = Utils.defineClass({
 
         LookingGlass.LookingGlass.prototype.open = LookingGlass.LookingGlass.prototype._oldOpen;
         delete LookingGlass.LookingGlass.prototype._oldOpen;
-        
+
         // Reset "Launch new instance" setting
         AppDisplay.AppIcon.prototype.activate = _activateOriginal;
     },
 
     setFocusedMonitor: function(monitor, ignoreRelayout) {
         this._needsIconAllocate = 1;
-        
+
         if (!this.checkIfFocusedMonitor(monitor)) {
             Main.overview.viewSelector._workspacesDisplay._primaryIndex = monitor.index;
-            
+
             Main.overview._overview.clear_constraints();
             Main.overview._overview.add_constraint(new Layout.MonitorConstraint({ index: monitor.index }));
-            
+
             if (ignoreRelayout) return;
 
             this._newOverviewRelayout.call(Main.overview);
@@ -429,7 +429,7 @@ var dtpPanelManager = Utils.defineClass({
         let panelBox;
         let panel;
         let clipContainer = new Clutter.Actor();
-        
+
         if (isStandalone) {
             panelBox = new St.BoxLayout({ name: 'panelBox' });
         } else {
@@ -442,7 +442,7 @@ var dtpPanelManager = Utils.defineClass({
         Main.layoutManager.addChrome(clipContainer, { affectsInputRegion: false });
         clipContainer.add_child(panelBox);
         Main.layoutManager.trackChrome(panelBox, { trackFullscreen: true, affectsStruts: true, affectsInputRegion: true });
-        
+
         panel = new Panel.dtpPanel(this, monitor, panelBox, isStandalone);
         panelBox.add(panel);
         panel.enable();
@@ -602,7 +602,7 @@ var dtpPanelManager = Utils.defineClass({
 
     _newGetShowAppsButton: function() {
         let focusedMonitorIndex = Utils.findIndex(this.allPanels, p => this.checkIfFocusedMonitor(p.monitor));
-        
+
         return this.allPanels[focusedMonitorIndex].taskbar.showAppsButton;
     },
 
@@ -726,7 +726,7 @@ function newUpdateHotCorners() {
         let cornerY = monitor.y;
 
         let haveTopLeftCorner = true;
-        
+
         // If the panel is on the bottom, unless this is explicitly forced, don't add a topleft 
         // hot corner unless it is actually a top left panel. Otherwise, it stops the mouse 
         // as you are dragging across. In the future, maybe we will automatically move the 
@@ -793,10 +793,10 @@ function newUpdatePanelBarrier(panel) {
         return;
     }
 
-    let barrierSize = Math.min(10, panel.panelBox.height); 
+    let barrierSize = Math.min(10, panel.panelBox.height);
     let fixed1 = panel.monitor.y;
     let fixed2 = panel.monitor.y + barrierSize;
-    
+
     if (panel.checkIfVertical()) {
         barriers._rightPanelBarrier.push(panel.monitor.y + panel.monitor.height, Meta.BarrierDirection.POSITIVE_Y);
         barriers._leftPanelBarrier.push(panel.monitor.y, Meta.BarrierDirection.NEGATIVE_Y);
@@ -837,7 +837,7 @@ function newUpdatePanelBarrier(panel) {
             display: global.display,
             directions: barriers[k][2]
         };
-        
+
         barrierOptions[panel.varCoord.c1] = barrierOptions[panel.varCoord.c2] = barriers[k][1];
         barrierOptions[panel.fixedCoord.c1] = fixed1;
         barrierOptions[panel.fixedCoord.c2] = fixed2;

@@ -66,7 +66,7 @@ var dtpPanelStyle = Utils.defineClass({
         ];
 
         this._dtpSettingsSignalIds = [];
-        
+
         for(let i in configKeys) {
             this._dtpSettingsSignalIds.push(Me.settings.connect('changed::' + configKeys[i], Lang.bind(this, function () {
                 this._removeStyles();
@@ -77,7 +77,7 @@ var dtpPanelStyle = Utils.defineClass({
 
     _applyStyles: function() {
         this._rightBoxOperations = [];
-        
+
         let trayPadding = Me.settings.get_int('tray-padding');
         let isVertical = this.panel.checkIfVertical();
         let paddingStyle = 'padding: ' + (isVertical ? '%dpx 0' : '0 %dpx');
@@ -97,12 +97,12 @@ var dtpPanelStyle = Utils.defineClass({
                 if (trayPadding < 6) {
                     trayPaddingStyleLine += '; -minimum-hpadding: %dpx'.format(trayPadding);
                 }
-                
+
                 operation.compareFn = function (actor) {
                     return (actor.has_style_class_name && actor.has_style_class_name('panel-button'));
                 };
             }
-            
+
             operation.applyFn = Lang.bind(this, function (actor, operationIdx) {
                 this._overrideStyle(actor, trayPaddingStyleLine, operationIdx);
                 this._refreshPanelButton(actor);
@@ -148,7 +148,7 @@ var dtpPanelStyle = Utils.defineClass({
             this._overrideStyle(this.panel._rightBox, trayContentSizeStyleLine, 0);
             this._overrideStyle(this.panel._centerBox, trayContentSizeStyleLine, 0);
         }
-       
+
         // center box has been moved next to the right box and will be treated the same
         this._centerBoxOperations = this._rightBoxOperations;
 
@@ -194,7 +194,7 @@ var dtpPanelStyle = Utils.defineClass({
         }
 
         this._applyStylesRecursively();
-        
+
         /* connect signal */
         this._rightBoxActorAddedID = this.panel._rightBox.connect('actor-added',
             Lang.bind(this, function (container, actor) {
@@ -222,11 +222,11 @@ var dtpPanelStyle = Utils.defineClass({
 
     _removeStyles: function() {
         /* disconnect signal */
-        if (this._rightBoxActorAddedID) 
+        if (this._rightBoxActorAddedID)
             this.panel._rightBox.disconnect(this._rightBoxActorAddedID);
-        if (this._centerBoxActorAddedID) 
+        if (this._centerBoxActorAddedID)
             this.panel._centerBox.disconnect(this._centerBoxActorAddedID);
-        if (this._leftBoxActorAddedID) 
+        if (this._leftBoxActorAddedID)
             this.panel._leftBox.disconnect(this._leftBoxActorAddedID);
 
         this._restoreOriginalStyle(this.panel._rightBox);
@@ -276,7 +276,7 @@ var dtpPanelStyle = Utils.defineClass({
             }
         }
     },
-    
+
     _overrideStyle: function(actor, styleLine, operationIdx) {
         if (actor._dtp_original_inline_style === undefined) {
             actor._dtp_original_inline_style = actor.get_style();
@@ -322,5 +322,5 @@ var dtpPanelStyle = Utils.defineClass({
             parent.insert_child_at_index(actor, actorIndex);
         }
     }
-    
+
 });

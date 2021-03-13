@@ -211,7 +211,7 @@ class DraftWindow(Gtk.Window):
 		self.button_apps.connect("clicked", self.action_launch, "menulibre")
 		self.button_start.connect("clicked", self.action_launch, "gnome-session-properties")
 		self.button_tweaks.connect("clicked", self.action_launch, "gnome-tweaks")
-		self.button_qt5ct.connect("clicked", self.action_launch, "notify-send -i preferences-desktop-theme 'Please wait...' 'Qt5 Configuration Tool is starting' ; qt5ct")
+		self.button_qt5ct.connect("clicked", self.action_launch, "notify-send -i qt5ct 'Please wait...' 'Qt5 Configuration Tool is starting' ; qt5ct")
 		self.box_more.pack_start(self.button_apps, True, True, 0)
 		self.box_more.pack_start(self.button_start, True, True, 0)
 		self.box_more.pack_start(self.button_tweaks, True, True, 0)
