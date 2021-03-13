@@ -92,7 +92,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 - Desktop Icons NG: Fix separator issues
 - Desktop Icons NG: Gjs Gnome integration
 - Papirus Dark/Light? (update screenshot)
-- Synaptic slow window icon appearance
 - *Personal note: optimize VDI*
 - PUBLISH A NEW RELEASE
 - Nautilus extension: Folder color switch
