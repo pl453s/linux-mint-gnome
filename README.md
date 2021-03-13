@@ -64,7 +64,7 @@ Latest release (1.6): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
-- gnome-customization: 'gnome-tweaks', only better (customize Gnome, QT5, GDM3, Plymouth and Grub)
+- gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
@@ -72,7 +72,7 @@ Latest release (1.6): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 ## Gnome Customization
 
 - A first draft window has been created. The final aim is to create a central GUI to customize:  
-styles, extensions, appearance, applications grid, user's folders paths, Gnome, QT5, GDM3, Plymouth and Grub.
+styles, extensions, appearance, applications grid, user's folders paths, Gnome, Qt5, GDM3, Plymouth and Grub.
 - The user's folders names localization is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
