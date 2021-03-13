@@ -200,18 +200,18 @@ class DraftWindow(Gtk.Window):
 		" - Add, hide and edit application icons\n"
 		" - Add, hide and edit startup programs\n"
 		" - User folders paths and names\n"
-		" - QT5 and advanced Gnome settings\n"
+		" - Qt5 and advanced Gnome settings\n"
 		" - Plymouth theme and Grub theme\n")
 		self.box_infos.pack_start(self.text_infos, False, False, 0)
 
 		self.button_apps   = Gtk.Button(label = "Applications")
 		self.button_start  = Gtk.Button(label = "Startup")
 		self.button_tweaks = Gtk.Button(label = "Tweaks")
-		self.button_qt5ct  = Gtk.Button(label = "QT5 (slow)")
+		self.button_qt5ct  = Gtk.Button(label = "Qt5 CT")
 		self.button_apps.connect("clicked", self.action_launch, "menulibre")
 		self.button_start.connect("clicked", self.action_launch, "gnome-session-properties")
 		self.button_tweaks.connect("clicked", self.action_launch, "gnome-tweaks")
-		self.button_qt5ct.connect("clicked", self.action_launch, "qt5ct")
+		self.button_qt5ct.connect("clicked", self.action_launch, "notify-send -i preferences-desktop-theme 'Please wait...' 'Qt5 Configuration Tool is starting' ; qt5ct")
 		self.box_more.pack_start(self.button_apps, True, True, 0)
 		self.box_more.pack_start(self.button_start, True, True, 0)
 		self.box_more.pack_start(self.button_tweaks, True, True, 0)
