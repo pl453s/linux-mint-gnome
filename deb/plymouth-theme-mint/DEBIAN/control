@@ -1,6 +1,6 @@
 Package: plymouth-theme-mint
-Version: 1.7
+Version: 1.8
 Architecture: all
-Maintainer: nobody-for-now <null@null.null>
+Maintainer: PL453s <pl453s@github.com>
 Description: Linux Mint boot screen with BGRT support
 Depends: plymouth-theme-spinner

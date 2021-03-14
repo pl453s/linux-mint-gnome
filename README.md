@@ -59,15 +59,17 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 
 ## Project packages
 
-- mint-gnome-core: Welcome screen, Gnome extensions, .desktop files, default schemas and default user folder
-- mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
-- mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
+- mint-gnome-core: Mint Gnome session, various adjustments, default schemas and default user folder
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
+- mint-gnome-extensions : Top Indicator, Desktop Icons NG, Dash to Panel, Dash to Dock and User Themes
+- mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
+- mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
+- mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 
 ## Gnome Customization
 
@@ -89,8 +91,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Reorganize DEB: "mint-gnome-welcome" and "mint-gnome-extensions"
-- Reorganize DEB: pre/post scripts, dependencies, add maintainer
 - Desktop Icons: Download .po source files
 - Desktop Icons: Remove "tiny", "script", "extract"...
 - Desktop Icons: Improve localization

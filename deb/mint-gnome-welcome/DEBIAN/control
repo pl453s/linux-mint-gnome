@@ -1,0 +1,7 @@
+Package: mint-gnome-welcome
+Version: 1.8
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Linux Mint Gnome welcome screen
+Depends: dconf-cli, gnome-shell, libglib2.0-bin, mint-gnome-extensions, mint-gnome-theme, papirus-cursor-theme, papirus-icon-theme, python3, python3-gi
+

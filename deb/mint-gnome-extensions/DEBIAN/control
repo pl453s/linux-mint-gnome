@@ -1,0 +1,8 @@
+Package: mint-gnome-extensions
+Version: 1.8
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Linux Mint Gnome extensions
+ Contains Top Indicator, Desktop Icons NG, Dash to Panel, Dash to Dock and User Themes
+Depends: gnome-shell
+Section: gnome
