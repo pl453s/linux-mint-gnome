@@ -89,14 +89,14 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Downlod DING .po files
-- Remove "tiny" + "script" + "extract" ...
 - *Personal note: optimize VDI*
 - PUBLISH A NEW RELEASE
+- DING: Downlod .po source files
+- DING: Remove "tiny" + "script" + "extract" ...
+- DING: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
-- Desktop Icons NG: Improve localization
 - Develop Gnome Customization
 - ISO full test + Test installing updates
 - PUBLISH A NEW ISO FILE
