@@ -55,7 +55,7 @@ Mint Gnome development has become too complex to support scripted migration from
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evolved enough and is stable enough.
 
-Latest release (1.6): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.6-mint20)
+Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.7-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.7-mint20)
 
 ## Project packages
 
@@ -89,8 +89,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- *Personal note: optimize VDI*
-- PUBLISH A NEW RELEASE
 - DING: Downlod .po source files
 - DING: Remove "tiny" + "script" + "extract" ...
 - DING: Improve localization
