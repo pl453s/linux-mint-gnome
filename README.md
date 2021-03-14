@@ -89,9 +89,9 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- DING: Downlod .po source files
-- DING: Remove "tiny" + "script" + "extract" ...
-- DING: Improve localization
+- Desktop Icons: Download .po source files
+- Desktop Icons: Remove "tiny", "script", "extract"...
+- Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
