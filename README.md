@@ -89,6 +89,8 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
+- Reorganize DEB: "mint-gnome-welcome" and "mint-gnome-extensions"
+- Reorganize DEB: pre/post scripts, dependencies, add maintainer
 - Desktop Icons: Download .po source files
 - Desktop Icons: Remove "tiny", "script", "extract"...
 - Desktop Icons: Improve localization
