@@ -797,7 +797,6 @@ var FileItem = class {
         let open = new Gtk.MenuItem({label: (this._selectedItemsNum > 1 ? _("Open") : _("Open"))});
         open.connect('activate', () => {this._desktopManager.doMultiOpen();});
         this._menu.add(open);
-        this._desktopManager._createScriptsMenu(this._menu);
         switch (this._fileExtra) {
         case Enums.FileType.NONE:
             if (!this._isDirectory) {

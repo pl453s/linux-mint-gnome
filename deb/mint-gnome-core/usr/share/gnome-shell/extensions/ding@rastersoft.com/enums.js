@@ -16,9 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var ICON_SIZE = { 'tiny': 36, 'small': 48, 'standard': 64, 'large': 96 };
-var ICON_WIDTH = { 'tiny': 70, 'small': 90, 'standard': 120, 'large': 130 };
-var ICON_HEIGHT = { 'tiny': 70, 'small': 90, 'standard': 106, 'large': 138 };
+var ICON_SIZE = { 'small': 48, 'standard': 64, 'large': 96 };
+var ICON_WIDTH = { 'small': 90, 'standard': 120, 'large': 130 };
+var ICON_HEIGHT = { 'small': 90, 'standard': 106, 'large': 138 };
 
 var START_CORNER = { 'top-left':     [false, false],
                      'top-right':    [true, false],
@@ -75,7 +75,6 @@ var SCHEMA_GTK = 'org.gtk.Settings.FileChooser';
 var SCHEMA = 'org.gnome.shell.extensions.ding';
 var SCHEMA_MUTTER = 'org.gnome.mutter';
 var EXEC_KEY = 'exec';
-var NAUTILUS_SCRIPTS_DIR = '.local/share/nautilus/scripts';
 
 var S_IXUSR = 0o00100;
 var S_IWOTH = 0o00002;

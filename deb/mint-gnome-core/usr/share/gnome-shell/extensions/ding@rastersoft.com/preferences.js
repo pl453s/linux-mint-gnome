@@ -83,38 +83,43 @@ function get_schema(schema) {
 
 function showPreferences() {
 
-    let window = new Gtk.Window({ resizable: false,
-                                  window_position: Gtk.WindowPosition.CENTER });
-    window.set_title(_("Properties"));
-    window.set_icon_name("org.gnome.Extensions");
+    let application = new Gtk.Application({ application_id: 'org.gnome.Extensions' });
 
-    let header = new Gtk.HeaderBar();
-    header.set_title(_("Properties"));
-    header.set_show_close_button(true);
-    window.set_titlebar(header);
+    application.connect('activate', () => {
+        let window = new Gtk.ApplicationWindow({ application: application, window_position: Gtk.WindowPosition.CENTER });
+        window.set_title(_("Properties"));
+        window.set_icon_name("org.gnome.Extensions");
 
-    let frame = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
-    window.add(frame);
-    frame.set_spacing(10);
-    frame.set_border_width(32);
+        let header = new Gtk.HeaderBar();
+        header.set_title(_("Properties"));
+        header.set_show_close_button(true);
+        window.set_titlebar(header);
 
-    frame.add(buildSelector(desktopSettings, 'icon-size', _("Size for the desktop icons"), {'tiny': _("Tiny"), 'small': _("Small"), 'standard': _("Standard"), 'large': _("Large") }));
-    frame.add(buildSwitcher(desktopSettings, 'show-home', _("Show the personal folder in the desktop")));
-    frame.add(buildSwitcher(desktopSettings, 'show-trash', _("Show the trash icon in the desktop")));
-    frame.add(buildSwitcher(desktopSettings, 'show-volumes', _("Show external drives in the desktop")));
-    frame.add(buildSwitcher(desktopSettings, 'show-network-volumes', _("Show network drives in the desktop")));
-    frame.add(buildSelector(desktopSettings,
-                            'start-corner',
-                            _("New icons alignment"),
-                            {'top-left': _("Top-left corner"),
-                             'top-right': _("Top-right corner"),
-                             'bottom-left': _("Bottom-left corner"),
-                             'bottom-right': _("Bottom-right corner")
-                            }));
-    frame.add(buildSwitcher(desktopSettings, 'add-volumes-opposite', _("Add new drives to the opposite side of the screen")));
-    frame.add(buildSwitcher(desktopSettings, 'show-drop-place', _("Highlight the drop place during Drag'n'Drop")));
+        let frame = new Gtk.Box({ orientation: Gtk.Orientation.VERTICAL });
+        window.add(frame);
+        frame.set_spacing(10);
+        frame.set_border_width(32);
 
-    window.show_all();
+        frame.add(buildSelector(desktopSettings, 'icon-size', _("Size for the desktop icons"), {'small': _("Small"), 'standard': _("Standard"), 'large': _("Large") }));
+        frame.add(buildSwitcher(desktopSettings, 'show-home', _("Show the personal folder in the desktop")));
+        frame.add(buildSwitcher(desktopSettings, 'show-trash', _("Show the trash icon in the desktop")));
+        frame.add(buildSwitcher(desktopSettings, 'show-volumes', _("Show external drives in the desktop")));
+        frame.add(buildSwitcher(desktopSettings, 'show-network-volumes', _("Show network drives in the desktop")));
+        frame.add(buildSelector(desktopSettings,
+    	                    'start-corner',
+    	                    _("New icons alignment"),
+    	                    {'top-left': _("Top-left corner"),
+    	                     'top-right': _("Top-right corner"),
+    	                     'bottom-left': _("Bottom-left corner"),
+    	                     'bottom-right': _("Bottom-right corner")
+    	                    }));
+        frame.add(buildSwitcher(desktopSettings, 'add-volumes-opposite', _("Add new drives to the opposite side of the screen")));
+        frame.add(buildSwitcher(desktopSettings, 'show-drop-place', _("Highlight the drop place during Drag'n'Drop")));
+
+        window.show_all();
+    });
+
+    application.run([]);
 }
 
 function buildSwitcher(settings, key, labelText) {

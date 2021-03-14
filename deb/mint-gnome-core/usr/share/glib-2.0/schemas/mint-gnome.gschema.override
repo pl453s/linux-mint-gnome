@@ -25,7 +25,7 @@ primary-color="#000000"
 secondary-color="#000000"
 
 [org.gnome.desktop.wm.preferences]
-button-layout=':close'
+button-layout='appmenu:minimize,maximize,close'
 titlebar-font="Ubuntu Medium 10"
 titlebar-uses-system-font=false
 

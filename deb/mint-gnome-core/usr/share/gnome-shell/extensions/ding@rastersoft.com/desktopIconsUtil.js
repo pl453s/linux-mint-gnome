@@ -30,11 +30,6 @@ function getDesktopDir() {
     return Gio.File.new_for_commandline_arg(desktopPath);
 }
 
-function getScriptsDir() {
-    let scriptsDir =  GLib.build_filenamev([GLib.get_home_dir(), Enums.NAUTILUS_SCRIPTS_DIR]);
-    return Gio.File.new_for_commandline_arg(scriptsDir);
-}
-
 function clamp(value, min, max) {
     return Math.max(Math.min(value, max), min);
 };

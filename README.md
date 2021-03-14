@@ -89,13 +89,12 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Desktop Icons NG: Fix separator issues
-- Desktop Icons NG: Gjs Gnome integration
 - *Personal note: optimize VDI*
 - PUBLISH A NEW RELEASE
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open as administrator
+- Desktop Icons NG: Remove "script" + "tiny" localization references
 - Desktop Icons NG: Improve localization
 - Develop Gnome Customization
 - ISO full test + Test installing updates
