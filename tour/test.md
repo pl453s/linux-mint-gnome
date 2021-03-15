@@ -48,9 +48,9 @@
       </tr>
       <tr>
       </tr>
-      <tr>-->
-        <td> <img src="../img/3_dms.png"> </td>
-      <!--</tr>
+      <tr>
+        <td> --><img src="../img/3_dms.png"><!-- </td>
+      </tr>
     </tbody>
   </table>
 </span>-->
