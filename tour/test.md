@@ -29,11 +29,11 @@
 </br>
 </br>
 
-<span id="test">
+<!--<span id="test">
   <table>
     <tbody>
       <tr rowspan="2">
-        <td>
+        <td>-->
           <a href=""><img src="../btn/button_back_on.png"></a>
           <a href=""><img src="../btn/button_next_on.png"></a>
           &emsp;
@@ -44,16 +44,16 @@
           <a href=""><img src="../btn/button_dash_off.png"></a>
           &emsp;
           <a href=""><img src="../btn/button_icons_on.png"></a>
-        </td>
+        <!--</td>
       </tr>
       <tr>
       </tr>
-      <tr>
+      <tr>-->
         <td> <img src="../img/3_dms.png"> </td>
-      </tr>
+      <!--</tr>
     </tbody>
   </table>
-</span>
+</span>-->
 
 </br>
 </br>
