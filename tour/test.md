@@ -32,7 +32,7 @@
 <span id="test">
   <table>
     <tbody>
-      <tr>
+      <tr rowspan="2">
         <td>
           <a href=""><img src="../btn/button_back_on.png"></a>
           <a href=""><img src="../btn/button_next_on.png"></a>
