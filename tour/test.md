@@ -41,7 +41,7 @@
 &emsp;&emsp;
 <a href=""><img src="../btn/button_exit.png"></a>
 
-<td> <img src="../img/3_dms.png"> </td>
+<img src="../img/3_dms.png">
 
 <!--
 <span id="test">
