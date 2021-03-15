@@ -1,7 +1,9 @@
 <table>
   <tbody>
     <tr>
-      <td colspan="12"> <img src="../img/3_dms.png"> </td>
+      <td> </td>
+      <td colspan="10"> <img src="../img/3_dms.png"> </td>
+      <td> </td>
     </tr>
     <tr>
       <td> <a href=""><img src="../btn/button_back_on.png"></a> </td>
