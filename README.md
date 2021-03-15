@@ -29,7 +29,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   <tbody>
     <tr>
       <td colspan="2" rowspan="2"> <i>Developed windows (Python GTK)</br>
-      "Welcome screen" and "Gnome Customization"</i> </td>
+      "Welcome" and "Customization"</i> </td>
       <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
     </tr>
     <tr>
