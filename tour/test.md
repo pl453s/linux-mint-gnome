@@ -32,8 +32,8 @@
 <span id="test">
   <table>
     <tbody>
-      <tr rowspan="2">
-        <td>
+      <tr>
+        <td rowspan="2">
           <a href=""><img src="../btn/button_back_on.png"></a>
           <a href=""><img src="../btn/button_next_on.png"></a>
           &emsp;
