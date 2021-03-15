@@ -8,14 +8,31 @@
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 <span id="test"> </span>
 
 <table>
   <tbody>
-    <tr>
-      <td> <img src="../img/3_dms.png"> </td>
-    </tr>
     <tr>
       <td>
         <a href=""><img src="../btn/button_back_on.png"></a>
@@ -32,9 +49,32 @@
         <a href=""><img src="../btn/button_begin.png"></a>
       </td>
     </tr>
+    <tr>
+      <td> <img src="../img/3_dms.png"> </td>
+    </tr>
   </tbody>
 </table>
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
