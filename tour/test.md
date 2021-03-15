@@ -1,103 +1,815 @@
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a href=""><img src="../btn/button_back.png"></a>
-<a href=""><img src="../btn/button_next.png"></a>
-&emsp;&emsp;
-<a href=""><img src="../btn/button_panel_off.png"></a>
-<a href=""><img src="../btn/button_dock_on.png"></a>
-<a href=""><img src="../btn/button_dash_off.png"></a>
-&emsp;
-<a href=""><img src="../btn/button_icons_on.png"></a>
-<a href=""><img src="../btn/button_dark_on.png"></a>
-&emsp;&emsp;
-<a href=""><img src="../btn/button_exit.png"></a>
-
-<img src="../img/3_dms.png">
-
-<!--
-<span id="test">
-  <table>
-    <tbody>
-      <tr rowspan="2">
-        <td>
-          <a href=""><img src="../btn/button_back_on.png"></a>
-          <a href=""><img src="../btn/button_next_on.png"></a>
-          &emsp;
-          <a href=""><img src="../btn/button_dark_on.png"></a>
-          &emsp;
-          <a href=""><img src="../btn/button_panel_off.png"></a>
-          <a href=""><img src="../btn/button_dock_on.png"></a>
-          <a href=""><img src="../btn/button_dash_off.png"></a>
-          &emsp;
-          <a href=""><img src="../btn/button_icons_on.png"></a>
-        </td>
-      </tr>
-      <tr>
-      </tr>
-      <tr>
-        <td> <img src="../img/3_dms.png"> </td>
-      </tr>
-    </tbody>
-  </table>
+<span id="1lws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
 </span>
--->
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1lwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1lms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1lmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1lgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1lgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0lgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="1dgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#0dgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/1_boot.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2lgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1lgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_light.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="2dgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1dgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/2_dark.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lws">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lwh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lms">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lmh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lgs">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3lgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2lgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_lgh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dws">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dwh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dms">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dmh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dgs">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="3dgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2dgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/3_dgh">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lw">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lw">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lm">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lm">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lg">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4lgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3lgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5lgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_lg">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dws">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dws"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dws"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lws"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dw">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dwh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dwh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dwh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lwh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dw">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dms">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dms"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dms"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lms"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dm">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dmh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dmh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dmh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lmh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dm">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dgs">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgs"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dgs"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dws"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dms"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgs"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dg">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="4dgh">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#3dgh"><img src="../btn/button_back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#5dgh"><img src="../btn/button_next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dwh"><img src="../btn/button_panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dmh"><img src="../btn/button_dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgh"><img src="../btn/button_dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4dgs"><img src="../btn/button_icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#4lgh"><img src="../btn/button_dark_on.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
+  <img src="../img/4_dg">
+</span>
