@@ -29,8 +29,6 @@
 </br>
 </br>
 
-<a href=""><img src="../btn/button_exit.png"></a>
-&emsp;
 <a href=""><img src="../btn/button_back_on.png"></a>
 <a href=""><img src="../btn/button_next_on.png"></a>
 &emsp;
@@ -41,6 +39,8 @@
 <a href=""><img src="../btn/button_dash_off.png"></a>
 &emsp;
 <a href=""><img src="../btn/button_icons_on.png"></a>
+&emsp;&emsp;
+<a href=""><img src="../btn/button_exit.png"></a>
 
 <td> <img src="../img/3_dms.png"> </td>
 
