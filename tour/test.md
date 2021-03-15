@@ -9,6 +9,9 @@
 <table>
   <tbody>
     <tr>
+      <td> <img src="../img/3dms.png"> </td>
+    </tr>
+    <tr>
       <td> <a href=""><img src="../btn/button_back_on.png"></a> </td>
       <td> <a href=""><img src="../btn/button_next_on.png"></a> </td>
       <td> <a href=""><img src="../btn/button_dark_on.png"></a> </td>
