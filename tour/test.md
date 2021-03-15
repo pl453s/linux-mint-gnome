@@ -1,8 +1,10 @@
-# Title
+### Title
 
-<img src="../img/3_dms.png">
 <table>
   <tbody>
+    <tr>
+      <td> <img src="../img/3_dms.png"> </td>
+    </tr>
     <tr>
       <td>
         <a href=""><img src="../btn/button_back_on.png"></a>
