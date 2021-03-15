@@ -29,8 +29,8 @@
 </br>
 </br>
 
-<a href=""><img src="../btn/button_back_on.png"></a>
-<a href=""><img src="../btn/button_next_on.png"></a>
+<a href=""><img src="../btn/button_back.png"></a>
+<a href=""><img src="../btn/button_next.png"></a>
 &emsp;&emsp;
 <a href=""><img src="../btn/button_panel_off.png"></a>
 <a href=""><img src="../btn/button_dock_on.png"></a>
