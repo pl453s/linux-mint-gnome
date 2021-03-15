@@ -44,8 +44,6 @@
           <a href=""><img src="../btn/button_dash_off.png"></a>
           &emsp;
           <a href=""><img src="../btn/button_icons_on.png"></a>
-          &emsp;
-          <a href=""><img src="../btn/button_begin.png"></a>
         </td>
       </tr>
       <tr>
