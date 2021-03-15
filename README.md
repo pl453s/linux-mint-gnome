@@ -28,8 +28,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="2" rowspan="2"> <i>Developed windows (Python GTK)</br>
-      <small>"Welcome" and "Customization"</small></i> </td>
+      <td colspan="2" rowspan="2"> <i><b>Developed windows (Python GTK)</b></i> </td>
       <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
     </tr>
     <tr>
