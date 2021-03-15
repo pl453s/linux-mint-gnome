@@ -29,6 +29,8 @@
 </br>
 </br>
 
+<a href=""><img src="../btn/button_exit.png"></a>
+&emsp;
 <a href=""><img src="../btn/button_back_on.png"></a>
 <a href=""><img src="../btn/button_next_on.png"></a>
 &emsp;
@@ -42,6 +44,7 @@
 
 <td> <img src="../img/3_dms.png"> </td>
 
+<!--
 <span id="test">
   <table>
     <tbody>
@@ -67,6 +70,7 @@
     </tbody>
   </table>
 </span>
+-->
 
 </br>
 </br>
