@@ -1,1 +1,1 @@
-<img align="middle" src="../img/dock.png" alt="myimage" />
+<img align="middle" src="../btn/dock.png" alt="myimage" />
