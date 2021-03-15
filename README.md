@@ -49,7 +49,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 
 <br>
 
-**You can also migrate from an official Mint edition installation or upgrade your Mint Gnome installation:**
+**You can also migrate from an official Mint edition installation or upgrade your Mint Gnome installation:**  
+**WARNING: Some symlinks are missing to avoid breaking GitHub Pages ; refer to the 'symlinks' file**
 
 Mint Gnome development has become too complex to support scripted migration from official Mint editions.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
@@ -91,8 +92,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Desktop Icons: Download .po source files
-- Desktop Icons: Remove "tiny", "script", "extract"...
 - Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug

@@ -800,7 +800,7 @@ var FileItem = class {
         switch (this._fileExtra) {
         case Enums.FileType.NONE:
             if (!this._isDirectory) {
-                this._actionOpenWith = new Gtk.MenuItem({label: this._selectedItemsNum > 1 ? _("Open With Other Application...") : _("Open With Other Application")});
+                this._actionOpenWith = new Gtk.MenuItem({label: this._selectedItemsNum > 1 ? _("Open With Other Application") : _("Open With Other Application")});
                 this._actionOpenWith.connect('activate', () => this._desktopManager.doOpenWith());
                 this._menu.add(this._actionOpenWith);
                 if (DBusUtils.discreteGpuAvailable && this.trustedDesktopFile) {

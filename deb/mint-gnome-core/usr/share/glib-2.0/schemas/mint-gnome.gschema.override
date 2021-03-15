@@ -16,6 +16,7 @@ picture-options="zoom"
 picture-uri='file:///usr/share/backgrounds/linuxmint/sele_ring_center.jpg'
 primary-color="#000000"
 secondary-color="#000000"
+show-desktop-icons=true
 
 [org.gnome.desktop.screensaver]
 color-shading-type="solid"
