@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def inv(letter):
 	if letter == "l":
 		return "d"
@@ -9,12 +8,11 @@ def inv(letter):
 		return "s"
 	if letter == "s":
 		return "h"
-
 for slide in [1, 2, 3, 4]:
 	for style in ["w", "m", "g"]:
 		for icons in ["h", "s"]:
 			for theme in ["l", "d"]:
-				url = "https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md"
+				url = "https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md"
 				if slide == 1:
 					screen = "../img/1.png"
 				elif slide == 2:
