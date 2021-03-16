@@ -3,7 +3,7 @@
 <br><br>
 <b>Text is boring isn't it?</b>  
 <b>This is fine, you can also just explore through this "interactive tour".</b>  
-<b>It's a bit more "concrete" and visual!</b>**
+<b>It's a bit more "concrete" and visual!</b>
 <br><br>
 <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#1msd"><img src="../btn/begin.png"></a>
 
