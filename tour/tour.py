@@ -8,11 +8,25 @@ def inv(letter):
 		return "s"
 	if letter == "s":
 		return "h"
+url_exit = "https://github.com/pl453s/linux-mint-gnome"
+url = "https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md"
+print("# Interactive tour\n")
+print("<br><br>")
+print("<b>Text is boring isn't it?</b>  ")
+print("<b>This is fine, you can also just explore through this \"interactive tour\".</b>  ")
+print("<b>It's a bit more \"concrete\" and visual!</b>**")
+print("<br><br>")
+print("<a href=\"{}\"><img src=\"{}\"></a>".format(url + "#1msd", "../btn/begin.png"))
+print()
+br = ""
+for i in range(0, 16):
+	br += "<br>"
+print(br)
+print()
 for slide in [1, 2, 3, 4]:
 	for style in ["w", "m", "g"]:
 		for icons in ["h", "s"]:
 			for theme in ["l", "d"]:
-				url = "https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md"
 				if slide == 1:
 					screen = "../img/1.png"
 				elif slide == 2:
@@ -46,7 +60,6 @@ for slide in [1, 2, 3, 4]:
 				url_dash = url + "#" + str(slide) + "g" + icons + theme
 				url_icon = url + "#" + str(slide) + style + inv(icons) + theme
 				url_dark = url + "#" + str(slide) + style + icons + inv(theme)
-				url_exit = "https://github.com/pl453s/linux-mint-gnome"
 				url_self = url + "#" + anchor
 				if slide == 1:
 					ext_back = "_inactive"
