@@ -28,12 +28,12 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   <tbody>
     <tr>
       <td colspan="2" rowspan="2"> <i>Python GTK windows ("Welcome" and "Customization")</i> </td>
-      <td rowspan="3"> <a href="tour/customization.png"><img src="tour/customization.png"></a> </td>
+      <td rowspan="3"> <a href="img/customization.png"><img src="img/customization.png"></a> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td colspan="2"> <a href="tour/welcome.png"><img src="tour/welcome.png"></a> </td>
+      <td colspan="2"> <a href="img/welcome.png"><img src="img/welcome.png"></a> </td>
     </tr>
   </tbody>
 </table>
