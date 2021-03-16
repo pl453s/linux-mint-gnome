@@ -93,6 +93,7 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
+- Panels colors + Update screenshots
 - Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
