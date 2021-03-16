@@ -3,7 +3,10 @@
 <b>This is fine, you can also just explore through this "interactive tour".</b>  
 <b>It's a bit more "concrete" and visual!</b>**
 <br><br>
-<a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#msd"><img src="../btn/button_begin.png"></a>
+<a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#msd"><img src="../btn/begin.png"></a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <span id="1whl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#1whl"><img src="../btn/back_inactive.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md#2whl"><img src="../btn/next.png"></a>
