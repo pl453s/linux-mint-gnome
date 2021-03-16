@@ -12,7 +12,8 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+      <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash")</br>
+      Or else, you can also check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
     </tr>
@@ -27,7 +28,7 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="2" rowspan="2"> <i>Python GTK windows ("Welcome" and "Customization")</i> </td>
+      <td colspan="2" rowspan="2"> <b>Developed windows (Python GTK)</b> </td>
       <td rowspan="3"> <a href="img/customization.png"><img src="img/customization.png"></a> </td>
     </tr>
     <tr>
@@ -92,7 +93,6 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
-- Panel colors + Update screenshots
 - Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
