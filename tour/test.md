@@ -1,5 +1,3 @@
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 <span id="1whl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#1whl"><img src="../btn/button_back_inactive.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/test.md#2whl"><img src="../btn/button_next.png"></a>
@@ -813,4 +811,6 @@
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="../btn/button_exit.png"></a>
   <img src="../img/4_g.png">
 </span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
