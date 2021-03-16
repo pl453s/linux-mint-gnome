@@ -12,15 +12,14 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash")</br>
-      Or else, you can also check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+      <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash"), or check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td> <a href="tour/panel.md"><img src="btn/panel.png"></a> </td>
-      <td> <a href="tour/dock.md"><img src="btn/dock.png"></a> </td>
-      <td> <a href="tour/dash.md"><img src="btn/dash.png"></a> </td>
+      <td> <a href="tour/panel.md"><img src="tour/panel.png"></a> </td>
+      <td> <a href="tour/dock.md"><img src="tour/dock.png"></a> </td>
+      <td> <a href="tour/dash.md"><img src="tour/dash.png"></a> </td>
     </tr>
   </tbody>
 </table>
@@ -28,13 +27,13 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
 <table>
   <tbody>
     <tr>
-      <td colspan="2" rowspan="2"> <b>Developed windows (Python GTK)</b> </td>
-      <td rowspan="3"> <a href="btn/customization.png"><img src="btn/customization.png"></a> </td>
+      <td colspan="2" rowspan="2"> <i>Python GTK windows ("Welcome" and "Customization")</i> </td>
+      <td rowspan="3"> <a href="tour/customization.png"><img src="tour/customization.png"></a> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td colspan="2"> <a href="btn/welcome.png"><img src="btn/welcome.png"></a> </td>
+      <td colspan="2"> <a href="tour/welcome.png"><img src="tour/welcome.png"></a> </td>
     </tr>
   </tbody>
 </table>
@@ -93,6 +92,7 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 
 ## Remaining work
 
+- Panel colors + Update screenshots
 - Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
