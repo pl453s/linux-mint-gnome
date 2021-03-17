@@ -223,12 +223,12 @@
       <description>Specifies if the user can modify the taskbar</description>
     </key>
     <key type="b" name="trans-use-custom-bg">
-      <default>false</default>
+      <default>true</default>
       <summary>Override theme background color</summary>
       <description>Replace current theme background color for the panel</description>
     </key>
     <key type="s" name="trans-bg-color">
-      <default>"#000"</default>
+      <default>"#000000"</default>
       <summary>Custom background color</summary>
       <description>Custom background color for the panel</description>
     </key>

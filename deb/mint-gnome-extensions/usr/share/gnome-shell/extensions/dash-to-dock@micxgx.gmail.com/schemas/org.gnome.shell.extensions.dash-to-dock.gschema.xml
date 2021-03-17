@@ -66,17 +66,17 @@
       <description>Sets the delay after the mouse left the dock before hiding it.</description>
     </key>
     <key type="b" name="custom-background-color">
-      <default>false</default>
+      <default>true</default>
       <summary>Set a custom dash background background color</summary>
       <description>Sets the color for the dash background.</description>
     </key>
     <key type="s" name="background-color">
-      <default>"#ffffff"</default>
+      <default>"#000000"</default>
       <summary>Dash background color.</summary>
       <description>Customize the background color of the dash.</description>
     </key>
     <key name="transparency-mode" enum="org.gnome.shell.extensions.dash-to-dock.transparency-mode">
-      <default>'FIXED'</default>
+      <default>'DYNAMIC'</default>
       <summary>Transparency mode for the dock</summary>
       <description>FIXED: constant transparency. DYNAMIC: dock takes the opaque style only when windows are close to it.</description>
     </key>
@@ -91,17 +91,17 @@
       <description></description>
     </key>
     <key type="b" name="customize-alphas">
-      <default>false</default>
+      <default>true</default>
       <summary>Manually set the min and max opacity</summary>
       <description>For the dynamic mode, the min/max opacity values will be given by 'min-alpha' and 'max-alpha'.</description>
     </key>
     <key type="d" name="min-alpha">
-      <default>0.2</default>
+      <default>0</default>
       <summary>Opacity of the dash background when free-floating</summary>
       <description>Sets the opacity of the dash background when no windows are close.</description>
     </key>
     <key type="d" name="max-alpha">
-      <default>0.8</default>
+      <default>1</default>
       <summary>Opacity of the dash background when windows are close.</summary>
       <description>Sets the opacity of the dash background when windows are close.</description>
     </key>
@@ -111,7 +111,7 @@
       <description>Sets the opacity of the dash background  when in autohide mode.</description>
     </key>
     <key type="b" name="intellihide">
-      <default>true</default>
+      <default>false</default>
       <summary>Dock dodges windows</summary>
       <description>Enable or disable intellihide mode</description>
     </key>
@@ -259,7 +259,7 @@
       <description>Set on which monitor to put the dock, use -1 for the primary one</description>
     </key>
     <key type="b" name="multi-monitor">
-      <default>false</default>
+      <default>true</default>
       <summary>Enable multi-monitor docks</summary>
       <description>Show a dock on every monitor</description>
     </key>
