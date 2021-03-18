@@ -138,9 +138,9 @@ fi
 
 #Linux Mint Gnome --> Boot-repair
 if [ -f "/root/usr/share/applications/boot-repair.desktop" ]; then
-  chroot /root install -D -o $USERNAME -g $USERNAME /usr/share/applications/boot-repair.desktop /home/$USERNAME/Desktop/boot-repair.desktop
+  chroot /root install -D -o $USERNAME -g $USERNAME /usr/share/applications/boot-repair.desktop /home/$USERNAME/Desktop/x-boot-repair.desktop
   if [ -x "/root/usr/bin/dbus-run-session" ] && [ -x "/root/usr/bin/gio" ]; then
-      chroot /root sudo -i -u $USERNAME dbus-run-session -- gio set /home/$USERNAME/Desktop/boot-repair.desktop metadata::trusted true
+      chroot /root sudo -i -u $USERNAME dbus-run-session -- gio set /home/$USERNAME/Desktop/x-boot-repair.desktop metadata::trusted true
   fi
 fi
 
@@ -148,8 +148,8 @@ fi
 if [ -f "/root/home/$USERNAME/Desktop/ubiquity.desktop" ]; then
   sed -i 's/Icon=.*/Icon=mx-boot-options/' "/root/home/$USERNAME/Desktop/ubiquity.desktop"
 fi
-if [ -f "/root/home/$USERNAME/Desktop/boot-repair.desktop" ]; then
-  sed -i 's/Icon=.*/Icon=mx-boot-repair/' "/root/home/$USERNAME/Desktop/boot-repair.desktop"
+if [ -f "/root/home/$USERNAME/Desktop/x-boot-repair.desktop" ]; then
+  sed -i 's/Icon=.*/Icon=mx-boot-repair/' "/root/home/$USERNAME/Desktop/x-boot-repair.desktop"
 fi
 
 log_end_msg
