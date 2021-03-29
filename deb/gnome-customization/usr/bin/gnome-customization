@@ -23,9 +23,9 @@ class DraftWindow(Gtk.Window):
 		self.gsettings_full    = []
 		self.gsettings_base    = []
 
-		self.themes_gtk   = []
-		self.themes_icons = []
-		self.themes_curs  = []
+		self.themes_gtk   = ["Adwaita"]
+		self.themes_icons = ["Adwaita"]
+		self.themes_curs  = ["Adwaita"]
 		for path in ["/usr/share/themes/", "/usr/local/share/themes/", getenv("HOME") + "/.themes/", getenv("HOME") + "/.local/share/themes/"]:
 			if exists(path):
 				for theme in listdir(path):
