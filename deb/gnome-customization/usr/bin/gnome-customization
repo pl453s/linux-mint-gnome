@@ -48,10 +48,10 @@ class DraftWindow(Gtk.Window):
 		self.themes_curs.sort()
 
 		self.org_gnome_shell                       = Gio.Settings.new("org.gnome.shell")
-		self.org_gnome_shell_extensions_user_theme = Gio.Settings.new("org.gnome.shell.extensions.user-theme")
 		self.org_gnome_desktop_interface           = Gio.Settings.new("org.gnome.desktop.interface")
 		self.enabled_extensions = self.org_gnome_shell.get_strv("enabled-extensions")
-		self.theme_gnome        = self.org_gnome_shell_extensions_user_theme.get_string("name")
+		#self.theme_gnome        = self.org_gnome_shell_extensions_user_theme.get_string("name")
+		self.theme_gnome        = "Materia-Dark"
 		self.theme_gtk          = self.org_gnome_desktop_interface.get_string("gtk-theme")
 		self.theme_icons        = self.org_gnome_desktop_interface.get_string("icon-theme")
 		self.theme_curs         = self.org_gnome_desktop_interface.get_string("cursor-theme")
@@ -278,7 +278,8 @@ class DraftWindow(Gtk.Window):
 			self.gsettings(self.gsettings_base)
 
 	def action_gnome(self, widget):
-		self.org_gnome_shell_extensions_user_theme.set_string("name", widget.get_active_text())
+		#self.org_gnome_shell_extensions_user_theme.set_string("name", widget.get_active_text())
+		pass
 
 	def action_gtk(self, widget):
 		self.org_gnome_desktop_interface.set_string("gtk-theme", widget.get_active_text())

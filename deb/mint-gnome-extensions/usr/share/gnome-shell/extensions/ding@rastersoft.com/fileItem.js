@@ -147,11 +147,13 @@ var FileItem = class {
 
     _setFileName(text) {
         if (this._fileExtra == Enums.FileType.USER_DIRECTORY_HOME) {
-            // TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
             text = _("Home");
         }
         if (this._fileExtra == Enums.FileType.USER_DIRECTORY_TRASH) {
             text = _("Trash");
+        }
+        if (this._fileExtra == Enums.FileType.EXTERNAL_DRIVE) {
+            text = this._custom.get_name();
         }
         this._currentFileName = text;
         this._eventBox.set_tooltip_text(text);

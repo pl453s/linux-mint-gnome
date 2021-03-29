@@ -96,6 +96,7 @@ gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursor
 - Desktop Icons: Improve localization
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
+- Nautilus extension: Open terminal (only background)
 - Nautilus extension: Open as administrator
 - Develop Gnome Customization
 - ISO full test + Test installing updates

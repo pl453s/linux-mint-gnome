@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Gnome
+Exec=env GNOME_SHELL_SESSION_MODE=gnome-default /usr/bin/gnome-session --systemd --session=gnome-default
+TryExec=/usr/bin/gnome-shell
+Type=Application
+DesktopNames=GNOME
+X-GDM-SessionRegisters=true
+X-Ubuntu-Gettext-Domain=gnome-session-3.0

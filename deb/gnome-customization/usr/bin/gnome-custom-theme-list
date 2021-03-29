@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo true
+
+for gresource in /usr/share/gnome-shell/themes/*.gresource
+do
+	if [ -f "$gresource" ]
+	then
+		echo $(basename -s .gresource "$gresource")
+	fi
+done

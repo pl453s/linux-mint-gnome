@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Linux Mint Gnome (Xorg)
-Comment=This session logs you into Linux Mint Gnome
-Exec=env GNOME_SHELL_SESSION_MODE=mint /usr/bin/gnome-session --systemd --session=mint
-TryExec=/usr/bin/gnome-shell
-Type=Application
-DesktopNames=mint:GNOME
-X-GDM-SessionRegisters=true
-X-Ubuntu-Gettext-Domain=gnome-session-3.0

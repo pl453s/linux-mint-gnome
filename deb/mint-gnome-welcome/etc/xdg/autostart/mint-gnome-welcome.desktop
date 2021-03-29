@@ -4,4 +4,4 @@ Icon=lmg-os-logo-icon
 Exec=mint-gnome-welcome
 Terminal=false
 Type=Application
-OnlyShowIn=mint;
+OnlyShowIn=GNOME;

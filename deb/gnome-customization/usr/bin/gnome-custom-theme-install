@@ -1,0 +1,72 @@
+#!/bin/bash
+sudo true
+
+if [ "$#" == "1" ] || [ "$#" == "2" ]
+then
+
+	if ! [ -d "$1/gnome-shell" ]
+	then
+		if ! [ -d "$1" ]
+		then
+			echo "This theme doesn't exists!"
+			exit
+		else
+			echo "This theme doesn't support Gnome Shell!"
+			exit
+		fi
+	fi
+	if [ "$#" == "1" ]
+	then
+		if ! [ -f "$1/gnome-shell/$2/gnome-shell-theme.gresource" ]
+		then
+			echo "This theme doesn't have a gresource file!"
+			echo "Compilation mandatory, you must specify a <css file>"
+			exit
+		fi
+	else
+		if ! [ -f "$1/gnome-shell/$2" ]
+		then
+			echo "This theme doesn't have a '$2' file!"
+			exit
+		fi
+	fi
+
+	name="$(basename $1)"
+	if [ "$#" == "2" ]
+	then
+		sudo rm -r "/tmp/gnome-custom"
+		sudo cp -r "$1" "/tmp/gnome-custom"
+		bakpwd="$(pwd)"
+		cd "/tmp/gnome-custom/gnome-shell"
+		sudo cp "$2" "gdm3.css"
+		echo | sudo tee -a "gnome-shell-theme.gresource.xml"
+		echo "<gresources>" | sudo tee -a "gnome-shell-theme.gresource.xml"
+		echo "  <gresource prefix=\"/org/gnome/shell/theme\">" | sudo tee -a "gnome-shell-theme.gresource.xml"
+		echo "    <file>gdm3.css</file>" | sudo tee -a "gnome-shell-theme.gresource.xml"
+		echo "  </gresource>" | sudo tee -a "gnome-shell-theme.gresource.xml"
+		echo "</gresources>" | sudo tee -a "gnome-shell-theme.gresource.xml"
+		sudo rm "gnome-shell-theme.gresource"
+		sudo glib-compile-resources "gnome-shell-theme.gresource.xml"
+		cd "$bakpwd"
+		sudo cp "/tmp/gnome-custom/gnome-shell/gnome-shell-theme.gresource" "/usr/share/gnome-shell/themes/$name.gresource"
+		sudo rm -r "/tmp/gnome-custom"
+	else
+		sudo cp "$1/gnome-shell/gnome-shell-theme.gresource" "/usr/share/gnome-shell/themes/$name.gresource"
+	fi
+
+	sudo cp "/usr/share/gnome-shell/modes/gnome-default.json" "/usr/share/gnome-shell/modes/gnome-custom-${name,,}.json"
+	sudo sed -i "s/gnome-shell-theme.gresource/themes\/$name.gresource/g" "/usr/share/gnome-shell/modes/gnome-custom-${name,,}.json"
+	sudo cp "/usr/share/gnome-session/sessions/gnome-default.session" "/usr/share/gnome-session/sessions/gnome-custom-${name,,}.session"
+	sudo sed -i "s/Name=.*/Name=Gnome ($name)/g" "/usr/share/gnome-session/sessions/gnome-custom-${name,,}.session"
+	sudo cp "/usr/share/xsessions/gnome-default.desktop" "/usr/share/xsessions/gnome-custom-${name,,}.desktop"
+	sudo sed -i "s/Name=.*/Name=Gnome ($name)/g" "/usr/share/xsessions/gnome-custom-${name,,}.desktop"
+	sudo sed -i "s/gnome-default/gnome-custom-${name,,}/g" "/usr/share/xsessions/gnome-custom-${name,,}.desktop"
+
+else
+	echo "Usage: gnome-custom-theme <theme path> [css file]"
+	echo " (Specify [css file] to compile with [css file] as GDM3 stylesheet)"
+	echo " (Usualy, [css file] is 'gdm3.css' or 'gnome-shell.css')"
+	echo " (Without [css file], the theme is installed with its gresource file as it)"
+	echo
+	echo "Syntaxt error!"
+fi

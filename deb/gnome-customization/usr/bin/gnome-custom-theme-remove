@@ -1,0 +1,21 @@
+#!/bin/bash
+sudo true
+
+if [ "$#" == "1" ]
+then
+	if [ -f "/usr/share/gnome-shell/themes/$1.gresource" ]
+	then
+		sudo rm "/usr/share/gnome-shell/themes/$1.gresource"
+		sudo rm "/usr/share/gnome-shell/modes/gnome-custom-${1,,}.json"
+		sudo rm "/usr/share/gnome-session/sessions/gnome-custom-${1,,}.session"
+		sudo rm "/usr/share/xsessions/gnome-custom-${1,,}.desktop"
+	else
+		echo "This theme doesn't exists!"
+	fi
+else
+	echo "Usage: gnome-custom-theme-remove <theme name>"
+	echo " (Use 'gnome-custom-theme-list' to list available themes)"
+	echo " (Use 'gnome-custom-theme-install' to install a theme)"
+	echo
+	echo "Syntaxt error!"
+fi

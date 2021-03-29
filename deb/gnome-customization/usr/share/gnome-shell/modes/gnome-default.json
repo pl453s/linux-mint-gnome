@@ -1,7 +1,7 @@
 {
     "parentMode": "user",
     "stylesheetName": "gnome-shell.css",
-    "themeResourceName": "gdm3/gnome-shell-theme.gresource",
+    "themeResourceName": "gnome-shell-theme.gresource",
     "enabledExtensions": [],
     "panel": { "left": ["activities"],
                "center": ["dateMenu"],

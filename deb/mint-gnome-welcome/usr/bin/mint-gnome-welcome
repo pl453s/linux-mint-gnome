@@ -28,8 +28,6 @@ gsettings_dash    = ["org.gnome.desktop.wm.preferences button-layout appmenu:clo
 gsettings_show    = []
 gsettings_hide    = []
 
-theme_gnome_light = "Materia-Light"
-theme_gnome_dark  = "Materia-Dark"
 theme_gtk_light   = "Materia-Light"
 theme_gtk_dark    = "Materia-Dark"
 theme_icons_light = "Papirus"
@@ -188,12 +186,10 @@ class WelcomeWindow(Gtk.Window):
 
 	def action_theme(self, widget, state):
 		if state:
-			system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_dark)
 			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_dark)
 			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark)
 			system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_dark)
 		else:
-			system("gsettings set org.gnome.shell.extensions.user-theme name " + theme_gnome_light)
 			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_light)
 			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light)
 			system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_light)
@@ -222,7 +218,7 @@ if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
 		style = "dock"
 	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_show[0] + "'"):
 		icons = True
-	if system("gsettings get org.gnome.shell.extensions.user-theme name | grep -qv '" + theme_gnome_dark + "'"):
+	if system("gsettings get org.gnome.desktop.interface gtk-theme | grep -qv '" + theme_gtk_dark + "'"):
 		dark = True
 else:
 	system("dconf write /org/gnome/desktop/app-folders/folder-children \"['Utility', 'System-Tools']\"")

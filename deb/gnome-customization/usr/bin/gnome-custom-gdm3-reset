@@ -1,0 +1,18 @@
+#!/bin/bash
+sudo true
+
+for gresource in /usr/share/gnome-shell/themes/*.gresource
+do
+	if [ -f "$gresource" ]
+	then
+		sudo update-alternatives --remove gdm3-theme.gresource "$gresource"
+	fi
+done
+while true
+do
+	read -p "Restart GDM3? [Y/n] " yn
+	case $yn in
+		[Yy]* ) sudo systemctl restart gdm3.service; break;;
+		[Nn]* ) break;;
+	esac
+done

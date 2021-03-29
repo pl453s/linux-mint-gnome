@@ -13,3 +13,4 @@ Icon=gnome-color-manager
 Exec=gnome-customization
 Terminal=false
 Categories=GNOME;GTK;Settings;
+OnlyShowIn=GNOME;
