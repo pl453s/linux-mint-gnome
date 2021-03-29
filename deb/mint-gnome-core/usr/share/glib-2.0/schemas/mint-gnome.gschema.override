@@ -4,7 +4,7 @@ document-font-name="Sans 10"
 monospace-font-name="Monospace 10"
 gtk-key-theme='Default'
 gtk-theme='Materia-Dark'
-icon-theme='Papirus'
+icon-theme='Papirus-Dark'
 cursor-theme='Papirus'
 
 [org.gnome.desktop.background]

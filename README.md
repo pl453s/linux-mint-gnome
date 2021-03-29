@@ -81,14 +81,12 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
 ```bash
 # With 'gnome-customization' installed, run for example:
-gdm3-patch /usr/share/themes/Materia-Dark gnome-shell.css
-# If a theme is incompatible and makes crash GDM3, login to another TTY and run:
-gdm3-reset
-
-# And some GDM3 settings:
-gdm3-tweak false false true false false Materia-Dark Papirus-Dark Papirus-Cursors /usr/share/plymouth/themes/mint-spinner/watermark.png
-# Parameters: <battery %?> <weekday?> <date?> <seconds?> <week n°?> <GTK theme> <icons theme> <cursors theme> [watermark path]
-# '<...?>' should be 'true' or 'false' ; [watermark path] should be a path to an image, or nothing to remove the watermark
+gnome-custom-theme-install /usr/share/themes/YOUR_THEME gnome-shell.css
+# Now YOUR_THEME is available as Gnome session on the login screen
+gnome-custom-gdm3-theme YOUR_THEME
+# Now the login screen looks like YOUR_THEME
+gnome-custom-gdm3-tweak false false true false false GTK_THEME ICON_THEME CURSOR_THEME YOUR_WATERMARK
+# This last command allows to change some login screen settings (show battery level, show week numbers...)
 ```
 
 ## Remaining work

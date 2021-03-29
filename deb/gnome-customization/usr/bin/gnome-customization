@@ -23,15 +23,12 @@ class DraftWindow(Gtk.Window):
 		self.gsettings_full    = []
 		self.gsettings_base    = []
 
-		self.themes_gnome = []
 		self.themes_gtk   = []
 		self.themes_icons = []
 		self.themes_curs  = []
 		for path in ["/usr/share/themes/", "/usr/local/share/themes/", getenv("HOME") + "/.themes/", getenv("HOME") + "/.local/share/themes/"]:
 			if exists(path):
 				for theme in listdir(path):
-					if exists(path + theme + "/gnome-shell") and not theme in self.themes_gnome:
-						self.themes_gnome.append(theme)
 					if exists(path + theme + "/index.theme") and not theme in self.themes_gtk and not theme == "HighContrast" and not theme == "HighContrastInverse":
 						self.themes_gtk.append(theme)
 		for path in ["/usr/share/icons/", "/usr/local/share/icons/", getenv("HOME") + "/.icons/", getenv("HOME") + "/.local/share/icons/"]:
@@ -42,7 +39,6 @@ class DraftWindow(Gtk.Window):
 						self.themes_icons.append(theme)
 					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
 						self.themes_curs.append(theme)
-		self.themes_gnome.sort()
 		self.themes_gtk.sort()
 		self.themes_icons.sort()
 		self.themes_curs.sort()
@@ -50,8 +46,6 @@ class DraftWindow(Gtk.Window):
 		self.org_gnome_shell                       = Gio.Settings.new("org.gnome.shell")
 		self.org_gnome_desktop_interface           = Gio.Settings.new("org.gnome.desktop.interface")
 		self.enabled_extensions = self.org_gnome_shell.get_strv("enabled-extensions")
-		#self.theme_gnome        = self.org_gnome_shell_extensions_user_theme.get_string("name")
-		self.theme_gnome        = "Materia-Dark"
 		self.theme_gtk          = self.org_gnome_desktop_interface.get_string("gtk-theme")
 		self.theme_icons        = self.org_gnome_desktop_interface.get_string("icon-theme")
 		self.theme_curs         = self.org_gnome_desktop_interface.get_string("cursor-theme")
@@ -156,31 +150,26 @@ class DraftWindow(Gtk.Window):
 		self.text_gtk    = Gtk.Label(label = "GTK theme")
 		self.text_icons  = Gtk.Label(label = "Icons theme")
 		self.text_curs   = Gtk.Label(label = "Cursor theme")
-		self.combo_gnome = Gtk.ComboBoxText()
+		self.info_gnome  = Gtk.Label()
 		self.combo_gtk   = Gtk.ComboBoxText()
 		self.combo_icons = Gtk.ComboBoxText()
 		self.combo_curs  = Gtk.ComboBoxText()
-		self.combo_gnome.set_property("width-request", 256)
+		self.info_gnome.set_markup("<i>Select a Gnome theme on the login screen\n<small>Use 'gnome-custom-theme-install' to install a theme</small></i>")
 		self.combo_gtk.set_property("width-request", 256)
 		self.combo_icons.set_property("width-request", 256)
 		self.combo_curs.set_property("width-request", 256)
-		for theme in self.themes_gnome:
-			self.combo_gnome.append_text(theme)
 		for theme in self.themes_gtk:
 			self.combo_gtk.append_text(theme)
 		for theme in self.themes_icons:
 			self.combo_icons.append_text(theme)
 		for theme in self.themes_curs:
 			self.combo_curs.append_text(theme)
-		if self.theme_gnome in self.themes_gnome:
-			self.combo_gnome.set_active(self.themes_gnome.index(self.theme_gnome))
 		if self.theme_gtk in self.themes_gtk:
 			self.combo_gtk.set_active(self.themes_gtk.index(self.theme_gtk))
 		if self.theme_icons in self.themes_icons:
 			self.combo_icons.set_active(self.themes_icons.index(self.theme_icons))
 		if self.theme_curs in self.themes_curs:
 			self.combo_curs.set_active(self.themes_curs.index(self.theme_curs))
-		self.combo_gnome.connect("changed", self.action_gnome)
 		self.combo_gtk.connect("changed", self.action_gtk)
 		self.combo_icons.connect("changed", self.action_icons)
 		self.combo_curs.connect("changed", self.action_curs)
@@ -188,7 +177,7 @@ class DraftWindow(Gtk.Window):
 		self.box_gtk.pack_start(self.text_gtk, False, False, 0)
 		self.box_icons.pack_start(self.text_icons, False, False, 0)
 		self.box_curs.pack_start(self.text_curs, False, False, 0)
-		self.box_gnome.pack_end(self.combo_gnome, False, False, 0)
+		self.box_gnome.pack_end(self.info_gnome, False, False, 0)
 		self.box_gtk.pack_end(self.combo_gtk, False, False, 0)
 		self.box_icons.pack_end(self.combo_icons, False, False, 0)
 		self.box_curs.pack_end(self.combo_curs, False, False, 0)
@@ -276,10 +265,6 @@ class DraftWindow(Gtk.Window):
 			self.extensions(self.extensions_full, False)
 			self.extensions(self.extensions_base, True)
 			self.gsettings(self.gsettings_base)
-
-	def action_gnome(self, widget):
-		#self.org_gnome_shell_extensions_user_theme.set_string("name", widget.get_active_text())
-		pass
 
 	def action_gtk(self, widget):
 		self.org_gnome_desktop_interface.set_string("gtk-theme", widget.get_active_text())

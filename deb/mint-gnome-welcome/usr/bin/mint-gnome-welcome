@@ -30,8 +30,8 @@ gsettings_hide    = []
 
 theme_gtk_light   = "Materia-Light"
 theme_gtk_dark    = "Materia-Dark"
-theme_icons_light = "Papirus"
-theme_icons_dark  = "Papirus"
+theme_icons_light = "Papirus-Light"
+theme_icons_dark  = "Papirus-Dark"
 theme_curs_light  = "Papirus"
 theme_curs_dark   = "Papirus"
 

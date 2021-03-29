@@ -15,6 +15,11 @@ then
 		sudo update-alternatives --install "/usr/share/gnome-shell/gdm3-theme.gresource" gdm3-theme.gresource "/usr/share/gnome-shell/themes/$1.gresource" 1000
 		echo
 		echo
+		echo "/!\\ WARNING /!\\"
+		echo "If the theme is incompatible with GDM3 and causes it to crash,"
+		echo "login to another TTY and run 'gnome-custom-gdm3-reset'."
+		echo
+		echo
 		while true
 		do
 			read -p "Restart GDM3? [Y/n] " yn
