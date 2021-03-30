@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Desktop Icons
+Icon=org.gnome.Shell.Extensions
+Exec=false
+OnlyShowIn=GNOME;
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gnome-shell

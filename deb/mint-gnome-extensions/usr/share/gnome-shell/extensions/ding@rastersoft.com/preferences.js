@@ -39,6 +39,10 @@ var mutterSettings = null;
 // This is already in Nautilus settings, so it should not be made tweakable here
 var CLICK_POLICY_SINGLE = false;
 
+
+let application = new Gtk.Application({ application_id: "com.rastersoft.ding" });
+
+
 function init(path) {
     extensionPath = path;
     let schemaSource = GioSSS.get_default();
@@ -57,38 +61,12 @@ function init(path) {
     if (schemaMutter) {
         mutterSettings = new Gio.Settings({ settings_schema: schemaMutter});
     }
-}
 
-function get_schema(schema) {
-
-    // check if this extension was built with "make zip-file", and thus
-    // has the schema files in a subfolder
-    // otherwise assume that extension has been installed in the
-    // same prefix as gnome-shell (and therefore schemas are available
-    // in the standard folders)
-    let schemaSource;
-    let schemaFile = Gio.File.new_for_path(GLib.build_filenamev([extensionPath, 'schemas', 'gschemas.compiled']));
-    if (schemaFile.query_exists(null)) {
-        schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
-    } else {
-        schemaSource = GioSSS.get_default();
-    }
-
-    let schemaObj = schemaSource.lookup(schema, true);
-    if (!schemaObj)
-        throw new Error('Schema ' + schema + ' could not be found for extension ' + '. Please check your installation.');
-
-    return new Gio.Settings({ settings_schema: schemaObj });
-}
-
-function showPreferences() {
-
-    let application = new Gtk.Application({ application_id: 'org.gnome.Extensions' });
 
     application.connect('activate', () => {
         let window = new Gtk.ApplicationWindow({ application: application, window_position: Gtk.WindowPosition.CENTER });
         window.set_title(_("Properties"));
-        window.set_icon_name("org.gnome.Extensions");
+        window.set_icon_name("org.gnome.Shell.Extensions");
 
         let header = new Gtk.HeaderBar();
         header.set_title(_("Properties"));
@@ -118,7 +96,31 @@ function showPreferences() {
 
         window.show_all();
     });
+}
 
+function get_schema(schema) {
+
+    // check if this extension was built with "make zip-file", and thus
+    // has the schema files in a subfolder
+    // otherwise assume that extension has been installed in the
+    // same prefix as gnome-shell (and therefore schemas are available
+    // in the standard folders)
+    let schemaSource;
+    let schemaFile = Gio.File.new_for_path(GLib.build_filenamev([extensionPath, 'schemas', 'gschemas.compiled']));
+    if (schemaFile.query_exists(null)) {
+        schemaSource = GioSSS.new_from_directory(GLib.build_filenamev([extensionPath, 'schemas']), GioSSS.get_default(), false);
+    } else {
+        schemaSource = GioSSS.get_default();
+    }
+
+    let schemaObj = schemaSource.lookup(schema, true);
+    if (!schemaObj)
+        throw new Error('Schema ' + schema + ' could not be found for extension ' + '. Please check your installation.');
+
+    return new Gio.Settings({ settings_schema: schemaObj });
+}
+
+function showPreferences() {
     application.run([]);
 }
 
