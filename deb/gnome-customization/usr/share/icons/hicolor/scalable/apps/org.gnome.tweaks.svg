@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg11300" width="128" height="128" style="enable-background:new" version="1.0" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title id="title4162">Adwaita Icon Template</title>
+ <defs id="defs3">
+  <linearGradient id="linearGradient1747" x1="48" x2="464" y1="44" y2="44" gradientTransform="matrix(.25 0 0 .25 -110 225)" gradientUnits="userSpaceOnUse">
+   <stop id="stop962" style="stop-color:#babdb6" offset="0"/>
+   <stop id="stop964" style="stop-color:#f6f5f4" offset=".041667"/>
+   <stop id="stop966" style="stop-color:#d5d3cf" offset=".083333"/>
+   <stop id="stop968" style="stop-color:#deddda" offset=".91667"/>
+   <stop id="stop970" style="stop-color:#f6f5f4" offset=".95833"/>
+   <stop id="stop972" style="stop-color:#babdb6" offset="1"/>
+  </linearGradient>
+  <clipPath id="clipPath1784">
+   <rect id="rect1786" x="36" y="202" width="60" height="28" rx="14" ry="14" style="fill:#3584e4"/>
+  </clipPath>
+ </defs>
+ <metadata id="metadata4">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>GNOME Design Team</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:source/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    <dc:title>Adwaita Icon Template</dc:title>
+    <dc:subject>
+     <rdf:Bag/>
+    </dc:subject>
+    <dc:date/>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:rights>
+    <dc:publisher>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:publisher>
+    <dc:identifier/>
+    <dc:relation/>
+    <dc:language/>
+    <dc:coverage/>
+    <dc:description/>
+    <dc:contributor>
+     <cc:Agent>
+      <dc:title/>
+     </cc:Agent>
+    </dc:contributor>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0,-172)">
+  <g id="layer9">
+   <g id="g1769" transform="translate(110)">
+    <rect id="rect1709" x="-98" y="204" width="104" height="84" rx="8" ry="8" style="enable-background:new;fill:url(#linearGradient1747);paint-order:normal"/>
+    <rect id="rect1711" x="-98" y="184" width="104" height="100" rx="8" ry="8" style="enable-background:new;fill:#f6f5f4;paint-order:normal"/>
+   </g>
+   <g id="g1802" transform="translate(0,-2)">
+    <path id="rect1790" transform="translate(0,172)" d="m48 28c-7.756 0-14 6.244-14 14 0 0.33768 0.0275 0.66844 0.05078 1 0.51146-7.2838 6.5309-13 13.949-13h32c7.4183 0 13.438 5.7162 13.949 13 0.023281-0.33156 0.050781-0.66232 0.050781-1 0-7.756-6.244-14-14-14z" style="fill:#1a5fb4"/>
+    <rect id="rect1143" transform="scale(-1,1)" x="-94" y="202" width="60" height="28" rx="14" ry="14" style="fill:#3584e4"/>
+    <g id="g1151" transform="matrix(-1,0,0,1,130,-4)">
+     <circle id="circle1147" transform="translate(0,4)" cx="50" cy="218" r="14" clip-path="url(#clipPath1784)" style="fill:#deddda"/>
+     <rect id="rect1149" x="36" y="216" width="28" height="6" style="fill:#deddda"/>
+    </g>
+    <circle id="circle1153" transform="scale(-1,1)" cx="-80" cy="212" r="14" style="fill:#fff"/>
+   </g>
+   <g id="g1818" transform="matrix(-1,0,0,1,128,38)">
+    <path id="path1804" transform="translate(0,172)" d="m48 28c-7.756 0-14 6.244-14 14 0 0.33768 0.0275 0.66844 0.05078 1 0.51146-7.2838 6.5309-13 13.949-13h32c7.4183 0 13.438 5.7162 13.949 13 0.023281-0.33156 0.050781-0.66232 0.050781-1 0-7.756-6.244-14-14-14z" style="fill:#9a9996"/>
+    <rect id="rect1808" transform="scale(-1,1)" x="-94" y="202" width="60" height="28" rx="14" ry="14" style="fill:#c0bfbc"/>
+    <g id="g1814" transform="matrix(-1,0,0,1,130,-4)">
+     <circle id="circle1810" transform="translate(0,4)" cx="50" cy="218" r="14" clip-path="url(#clipPath1784)" style="fill:#deddda"/>
+     <rect id="rect1812" x="36" y="216" width="28" height="6" style="fill:#deddda"/>
+    </g>
+    <circle id="circle1816" transform="scale(-1,1)" cx="-80" cy="212" r="14" style="fill:#fff"/>
+   </g>
+  </g>
+ </g>
+</svg>

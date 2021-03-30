@@ -2,7 +2,7 @@
     "hasWindows": true,
     "components": ["polkitAgent", "networkAgent"],
     "stylesheetName": "gnome-shell.css",
-    "themeResourceName": "gdm3/gnome-shell-theme.gresource",
+    "themeResourceName": "themes/Materia-Dark.gresource",
     "panel": { "left": [],
                "center": ["dateMenu"],
                "right": []
