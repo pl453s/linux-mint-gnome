@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import gi
 gi.require_version('Gtk', '3.0')
+gi.require_version('Handy', '0.0')
 from gi.repository import Gtk, Gio
 from os import system, getenv, listdir
 from os.path import exists
@@ -287,23 +288,50 @@ class MainWindow(Gtk.Window):
 		self.set_icon_name("gnome-color-manager")
 		self.box = Gtk.Box()
 		self.add(self.box)
-		self.header = Gtk.Stack()
-		self.list = Gtk.ListBox()
-		self.list.connect("row-selected", self.switch_tab)
-		self.stack = Gtk.Stack()
+		
+		self.header = Gtk.Box()
+		#self.header.set_show_close_button(True)
+		
+		self.lheader = Gtk.Box()
+		self.rheader = Gtk.Stack()
+		
+		self.title = Gtk.Label()
+		self.title.set_markup("<b>Customization</b>")
+		self.lheader.pack_start(self.title, True, True, 0)
+		self.lheader.pack_start(Gtk.Separator(), False, False, 0)
+		
+		self.header.pack_start(self.lheader, False, False, 0)
+		self.header.pack_start(self.rheader, True, True, 0)
+		
 		self.set_titlebar(self.header)
-		self.box.pack_start(self.list, False, False, 0)
-		self.box.pack_start(self.stack, False, False, 0)
+		self.panel = Gtk.Box()
+		self.stack = Gtk.Stack()
+		self.list = Gtk.ListBox(width_request = 200)
+		self.list.connect("row-selected", self.switch_tab)
+		self.panel.pack_start(self.list, True, True, 0)
+		self.panel.pack_start(Gtk.Separator(), False, False, 0)
 		for tab in [ExtensionsTab(), DesktopTab(), LoginScreenTab(), MoreTab()]:
-			row = Gtk.ListBoxRow(width_request = 200, height_request = 40)
+			row = Gtk.ListBoxRow()
 			row.add(Gtk.Label(label = tab.name, xalign = 0.0, margin = 10))
 			self.list.insert(row, -1)
-			self.header.add_named(tab.header, tab.name)
+			tab.header.set_title(tab.name)
+			tab.header.set_show_close_button(True)
+			self.rheader.add_named(tab.header, tab.name)
 			self.stack.add_named(tab, tab.name)
-
+		self.box.pack_start(self.panel, False, False, 0)
+		self.box.pack_start(self.stack, True, True, 0)
+		
+		self.lsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
+		self.lsize.add_widget(self.lheader)
+		self.lsize.add_widget(self.panel)
+		
+		self.rsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
+		self.rsize.add_widget(self.rheader)
+		self.rsize.add_widget(self.stack)
+		
 	def switch_tab(self, widget, subwidget):
 		name = subwidget.get_child().get_text()
-		self.header.set_visible_child_name(name)
+		self.rheader.set_visible_child_name(name)
 		self.stack.set_visible_child_name(name)
 
 
@@ -312,45 +340,115 @@ class ExtensionsTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Extensions"
 		self.header = Gtk.HeaderBar()
-		self.header.set_title(self.name)
-		self.header_switch = Gtk.Switch()
-		self.header.pack_end(self.header_switch)
-		self.header.set_show_close_button(True)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.pack_start(Gtk.Label(label = "EXTENSIONS!"), False, False, 0)
+		self.header_style_settings = Gtk.Button(label = "Dock Settings")
+		#self.header_style_settings.connect("clicked", self.BUTTON)
+		self.header_circuit_breaker = Gtk.Switch()
+		self.header_circuit_breaker.set_state(True)
+		#self.header_circuit_breaker.connect("state_set", self.SWITCH)
+		self.header.pack_start(self.header_style_settings)
+		self.header.pack_end(self.header_circuit_breaker)
+		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 30)
+		self.pack_start(self.box, True, True, 0)
+		
+		self.box_styles = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box_others = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box.pack_start(self.box_styles, False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(self.box_others, False, False, 0)
+		
+		self.button_panel = Gtk.Button(label = "Panel style", image = Gtk.Image(file = "/usr/share/gnome-customization/panel.png"))
+		self.button_dock = Gtk.Button(label = "Dock style", image = Gtk.Image(file = "/usr/share/gnome-customization/dock.png"))
+		self.button_dash = Gtk.Button(label = "Dash style", image = Gtk.Image(file = "/usr/share/gnome-customization/dash.png"))
+		self.button_panel.set_always_show_image(True)
+		self.button_dock.set_always_show_image(True)
+		self.button_dash.set_always_show_image(True)
+		self.button_panel.set_image_position(Gtk.PositionType.TOP)
+		self.button_dock.set_image_position(Gtk.PositionType.TOP)
+		self.button_dash.set_image_position(Gtk.PositionType.TOP)
+		#if self.style == "panel":
+		#	self.button_panel.get_style_context().add_class("suggested-action")
+		#if self.style == "dock":
+		#	self.button_dock.get_style_context().add_class("suggested-action")
+		#if self.style == "dash":
+		#	self.button_dash.get_style_context().add_class("suggested-action")
+		#self.button_panel.connect("clicked", self.action_panel)
+		#self.button_dock.connect("clicked", self.action_dock)
+		#self.button_dash.connect("clicked", self.action_dash)
+		self.box_styles.pack_start(self.button_panel, False, False, 0)
+		self.box_styles.pack_start(self.button_dock, False, False, 0)
+		self.box_styles.pack_start(self.button_dash, False, False, 0)
 
 
 class DesktopTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Desktop"
 		self.header = Gtk.HeaderBar()
-		self.header.set_title(self.name)
-		self.header.set_show_close_button(True)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.pack_start(Gtk.Label(label = "DESKTOP!"), False, False, 0)
+		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 30)
+		self.pack_start(self.box, True, True, 0)
+		
+		self.box.pack_start(Gtk.Label(label = "DESKTOP!"), False, False, 0)
 
 
 class LoginScreenTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Login screen"
 		self.header = Gtk.HeaderBar()
-		self.header.set_title(self.name)
-		self.header.set_show_close_button(True)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.pack_start(Gtk.Label(label = "LOGINSCREEN!"), False, False, 0)
+		self.header_unlock = Gtk.Button(label = "Unlock")
+		self.header.pack_end(self.header_unlock)
+		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 30)
+		self.pack_start(self.box, True, True, 0)
+		
+		self.box.pack_start(Gtk.Label(label = "LOGINSCREEN!"), False, False, 0)
 
 
 class MoreTab(Gtk.Box):
 	def __init__(self):
 		self.name = "More"
 		self.header = Gtk.HeaderBar()
-		self.header.set_title(self.name)
-		self.header.set_show_close_button(True)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.pack_start(Gtk.Label(label = "MORE!"), False, False, 0)
-		self.draft = Gtk.Button(label = "Return to draft GUI")
+		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 30)
+		self.pack_start(self.box, True, True, 0)
+		
+		self.box_buttons = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
+		self.box.pack_start(self.box_buttons, False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(label = ""), False, False, 0)
+		
+		self.draft  = Gtk.Button(label = "This is a BETA version!\nReturn to the old GUI")
+		self.tweaks = Gtk.Button(label = "GNOME TWEAKS\n(Minimalist version)\nOriginal tool created\nby John Stower")
+		self.apps   = Gtk.Button(label = "Applications list editor")
+		self.webapp = Gtk.Button(label = "Web Apps. Manager")
+		self.start  = Gtk.Button(label = "Startup Applications")
+		self.qt5ct  = Gtk.Button(label = "Qt5 Configuration Tool")
+		self.store  = Gtk.Button(label = "Gnome Extensions\nCatalog Website")
+		self.github = Gtk.Button(label = "Linux Mint Gnome\nGitHub project page")
 		self.draft.connect("clicked", self.returntodraft)
-		self.pack_start(self.draft, False, False, 0)
+		self.tweaks.connect("clicked", self.launch, "gnome-tweaks")
+		self.apps.connect("clicked", self.launch, "menulibre")
+		#self.webapp.connect("clicked", self.launch, "if [ 1 == 0 ]; then notify-send -i webapp-manager 'Please install \'webapp-manager\'' 'Linux Mint must be upgraded to 20.1'; else webapp-manager; fi")
+		self.webapp.connect("clicked", self.launch, "webapp-manager")
+		self.start.connect("clicked", self.launch, "gnome-session-properties")
+		self.qt5ct.connect("clicked", self.launch, "notify-send -i qt5ct 'Please wait...' 'Qt5 Configuration Tool is starting' ; qt5ct")
+		self.box_buttons.pack_start(self.draft, False, False, 0)
+		self.box_buttons.pack_start(Gtk.Separator(), False, False, 0)
+		self.box_buttons.pack_start(Gtk.Label(label = "Additional tools:"), False, False, 0)
+		self.box_buttons.pack_start(self.tweaks, False, False, 0)
+		self.box_buttons.pack_start(self.apps, False, False, 0)
+		self.box_buttons.pack_start(self.webapp, False, False, 0)
+		self.box_buttons.pack_start(self.start, False, False, 0)
+		self.box_buttons.pack_start(self.qt5ct, False, False, 0)
+		self.box_buttons.pack_start(Gtk.Separator(), False, False, 0)
+		self.box_buttons.pack_start(Gtk.Label(label = "Web links:"), False, False, 0)
+		self.box_buttons.pack_start(self.store, False, False, 0)
+		self.box_buttons.pack_start(self.github, False, False, 0)
+
+		
+	def launch(self, widget, command):
+		system(command + " &")
+	
 	def returntodraft(self, widget):
 		global launchdraft
 		launchdraft = True
@@ -368,3 +466,8 @@ if launchdraft:
 	windraft.show_all()
 	Gtk.main()
 	windraft.destroy()
+	
+# HEADERBAR COLOR
+# HEADERBAR CLOSEBUTTON
+# HEADERBAR RIGHT EXPAND
+# HEADERBAR VARIABLES NAMES (REORG MAINWINDOW CLASS)
