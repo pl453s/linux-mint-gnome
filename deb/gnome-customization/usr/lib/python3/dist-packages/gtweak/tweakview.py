@@ -107,7 +107,7 @@ class Window(Gtk.ApplicationWindow):
         self.button.get_style_context().add_class("image-button")
         left_header.pack_start(self.button)
 
-        lbl = Gtk.Label(label=_("Tweaks"))
+        lbl = Gtk.Label(label=_("Tweaks (mini)"))
         lbl.get_style_context().add_class("title")
         left_header.set_custom_title(lbl)
 

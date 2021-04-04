@@ -16,17 +16,9 @@ system_tools = "" \
 "'mintreport.py.desktop', 'mintsources.py.desktop', 'mintstick.py.desktop', 'org.gnome.DiskUtility.desktop', " \
 "'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
 
-extensions_panel  = ["dash-to-panel@jderose9.github.com"]
-extensions_dock   = ["dash-to-dock@micxgx.gmail.com"]
-extensions_dash   = []
-extensions_show   = ["ding@rastersoft.com"]
-extensions_hide   = []
-
-gsettings_panel   = ["org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close"]
-gsettings_dock    = ["org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close"]
-gsettings_dash    = ["org.gnome.desktop.wm.preferences button-layout appmenu:close"]
-gsettings_show    = []
-gsettings_hide    = []
+dashtopanel  = "dash-to-panel@jderose9.github.com"
+dashtodock   = "dash-to-dock@micxgx.gmail.com"
+desktopicons = "ding@rastersoft.com"
 
 theme_gtk_light   = "Materia-Light"
 theme_gtk_dark    = "Materia-Dark"
@@ -34,19 +26,6 @@ theme_icons_light = "Papirus-Light"
 theme_icons_dark  = "Papirus-Dark"
 theme_curs_light  = "Papirus"
 theme_curs_dark   = "Papirus"
-
-
-
-def extensions(extensions, enable):
-	for extension in extensions:
-		if enable:
-			system("gnome-extensions enable " + extension)
-		else:
-			system("gnome-extensions disable " + extension)
-
-def gsettings(gsettings):
-	for gsetting in gsettings:
-		system("gsettings set " + gsetting)
 
 
 
@@ -148,41 +127,34 @@ class WelcomeWindow(Gtk.Window):
 		Gtk.main_quit()
 
 	def action_panel(self, widget):
-		self.button_panel.get_style_context().add_class("suggested-action")
 		self.button_dock.get_style_context().remove_class("suggested-action")
 		self.button_dash.get_style_context().remove_class("suggested-action")
-		extensions(extensions_dock, False)
-		extensions(extensions_dash, False)
-		extensions(extensions_panel, True)
-		gsettings(gsettings_panel)
+		self.button_panel.get_style_context().add_class("suggested-action")
+		system("gnome-extensions disable " + dashtodock)
+		system("gnome-extensions enable " + dashtopanel)
+		system("gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close")
 
 	def action_dock(self, widget):
 		self.button_panel.get_style_context().remove_class("suggested-action")
-		self.button_dock.get_style_context().add_class("suggested-action")
 		self.button_dash.get_style_context().remove_class("suggested-action")
-		extensions(extensions_panel, False)
-		extensions(extensions_dash, False)
-		extensions(extensions_dock, True)
-		gsettings(gsettings_dock)
+		self.button_dock.get_style_context().add_class("suggested-action")
+		system("gnome-extensions disable " + dashtopanel)
+		system("gnome-extensions enable " + dashtodock)
+		system("gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close")
 
 	def action_dash(self, widget):
 		self.button_panel.get_style_context().remove_class("suggested-action")
 		self.button_dock.get_style_context().remove_class("suggested-action")
 		self.button_dash.get_style_context().add_class("suggested-action")
-		extensions(extensions_panel, False)
-		extensions(extensions_dock, False)
-		extensions(extensions_dash, True)
-		gsettings(gsettings_dash)
+		system("gnome-extensions disable " + dashtodock)
+		system("gnome-extensions disable " + dashtopanel)
+		system("gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:close")
 
 	def action_desktop(self, widget, state):
 		if state:
-			extensions(extensions_hide, False)
-			extensions(extensions_show, True)
-			gsettings(gsettings_show)
+			system("gnome-extensions enable " + desktopicons)
 		else:
-			extensions(extensions_show, False)
-			extensions(extensions_hide, True)
-			gsettings(gsettings_hide)
+			system("gnome-extensions disable " + desktopicons)
 
 	def action_theme(self, widget, state):
 		if state:
@@ -212,11 +184,11 @@ if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
 	style = "dash"
 	icons = False
 	dark = False
-	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_panel[0] + "'"):
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + dashtopanel + "'"):
 		style = "panel"
-	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_dock[0] + "'"):
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + dashtodock + "'"):
 		style = "dock"
-	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + extensions_show[0] + "'"):
+	if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + desktopicons + "'"):
 		icons = True
 	if system("gsettings get org.gnome.desktop.interface gtk-theme | grep -qv '" + theme_gtk_dark + "'"):
 		dark = True

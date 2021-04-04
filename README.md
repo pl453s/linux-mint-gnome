@@ -109,3 +109,4 @@ gnome-custom-gdm3-tweak false false true false false GTK_THEME ICON_THEME CURSOR
 - 'Papirus icon theme' created by 'varlesh' --> [https://github.com/PapirusDevelopmentTeam/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - 'Paper icon theme' created by 'snwh' --> [https://github.com/snwh/paper-icon-theme](https://github.com/snwh/paper-icon-theme)
 - 'Materia GTK theme' created by 'nana-4' --> [https://github.com/nana-4/materia-theme](https://github.com/nana-4/materia-theme)
+- 'Gnome Tweaks' created by 'John Stowers' --> [https://github.com/GNOME/gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
