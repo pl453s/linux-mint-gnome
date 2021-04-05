@@ -75,7 +75,7 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 
 ## Gnome Customization
 
-- A first draft window has been created. The final aim is to create a central GUI to customize:  
+- The tabbed GUI is currently in development! The final aim is to create a central GUI to customize:  
 styles, extensions, appearance, applications grid, user's folders paths, Gnome, Qt5, GDM3, Plymouth and Grub.
 - The user's folders names localization is intentionally disabled. A section to change these names is planned.
 - Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
