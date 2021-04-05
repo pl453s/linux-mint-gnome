@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('Handy', '0.0')
 from gi.repository import Gtk, Gio
 from os import system, getenv, listdir
 from os.path import exists
@@ -302,19 +301,19 @@ class ExtensionsTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Extensions (not ready)"
 		self.header = Gtk.HeaderBar()
-		self.header_style_settings = Gtk.Button(label = "Dock Settings")
-		#self.header_style_settings.connect("clicked", self.BUTTON)
-		self.header_circuit_breaker = Gtk.Switch()
-		self.header_circuit_breaker.set_state(True)
-		#self.header_circuit_breaker.connect("state_set", self.SWITCH)
-		self.header.pack_start(self.header_style_settings)
-		self.header.pack_end(self.header_circuit_breaker)
+		self.header_info = Gtk.Button(image = Gtk.Image(icon_name = "dialog-information-symbolic"))
+		self.header_info.connect("clicked", self.info)
+		self.header_switch = Gtk.Switch()
+		self.header_switch.set_state(True)
+		self.header_switch.connect("state-set", self.switch)
+		self.header.pack_start(self.header_info)
+		self.header.pack_end(self.header_switch)
 		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
 		self.box = Gtk.Box(spacing = 30)
 		self.pack_start(self.box, True, True, 0)
 
-		self.box_styles = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
-		self.box_others = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.box_styles = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
+		self.box_others = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
 		self.box.pack_start(self.box_styles, True, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
 		self.box.pack_start(self.box_others, True, False, 0)
@@ -343,13 +342,19 @@ class ExtensionsTab(Gtk.Box):
 
 		string = ""
 		for i in range(1, 10):
-			string += "Extension " + str(i) + "                                                  ( Y )          --O\n\n"
+			string += "Extension " + str(i) + "                         ( Y )          --O\n\n"
 		string += "[ ... ]"
 		self.extensions = Gtk.Button(label = "Manage extensions")
 		self.extensions.connect("clicked", self.launch, "gnome-extensions-app")
 		self.box_others.pack_start(Gtk.Label(label = string), False, False, 0)
 		self.box_others.pack_start(self.extensions, False, False, 0)
 
+
+	def info(self, widget):
+		pass
+
+	def switch(self, widget, state):
+		self.box.set_sensitive(state)
 
 	def launch(self, widget, command):
 		system(command + " &")
@@ -360,6 +365,9 @@ class DesktopTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Desktop (not ready)"
 		self.header = Gtk.HeaderBar()
+		self.header_info = Gtk.Button(image = Gtk.Image(icon_name = "dialog-information-symbolic"))
+		self.header_info.connect("clicked", self.info)
+		self.header.pack_start(self.header_info)
 		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
 		self.box = Gtk.Box(spacing = 30)
 		self.pack_start(self.box, True, True, 0)
@@ -370,6 +378,9 @@ class DesktopTab(Gtk.Box):
 		self.box.pack_start(Gtk.Label(label = "Show weekday\n\nShow date\n\nShow seconds\n\nShow week number\n\nShow battery percentage\n\nVolume over than 100%"), True, True, 0)
 		self.box.pack_start(Gtk.Label(label = "O--\n\n--O\n\nO--\n\nO--\n\nO--\n\nO--"), True, True, 0)
 
+	def info(self, widget):
+		pass
+
 
 
 class LoginScreenTab(Gtk.Box):
@@ -377,8 +388,11 @@ class LoginScreenTab(Gtk.Box):
 		self.admin = None
 		self.name = "Login screen (not ready)"
 		self.header = Gtk.HeaderBar()
-		self.header_unlock = Gtk.Button(label = "Unlock")
+		self.header_info = Gtk.Button(image = Gtk.Image(icon_name = "dialog-information-symbolic"))
+		self.header_info.connect("clicked", self.info)
+		self.header_unlock = Gtk.Button(image = Gtk.Image(icon_name = "system-lock-screen-symbolic"))
 		self.header_unlock.connect("clicked", self.unlock)
+		self.header.pack_start(self.header_info)
 		self.header.pack_end(self.header_unlock)
 		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
 		self.box = Gtk.Box(spacing = 30)
@@ -390,6 +404,9 @@ class LoginScreenTab(Gtk.Box):
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
 		self.box.pack_start(Gtk.Label(label = "Show weekday\n\nShow date\n\nShow seconds\n\nShow week number\n\nShow battery percentage\n\nVolume over than 100%"), True, True, 0)
 		self.box.pack_start(Gtk.Label(label = "O--\n\n--O\n\nO--\n\nO--\n\nO--\n\nO--"), True, True, 0)
+
+	def info(self, widget):
+		pass
 
 	def unlock(self, widget):
 		self.admin = unlock()
@@ -406,56 +423,43 @@ class MoreTab(Gtk.Box):
 		Gtk.Box.__init__(self, margin = 30, spacing = 30)
 		self.box = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, False, False, 0)
-
+		
 		self.box_head = Gtk.Box(spacing = 15)
-		self.box_body = Gtk.Box(spacing = 15)
+		self.box_buttons = Gtk.Box(spacing = 15)
 		self.box.pack_start(self.box_head, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_body, False, False, 0)
-		self.box_buttons = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
-		self.box_commands = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
-		self.box_body.pack_start(self.box_buttons, False, False, 0)
-		self.box_body.pack_start(Gtk.Separator(), False, False, 0)
-		self.box_body.pack_start(self.box_commands, False, False, 0)
-
+		self.box.pack_start(Gtk.Label(label = "Graphical additional tools:"), False, False, 0)
+		self.box.pack_start(self.box_buttons, False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(label = "Command line additional tools:"), False, False, 0)
+		
 		self.draft = Gtk.Button(label = "This is a BETA version!\nReturn to the old GUI")
 		self.links = Gtk.Label()
-		#self.themes = Gtk.Button(label = "Gnome-Look.org")
-		#self.extens = Gtk.Button(label = "Gnome Extensions")
-		#self.github = Gtk.Button(label = "Linux Mint Gnome\nGitHub project page")
 		self.draft.connect("clicked", self.returntodraft)
-		self.links.set_markup("You can download themes at <a href='https://gnome-look.org'>gnome-look.org</a> and extensions at <a href='https://extensions.gnome.org'>extensions.gnome.org</a>\nCheck Linux Mint Gnome development progress or report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub page</a>")
-		#self.themes.connect("clicked", self.launch, "xdg-open https://gnome-look.org")
-		#self.extens.connect("clicked", self.launch, "xdg-open https://extensions.gnome.org")
-		#self.github.connect("clicked", self.launch, "xdg-open https://github.com/pl453s/linux-mint-gnome")
+		self.links.set_markup("Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>")
 		self.box_head.pack_start(self.draft, False, False, 0)
 		self.box_head.pack_start(Gtk.Separator(), False, False, 0)
 		self.box_head.pack_start(self.links, False, False, 0)
-		#self.box_head.pack_start(self.themes, False, False, 0)
-		#self.box_head.pack_start(self.extens, False, False, 0)
-		#self.box_head.pack_start(self.github, False, False, 0)
-
-		self.tweaks = Gtk.Button(label = "Gnome Tweaks Mini")
-		self.apps   = Gtk.Button(label = "Applications list editor")
-		self.webapp = Gtk.Button(label = "Web Apps. Manager")
-		self.start  = Gtk.Button(label = "Startup Applications")
-		self.qt5ct  = Gtk.Button(label = "Qt5 Configuration Tool")
+		
+		self.tweaks = Gtk.Button(label = "Tweaks Mini")
+		self.apps   = Gtk.Button(label = "Applications")
+		self.webapp = Gtk.Button(label = "Web Apps.")
+		self.start  = Gtk.Button(label = "Startup")
+		self.qt5ct  = Gtk.Button(label = "Qt5 CT")
 		self.tweaks.connect("clicked", self.launch, "gnome-tweaks")
 		self.apps.connect("clicked", self.launch, "menulibre")
 		self.webapp.connect("clicked", self.launch, "if ! command webapp-manager; then notify-send -i applications-internet 'Please install the \"webapp-manager\" package' 'Linux Mint must be upgraded to 20.1 minimum'; fi")
 		self.start.connect("clicked", self.launch, "gnome-session-properties")
 		self.qt5ct.connect("clicked", self.launch, "notify-send -i qt5ct 'Please wait...' 'Qt5 Configuration Tool is starting'; qt5ct")
-		self.box_buttons.pack_start(Gtk.Label(label = "Additional tools:"), False, False, 0)
-		self.box_buttons.pack_start(self.tweaks, False, False, 0)
-		self.box_buttons.pack_start(self.apps, False, False, 0)
-		self.box_buttons.pack_start(self.webapp, False, False, 0)
-		self.box_buttons.pack_start(self.start, False, False, 0)
-		self.box_buttons.pack_start(self.qt5ct, False, False, 0)
-
+		self.box_buttons.pack_start(self.tweaks, True, True, 0)
+		self.box_buttons.pack_start(self.apps, True, True, 0)
+		self.box_buttons.pack_start(self.webapp, True, True, 0)
+		self.box_buttons.pack_start(self.start, True, True, 0)
+		self.box_buttons.pack_start(self.qt5ct, True, True, 0)
+		
 		self.commands = Gtk.Label()
-		self.commands.set_markup("\n<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>")
-		self.box_commands.pack_start(Gtk.Label(label = "Command line additional tools:"), False, False, 0)
-		self.box_commands.pack_start(self.commands, False, False, 0)
+		self.commands.set_markup("<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>")
+		self.box.pack_start(self.commands, False, False, 0)
 
 
 	def launch(self, widget, command):
@@ -491,3 +495,5 @@ if draft:
 	windraft.show_all()
 	Gtk.main()
 	windraft.destroy()
+	
+#You can download themes at <a href='https://gnome-look.org'>gnome-look.org</a> and extensions at <a href='https://extensions.gnome.org'>extensions.gnome.org</a>
