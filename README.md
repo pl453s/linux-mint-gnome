@@ -75,19 +75,21 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 
 ## Gnome Customization
 
-- The tabbed GUI is currently in development! The final aim is to create a central GUI to customize:  
+The tabbed GUI is currently in development! The final aim is to create a central GUI to customize:  
 styles, extensions, appearance, applications grid, user's folders paths, Gnome, Qt5, GDM3, Plymouth and Grub.
-- The user's folders names localization is intentionally disabled. A section to change these names is planned.
-- Until 'Customization' is developed, I created a set of basic tools to more easily customize GDM3:
-```bash
-# With 'gnome-customization' installed, run for example:
-gnome-custom-theme-install /usr/share/themes/YOUR_THEME gnome-shell.css
-# Now YOUR_THEME is available as Gnome session on the login screen
-gnome-custom-gdm3-theme YOUR_THEME
-# Now the login screen looks like YOUR_THEME
-gnome-custom-gdm3-tweak false false true false false GTK_THEME ICON_THEME CURSOR_THEME YOUR_WATERMARK
-# This last command allows to change some login screen settings (show battery level, show week numbers...)
-```
+
+<table>
+  <tbody>
+    <tr>
+      <td> <a href="img/beta1.png"><img src="img/beta1.png"></a> </td>
+      <td> <a href="img/beta2.png"><img src="img/beta2.png"></a> </td>
+    </tr>
+    <tr>
+      <td> <a href="img/beta3.png"><img src="img/beta3.png"></a> </td>
+      <td> <a href="img/beta4.png"><img src="img/beta4.png"></a> </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Remaining work
 
