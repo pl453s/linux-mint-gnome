@@ -146,8 +146,8 @@ class WelcomeWindow(Gtk.Window):
 		self.button_panel.get_style_context().remove_class("suggested-action")
 		self.button_dock.get_style_context().remove_class("suggested-action")
 		self.button_dash.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + dashtodock)
 		system("gnome-extensions disable " + dashtopanel)
+		system("gnome-extensions disable " + dashtodock)
 		system("gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:close")
 
 	def action_desktop(self, widget, state):
