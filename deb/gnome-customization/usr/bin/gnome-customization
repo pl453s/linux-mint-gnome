@@ -306,7 +306,7 @@ class MainWindow(Gtk.Window):
 
 class ExtensionsTab(Gtk.Box):
 	def __init__(self):
-		self.name = "Extensions (not ready)"
+		self.name = "Extensions"
 		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
 		self.header_text = Gtk.Label(margin = 15)
