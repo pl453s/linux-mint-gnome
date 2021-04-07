@@ -81,8 +81,10 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 <table>
   <tbody>
     <tr>
-      <td> <a href="img/beta1.png"><img src="img/beta1.png"></a> </td>
-      <td> <a href="img/beta2.png"><img src="img/beta2.png"></a> </td>
+      <td rowspan="2"> <a href="img/beta1.png"><img src="img/beta1.png"></a> </td>
+      <td rowspan="2"> <a href="img/beta2.png"><img src="img/beta2.png"></a> </td>
+    </tr>
+    <tr>
     </tr>
     <tr>
       <td> <a href="img/beta3.png"><img src="img/beta3.png"></a> </td>
