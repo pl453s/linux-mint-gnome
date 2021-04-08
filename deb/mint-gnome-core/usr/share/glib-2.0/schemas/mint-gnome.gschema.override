@@ -52,17 +52,6 @@ tap-and-drag=true
 tap-to-click=true
 two-finger-scrolling-enabled=true
 
-[org.gnome.shell]
-enabled-extensions=['topindicatorapp@quiro9.com', 'ding@rastersoft.com', 'dash-to-dock@micxgx.gmail.com']
-favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
-always-show-log-out=true
-
-[org.gnome.desktop.app-switcher]
-current-workspace-only=true
-
-[org.gnome.desktop.window-switcher]
-current-workspace-only=true
-
 [org.gnome.desktop.sound]
 allow-volume-above-100-percent=false
 theme-name='freedesktop'
@@ -70,13 +59,24 @@ theme-name='freedesktop'
 [org.gnome.desktop.a11y]
 always-show-universal-access-status=true
 
-[org.gnome.login-screen]
-logo='/usr/share/plymouth/themes/mint-spinner/watermark.png'
-
 [org.gnome.desktop.privacy]
 remember-app-usage=false
 remember-recent-files=false
 report-technical-problems=false
+
+[org.gnome.shell]
+enabled-extensions=['topindicatorapp@quiro9.com', 'ding@rastersoft.com', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
+always-show-log-out=true
+
+[org.gnome.shell.app-switcher]
+current-workspace-only=true
+
+[org.gnome.shell.window-switcher]
+current-workspace-only=true
+
+[org.gnome.login-screen]
+logo='/usr/share/plymouth/themes/mint-spinner/watermark.png'
 
 [org.gtk.Settings.FileChooser]
 sort-directories-first=true
