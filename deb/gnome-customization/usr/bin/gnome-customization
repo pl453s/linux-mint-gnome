@@ -1,10 +1,15 @@
 #!/usr/bin/python3
+
+#CHECK EXTENSION STATE AFTER SWITCH
+
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gio
+gi.require_version('Handy', '0.0')
+from gi.repository import Gtk, Gio, Handy, Pango
 from os import system, getenv, listdir
 from os.path import exists
 from pexpect import runu, spawnu, EOF
+Handy.init()
 dashtopanel  = "dash-to-panel@jderose9.github.com"
 dashtodock   = "dash-to-dock@micxgx.gmail.com"
 desktopicons = "ding@rastersoft.com"
@@ -260,56 +265,68 @@ class MainWindow(Gtk.Window):
 		self.name = "Customization (BETA)"
 		Gtk.Window.__init__(self, title = self.name)
 		self.set_icon_name("gnome-color-manager")
-		self.box = Gtk.Box()
-		self.add(self.box)
-		self.header = Gtk.Box()
-		self.lheader = Gtk.Box()
-		self.rheader = Gtk.Stack()
-		self.title = Gtk.HeaderBar(title = self.name)
-		self.lheader.pack_start(self.title, True, True, 0)
-		self.lheader.pack_start(Gtk.Separator(), False, False, 0)
-		self.header.pack_start(self.lheader, False, False, 0)
-		self.header.pack_start(self.rheader, True, True, 0)
-		self.set_titlebar(self.header)
+		self.body = Gtk.Box()
+		self.add(self.body)
+		self.bar = Handy.TitleBar()
+		self.head = Handy.Leaflet()
+		self.head.set_transition_type(Handy.LeafletTransitionType.SLIDE)
+		self.lhead = Handy.HeaderBar(title = self.name)
+		self.rhead = Handy.HeaderBar(title = self.name)
+		self.rhead.props.hexpand = True
+		self.rhead.props.show_close_button = True
+		self.rhead_start = Gtk.Stack()
+		self.rhead_end = Gtk.Stack()
+		self.rhead.pack_start(self.rhead_start)
+		self.rhead.pack_end(self.rhead_end)
+		separator = Gtk.Separator()
+		separator.get_style_context().add_class("sidebar")
+		self.head.add(self.lhead)
+		self.head.add(separator)
+		self.head.add(self.rhead)
+		self.bar.add(self.head)
+		self.set_titlebar(self.bar)
 
-		self.panel = Gtk.Box()
-		self.stack = Gtk.Stack()
+		self.lbody = Gtk.Box()
+		self.rbody = Gtk.Stack()
 		self.list = Gtk.ListBox(width_request = 200)
 		self.list.connect("row-selected", self.switch_tab)
-		self.panel.pack_start(self.list, True, True, 0)
-		self.panel.pack_start(Gtk.Separator(), False, False, 0)
+		self.lbody.pack_start(self.list, True, True, 0)
+		#self.panel.pack_start(Gtk.Separator(), False, False, 0)
 		for tab in [ExtensionsTab(), DesktopTab(), LoginScreenTab(), MoreTab()]:
 			row = Gtk.ListBoxRow()
 			row.add(Gtk.Label(label = tab.name, xalign = 0.0, margin = 10))
 			self.list.insert(row, -1)
-			tab.header.set_title(tab.name)
-			tab.header.set_show_close_button(True)
-			self.rheader.add_named(tab.header, tab.name)
-			self.stack.add_named(tab, tab.name)
-		self.box.pack_start(self.panel, False, False, 0)
-		self.box.pack_start(self.stack, True, True, 0)
+			self.rhead_start.add_named(tab.head_start, tab.name)
+			self.rhead_end.add_named(tab.head_end, tab.name)
+			self.rbody.add_named(tab, tab.name)
+		self.body.pack_start(self.lbody, False, False, 0)
+		self.body.pack_start(Gtk.Separator(), False, False, 0)
+		self.body.pack_start(self.rbody, True, True, 0)
 
 		self.lsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
-		self.lsize.add_widget(self.lheader)
-		self.lsize.add_widget(self.panel)
+		self.lsize.add_widget(self.lhead)
+		self.lsize.add_widget(self.lbody)
 		self.rsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
-		self.rsize.add_widget(self.rheader)
-		self.rsize.add_widget(self.stack)
+		self.rsize.add_widget(self.rhead)
+		self.rsize.add_widget(self.rbody)
 
 
 	def switch_tab(self, widget, subwidget):
 		name = subwidget.get_child().get_text()
-		self.rheader.set_visible_child_name(name)
-		self.stack.set_visible_child_name(name)
+		self.rhead.set_title(name)
+		self.rhead_start.set_visible_child_name(name)
+		self.rhead_end.set_visible_child_name(name)
+		self.rbody.set_visible_child_name(name)
 
 
 
 class ExtensionsTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Extensions"
-		self.header = Gtk.HeaderBar()
+		self.head_start = Gtk.Box()
+		self.head_end = Gtk.Box()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 15)
+		self.header_text = Gtk.Label(margin = 20)
 		self.header_text.set_markup("<b>Warning: Disable all extensions if you experience system issues.</b>\n\nTo add a Gnome extension, install it with your package manager or\nmanually browse, download and install it from <a href='https://extensions.gnome.org'>extensions.gnome.org</a>.\n\nMake sure the extension folder name matches its UUID. You can install\nan extension directly from your browser with the appropriate addon.\n\nValid paths to place extensions are:\n - <tt><a href='file:///usr/share/gnome-shell/extensions'>/usr/share/gnome-shell/extensions</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.local/share/gnome-shell/extensions'>/home/" + getenv("USER") + "/.local/share/gnome-shell/extensions</a></tt>")
 		self.header_text.show_all()
 		self.header_popover.add(self.header_text)
@@ -317,134 +334,143 @@ class ExtensionsTab(Gtk.Box):
 		self.header_switch = Gtk.Switch()
 		self.header_switch.set_state(True)
 		self.header_switch.connect("state-set", self.switchall)
-		self.header.pack_start(self.header_info)
-		self.header.pack_end(self.header_switch)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30, orientation = Gtk.Orientation.VERTICAL)
-		self.box = Gtk.Box(spacing = 30)
+		self.head_start.pack_start(self.header_info, False, False, 0)
+		self.head_end.pack_end(self.header_switch, False, False, 0)
+		Gtk.Box.__init__(self, margin = 20, spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 20)
 		self.pack_start(self.box, True, True, 0)
-		self.box_styles = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
-		self.box_others = Gtk.Box(spacing = 15, orientation = Gtk.Orientation.VERTICAL)
+		
+		self.box_styles = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.scroll_others = Gtk.ScrolledWindow(min_content_width = 300, max_content_width = 300)
 		self.box.pack_start(self.box_styles, True, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_others, True, False, 0)
-
-		self.box_others.pack_start(Gtk.Label(label = "Other extensions:"), False, False, 0)
-		self.sizegroup = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
+		self.box.pack_start(self.scroll_others, True, False, 0)
+		self.box_others = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.VERTICAL, margin_right = 20, margin_top = 10, margin_bottom = 10)
+		self.scroll_others.add(self.box_others)
+		self.size_others = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.VERTICAL)
+		
 		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
 		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
-		self.extensions_list         = runu("gnome-extensions list").split("\n")
-		self.extensions_list_prefs   = runu("gnome-extensions list --prefs").split("\n")
-		self.extensions_list_enabled = runu("gnome-extensions list --enabled").split("\n")
-		self.extensions_uuid         = []
-		self.extensions_info         = []
-		self.extensions_name         = []
-		self.extensions_prefs        = []
-		self.extensions_enabled      = []
+		self.extensions_list                  = runu("gnome-extensions list").split("\n")
+		self.extensions_list_info             = runu("gnome-extensions list --details").split("\n")
+		self.extensions_list_pref             = runu("gnome-extensions list --prefs").split("\n")
+		self.extensions_list_enab             = runu("gnome-extensions list --enabled").split("\n")
+		self.dashtopanel_uuid                 = None
+		self.dashtopanel_pref                 = None
+		self.dashtopanel_enab                 = None
+		self.dashtodock_uuid                  = None
+		self.dashtodock_pref                  = None
+		self.dashtodock_enab                  = None
+		self.extensions                       = []
 		for extension in self.extensions_list:
 			if extension:
 				uuid = extension[:-1]
-				info = runu("gnome-extensions info " + uuid)
-				name = info.split("\n")[1][7:-1]
-				if extension in self.extensions_list_prefs:
-					prefs = True
+				name = self.extensions_list_info[self.extensions_list_info.index(extension)+1][7:-1]
+				pref = extension in self.extensions_list_pref
+				enab = extension in self.extensions_list_enab
+				if uuid == dashtopanel:
+					self.dashtopanel_uuid = uuid
+					self.dashtopanel_pref = pref
+					self.dashtopanel_enab = enab
+				elif uuid == dashtodock:
+					self.dashtodock_uuid = uuid
+					self.dashtodock_pref = pref
+					self.dashtodock_enab = enab
 				else:
-					prefs = False
-				if extension in self.extensions_list_enabled:
-					enabled = True
-				else:
-					enabled = False
-				self.extensions_uuid.append(uuid)
-				self.extensions_name.append(name)
-				self.extensions_info.append(info)
-				self.extensions_prefs.append(prefs)
-				self.extensions_enabled.append(enabled)
-				if uuid != dashtopanel and uuid != dashtodock:
-					self.box_others.pack_start(Gtk.Separator(), False, False, 0)
-					box = Gtk.Box(spacing = 15)
-					label = Gtk.Label(label = name, xalign = 0.0)
+					box = Gtk.Box(spacing = 10)
+					label = Gtk.Label(label = name, xalign = 0.0, ellipsize = Pango.EllipsizeMode.END)
 					box.pack_start(label, True, True, 0)
-					self.sizegroup.add_widget(label)
+					subbox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
 					switch = Gtk.Switch()
-					switch.set_state(enabled)
+					switch.set_state(enab)
 					switch.connect("state-set", self.switch, uuid)
-					box.pack_end(switch, False, False, 0)
-					if prefs:
+					subbox.pack_start(switch, True, False, 0)
+					box.pack_end(subbox, False, False, 0)
+					if pref:
 						config = Gtk.Button(image = Gtk.Image(icon_name = "emblem-system-symbolic"))
 						config.connect("clicked", self.launch, "gnome-extensions prefs " + uuid)
 						box.pack_end(config, False, False, 0)
-					self.box_others.pack_start(box, False, False, 0)
+					self.extensions.append([name, box])
 
-		if dashtopanel in self.extensions_uuid:
-			box = Gtk.Box(spacing = 15)
+		if self.dashtopanel_uuid:
+			box = Gtk.Box(spacing = 20)
 			self.panel = Gtk.Button(label = "Panel style", image = Gtk.Image(file = "/usr/share/gnome-customization/panel.png"))
 			self.panel.set_always_show_image(True)
 			self.panel.set_image_position(Gtk.PositionType.TOP)
 			self.panel.connect("clicked", self.topanel)
+			if self.dashtopanel_enab:
+				self.panel.get_style_context().add_class("suggested-action")
 			subbox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
-			if self.extensions_prefs[self.extensions_uuid.index(dashtopanel)]:
+			if self.dashtopanel_pref:
 				config = Gtk.Button(image = Gtk.Image(icon_name = "emblem-system-symbolic"))
-				config.connect("clicked", self.launch, "gnome-extensions prefs " + dashtopanel)
+				config.connect("clicked", self.launch, "gnome-extensions prefs " + self.dashtopanel_uuid)
 				subbox.pack_start(config, True, False, 0)
 			box.pack_start(self.panel, False, False, 0)
 			box.pack_start(subbox, False, False, 0)
 			self.box_styles.pack_start(box, False, False, 0)
-		if dashtodock in self.extensions_uuid:
-			box = Gtk.Box(spacing = 15)
+		if self.dashtodock_uuid:
+			box = Gtk.Box(spacing = 20)
 			self.dock = Gtk.Button(label = "Dock style", image = Gtk.Image(file = "/usr/share/gnome-customization/dock.png"))
 			self.dock.set_always_show_image(True)
 			self.dock.set_image_position(Gtk.PositionType.TOP)
 			self.dock.connect("clicked", self.todock)
+			if self.dashtodock_enab:
+				self.dock.get_style_context().add_class("suggested-action")
 			subbox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
-			if self.extensions_prefs[self.extensions_uuid.index(dashtodock)]:
+			if self.dashtodock_pref:
 				config = Gtk.Button(image = Gtk.Image(icon_name = "emblem-system-symbolic"))
-				config.connect("clicked", self.launch, "gnome-extensions prefs " + dashtodock)
+				config.connect("clicked", self.launch, "gnome-extensions prefs " + self.dashtodock_uuid)
 				subbox.pack_start(config, True, False, 0)
 			box.pack_start(self.dock, False, False, 0)
 			box.pack_start(subbox, False, False, 0)
 			self.box_styles.pack_start(box, False, False, 0)
-		box = Gtk.Box(spacing = 15)
+		box = Gtk.Box(spacing = 20)
 		self.dash = Gtk.Button(label = "Dash style", image = Gtk.Image(file = "/usr/share/gnome-customization/dash.png"))
 		self.dash.set_always_show_image(True)
 		self.dash.set_image_position(Gtk.PositionType.TOP)
 		self.dash.connect("clicked", self.todash)
+		if not self.dashtopanel_enab and not self.dashtodock_enab:
+			self.dash.get_style_context().add_class("suggested-action")
 		subbox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
 		box.pack_start(self.dash, False, False, 0)
 		box.pack_start(subbox, False, False, 0)
 		self.box_styles.pack_start(box, False, False, 0)
 
-		self.dash.get_style_context().add_class("suggested-action")
-		if dashtopanel in self.extensions_uuid:
-			if self.extensions_enabled[self.extensions_uuid.index(dashtopanel)]:
-				self.dash.get_style_context().remove_class("suggested-action")
-				self.panel.get_style_context().add_class("suggested-action")
-		if dashtodock in self.extensions_uuid:
-			if self.extensions_enabled[self.extensions_uuid.index(dashtodock)]:
-				self.dash.get_style_context().remove_class("suggested-action")
-				self.dock.get_style_context().add_class("suggested-action")
+		self.extensions.sort()
+		for extension in self.extensions:
+			self.size_others.add_widget(extension[1])
+			self.box_others.pack_start(extension[1], False, False, 0)
+			separator = Gtk.Separator()
+			self.box_others.pack_start(separator, False, False, 0)
+		separator.destroy()
 
 
 	def topanel(self, widget):
-		self.dock.get_style_context().remove_class("suggested-action")
+		if self.dashtodock_uuid:
+			self.dock.get_style_context().remove_class("suggested-action")
+			system("gnome-extensions disable " + self.dashtodock_uuid)
 		self.dash.get_style_context().remove_class("suggested-action")
 		self.panel.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + dashtodock)
-		system("gnome-extensions enable " + dashtopanel)
+		system("gnome-extensions enable " + self.dashtopanel_uuid)
 		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:minimize,maximize,close")
 
 	def todock(self, widget):
-		self.panel.get_style_context().remove_class("suggested-action")
+		if self.dashtopanel_uuid:
+			self.panel.get_style_context().remove_class("suggested-action")
+			system("gnome-extensions disable " + self.dashtopanel_uuid)
 		self.dash.get_style_context().remove_class("suggested-action")
 		self.dock.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + dashtopanel)
-		system("gnome-extensions enable " + dashtodock)
+		system("gnome-extensions enable " + self.dashtodock_uuid)
 		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:minimize,maximize,close")
 
 	def todash(self, widget):
-		self.panel.get_style_context().remove_class("suggested-action")
-		self.dock.get_style_context().remove_class("suggested-action")
+		if self.dashtopanel_uuid:
+			self.panel.get_style_context().remove_class("suggested-action")
+			system("gnome-extensions disable " + self.dashtopanel_uuid)
+		if self.dashtodock_uuid:
+			self.dock.get_style_context().remove_class("suggested-action")
+			system("gnome-extensions disable " + self.dashtodock_uuid)
 		self.dash.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + dashtopanel)
-		system("gnome-extensions disable " + dashtodock)
 		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:close")
 
 	def switchall(self, widget, state):
@@ -464,16 +490,17 @@ class ExtensionsTab(Gtk.Box):
 class DesktopTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Desktop (not ready)"
-		self.header = Gtk.HeaderBar()
+		self.head_start = Gtk.Box()
+		self.head_end = Gtk.Box()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 15)
+		self.header_text = Gtk.Label(margin = 20)
 		self.header_text.set_markup("To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.themes'>/home/" + getenv("USER") + "/.themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.icons'>/home/" + getenv("USER") + "/.icons</a></tt>")
 		self.header_text.show_all()
 		self.header_popover.add(self.header_text)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
-		self.header.pack_start(self.header_info)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.box = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.head_start.pack_start(self.header_info, False, False, 0)
+		Gtk.Box.__init__(self, margin = 20, spacing = 20)
+		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, True, 0)
 
 		self.box_top = Gtk.Box()
@@ -496,19 +523,20 @@ class LoginScreenTab(Gtk.Box):
 	def __init__(self):
 		self.admin = None
 		self.name = "Login screen (not ready)"
-		self.header = Gtk.HeaderBar()
+		self.head_start = Gtk.Box()
+		self.head_end = Gtk.Box()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 15)
+		self.header_text = Gtk.Label(margin = 20)
 		self.header_text.set_markup("To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>")
 		self.header_text.show_all()
 		self.header_popover.add(self.header_text)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
 		self.header_unlock = Gtk.Button(image = Gtk.Image(icon_name = "system-lock-screen-symbolic"))
 		self.header_unlock.connect("clicked", self.unlock)
-		self.header.pack_start(self.header_info)
-		self.header.pack_end(self.header_unlock)
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.box = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.head_start.pack_start(self.header_info, False, False, 0)
+		self.head_end.pack_end(self.header_unlock, False, False, 0)
+		Gtk.Box.__init__(self, margin = 20, spacing = 20)
+		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, True, 0)
 		self.box.set_sensitive(False)
 
@@ -539,21 +567,26 @@ class LoginScreenTab(Gtk.Box):
 class MoreTab(Gtk.Box):
 	def __init__(self):
 		self.name = "More"
-		self.header = Gtk.HeaderBar()
-		Gtk.Box.__init__(self, margin = 30, spacing = 30)
-		self.box = Gtk.Box(spacing = 30, orientation = Gtk.Orientation.VERTICAL)
+		self.head_start = Gtk.Box()
+		self.head_end = Gtk.Box()
+		Gtk.Box.__init__(self, margin = 20, spacing = 20)
+		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, False, 0)
 
-		self.box_head = Gtk.Box(spacing = 15)
-		self.box_buttons = Gtk.Box(spacing = 15)
+		self.box_head = Gtk.Box(spacing = 20)
+		self.box_buttons = Gtk.Box(spacing = 20)
+		self.label_gui = Gtk.Label()
+		self.label_cmd = Gtk.Label()
+		self.label_gui.set_markup("<b>Graphical additional tools</b>")
+		self.label_cmd.set_markup("<b>Command line additional tools</b>")
 		self.box.pack_start(self.box_head, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(Gtk.Label(label = "Graphical additional tools:"), False, False, 0)
+		self.box.pack_start(self.label_gui, False, False, 0)
 		self.box.pack_start(self.box_buttons, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(Gtk.Label(label = "Command line additional tools:"), False, False, 0)
+		self.box.pack_start(self.label_cmd, False, False, 0)
 
-		self.draft = Gtk.Button(label = "This is a BETA version!\nReturn to the old GUI")
+		self.draft = Gtk.Button(label = "This is a BETA version\nReturn to the old GUI")
 		self.links = Gtk.Label()
 		self.draft.connect("clicked", self.returntodraft)
 		self.links.set_markup("Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>.")
