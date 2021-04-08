@@ -57,6 +57,12 @@ enabled-extensions=['topindicatorapp@quiro9.com', 'ding@rastersoft.com', 'dash-t
 favorite-apps=['org.gnome.Calculator.desktop', 'org.gnome.Notes.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Maps.desktop', 'firefox.desktop', 'thunderbird.desktop']
 always-show-log-out=true
 
+[org.gnome.desktop.app-switcher]
+current-workspace-only=true
+
+[org.gnome.desktop.window-switcher]
+current-workspace-only=true
+
 [org.gnome.desktop.sound]
 allow-volume-above-100-percent=false
 theme-name='freedesktop'

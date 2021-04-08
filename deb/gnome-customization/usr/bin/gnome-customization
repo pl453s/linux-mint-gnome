@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-
-#DEBIAN CONTROL PANGO DEPENDANCE
-#CHECK EXTENSION STATE AFTER SWITCH
-
 import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('Handy', '0.0')
@@ -292,7 +288,6 @@ class MainWindow(Gtk.Window):
 		self.list = Gtk.ListBox(width_request = 200)
 		self.list.connect("row-selected", self.switch_tab)
 		self.lbody.pack_start(self.list, True, True, 0)
-		#self.panel.pack_start(Gtk.Separator(), False, False, 0)
 		for tab in [ExtensionsTab(), DesktopTab(), LoginScreenTab(), MoreTab()]:
 			row = Gtk.ListBoxRow()
 			row.add(Gtk.Label(label = tab.name, xalign = 0.0, margin = 10))
@@ -340,7 +335,7 @@ class ExtensionsTab(Gtk.Box):
 		Gtk.Box.__init__(self, margin = 20, spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.box = Gtk.Box(spacing = 20)
 		self.pack_start(self.box, True, True, 0)
-		
+
 		self.box_styles = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.scroll_others = Gtk.ScrolledWindow(min_content_width = 300, max_content_width = 300)
 		self.box.pack_start(self.box_styles, True, False, 0)
@@ -349,7 +344,7 @@ class ExtensionsTab(Gtk.Box):
 		self.box_others = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.VERTICAL, margin_right = 20, margin_top = 10, margin_bottom = 10)
 		self.scroll_others.add(self.box_others)
 		self.size_others = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.VERTICAL)
-		
+
 		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
 		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
 		self.extensions_list                  = runu("gnome-extensions list").split("\n")
@@ -518,6 +513,7 @@ class DesktopTab(Gtk.Box):
 		self.box_middle.pack_end(Gtk.Label(label = "O--\n\nO--\n\n--O\n\nO--\n\nO--\n\nO--"), True, True, 0)
 		self.box_bottom.pack_start(Gtk.Label(label = "Activities hot-corner\n\nWorkspaces (0 for dynamic)\n\nWorkspaces only on primary monitor"), True, True, 0)
 		self.box_bottom.pack_end(Gtk.Label(label = "--O\n\n-  +\n\n--O"), True, True, 0)
+
 
 
 class LoginScreenTab(Gtk.Box):
