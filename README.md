@@ -95,8 +95,11 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
-- First Gnome Customization tabbed GUI 
+- Gnome Customization: Default extensions general switch state
+- Gnome Customization: Empty extentions list label
+- Gnome Customization: Desktop + Login Screen tabs
 - Desktop Icons: Improve localization
+- PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open terminal (only background)
