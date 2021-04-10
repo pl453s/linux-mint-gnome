@@ -95,8 +95,6 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
-- Gnome Customization: Default extensions general switch state
-- Gnome Customization: Empty extentions list label
 - Gnome Customization: Desktop + Login Screen tabs
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE

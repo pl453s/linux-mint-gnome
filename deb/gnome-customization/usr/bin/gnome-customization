@@ -6,7 +6,6 @@ from gi.repository import Gtk, Gio, Handy, Pango
 from os import system, getenv, listdir
 from os.path import exists
 from pexpect import runu, spawnu, EOF
-Handy.init()
 dashtopanel  = "dash-to-panel@jderose9.github.com"
 dashtodock   = "dash-to-dock@micxgx.gmail.com"
 desktopicons = "ding@rastersoft.com"
@@ -129,16 +128,10 @@ class DraftWindow(Gtk.Window):
 		self.box_styles.pack_start(self.button_dock, True, False, 0)
 		self.box_styles.pack_start(self.button_dash, True, False, 0)
 
-		self.text_desktop   = Gtk.Label()
-		self.text_indicator = Gtk.Label()
-		self.text_desktop.set_markup("Desktop Icons NG extension\n<small><i>To configure: Right clic on the desktop > Properties</i></small>")
-		self.text_indicator.set_markup("Top Indicator App extension\n<small><i>Add third-party tray icons next to system tray icons</i></small>")
-		self.switch_desktop   = Gtk.Switch()
-		self.switch_indicator = Gtk.Switch()
-		if self.icons:
-			self.switch_desktop.set_state(True)
-		if self.tray:
-			self.switch_indicator.set_state(True)
+		self.text_desktop     = Gtk.Label(label = "Desktop Icons NG extension\n<small><i>To configure: Right clic on the desktop > Properties</i></small>", use_markup = True)
+		self.text_indicator   = Gtk.Label(label = "Top Indicator App extension\n<small><i>Add third-party tray icons next to system tray icons</i></small>", use_markup = True)
+		self.switch_desktop   = Gtk.Switch(state = self.icons)
+		self.switch_indicator = Gtk.Switch(state = self.tray)
 		self.switch_desktop.connect("state_set", self.action_desktop)
 		self.switch_indicator.connect("state_set", self.action_indicator)
 		self.box_desktop.pack_start(self.text_desktop, False, False, 0)
@@ -150,11 +143,10 @@ class DraftWindow(Gtk.Window):
 		self.text_gtk    = Gtk.Label(label = "GTK theme")
 		self.text_icons  = Gtk.Label(label = "Icons theme")
 		self.text_curs   = Gtk.Label(label = "Cursor theme")
-		self.info_gnome  = Gtk.Label()
+		self.info_gnome  = Gtk.Label(label = "<i>Select a Gnome theme on the login screen\n<small>Use 'gnome-custom-theme-install' to install a theme</small></i>", use_markup = True)
 		self.combo_gtk   = Gtk.ComboBoxText()
 		self.combo_icons = Gtk.ComboBoxText()
 		self.combo_curs  = Gtk.ComboBoxText()
-		self.info_gnome.set_markup("<i>Select a Gnome theme on the login screen\n<small>Use 'gnome-custom-theme-install' to install a theme</small></i>")
 		self.combo_gtk.set_property("width-request", 256)
 		self.combo_icons.set_property("width-request", 256)
 		self.combo_curs.set_property("width-request", 256)
@@ -267,14 +259,8 @@ class MainWindow(Gtk.Window):
 		self.bar = Handy.TitleBar()
 		self.head = Handy.Leaflet()
 		self.head.set_transition_type(Handy.LeafletTransitionType.SLIDE)
-		self.lhead = Handy.HeaderBar(title = self.name)
-		self.rhead = Handy.HeaderBar(title = self.name)
-		self.rhead.props.hexpand = True
-		self.rhead.props.show_close_button = True
-		self.rhead_start = Gtk.Stack()
-		self.rhead_end = Gtk.Stack()
-		self.rhead.pack_start(self.rhead_start)
-		self.rhead.pack_end(self.rhead_end)
+		self.lhead = Gtk.HeaderBar(title = self.name)
+		self.rhead = Gtk.Stack()
 		separator = Gtk.Separator()
 		separator.get_style_context().add_class("sidebar")
 		self.head.add(self.lhead)
@@ -283,22 +269,21 @@ class MainWindow(Gtk.Window):
 		self.bar.add(self.head)
 		self.set_titlebar(self.bar)
 
-		self.lbody = Gtk.Box()
+		self.lbody = Gtk.ListBox(width_request = 200)
+		self.lbody.connect("row-selected", self.switch_tab)
 		self.rbody = Gtk.Stack()
-		self.list = Gtk.ListBox(width_request = 200)
-		self.list.connect("row-selected", self.switch_tab)
-		self.lbody.pack_start(self.list, True, True, 0)
 		for tab in [ExtensionsTab(), DesktopTab(), LoginScreenTab(), MoreTab()]:
 			row = Gtk.ListBoxRow()
 			row.add(Gtk.Label(label = tab.name, xalign = 0.0, margin = 10))
-			self.list.insert(row, -1)
-			self.rhead_start.add_named(tab.head_start, tab.name)
-			self.rhead_end.add_named(tab.head_end, tab.name)
+			self.lbody.insert(row, -1)
+			tab.header.props.hexpand = True
+			tab.header.props.show_close_button = True
+			tab.header.props.title = tab.name
+			self.rhead.add_named(tab.header, tab.name)
 			self.rbody.add_named(tab, tab.name)
 		self.body.pack_start(self.lbody, False, False, 0)
 		self.body.pack_start(Gtk.Separator(), False, False, 0)
 		self.body.pack_start(self.rbody, True, True, 0)
-
 		self.lsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
 		self.lsize.add_widget(self.lhead)
 		self.lsize.add_widget(self.lbody)
@@ -309,29 +294,26 @@ class MainWindow(Gtk.Window):
 
 	def switch_tab(self, widget, subwidget):
 		name = subwidget.get_child().get_text()
-		self.rhead.set_title(name)
-		self.rhead_start.set_visible_child_name(name)
-		self.rhead_end.set_visible_child_name(name)
+		self.rhead.set_visible_child_name(name)
 		self.rbody.set_visible_child_name(name)
 
 
 
 class ExtensionsTab(Gtk.Box):
 	def __init__(self):
+		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
+		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
 		self.name = "Extensions"
-		self.head_start = Gtk.Box()
-		self.head_end = Gtk.Box()
+		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 20)
-		self.header_text.set_markup("<b>Warning: Disable all extensions if you experience system issues.</b>\n\nTo add a Gnome extension, install it with your package manager or\nmanually browse, download and install it from <a href='https://extensions.gnome.org'>extensions.gnome.org</a>.\n\nMake sure the extension folder name matches its UUID. You can install\nan extension directly from your browser with the appropriate addon.\n\nValid paths to place extensions are:\n - <tt><a href='file:///usr/share/gnome-shell/extensions'>/usr/share/gnome-shell/extensions</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.local/share/gnome-shell/extensions'>/home/" + getenv("USER") + "/.local/share/gnome-shell/extensions</a></tt>")
-		self.header_text.show_all()
-		self.header_popover.add(self.header_text)
+		label = Gtk.Label(label = "<b>Warning: Disable all extensions if you experience system issues.</b>\n\nTo add a Gnome extension, install it with your package manager or\nmanually browse, download and install it from <a href='https://extensions.gnome.org'>extensions.gnome.org</a>.\n\nMake sure the extension folder name matches its UUID. You can install\nan extension directly from your browser with the appropriate addon.\n\nValid paths to place extensions are:\n - <tt><a href='file:///usr/share/gnome-shell/extensions'>/usr/share/gnome-shell/extensions</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.local/share/gnome-shell/extensions'>/home/" + getenv("USER") + "/.local/share/gnome-shell/extensions</a></tt>", use_markup = True, margin = 20)
+		label.show_all()
+		self.header_popover.add(label)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
-		self.header_switch = Gtk.Switch()
-		self.header_switch.set_state(True)
+		self.header_switch = Gtk.Switch(state = not self.org_gnome_shell.get_boolean("disable-user-extensions"))
 		self.header_switch.connect("state-set", self.switchall)
-		self.head_start.pack_start(self.header_info, False, False, 0)
-		self.head_end.pack_end(self.header_switch, False, False, 0)
+		self.header.pack_start(self.header_info)
+		self.header.pack_end(self.header_switch)
 		Gtk.Box.__init__(self, margin = 20, spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.box = Gtk.Box(spacing = 20)
 		self.pack_start(self.box, True, True, 0)
@@ -345,25 +327,24 @@ class ExtensionsTab(Gtk.Box):
 		self.scroll_others.add(self.box_others)
 		self.size_others = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.VERTICAL)
 
-		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
-		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
-		self.extensions_list                  = runu("gnome-extensions list").split("\n")
-		self.extensions_list_info             = runu("gnome-extensions list --details").split("\n")
-		self.extensions_list_pref             = runu("gnome-extensions list --prefs").split("\n")
-		self.extensions_list_enab             = runu("gnome-extensions list --enabled").split("\n")
-		self.dashtopanel_uuid                 = None
-		self.dashtopanel_pref                 = None
-		self.dashtopanel_enab                 = None
-		self.dashtodock_uuid                  = None
-		self.dashtodock_pref                  = None
-		self.dashtodock_enab                  = None
-		self.extensions                       = []
+		self.extensions_list  = runu("gnome-extensions list").split("\n")
+		self.extensions_info  = runu("gnome-extensions list --details").split("\n")
+		self.extensions_pref  = runu("gnome-extensions list --prefs").split("\n")
+		self.extensions_enab  = self.org_gnome_shell.get_strv("enabled-extensions")
+		self.extensions_disa  = self.org_gnome_shell.get_strv("disabled-extensions")
+		self.dashtopanel_uuid = None
+		self.dashtopanel_pref = None
+		self.dashtopanel_enab = None
+		self.dashtodock_uuid  = None
+		self.dashtodock_pref  = None
+		self.dashtodock_enab  = None
+		self.extensions       = []
 		for extension in self.extensions_list:
 			if extension:
 				uuid = extension[:-1]
-				name = self.extensions_list_info[self.extensions_list_info.index(extension)+1][7:-1]
-				pref = extension in self.extensions_list_pref
-				enab = extension in self.extensions_list_enab
+				name = self.extensions_info[self.extensions_info.index(extension)+1][7:-1]
+				pref = extension in self.extensions_pref
+				enab = uuid in self.extensions_enab and uuid not in self.extensions_disa
 				if uuid == dashtopanel:
 					self.dashtopanel_uuid = uuid
 					self.dashtopanel_pref = pref
@@ -432,13 +413,19 @@ class ExtensionsTab(Gtk.Box):
 		box.pack_start(subbox, False, False, 0)
 		self.box_styles.pack_start(box, False, False, 0)
 
-		self.extensions.sort()
-		for extension in self.extensions:
-			self.size_others.add_widget(extension[1])
-			self.box_others.pack_start(extension[1], False, False, 0)
-			separator = Gtk.Separator()
-			self.box_others.pack_start(separator, False, False, 0)
-		separator.destroy()
+		if self.extensions:
+			self.extensions.sort()
+			for extension in self.extensions:
+				self.size_others.add_widget(extension[1])
+				self.box_others.pack_start(extension[1], False, False, 0)
+				separator = Gtk.Separator()
+				self.box_others.pack_start(separator, False, False, 0)
+			separator.destroy()
+		else:
+			box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+			box.pack_start(Gtk.Image(icon_name = "org.gnome.Extensions-symbolic", icon_size = 6), False, False, 0)
+			box.pack_start(Gtk.Label(label = "<big><b>You have no other\nextension installed</b></big>", use_markup = True, justify = Gtk.Justification.CENTER), False, False, 0)
+			self.box_others.pack_start(box, True, False, 0)
 
 
 	def topanel(self, widget):
@@ -486,15 +473,13 @@ class ExtensionsTab(Gtk.Box):
 class DesktopTab(Gtk.Box):
 	def __init__(self):
 		self.name = "Desktop (not ready)"
-		self.head_start = Gtk.Box()
-		self.head_end = Gtk.Box()
+		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 20)
-		self.header_text.set_markup("To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.themes'>/home/" + getenv("USER") + "/.themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.icons'>/home/" + getenv("USER") + "/.icons</a></tt>")
-		self.header_text.show_all()
-		self.header_popover.add(self.header_text)
+		label = Gtk.Label(label = "To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.themes'>/home/" + getenv("USER") + "/.themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.icons'>/home/" + getenv("USER") + "/.icons</a></tt>", use_markup = True, margin = 20)
+		label.show_all()
+		self.header_popover.add(label)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
-		self.head_start.pack_start(self.header_info, False, False, 0)
+		self.header.pack_start(self.header_info)
 		Gtk.Box.__init__(self, margin = 20, spacing = 20)
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, True, 0)
@@ -520,18 +505,16 @@ class LoginScreenTab(Gtk.Box):
 	def __init__(self):
 		self.admin = None
 		self.name = "Login screen (not ready)"
-		self.head_start = Gtk.Box()
-		self.head_end = Gtk.Box()
+		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
-		self.header_text = Gtk.Label(margin = 20)
-		self.header_text.set_markup("To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>")
-		self.header_text.show_all()
-		self.header_popover.add(self.header_text)
+		label = Gtk.Label(label = "To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>", use_markup = True, margin = 20)
+		label.show_all()
+		self.header_popover.add(label)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
 		self.header_unlock = Gtk.Button(image = Gtk.Image(icon_name = "system-lock-screen-symbolic"))
 		self.header_unlock.connect("clicked", self.unlock)
-		self.head_start.pack_start(self.header_info, False, False, 0)
-		self.head_end.pack_end(self.header_unlock, False, False, 0)
+		self.header.pack_start(self.header_info)
+		self.header.pack_end(self.header_unlock)
 		Gtk.Box.__init__(self, margin = 20, spacing = 20)
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, True, 0)
@@ -564,18 +547,15 @@ class LoginScreenTab(Gtk.Box):
 class MoreTab(Gtk.Box):
 	def __init__(self):
 		self.name = "More"
-		self.head_start = Gtk.Box()
-		self.head_end = Gtk.Box()
+		self.header = Gtk.HeaderBar()
 		Gtk.Box.__init__(self, margin = 20, spacing = 20)
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, False, 0)
 
 		self.box_head = Gtk.Box(spacing = 20)
 		self.box_buttons = Gtk.Box(spacing = 20)
-		self.label_gui = Gtk.Label()
-		self.label_cmd = Gtk.Label()
-		self.label_gui.set_markup("<b>Graphical additional tools</b>")
-		self.label_cmd.set_markup("<b>Command line additional tools</b>")
+		self.label_gui = Gtk.Label(label = "<b>Graphical additional tools</b>", use_markup = True)
+		self.label_cmd = Gtk.Label(label = "<b>Command line additional tools</b>", use_markup = True)
 		self.box.pack_start(self.box_head, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
 		self.box.pack_start(self.label_gui, False, False, 0)
@@ -584,9 +564,8 @@ class MoreTab(Gtk.Box):
 		self.box.pack_start(self.label_cmd, False, False, 0)
 
 		self.draft = Gtk.Button(label = "This is a BETA version\nReturn to the old GUI")
-		self.links = Gtk.Label()
 		self.draft.connect("clicked", self.returntodraft)
-		self.links.set_markup("Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>.")
+		self.links = Gtk.Label(label = "Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>.", use_markup = True)
 		self.box_head.pack_start(self.draft, True, False, 0)
 		self.box_head.pack_start(Gtk.Separator(), False, False, 0)
 		self.box_head.pack_start(self.links, True, False, 0)
@@ -607,8 +586,7 @@ class MoreTab(Gtk.Box):
 		self.box_buttons.pack_start(self.start, True, True, 0)
 		self.box_buttons.pack_start(self.qt5ct, True, True, 0)
 
-		self.commands = Gtk.Label()
-		self.commands.set_markup("<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>")
+		self.commands = Gtk.Label(label = "<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>", use_markup = True)
 		self.box.pack_start(self.commands, False, False, 0)
 
 
