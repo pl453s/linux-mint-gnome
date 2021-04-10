@@ -64,7 +64,7 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-core: Mint Gnome session, various adjustments, default schemas and default user folder
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
-- mint-gnome-extensions : Top Indicator, Desktop Icons NG, Dash to Panel, Dash to Dock and User Themes
+- mint-gnome-extensions : Dash to Panel and Dash to Dock, Desktop Icons NG and Top Indicator App
 - mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
@@ -95,8 +95,8 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
-- Gnome Customization: Desktop + Login Screen tabs
 - Desktop Icons: Improve localization
+- Gnome Customization: Desktop + Login Screen tabs
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
