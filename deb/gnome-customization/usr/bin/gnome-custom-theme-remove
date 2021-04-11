@@ -14,8 +14,6 @@ then
 	fi
 else
 	echo "Usage: gnome-custom-theme-remove <theme name>"
-	echo " (Use 'gnome-custom-theme-list' to list available themes)"
-	echo " (Use 'gnome-custom-theme-install' to install a theme)"
 	echo
 	echo "Syntaxt error!"
 fi

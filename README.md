@@ -95,8 +95,6 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
-- Gnome Customization: Startup optimization (runu)
-- Gnome Customization: Desktop + Login Screen tabs
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch

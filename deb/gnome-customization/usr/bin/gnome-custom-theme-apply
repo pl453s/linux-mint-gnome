@@ -17,7 +17,7 @@ then
 		echo
 		echo "/!\\ WARNING /!\\"
 		echo "If the theme is incompatible with GDM3 and causes it to crash,"
-		echo "login to another TTY and run 'gnome-custom-gdm3-reset'."
+		echo "login to another TTY and run 'gdm3-reset'."
 		echo
 		echo
 		while true
@@ -32,9 +32,7 @@ then
 		echo "This theme doesn't exists!"
 	fi
 else
-	echo "Usage: gnome-custom-gdm3-theme <theme name>"
-	echo " (Use 'gnome-custom-theme-list' to list available themes)"
-	echo " (Use 'gnome-custom-theme-install' to install a theme)"
+	echo "Usage: gnome-custom-theme-apply <theme name>"
 	echo
 	echo "Syntaxt error!"
 fi

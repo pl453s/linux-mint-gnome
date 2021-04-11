@@ -63,7 +63,7 @@ then
 	sudo sed -i "s/gnome-default/gnome-custom-${name,,}/g" "/usr/share/xsessions/gnome-custom-${name,,}.desktop"
 
 else
-	echo "Usage: gnome-custom-theme <theme path> [css file]"
+	echo "Usage: gnome-custom-theme-install <theme path> [css file]"
 	echo " (Specify [css file] to compile with [css file] as GDM3 stylesheet)"
 	echo " (Usualy, [css file] is 'gdm3.css' or 'gnome-shell.css')"
 	echo " (Without [css file], the theme is installed with its gresource file as it)"
