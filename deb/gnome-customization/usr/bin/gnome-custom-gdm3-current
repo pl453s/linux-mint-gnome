@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo true
 
 if [ "$(readlink -f '/usr/share/gnome-shell/gdm3-theme.gresource')" == "/usr/share/gnome-shell/gnome-shell-theme.gresource" ]
 then
@@ -10,12 +9,12 @@ fi
 echo
 echo "Parameter: current value (default value)"
 echo
-echo "Battery %: $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface show-battery-percentage 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface show-battery-percentage))"
-echo "Weekday  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-weekday 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-weekday))"
-echo "Date     : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-date 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-date))"
-echo "Seconds  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface clock-show-seconds 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-seconds))"
-echo "Week N°  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.calendar show-weekdate 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.calendar show-weekdate))"
-echo "GTK theme: $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface gtk-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface gtk-theme))" | sed "s/'//g"
-echo "Icons    : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface icon-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface icon-theme))" | sed "s/'//g"
-echo "Cursors  : $(sudo -u gdm dbus-launch gsettings get org.gnome.desktop.interface cursor-theme 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface cursor-theme))" | sed "s/'//g"
-echo "Watermark: $(sudo -u gdm dbus-launch gsettings get org.gnome.login-screen logo 2> /dev/null) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.login-screen logo))" | sed "s/'//g"
+echo "Battery %: $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface show-battery-percentage) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface show-battery-percentage))"
+echo "Weekday  : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface clock-show-weekday) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-weekday))"
+echo "Date     : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface clock-show-date) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-date))"
+echo "Seconds  : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface clock-show-seconds) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface clock-show-seconds))"
+echo "Week N°  : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.calendar show-weekdate) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.calendar show-weekdate))"
+echo "GTK theme: $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface gtk-theme) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface gtk-theme))" | sed "s/'//g"
+echo "Icons    : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface icon-theme) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface icon-theme))" | sed "s/'//g"
+echo "Cursors  : $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.desktop.interface cursor-theme) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.desktop.interface cursor-theme))" | sed "s/'//g"
+echo "Watermark: $(XDG_CONFIG_HOME=/var/lib/gdm3/ gsettings get org.gnome.login-screen logo) ($(XDG_CONFIG_HOME=/tmp/ gsettings get org.gnome.login-screen logo))" | sed "s/'//g"

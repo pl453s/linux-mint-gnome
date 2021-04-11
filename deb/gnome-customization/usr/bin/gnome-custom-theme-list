@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo true
 
 for gresource in /usr/share/gnome-shell/themes/*.gresource
 do

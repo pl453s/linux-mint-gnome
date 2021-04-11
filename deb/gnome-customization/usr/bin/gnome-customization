@@ -3,249 +3,13 @@ import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('Handy', '0.0')
 from gi.repository import Gtk, Gio, Handy, Pango
-from os import system, getenv, listdir
+from os import system, getenv, listdir, readlink
 from os.path import exists
 from pexpect import runu, spawnu, EOF
 dashtopanel  = "dash-to-panel@jderose9.github.com"
 dashtodock   = "dash-to-dock@micxgx.gmail.com"
 desktopicons = "ding@rastersoft.com"
 topindicator = "topindicatorapp@quiro9.com"
-
-
-
-class DraftWindow(Gtk.Window):
-	def __init__(self):
-
-		self.dashtopanel  = "dash-to-panel@jderose9.github.com"
-		self.dashtodock   = "dash-to-dock@micxgx.gmail.com"
-		self.desktopicons = "ding@rastersoft.com"
-		self.topindicator = "topindicatorapp@quiro9.com"
-
-		self.themes_gtk   = ["Adwaita"]
-		self.themes_icons = ["Adwaita"]
-		self.themes_curs  = ["Adwaita"]
-		for path in ["/usr/share/themes/", "/usr/local/share/themes/", getenv("HOME") + "/.themes/", getenv("HOME") + "/.local/share/themes/"]:
-			if exists(path):
-				for theme in listdir(path):
-					if exists(path + theme + "/index.theme") and not theme in self.themes_gtk and not theme == "HighContrast" and not theme == "HighContrastInverse":
-						self.themes_gtk.append(theme)
-		for path in ["/usr/share/icons/", "/usr/local/share/icons/", getenv("HOME") + "/.icons/", getenv("HOME") + "/.local/share/icons/"]:
-			if exists(path):
-				for theme in listdir(path):
-					if exists(path + theme + "/index.theme") and not theme in self.themes_icons and not theme == "HighContrast" and not theme == "HighContrastInverse" \
-					and not theme == "default" and not theme == "gnome" and not theme == "hicolor" and not theme == "locolor":
-						self.themes_icons.append(theme)
-					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
-						self.themes_curs.append(theme)
-		self.themes_gtk.sort()
-		self.themes_icons.sort()
-		self.themes_curs.sort()
-
-		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
-		self.org_gnome_desktop_interface      = Gio.Settings.new("org.gnome.desktop.interface")
-		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
-		self.enabled_extensions               = self.org_gnome_shell.get_strv("enabled-extensions")
-		self.theme_gtk                        = self.org_gnome_desktop_interface.get_string("gtk-theme")
-		self.theme_icons                      = self.org_gnome_desktop_interface.get_string("icon-theme")
-		self.theme_curs                       = self.org_gnome_desktop_interface.get_string("cursor-theme")
-
-		self.style = "dash"
-		self.icons = False
-		self.tray  = False
-		if self.dashtopanel in self.enabled_extensions:
-			self.style = "panel"
-		if self.dashtodock in self.enabled_extensions:
-			self.style = "dock"
-		if self.desktopicons in self.enabled_extensions:
-			self.icons = True
-		if self.topindicator in self.enabled_extensions:
-			self.tray = True
-
-		Gtk.Window.__init__(self, title = "Customization")
-		self.set_icon_name("gnome-color-manager")
-		self.set_resizable(False)
-		self.set_border_width(32)
-		self.header = Gtk.HeaderBar()
-		self.header.set_title("Customization")
-		self.header.set_show_close_button(True)
-		self.set_titlebar(self.header)
-		self.box = Gtk.Box(spacing = 32)
-		self.add(self.box)
-		self.box_styles = Gtk.Box(spacing = 24, orientation = Gtk.Orientation.VERTICAL)
-		self.box_options = Gtk.Box(spacing = 8, orientation = Gtk.Orientation.VERTICAL)
-		self.box.pack_start(self.box_styles, True, False, 0)
-		self.box.pack_start(Gtk.Separator(), True, False, 0)
-		self.box.pack_start(self.box_options, True, False, 0)
-
-		self.box_desktop   = Gtk.Box(spacing = 8)
-		self.box_indicator = Gtk.Box(spacing = 8)
-		self.box_gnome     = Gtk.Box(spacing = 8)
-		self.box_gtk       = Gtk.Box(spacing = 8)
-		self.box_icons     = Gtk.Box(spacing = 8)
-		self.box_curs      = Gtk.Box(spacing = 8)
-		self.box_infos     = Gtk.Box(spacing = 8)
-		self.box_more      = Gtk.Box(spacing = 8)
-		self.box_options.pack_start(self.box_desktop, False, False, 0)
-		self.box_options.pack_start(self.box_indicator, False, False, 0)
-		self.box_options.pack_start(Gtk.Separator(), False, False, 0)
-		self.box_options.pack_start(self.box_gnome, False, False, 0)
-		self.box_options.pack_start(self.box_gtk, False, False, 0)
-		self.box_options.pack_start(self.box_icons, False, False, 0)
-		self.box_options.pack_start(self.box_curs, False, False, 0)
-		self.box_options.pack_start(Gtk.Separator(), False, False, 0)
-		self.box_options.pack_start(self.box_infos, False, False, 0)
-		self.box_options.pack_start(Gtk.Separator(), False, False, 0)
-		self.box_options.pack_end(self.box_more, False, False, 0)
-
-		self.button_panel = Gtk.Button(label = "Panel style")
-		self.button_dock  = Gtk.Button(label = "Dock style")
-		self.button_dash  = Gtk.Button(label = "Dash style")
-		self.button_panel.set_always_show_image(True)
-		self.button_dock.set_always_show_image(True)
-		self.button_dash.set_always_show_image(True)
-		self.image_panel = Gtk.Image()
-		self.image_dock  = Gtk.Image()
-		self.image_dash  = Gtk.Image()
-		self.image_panel.set_from_file("/usr/share/gnome-customization/panel.png")
-		self.image_dock.set_from_file("/usr/share/gnome-customization/dock.png")
-		self.image_dash.set_from_file("/usr/share/gnome-customization/dash.png")
-		self.button_panel.set_image(self.image_panel)
-		self.button_dock.set_image(self.image_dock)
-		self.button_dash.set_image(self.image_dash)
-		self.button_panel.set_image_position(Gtk.PositionType.TOP)
-		self.button_dock.set_image_position(Gtk.PositionType.TOP)
-		self.button_dash.set_image_position(Gtk.PositionType.TOP)
-		if self.style == "panel":
-			self.button_panel.get_style_context().add_class("suggested-action")
-		if self.style == "dock":
-			self.button_dock.get_style_context().add_class("suggested-action")
-		if self.style == "dash":
-			self.button_dash.get_style_context().add_class("suggested-action")
-		self.button_panel.connect("clicked", self.action_panel)
-		self.button_dock.connect("clicked", self.action_dock)
-		self.button_dash.connect("clicked", self.action_dash)
-		self.box_styles.pack_start(self.button_panel, True, False, 0)
-		self.box_styles.pack_start(self.button_dock, True, False, 0)
-		self.box_styles.pack_start(self.button_dash, True, False, 0)
-
-		self.text_desktop     = Gtk.Label(label = "Desktop Icons NG extension\n<small><i>To configure: Right clic on the desktop > Properties</i></small>", use_markup = True)
-		self.text_indicator   = Gtk.Label(label = "Top Indicator App extension\n<small><i>Add third-party tray icons next to system tray icons</i></small>", use_markup = True)
-		self.switch_desktop   = Gtk.Switch(state = self.icons)
-		self.switch_indicator = Gtk.Switch(state = self.tray)
-		self.switch_desktop.connect("state_set", self.action_desktop)
-		self.switch_indicator.connect("state_set", self.action_indicator)
-		self.box_desktop.pack_start(self.text_desktop, False, False, 0)
-		self.box_indicator.pack_start(self.text_indicator, False, False, 0)
-		self.box_desktop.pack_end(self.switch_desktop, False, False, 0)
-		self.box_indicator.pack_end(self.switch_indicator, False, False, 0)
-
-		self.text_gnome  = Gtk.Label(label = "Gnome theme")
-		self.text_gtk    = Gtk.Label(label = "GTK theme")
-		self.text_icons  = Gtk.Label(label = "Icons theme")
-		self.text_curs   = Gtk.Label(label = "Cursor theme")
-		self.info_gnome  = Gtk.Label(label = "<i>Select a Gnome theme on the login screen\n<small>Use 'gnome-custom-theme-install' to install a theme</small></i>", use_markup = True)
-		self.combo_gtk   = Gtk.ComboBoxText()
-		self.combo_icons = Gtk.ComboBoxText()
-		self.combo_curs  = Gtk.ComboBoxText()
-		self.combo_gtk.set_property("width-request", 256)
-		self.combo_icons.set_property("width-request", 256)
-		self.combo_curs.set_property("width-request", 256)
-		for theme in self.themes_gtk:
-			self.combo_gtk.append_text(theme)
-		for theme in self.themes_icons:
-			self.combo_icons.append_text(theme)
-		for theme in self.themes_curs:
-			self.combo_curs.append_text(theme)
-		if self.theme_gtk in self.themes_gtk:
-			self.combo_gtk.set_active(self.themes_gtk.index(self.theme_gtk))
-		if self.theme_icons in self.themes_icons:
-			self.combo_icons.set_active(self.themes_icons.index(self.theme_icons))
-		if self.theme_curs in self.themes_curs:
-			self.combo_curs.set_active(self.themes_curs.index(self.theme_curs))
-		self.combo_gtk.connect("changed", self.action_gtk)
-		self.combo_icons.connect("changed", self.action_icons)
-		self.combo_curs.connect("changed", self.action_curs)
-		self.box_gnome.pack_start(self.text_gnome, False, False, 0)
-		self.box_gtk.pack_start(self.text_gtk, False, False, 0)
-		self.box_icons.pack_start(self.text_icons, False, False, 0)
-		self.box_curs.pack_start(self.text_curs, False, False, 0)
-		self.box_gnome.pack_end(self.info_gnome, False, False, 0)
-		self.box_gtk.pack_end(self.combo_gtk, False, False, 0)
-		self.box_icons.pack_end(self.combo_icons, False, False, 0)
-		self.box_curs.pack_end(self.combo_curs, False, False, 0)
-
-		self.text_infos = Gtk.Label(label = "\n"
-		"This is a first \"Customization\" GUI. In the future, this window\n"
-		"should be splited in many tabs, allowing you to customize:\n\n"
-		" - Styles and Gnome extensions\n - Desktop and GDM3 appearance\n"
-		" - Add, hide and edit application icons\n"
-		" - Add, hide and edit startup programs\n"
-		" - User folders paths and names\n"
-		" - Qt5 and advanced Gnome settings\n"
-		" - Plymouth theme and Grub theme\n")
-		self.box_infos.pack_start(self.text_infos, False, False, 0)
-
-		self.button_apps   = Gtk.Button(label = "Applications")
-		self.button_start  = Gtk.Button(label = "Startup")
-		self.button_tweaks = Gtk.Button(label = "Tweaks")
-		self.button_qt5ct  = Gtk.Button(label = "Qt5 CT")
-		self.button_apps.connect("clicked", self.action_launch, "menulibre")
-		self.button_start.connect("clicked", self.action_launch, "gnome-session-properties")
-		self.button_tweaks.connect("clicked", self.action_launch, "gnome-tweaks")
-		self.button_qt5ct.connect("clicked", self.action_launch, "notify-send -i qt5ct 'Please wait...' 'Qt5 Configuration Tool is starting' ; qt5ct")
-		self.box_more.pack_start(self.button_apps, True, True, 0)
-		self.box_more.pack_start(self.button_start, True, True, 0)
-		self.box_more.pack_start(self.button_tweaks, True, True, 0)
-		self.box_more.pack_start(self.button_qt5ct, True, True, 0)
-
-
-	def action_panel(self, widget):
-		self.button_dock.get_style_context().remove_class("suggested-action")
-		self.button_dash.get_style_context().remove_class("suggested-action")
-		self.button_panel.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + self.dashtodock)
-		system("gnome-extensions enable " + self.dashtopanel)
-		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:minimize,maximize,close")
-
-	def action_dock(self, widget):
-		self.button_panel.get_style_context().remove_class("suggested-action")
-		self.button_dash.get_style_context().remove_class("suggested-action")
-		self.button_dock.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + self.dashtopanel)
-		system("gnome-extensions enable " + self.dashtodock)
-		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:minimize,maximize,close")
-
-	def action_dash(self, widget):
-		self.button_panel.get_style_context().remove_class("suggested-action")
-		self.button_dock.get_style_context().remove_class("suggested-action")
-		self.button_dash.get_style_context().add_class("suggested-action")
-		system("gnome-extensions disable " + self.dashtopanel)
-		system("gnome-extensions disable " + self.dashtodock)
-		self.org_gnome_desktop_wm_preferences.set_string("button-layout", "appmenu:close")
-
-	def action_desktop(self, widget, state):
-		if state:
-			system("gnome-extensions enable " + self.desktopicons)
-		else:
-			system("gnome-extensions disable " + self.desktopicons)
-
-	def action_indicator(self, widget, state):
-		if state:
-			system("gnome-extensions enable " + self.topindicator)
-		else:
-			system("gnome-extensions disable " + self.topindicator)
-
-	def action_gtk(self, widget):
-		self.org_gnome_desktop_interface.set_string("gtk-theme", widget.get_active_text())
-
-	def action_icons(self, widget):
-		self.org_gnome_desktop_interface.set_string("icon-theme", widget.get_active_text())
-
-	def action_curs(self, widget):
-		self.org_gnome_desktop_interface.set_string("cursor-theme", widget.get_active_text())
-
-	def action_launch(self, widget, command):
-		system(command + " &")
 
 
 
@@ -303,6 +67,7 @@ class ExtensionsTab(Gtk.Box):
 	def __init__(self):
 		self.org_gnome_shell                  = Gio.Settings.new("org.gnome.shell")
 		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
+
 		self.name = "Extensions"
 		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
@@ -358,8 +123,7 @@ class ExtensionsTab(Gtk.Box):
 					label = Gtk.Label(label = name, xalign = 0.0, ellipsize = Pango.EllipsizeMode.END)
 					box.pack_start(label, True, True, 0)
 					subbox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
-					switch = Gtk.Switch()
-					switch.set_state(enab)
+					switch = Gtk.Switch(state = enab)
 					switch.connect("state-set", self.switch, uuid)
 					subbox.pack_start(switch, True, False, 0)
 					box.pack_end(subbox, False, False, 0)
@@ -371,9 +135,7 @@ class ExtensionsTab(Gtk.Box):
 
 		if self.dashtopanel_uuid:
 			box = Gtk.Box(spacing = 20)
-			self.panel = Gtk.Button(label = "Panel style", image = Gtk.Image(file = "/usr/share/gnome-customization/panel.png"))
-			self.panel.set_always_show_image(True)
-			self.panel.set_image_position(Gtk.PositionType.TOP)
+			self.panel = Gtk.Button(label = "Panel style", image = Gtk.Image(file = "/usr/share/gnome-customization/panel.png"), always_show_image = True, image_position = Gtk.PositionType.TOP)
 			self.panel.connect("clicked", self.topanel)
 			if self.dashtopanel_enab:
 				self.panel.get_style_context().add_class("suggested-action")
@@ -387,9 +149,7 @@ class ExtensionsTab(Gtk.Box):
 			self.box_styles.pack_start(box, False, False, 0)
 		if self.dashtodock_uuid:
 			box = Gtk.Box(spacing = 20)
-			self.dock = Gtk.Button(label = "Dock style", image = Gtk.Image(file = "/usr/share/gnome-customization/dock.png"))
-			self.dock.set_always_show_image(True)
-			self.dock.set_image_position(Gtk.PositionType.TOP)
+			self.dock = Gtk.Button(label = "Dock style", image = Gtk.Image(file = "/usr/share/gnome-customization/dock.png"), always_show_image = True, image_position = Gtk.PositionType.TOP)
 			self.dock.connect("clicked", self.todock)
 			if self.dashtodock_enab:
 				self.dock.get_style_context().add_class("suggested-action")
@@ -402,9 +162,7 @@ class ExtensionsTab(Gtk.Box):
 			box.pack_start(subbox, False, False, 0)
 			self.box_styles.pack_start(box, False, False, 0)
 		box = Gtk.Box(spacing = 20)
-		self.dash = Gtk.Button(label = "Dash style", image = Gtk.Image(file = "/usr/share/gnome-customization/dash.png"))
-		self.dash.set_always_show_image(True)
-		self.dash.set_image_position(Gtk.PositionType.TOP)
+		self.dash = Gtk.Button(label = "Dash style", image = Gtk.Image(file = "/usr/share/gnome-customization/dash.png"), always_show_image = True, image_position = Gtk.PositionType.TOP)
 		self.dash.connect("clicked", self.todash)
 		if not self.dashtopanel_enab and not self.dashtodock_enab:
 			self.dash.get_style_context().add_class("suggested-action")
@@ -472,6 +230,36 @@ class ExtensionsTab(Gtk.Box):
 
 class DesktopTab(Gtk.Box):
 	def __init__(self):
+		self.org_gnome_desktop_interface      = Gio.Settings.new("org.gnome.desktop.interface")
+		self.org_gnome_desktop_calendar       = Gio.Settings.new("org.gnome.desktop.calendar")
+		self.org_gnome_desktop_sound          = Gio.Settings.new("org.gnome.desktop.sound")
+		self.org_gnome_desktop_wm_preferences = Gio.Settings.new("org.gnome.desktop.wm.preferences")
+		self.org_gnome_mutter                 = Gio.Settings.new("org.gnome.mutter")
+		file = open("/usr/share/gnome-session/sessions/" + getenv("XDG_SESSION_DESKTOP") + ".session", "r")
+		self.theme_gnome = file.readlines()[1][12:-2]
+		if not self.theme_gnome:
+			self.theme_gnome = "(Default)"
+		file.close()
+		self.theme_gtk    = self.org_gnome_desktop_interface.get_string("gtk-theme")
+		self.theme_icons  = self.org_gnome_desktop_interface.get_string("icon-theme")
+		self.theme_curs   = self.org_gnome_desktop_interface.get_string("cursor-theme")
+		self.themes_gtk   = ["Adwaita"]
+		self.themes_icons = ["Adwaita"]
+		self.themes_curs  = ["Adwaita"]
+		for path in ["/usr/share/themes/", "/usr/local/share/themes/", getenv("HOME") + "/.themes/", getenv("HOME") + "/.local/share/themes/"]:
+			if exists(path):
+				for theme in listdir(path):
+					if exists(path + theme + "/index.theme") and not theme in self.themes_gtk and not theme == "HighContrast" and not theme == "HighContrastInverse":
+						self.themes_gtk.append(theme)
+		for path in ["/usr/share/icons/", "/usr/local/share/icons/", getenv("HOME") + "/.icons/", getenv("HOME") + "/.local/share/icons/"]:
+			if exists(path):
+				for theme in listdir(path):
+					if exists(path + theme + "/index.theme") and not theme in self.themes_icons and not theme == "HighContrast" and not theme == "HighContrastInverse" \
+					and not theme == "default" and not theme == "gnome" and not theme == "hicolor" and not theme == "locolor":
+						self.themes_icons.append(theme)
+					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
+						self.themes_curs.append(theme)
+
 		self.name = "Desktop (not ready)"
 		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
@@ -484,25 +272,177 @@ class DesktopTab(Gtk.Box):
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, True, 0)
 
-		self.box_top = Gtk.Box()
-		self.box_middle = Gtk.Box()
-		self.box_bottom = Gtk.Box()
-		self.box.pack_start(self.box_top, True, True, 0)
+		self.box0 = Gtk.Box(spacing = 20)
+		self.box1 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box2 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box3 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box0.pack_start(self.box1, True, True, 0)
+		self.box0.pack_start(Gtk.Separator(), False, False, 0)
+		self.box0.pack_start(self.box2, True, True, 0)
+		self.box.pack_start(self.box0, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_middle, True, True, 0)
-		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_bottom, True, True, 0)
-		self.box_top.pack_start(Gtk.Label(label = "Gnome Shell theme\n\nGTK applications theme\n\nIcons theme\n\nCursors theme\n\nFont\n\nAnimations"), True, True, 0)
-		self.box_top.pack_end(Gtk.Label(label = " ( i )\n\n[ v ]\n\n[ v ]\n\n[ v ]\n\n[ F ]\n\n--O"), True, True, 0)
-		self.box_middle.pack_start(Gtk.Label(label = "Show week number in the calendar\n\nShow weekday in the topbar\n\nShow date in the topbar\n\nShow seconds in the topbar\n\nShow battery percentage in the topbar\n\nAllow volume over than 100%"), True, True, 0)
-		self.box_middle.pack_end(Gtk.Label(label = "O--\n\nO--\n\n--O\n\nO--\n\nO--\n\nO--"), True, True, 0)
-		self.box_bottom.pack_start(Gtk.Label(label = "Activities hot-corner\n\nWorkspaces (0 for dynamic)\n\nWorkspaces only on primary monitor"), True, True, 0)
-		self.box_bottom.pack_end(Gtk.Label(label = "--O\n\n-  +\n\n--O"), True, True, 0)
+		self.box.pack_start(self.box3, False, False, 0)
+
+		self.box_gnome = Gtk.Box(spacing = 10)
+		self.box_gtk   = Gtk.Box(spacing = 10)
+		self.box_icons = Gtk.Box(spacing = 10)
+		self.box_curs  = Gtk.Box(spacing = 10)
+		self.box_font  = Gtk.Box(spacing = 10)
+		self.box_anim  = Gtk.Box(spacing = 10)
+		self.box_weekn = Gtk.Box(spacing = 10)
+		self.box_weekd = Gtk.Box(spacing = 10)
+		self.box_date  = Gtk.Box(spacing = 10)
+		self.box_sec   = Gtk.Box(spacing = 10)
+		self.box_bat   = Gtk.Box(spacing = 10)
+		self.box_vol   = Gtk.Box(spacing = 10)
+		self.box_hot   = Gtk.Box(spacing = 10)
+		self.box_work  = Gtk.Box(spacing = 10)
+		self.box_span  = Gtk.Box(spacing = 10)
+
+		self.btn_gnome = Gtk.Button(label = self.theme_gnome, sensitive = False)
+		self.btn_gtk   = Gtk.ComboBoxText(width_request = 200)
+		self.btn_icons = Gtk.ComboBoxText(width_request = 200)
+		self.btn_curs  = Gtk.ComboBoxText(width_request = 200)
+		self.btn_font  = Gtk.FontButton(font = self.org_gnome_desktop_interface.get_string("font-name"), sensitive = False)
+		self.btn_anim  = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("enable-animations"))
+		self.btn_weekn = Gtk.Switch(state = self.org_gnome_desktop_calendar.get_boolean("show-weekdate"))
+		self.btn_weekd = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("clock-show-weekday"))
+		self.btn_date  = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("clock-show-date"))
+		self.btn_sec   = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("clock-show-seconds"))
+		self.btn_bat   = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("show-battery-percentage"))
+		self.btn_vol   = Gtk.Switch(state = self.org_gnome_desktop_sound.get_boolean("allow-volume-above-100-percent"))
+		self.btn_hot   = Gtk.Switch(state = self.org_gnome_desktop_interface.get_boolean("enable-hot-corners"))
+		self.btn_work  = Gtk.SpinButton()
+		self.btn_span  = Gtk.Switch(state = self.org_gnome_mutter.get_boolean("workspaces-only-on-primary"))
+
+		for theme in self.themes_gtk:
+			self.btn_gtk.append_text(theme)
+		for theme in self.themes_icons:
+			self.btn_icons.append_text(theme)
+		for theme in self.themes_curs:
+			self.btn_curs.append_text(theme)
+		if self.theme_gtk in self.themes_gtk:
+			self.btn_gtk.set_active(self.themes_gtk.index(self.theme_gtk))
+		if self.theme_icons in self.themes_icons:
+			self.btn_icons.set_active(self.themes_icons.index(self.theme_icons))
+		if self.theme_curs in self.themes_curs:
+			self.btn_curs.set_active(self.themes_curs.index(self.theme_curs))
+		self.btn_work.set_range(0, 36)
+		self.btn_work.set_increments(1, 1)
+		self.btn_work.set_value(0)
+		if not self.org_gnome_mutter.get_boolean("dynamic-workspaces"):
+			self.btn_work.set_value(self.org_gnome_desktop_wm_preferences.get_int("num-workspaces"))
+
+		self.btn_gtk.connect("changed", self.action_combo, self.org_gnome_desktop_interface, "gtk-theme")
+		self.btn_icons.connect("changed", self.action_combo, self.org_gnome_desktop_interface, "icon-theme")
+		self.btn_curs.connect("changed", self.action_combo, self.org_gnome_desktop_interface, "cursor-theme")
+		self.btn_anim.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "enable-animations")
+		self.btn_weekn.connect("state-set", self.action_switch, self.org_gnome_desktop_calendar, "show-weekdate")
+		self.btn_weekd.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "clock-show-weekday")
+		self.btn_date.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "clock-show-date")
+		self.btn_sec.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "clock-show-seconds")
+		self.btn_bat.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "show-battery-percentage")
+		self.btn_vol.connect("state-set", self.action_switch, self.org_gnome_desktop_sound, "allow-volume-above-100-percent")
+		self.btn_hot.connect("state-set", self.action_switch, self.org_gnome_desktop_interface, "enable-hot-corners")
+		self.btn_work.connect("value-changed", self.action_workspaces)
+		self.btn_span.connect("state-set", self.action_switch, self.org_gnome_mutter, "workspaces-only-on-primary")
+
+		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme"), False, False, 0)
+		self.box_gtk.pack_start(Gtk.Label(label = "GTK theme"), False, False, 0)
+		self.box_icons.pack_start(Gtk.Label(label = "Icons theme"), False, False, 0)
+		self.box_curs.pack_start(Gtk.Label(label = "Cursor theme"), False, False, 0)
+		self.box_font.pack_start(Gtk.Label(label = "System font"), False, False, 0)
+		self.box_anim.pack_start(Gtk.Label(label = "Desktop animations"), False, False, 0)
+		self.box_weekn.pack_start(Gtk.Label(label = "Show week number"), False, False, 0)
+		self.box_weekd.pack_start(Gtk.Label(label = "Show weekday in the clock"), False, False, 0)
+		self.box_date.pack_start(Gtk.Label(label = "Show date in the clock"), False, False, 0)
+		self.box_sec.pack_start(Gtk.Label(label = "Show seconds in the clock"), False, False, 0)
+		self.box_bat.pack_start(Gtk.Label(label = "Show battery percentage"), False, False, 0)
+		self.box_vol.pack_start(Gtk.Label(label = "Allow volume amplification"), False, False, 0)
+		self.box_hot.pack_start(Gtk.Label(label = "Place the cursor at the top-left corner to open overview"), False, False, 0)
+		self.box_work.pack_start(Gtk.Label(label = "Fixed number of workspaces (0 for dynamic workspaces)"), False, False, 0)
+		self.box_span.pack_start(Gtk.Label(label = "Allow only one workspace on external monitors"), False, False, 0)
+
+		self.box_gnome.pack_end(self.btn_gnome, False, False, 0)
+		self.box_gtk.pack_end(self.btn_gtk, False, False, 0)
+		self.box_icons.pack_end(self.btn_icons, False, False, 0)
+		self.box_curs.pack_end(self.btn_curs, False, False, 0)
+		self.box_font.pack_end(self.btn_font, False, False, 0)
+		self.box_anim.pack_end(self.btn_anim, False, False, 0)
+		self.box_weekn.pack_end(self.btn_weekn, False, False, 0)
+		self.box_weekd.pack_end(self.btn_weekd, False, False, 0)
+		self.box_date.pack_end(self.btn_date, False, False, 0)
+		self.box_sec.pack_end(self.btn_sec, False, False, 0)
+		self.box_bat.pack_end(self.btn_bat, False, False, 0)
+		self.box_vol.pack_end(self.btn_vol, False, False, 0)
+		self.box_hot.pack_end(self.btn_hot, False, False, 0)
+		self.box_work.pack_end(self.btn_work, False, False, 0)
+		self.box_span.pack_end(self.btn_span, False, False, 0)
+
+		self.box1.pack_start(self.box_gnome, False, False, 0)
+		self.box1.pack_start(self.box_gtk, False, False, 0)
+		self.box1.pack_start(self.box_icons, False, False, 0)
+		self.box1.pack_start(self.box_curs, False, False, 0)
+		self.box1.pack_start(self.box_font, False, False, 0)
+		self.box1.pack_start(self.box_anim, False, False, 0)
+		self.box2.pack_start(self.box_weekn, False, False, 0)
+		self.box2.pack_start(self.box_weekd, False, False, 0)
+		self.box2.pack_start(self.box_date, False, False, 0)
+		self.box2.pack_start(self.box_sec, False, False, 0)
+		self.box2.pack_start(self.box_bat, False, False, 0)
+		self.box2.pack_start(self.box_vol, False, False, 0)
+		self.box3.pack_start(self.box_hot, False, False, 0)
+		self.box3.pack_start(self.box_work, False, False, 0)
+		self.box3.pack_start(self.box_span, False, False, 0)
+
+
+	def action_combo(self, widget, schema, key):
+		schema.set_string(key, widget.get_active_text())
+
+	def action_switch(self, widget, state, schema, key):
+		schema.set_boolean(key, state)
+
+	def action_workspaces(self, widget):
+		num = widget.get_value()
+		if num:
+			self.org_gnome_mutter.set_boolean("dynamic-workspaces", False)
+			self.org_gnome_desktop_wm_preferences.set_int("num-workspaces", num)
+		else:
+			self.org_gnome_mutter.set_boolean("dynamic-workspaces", True)
+			self.org_gnome_desktop_wm_preferences.reset("num-workspaces")
 
 
 
 class LoginScreenTab(Gtk.Box):
 	def __init__(self):
+		self.theme_gnome = readlink("/etc/alternatives/gdm3-theme.gresource")
+		if self.theme_gnome == "/usr/share/gnome-shell/gnome-shell-theme.gresource":
+			self.theme_gnome = "(Default)"
+		else:
+			self.theme_gnome = self.theme_gnome.split("/")[-1][0:-10]
+		self.theme_gtk    = self.getstr("org.gnome.desktop.interface", "gtk-theme")
+		self.theme_icons  = self.getstr("org.gnome.desktop.interface", "icon-theme")
+		self.theme_curs   = self.getstr("org.gnome.desktop.interface", "cursor-theme")
+		self.watermark    = self.getstr("org.gnome.login-screen", "logo").split("/")[-1]
+		if not self.watermark:
+			self.watermark = "(None)"
+		self.themes_gtk   = ["Adwaita"]
+		self.themes_icons = ["Adwaita"]
+		self.themes_curs  = ["Adwaita"]
+		for path in ["/usr/share/themes/", "/usr/local/share/themes/"]:
+			if exists(path):
+				for theme in listdir(path):
+					if exists(path + theme + "/index.theme") and not theme in self.themes_gtk and not theme == "HighContrast" and not theme == "HighContrastInverse":
+						self.themes_gtk.append(theme)
+		for path in ["/usr/share/icons/", "/usr/local/share/icons/"]:
+			if exists(path):
+				for theme in listdir(path):
+					if exists(path + theme + "/index.theme") and not theme in self.themes_icons and not theme == "HighContrast" and not theme == "HighContrastInverse" \
+					and not theme == "default" and not theme == "gnome" and not theme == "hicolor" and not theme == "locolor":
+						self.themes_icons.append(theme)
+					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
+						self.themes_curs.append(theme)
+
 		self.admin = None
 		self.name = "Login screen (not ready)"
 		self.header = Gtk.HeaderBar()
@@ -516,24 +456,119 @@ class LoginScreenTab(Gtk.Box):
 		self.header.pack_start(self.header_info)
 		self.header.pack_end(self.header_unlock)
 		Gtk.Box.__init__(self, margin = 20, spacing = 20)
-		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL, sensitive = False)
 		self.pack_start(self.box, True, True, 0)
-		self.box.set_sensitive(False)
 
-		self.box_top = Gtk.Box()
-		self.box_middle = Gtk.Box()
-		self.box_bottom = Gtk.Box()
-		self.box.pack_start(self.box_top, True, True, 0)
+		self.box0 = Gtk.Box(spacing = 20)
+		self.box1 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box2 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box3 = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
+		self.box0.pack_start(self.box1, True, True, 0)
+		self.box0.pack_start(Gtk.Separator(), False, False, 0)
+		self.box0.pack_start(self.box2, True, True, 0)
+		self.box.pack_start(self.box0, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_middle, True, True, 0)
-		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.box_bottom, True, True, 0)
-		self.box_top.pack_start(Gtk.Label(label = "Gnome Shell theme\n\nGTK applications theme\n\nIcons theme\n\nCursors theme\n\nFont\n\nAnimations"), True, True, 0)
-		self.box_top.pack_end(Gtk.Label(label = " ( i )\n\n[ v ]\n\n[ v ]\n\n[ v ]\n\n[ F ]\n\n--O"), True, True, 0)
-		self.box_middle.pack_start(Gtk.Label(label = "Show week number in the calendar\n\nShow weekday in the topbar\n\nShow date in the topbar\n\nShow seconds in the topbar\n\nShow battery percentage in the topbar\n\nAllow volume over than 100%"), True, True, 0)
-		self.box_middle.pack_end(Gtk.Label(label = "O--\n\nO--\n\n--O\n\nO--\n\nO--\n\nO--"), True, True, 0)
-		self.box_bottom.pack_start(Gtk.Label(label = "Disable users list\n\nAllowed failures\n\nWatermark"), True, True, 0)
-		self.box_bottom.pack_end(Gtk.Label(label = "O--\n\n-  +\n\n[ / ]"), True, True, 0)
+		self.box.pack_start(self.box3, False, False, 0)
+
+		self.box_gnome = Gtk.Box(spacing = 10)
+		self.box_gtk   = Gtk.Box(spacing = 10)
+		self.box_icons = Gtk.Box(spacing = 10)
+		self.box_curs  = Gtk.Box(spacing = 10)
+		self.box_font  = Gtk.Box(spacing = 10)
+		self.box_anim  = Gtk.Box(spacing = 10)
+		self.box_weekn = Gtk.Box(spacing = 10)
+		self.box_weekd = Gtk.Box(spacing = 10)
+		self.box_date  = Gtk.Box(spacing = 10)
+		self.box_sec   = Gtk.Box(spacing = 10)
+		self.box_bat   = Gtk.Box(spacing = 10)
+		self.box_vol   = Gtk.Box(spacing = 10)
+		self.box_list  = Gtk.Box(spacing = 10)
+		self.box_fail  = Gtk.Box(spacing = 10)
+		self.box_logo  = Gtk.Box(spacing = 10)
+
+		self.btn_gnome = Gtk.Button(label = self.theme_gnome, sensitive = False)
+		self.btn_gtk   = Gtk.ComboBoxText(width_request = 200, sensitive = False)
+		self.btn_icons = Gtk.ComboBoxText(width_request = 200, sensitive = False)
+		self.btn_curs  = Gtk.ComboBoxText(width_request = 200, sensitive = False)
+		self.btn_font  = Gtk.FontButton(font = self.getstr("org.gnome.desktop.interface", "font-name"), sensitive = False)
+		self.btn_anim  = Gtk.Switch(state = self.getbool("org.gnome.desktop.interface", "enable-animations"), sensitive = False)
+		self.btn_weekn = Gtk.Switch(state = self.getbool("org.gnome.desktop.calendar", "show-weekdate"), sensitive = False)
+		self.btn_weekd = Gtk.Switch(state = self.getbool("org.gnome.desktop.interface", "clock-show-weekday"), sensitive = False)
+		self.btn_date  = Gtk.Switch(state = self.getbool("org.gnome.desktop.interface", "clock-show-date"), sensitive = False)
+		self.btn_sec   = Gtk.Switch(state = self.getbool("org.gnome.desktop.interface", "clock-show-seconds"), sensitive = False)
+		self.btn_bat   = Gtk.Switch(state = self.getbool("org.gnome.desktop.interface", "show-battery-percentage"), sensitive = False)
+		self.btn_vol   = Gtk.Switch(state = self.getbool("org.gnome.desktop.sound", "allow-volume-above-100-percent"), sensitive = False)
+		self.btn_list  = Gtk.Switch(state = self.getbool("org.gnome.login-screen", "disable-user-list"), sensitive = False)
+		self.btn_fail  = Gtk.SpinButton(sensitive = False)
+		self.btn_l_rst = Gtk.Button(image = Gtk.Image(icon_name = "edit-undo-symbolic"), sensitive = False)
+		self.btn_l_rmv = Gtk.Button(image = Gtk.Image(icon_name = "edit-delete-symbolic"), sensitive = False)
+		self.btn_l_chg = Gtk.Button(image = Gtk.Image(icon_name = "document-open-symbolic"), label = self.watermark + "   ", always_show_image = True, image_position = Gtk.PositionType.RIGHT, sensitive = False)
+
+		for theme in self.themes_gtk:
+			self.btn_gtk.append_text(theme)
+		for theme in self.themes_icons:
+			self.btn_icons.append_text(theme)
+		for theme in self.themes_curs:
+			self.btn_curs.append_text(theme)
+		if self.theme_gtk in self.themes_gtk:
+			self.btn_gtk.set_active(self.themes_gtk.index(self.theme_gtk))
+		if self.theme_icons in self.themes_icons:
+			self.btn_icons.set_active(self.themes_icons.index(self.theme_icons))
+		if self.theme_curs in self.themes_curs:
+			self.btn_curs.set_active(self.themes_curs.index(self.theme_curs))
+		self.btn_fail.set_range(0, 36)
+		self.btn_fail.set_increments(1, 1)
+		self.btn_fail.set_value(self.getint("org.gnome.login-screen", "allowed-failures"))
+
+		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme"), False, False, 0)
+		self.box_gtk.pack_start(Gtk.Label(label = "GTK theme"), False, False, 0)
+		self.box_icons.pack_start(Gtk.Label(label = "Icons theme"), False, False, 0)
+		self.box_curs.pack_start(Gtk.Label(label = "Cursor theme"), False, False, 0)
+		self.box_font.pack_start(Gtk.Label(label = "System font"), False, False, 0)
+		self.box_anim.pack_start(Gtk.Label(label = "Desktop animations"), False, False, 0)
+		self.box_weekn.pack_start(Gtk.Label(label = "Show week number"), False, False, 0)
+		self.box_weekd.pack_start(Gtk.Label(label = "Show weekday in the clock"), False, False, 0)
+		self.box_date.pack_start(Gtk.Label(label = "Show date in the clock"), False, False, 0)
+		self.box_sec.pack_start(Gtk.Label(label = "Show seconds in the clock"), False, False, 0)
+		self.box_bat.pack_start(Gtk.Label(label = "Show battery percentage"), False, False, 0)
+		self.box_vol.pack_start(Gtk.Label(label = "Allow volume amplification"), False, False, 0)
+		self.box_list.pack_start(Gtk.Label(label = "Disable user list, forcing username and password authentification"), False, False, 0)
+		self.box_fail.pack_start(Gtk.Label(label = "Allowed password failures before going back to user selection"), False, False, 0)
+		self.box_logo.pack_start(Gtk.Label(label = "Bottom watermark image"), False, False, 0)
+
+		self.box_gnome.pack_end(self.btn_gnome, False, False, 0)
+		self.box_gtk.pack_end(self.btn_gtk, False, False, 0)
+		self.box_icons.pack_end(self.btn_icons, False, False, 0)
+		self.box_curs.pack_end(self.btn_curs, False, False, 0)
+		self.box_font.pack_end(self.btn_font, False, False, 0)
+		self.box_anim.pack_end(self.btn_anim, False, False, 0)
+		self.box_weekn.pack_end(self.btn_weekn, False, False, 0)
+		self.box_weekd.pack_end(self.btn_weekd, False, False, 0)
+		self.box_date.pack_end(self.btn_date, False, False, 0)
+		self.box_sec.pack_end(self.btn_sec, False, False, 0)
+		self.box_bat.pack_end(self.btn_bat, False, False, 0)
+		self.box_vol.pack_end(self.btn_vol, False, False, 0)
+		self.box_list.pack_end(self.btn_list, False, False, 0)
+		self.box_fail.pack_end(self.btn_fail, False, False, 0)
+		self.box_logo.pack_end(self.btn_l_rst, False, False, 0)
+		self.box_logo.pack_end(self.btn_l_rmv, False, False, 0)
+		self.box_logo.pack_end(self.btn_l_chg, False, False, 0)
+
+		self.box1.pack_start(self.box_gnome, False, False, 0)
+		self.box1.pack_start(self.box_gtk, False, False, 0)
+		self.box1.pack_start(self.box_icons, False, False, 0)
+		self.box1.pack_start(self.box_curs, False, False, 0)
+		self.box1.pack_start(self.box_font, False, False, 0)
+		self.box1.pack_start(self.box_anim, False, False, 0)
+		self.box2.pack_start(self.box_weekn, False, False, 0)
+		self.box2.pack_start(self.box_weekd, False, False, 0)
+		self.box2.pack_start(self.box_date, False, False, 0)
+		self.box2.pack_start(self.box_sec, False, False, 0)
+		self.box2.pack_start(self.box_bat, False, False, 0)
+		self.box2.pack_start(self.box_vol, False, False, 0)
+		self.box3.pack_start(self.box_list, False, False, 0)
+		self.box3.pack_start(self.box_fail, False, False, 0)
+		self.box3.pack_start(self.box_logo, False, False, 0)
 
 
 	def unlock(self, widget):
@@ -541,6 +576,18 @@ class LoginScreenTab(Gtk.Box):
 		if self.admin:
 			self.header_unlock.set_sensitive(False)
 			self.box.set_sensitive(True)
+
+	def getbool(self, schema, key):
+		if runu("env HOME=/var/lib/gdm3/ gsettings get " + schema + " " + key)[:-2] == "true":
+			return True
+		else:
+			return False
+
+	def getint(self, schema, key):
+		return int(runu("env HOME=/var/lib/gdm3/ gsettings get " + schema + " " + key)[:-2])
+
+	def getstr(self, schema, key):
+		return runu("env HOME=/var/lib/gdm3/ gsettings get " + schema + " " + key)[1:-3]
 
 
 
@@ -552,23 +599,14 @@ class MoreTab(Gtk.Box):
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, False, 0)
 
-		self.box_head = Gtk.Box(spacing = 20)
 		self.box_buttons = Gtk.Box(spacing = 20)
-		self.label_gui = Gtk.Label(label = "<b>Graphical additional tools</b>", use_markup = True)
-		self.label_cmd = Gtk.Label(label = "<b>Command line additional tools</b>", use_markup = True)
-		self.box.pack_start(self.box_head, False, False, 0)
-		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.label_gui, False, False, 0)
+		self.box.pack_start(Gtk.Label(label = "<b>Graphical additional tools</b>", use_markup = True), False, False, 0)
 		self.box.pack_start(self.box_buttons, False, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(self.label_cmd, False, False, 0)
-
-		self.draft = Gtk.Button(label = "This is a BETA version\nReturn to the old GUI")
-		self.draft.connect("clicked", self.returntodraft)
-		self.links = Gtk.Label(label = "Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>.", use_markup = True)
-		self.box_head.pack_start(self.draft, True, False, 0)
-		self.box_head.pack_start(Gtk.Separator(), False, False, 0)
-		self.box_head.pack_start(self.links, True, False, 0)
+		self.box.pack_start(Gtk.Label(label = "<b>Command line additional tools</b>", use_markup = True), False, False, 0)
+		self.box.pack_start(Gtk.Label(label = "<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>", use_markup = True), False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(label = "<i>Check Linux Mint Gnome development progress or report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub page</a>.</i>", use_markup = True), False, False, 0)
 
 		self.apps   = Gtk.Button(label = "Apps. List")
 		self.webapp = Gtk.Button(label = "Web Apps.")
@@ -582,9 +620,6 @@ class MoreTab(Gtk.Box):
 		self.box_buttons.pack_start(self.webapp, True, True, 0)
 		self.box_buttons.pack_start(self.start, True, True, 0)
 		self.box_buttons.pack_start(self.qt5ct, True, True, 0)
-
-		self.commands = Gtk.Label(label = "<b>- Firstly, to use a theme (login screen or Gnome), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To change the login screen theme, run:</b>\n<tt>gnome-custom-gdm3-theme YOUR_THEME</tt>\n\n<b>- To change your Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>\n\n<b>- To tweak the login screen, run:</b>\n<tt>gnome-custom-gdm3-tweak YOUR_SETTINGS...</tt>\n\n<b>- To check the current login screen settings (theme and tweaks), run:</b>\n<tt>gnome-custom-gdm3-current</tt>", use_markup = True)
-		self.box.pack_start(self.commands, False, False, 0)
 
 
 	def launch(self, widget, command):
@@ -601,12 +636,11 @@ admin = None
 def get_admin():
 	global admin
 	if not admin:
-		admin = spawn("pkexec bash")
+		admin = spawnu("pkexec bash")
 		admin.expect([EOF, "#"])
 		if not admin.isalive():
 			admin = None
 	return admin
-draft = False
 win = MainWindow()
 win.connect("destroy", Gtk.main_quit)
 win.show_all()
@@ -615,9 +649,3 @@ win.destroy()
 if admin:
 	admin.sendline("exit")
 	admin.expect(EOF)
-if draft:
-	windraft = DraftWindow()
-	windraft.connect("destroy", Gtk.main_quit)
-	windraft.show_all()
-	Gtk.main()
-	windraft.destroy()
