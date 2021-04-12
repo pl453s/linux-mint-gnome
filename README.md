@@ -95,6 +95,8 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
+- Gnome Customization: Gnome Shell theme dialogs
+- Gnome Customization: Check english
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
