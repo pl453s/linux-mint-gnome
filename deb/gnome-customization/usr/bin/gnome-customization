@@ -299,7 +299,7 @@ class DesktopTab(Gtk.Box):
 		self.box_work  = Gtk.Box(spacing = 10)
 		self.box_span  = Gtk.Box(spacing = 10)
 
-		self.btn_gnome = Gtk.Button(label = self.theme_gnome, sensitive = False)
+		self.btn_gnome = Gtk.Button(label = self.theme_gnome)
 		self.btn_gtk   = Gtk.ComboBoxText(width_request = 200)
 		self.btn_icons = Gtk.ComboBoxText(width_request = 200)
 		self.btn_curs  = Gtk.ComboBoxText(width_request = 200)
@@ -351,7 +351,7 @@ class DesktopTab(Gtk.Box):
 		self.btn_work.connect("value-changed", self.action_workspaces)
 		self.btn_span.connect("state-set", self.action_switch, self.org_gnome_mutter, "workspaces-only-on-primary")
 
-		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme (see 'More')"), False, False, 0)
+		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme"), False, False, 0)
 		self.box_gtk.pack_start(Gtk.Label(label = "GTK theme"), False, False, 0)
 		self.box_icons.pack_start(Gtk.Label(label = "Icons theme"), False, False, 0)
 		self.box_curs.pack_start(Gtk.Label(label = "Cursor theme"), False, False, 0)
@@ -411,8 +411,7 @@ class DesktopTab(Gtk.Box):
 		schema.set_string(key, widget.get_font())
 
 	def action_gnome(self, widget):
-		pass
-		# Change Gnom Shell theme dialog
+		system("notify-send -i gnome-color-manager 'Desktop Gnome Shell theme dialog' &")
 
 	def action_font_reset(self, widget):
 		self.org_gnome_desktop_interface.reset("font-name")
@@ -444,9 +443,6 @@ class LoginScreenTab(Gtk.Box):
 		self.theme_gtk    = self.getstr("org.gnome.desktop.interface", "gtk-theme")
 		self.theme_icons  = self.getstr("org.gnome.desktop.interface", "icon-theme")
 		self.theme_curs   = self.getstr("org.gnome.desktop.interface", "cursor-theme")
-		self.watermark    = self.getstr("org.gnome.login-screen", "logo").split("/")[-1]
-		if not self.watermark:
-			self.watermark = "(None)"
 		self.themes_gtk   = ["Adwaita"]
 		self.themes_icons = ["Adwaita"]
 		self.themes_curs  = ["Adwaita"]
@@ -507,7 +503,7 @@ class LoginScreenTab(Gtk.Box):
 		self.box_fail  = Gtk.Box(spacing = 10)
 		self.box_logo  = Gtk.Box(spacing = 10)
 
-		self.btn_gnome = Gtk.Button(label = self.theme_gnome, sensitive = False)
+		self.btn_gnome = Gtk.Button(label = self.theme_gnome)
 		self.btn_gtk   = Gtk.ComboBoxText(width_request = 200)
 		self.btn_icons = Gtk.ComboBoxText(width_request = 200)
 		self.btn_curs  = Gtk.ComboBoxText(width_request = 200)
@@ -562,7 +558,7 @@ class LoginScreenTab(Gtk.Box):
 		self.btn_logod.connect("clicked", self.action_logo_remove)
 		self.btn_logo.connect("file-set", self.action_file, "org.gnome.login-screen", "logo")
 
-		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme (see 'More')"), False, False, 0)
+		self.box_gnome.pack_start(Gtk.Label(label = "Gnome Shell theme"), False, False, 0)
 		self.box_gtk.pack_start(Gtk.Label(label = "GTK theme"), False, False, 0)
 		self.box_icons.pack_start(Gtk.Label(label = "Icons theme"), False, False, 0)
 		self.box_curs.pack_start(Gtk.Label(label = "Cursor theme"), False, False, 0)
@@ -687,8 +683,7 @@ class LoginScreenTab(Gtk.Box):
 		self.admin.expect("#")
 
 	def action_gnome(self, widget):
-		pass
-		# Change Gnom Shell theme dialog
+		system("notify-send -i gnome-color-manager 'Login screen Gnome Shell theme dialog' &")
 
 	def action_font_reset(self, widget):
 		self.admin.sendline("sudo -u gdm dbus-launch gsettings reset org.gnome.desktop.interface font-name")
@@ -715,36 +710,27 @@ class MoreTab(Gtk.Box):
 		self.box = Gtk.Box(spacing = 20, orientation = Gtk.Orientation.VERTICAL)
 		self.pack_start(self.box, True, False, 0)
 
-		self.box_buttons = Gtk.Box(spacing = 20)
-		self.box.pack_start(Gtk.Label(label = "<b>Graphical additional tools</b>", use_markup = True), False, False, 0)
-		self.box.pack_start(self.box_buttons, False, False, 0)
-		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(Gtk.Label(label = "<b>Command line additional tools</b>", use_markup = True), False, False, 0)
-		self.box.pack_start(Gtk.Label(label = "<b>- Firstly, to use a Gnome theme (login screen or desktop), install-it by running:</b>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<b>- To remove an installed theme, run:</b>\n<tt>gnome-custom-theme-remove YOUR_THEME</tt>\n\n<b>- To list all installed themes, run:</b>\n<tt>gnome-custom-theme-list</tt>\n\n<b>- To change the login screen Gnome theme, run:</b>\n<tt>gnome-custom-theme-apply YOUR_THEME</tt>\n\n<b>- To change your desktop Gnome theme:</b>\n<i>Select 'Gnome (YOUR_THEME)' in the session list of the login screen</i>", use_markup = True), False, False, 0)
-		self.box.pack_start(Gtk.Separator(), False, False, 0)
-		self.box.pack_start(Gtk.Label(label = "<i>Check Linux Mint Gnome development progress or report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub page</a>.</i>", use_markup = True), False, False, 0)
-
-		self.apps   = Gtk.Button(label = "Apps. List")
-		self.webapp = Gtk.Button(label = "Web Apps.")
-		self.start  = Gtk.Button(label = "Autostart")
-		self.qt5ct  = Gtk.Button(label = "Qt5 CT")
+		self.apps   = Gtk.Button(label = "Manage applications grid")
+		self.webapp = Gtk.Button(label = "Manage Web applications")
+		self.start  = Gtk.Button(label = "Manage startup programs")
+		self.gnome  = Gtk.Button(label = "Manage Gnome Shell themes")
+		self.qt5ct  = Gtk.Button(label = "Qt5 applications appearance")
 		self.apps.connect("clicked", self.launch, "menulibre")
 		self.webapp.connect("clicked", self.launch, "if ! command webapp-manager; then notify-send -i applications-internet 'Please install the \"webapp-manager\" package' 'Linux Mint must be upgraded to 20.1 minimum'; fi")
 		self.start.connect("clicked", self.launch, "gnome-session-properties")
+		self.gnome.connect("clicked", self.launch, "gnome-theming")
 		self.qt5ct.connect("clicked", self.launch, "notify-send -i qt5ct 'Please wait...' 'Qt5 Configuration Tool is starting'; qt5ct")
-		self.box_buttons.pack_start(self.apps, True, True, 0)
-		self.box_buttons.pack_start(self.webapp, True, True, 0)
-		self.box_buttons.pack_start(self.start, True, True, 0)
-		self.box_buttons.pack_start(self.qt5ct, True, True, 0)
+		self.box.pack_start(self.apps, False, False, 0)
+		self.box.pack_start(self.webapp, False, False, 0)
+		self.box.pack_start(self.start, False, False, 0)
+		self.box.pack_start(self.gnome, False, False, 0)
+		self.box.pack_start(self.qt5ct, False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(label = "<i>Check Linux Mint Gnome development progress\nor report a bug on the <a href='https://github.com/pl453s/linux-mint-gnome'>GitHub project page</a>.</i>", use_markup = True), False, False, 0)
 
 
 	def launch(self, widget, command):
 		system(command + " &")
-
-	def returntodraft(self, widget):
-		global draft
-		draft = True
-		Gtk.main_quit()
 
 
 
@@ -761,7 +747,49 @@ win = MainWindow()
 win.connect("destroy", Gtk.main_quit)
 win.show_all()
 Gtk.main()
-win.destroy()
 if admin:
 	admin.sendline("exit")
 	admin.expect(EOF)
+
+
+
+"""
+#!/bin/bash
+sudo true
+
+if [ "$#" == "1" ]
+then
+	if [ -f "/usr/share/gnome-shell/themes/$1.gresource" ]
+	then
+		for gresource in /usr/share/gnome-shell/themes/*.gresource
+		do
+			if [ -f "$gresource" ]
+			then
+				sudo update-alternatives --remove gdm3-theme.gresource "$gresource"
+			fi
+		done
+		sudo update-alternatives --install "/usr/share/gnome-shell/gdm3-theme.gresource" gdm3-theme.gresource "/usr/share/gnome-shell/themes/$1.gresource" 1000
+		echo
+		echo
+		echo "/!\\ WARNING /!\\"
+		echo "If the theme is incompatible with GDM3 and causes it to crash,"
+		echo "login to another TTY and run 'gdm3-reset'."
+		echo
+		echo
+		while true
+		do
+			read -p "Restart GDM3? [Y/n] " yn
+			case $yn in
+				[Yy]* ) sudo systemctl restart gdm3.service; break;;
+				[Nn]* ) break;;
+			esac
+		done
+	else
+		echo "This theme doesn't exists!"
+	fi
+else
+	echo "Usage: gnome-custom-theme-apply <theme name>"
+	echo
+	echo "Syntaxt error!"
+fi
+"""

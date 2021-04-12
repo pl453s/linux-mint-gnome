@@ -1,0 +1,45 @@
+#!/usr/bin/python3
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from os import listdir
+
+
+
+class InfoWindow(Gtk.Window):
+	def __init__(self):
+		Gtk.Window.__init__(self, title = "Gnome Shell Theme Manager")
+		self.set_icon_name("gnome-color-manager")
+		self.set_resizable(False)
+		self.set_border_width(32)
+		self.header = Gtk.HeaderBar(title = "Gnome Shell Theme Manager")
+		self.header.set_show_close_button(True)
+		self.refresh = Gtk.Button(image = Gtk.Image(icon_name = "view-refresh-symbolic"))
+		self.refresh.connect("clicked", self.list)
+		self.header.pack_start(self.refresh)
+		self.set_titlebar(self.header)
+		self.box = Gtk.Box(spacing = 32, orientation = Gtk.Orientation.VERTICAL)
+		self.add(self.box)
+		self.box.pack_start(Gtk.Label(xalign = 0, label = "<b>Warning: This tool requires a minimum of GNU/Linux console knowledge.</b>", use_markup = True), False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(xalign = 0, label = "<u>- Installed Gnome Shell themes:</u>", use_markup = True), False, False, 0)
+		self.label = Gtk.Label(xalign = 0, margin_left = 32)
+		self.box.pack_start(self.label, False, False, 0)
+		self.box.pack_start(Gtk.Separator(), False, False, 0)
+		self.box.pack_start(Gtk.Label(xalign = 0, label = "<u>- Install a Gnome Shell theme:</u>\n<tt>gnome-custom-theme-install /usr/share/themes/YOUR_THEME GDM3_CSS</tt>\n\n<u>- Remove an installed theme:</u>\n<tt>gnome-custom-theme-remove YOUR_THEME</tt>", use_markup = True), False, False, 0)
+		self.list(None)
+
+	def list(self, widget):
+		label = ""
+		themes = listdir("/usr/share/gnome-shell/themes/")
+		themes.sort()
+		for theme in themes:
+			label += theme + "\n"
+		self.label.set_label(label[:-1])
+
+
+
+win = InfoWindow()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

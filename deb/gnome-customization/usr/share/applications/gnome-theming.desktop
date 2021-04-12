@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Gnome Shell Theme Manager
+Icon=gnome-color-manager
+Exec=gnome-theming
+Terminal=false
+Categories=GNOME;GTK;Settings;
+OnlyShowIn=GNOME;
+NoDisplay=true
