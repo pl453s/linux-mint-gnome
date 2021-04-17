@@ -93,9 +93,9 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
   </tbody>
 </table>
 
-As the Adapta Gnome Shell Theme doesn't works in Gnome 3.36, I forked the Materia Gnome Shell Theme, makes some fixes, and duplicate it with the Adapta colors.
+Some forks of the Materia Gnome Shell theme are availables:
 
-- Materia: Some fixes on app folders, low resolutions and on screen keyboard
+- Materia: Materia theme with some fixes on app folders, low resolutions and on screen keyboard
 - Adapta: The same, but with the Adapta colors, because the original one doesn't works on Gnome 3.36
 
 ## Remaining work
