@@ -120,5 +120,5 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 ## Sources of inspiration
 
 - 'Gnome Tweaks' created by 'John Stowers' --> [https://github.com/GNOME/gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
-- 'Gnome Extensions' created by 'gcampax' --> [https://gitlab.gnome.org/GNOME/gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
+- 'Gnome Shell Extensions' created by 'gcampax' --> [https://gitlab.gnome.org/GNOME/gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
 - 'Pop!\_OS' developed by 'System76' --> [https://github.com/pop-os/pop](https://github.com/pop-os)
