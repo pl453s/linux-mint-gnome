@@ -13,14 +13,14 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   <tbody>
     <tr>
       <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash")</br>
-      Or else, you can also check the <b><a href="https://github.com/pl453s/linux-mint-gnome/blob/main/tour/tour.md">INTERACTIVE TOUR</a></b></i> </td>
+      Or else, you can also check the <b><a href="github/tour.md">INTERACTIVE TOUR</a></b></i> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td> <a href="tour/panel.md"><img src="tour/panel.png"></a> </td>
-      <td> <a href="tour/dock.md"><img src="tour/dock.png"></a> </td>
-      <td> <a href="tour/dash.md"><img src="tour/dash.png"></a> </td>
+      <td> <a href="github/tour_panel.md"><img src="github/tour_panel.png"></a> </td>
+      <td> <a href="github/tour_dock.md"><img src="github/tour_dock.png"></a> </td>
+      <td> <a href="github/tour_dash.md"><img src="github/tour_dash.png"></a> </td>
     </tr>
   </tbody>
 </table>
@@ -29,12 +29,12 @@ I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any
   <tbody>
     <tr>
       <td colspan="2" rowspan="2"> <b>Developed windows (Python GTK)</b> </td>
-      <td rowspan="3"> <a href="img/customization.png"><img src="img/customization.png"></a> </td>
+      <td rowspan="3"> <a href="github/screen_customization.png"><img src="github/screen_customization.png"></a> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td colspan="2"> <a href="img/welcome.png"><img src="img/welcome.png"></a> </td>
+      <td colspan="2"> <a href="github/screen_welcome.png"><img src="github/screen_welcome.png"></a> </td>
     </tr>
   </tbody>
 </table>
@@ -81,14 +81,14 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 <table>
   <tbody>
     <tr>
-      <td rowspan="2"> <a href="img/beta1.png"><img src="img/beta1.png"></a> </td>
-      <td rowspan="2"> <a href="img/beta2.png"><img src="img/beta2.png"></a> </td>
+      <td rowspan="2"> <a href="github/screen_beta1.png"><img src="github/screen_beta1.png"></a> </td>
+      <td rowspan="2"> <a href="github/screen_beta2.png"><img src="github/screen_beta2.png"></a> </td>
     </tr>
     <tr>
     </tr>
     <tr>
-      <td> <a href="img/beta3.png"><img src="img/beta3.png"></a> </td>
-      <td> <a href="img/beta4.png"><img src="img/beta4.png"></a> </td>
+      <td> <a href="github/screen_beta3.png"><img src="github/screen_beta3.png"></a> </td>
+      <td> <a href="github/screen_beta4.png"><img src="github/screen_beta4.png"></a> </td>
     </tr>
   </tbody>
 </table>
