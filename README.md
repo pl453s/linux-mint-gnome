@@ -65,7 +65,7 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
 - mint-gnome-extensions : Dash to Panel and Dash to Dock, Desktop Icons NG and Top Indicator App
-- mint-gnome-theme: 'Materia' theme with some fixes (https://github.com/pl453s/materia-adapta-gnome)
+- mint-gnome-theme: 'Materia' theme with some fixes (app folder and on screen keyboard)
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
@@ -118,7 +118,9 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 - 'Paper icon theme' created by 'snwh' --> [https://github.com/snwh/paper-icon-theme](https://github.com/snwh/paper-icon-theme)
 - 'Materia GTK theme' created by 'nana-4' --> [https://github.com/nana-4/materia-theme](https://github.com/nana-4/materia-theme)
 
-## Sources of inspiration
+<br>
+
+**Sources of inspiration:**
 
 - 'Gnome Tweaks' created by 'John Stowers' --> [https://github.com/GNOME/gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
 - 'Gnome Shell Extensions' created by 'gcampax' --> [https://gitlab.gnome.org/GNOME/gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
