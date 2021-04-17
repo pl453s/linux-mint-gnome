@@ -93,6 +93,11 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
   </tbody>
 </table>
 
+As the Adapta Gnome Shell Theme doesn't works in Gnome 3.36, I forked the Materia Gnome Shell Theme, makes some fixes, and duplicate it with the Adapta colors.
+
+- Materia: Some fixes on app folders, low resolutions and on screen keyboard
+- Adapta: The same, but with the Adapta colors, because the original one doesn't works on Gnome 3.36
+
 ## Remaining work
 
 - Gnome Customization: Gnome Shell theme dialogs
@@ -117,11 +122,4 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 - 'Papirus icon theme' created by 'varlesh' --> [https://github.com/PapirusDevelopmentTeam/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - 'Paper icon theme' created by 'snwh' --> [https://github.com/snwh/paper-icon-theme](https://github.com/snwh/paper-icon-theme)
 - 'Materia GTK theme' created by 'nana-4' --> [https://github.com/nana-4/materia-theme](https://github.com/nana-4/materia-theme)
-
-<br>
-
-**Sources of inspiration:**
-
-- 'Gnome Tweaks' created by 'John Stowers' --> [https://github.com/GNOME/gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
-- 'Gnome Shell Extensions' created by 'gcampax' --> [https://gitlab.gnome.org/GNOME/gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
-- 'Pop!\_OS' developed by 'System76' --> [https://github.com/pop-os/pop](https://github.com/pop-os)
+- 'Adapta GTK theme' created by 'tista500' --> [https://github.com/adapta-project/adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme)
