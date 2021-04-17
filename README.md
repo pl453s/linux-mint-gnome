@@ -95,12 +95,8 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
-<<<<<<< HEAD
 - Gnome Customization: Gnome Shell theme dialogs
 - Gnome Customization: Check english
-=======
-- Gnome Customization: Gnome Shell Theme dialogs
->>>>>>> 7db55c3934cabaca3413dae4515ebdb870fd5bfe
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
