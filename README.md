@@ -65,7 +65,7 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
 - mint-gnome-extensions : Dash to Panel and Dash to Dock, Desktop Icons NG and Top Indicator App
-- mint-gnome-theme: 'Materia' theme with some fixes (on screen keyboard icons + app-folder bug)
+- mint-gnome-theme: 'Materia' theme with some fixes (https://github.com/pl453s/materia-adapta-gnome)
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
@@ -95,8 +95,12 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Remaining work
 
+<<<<<<< HEAD
 - Gnome Customization: Gnome Shell theme dialogs
 - Gnome Customization: Check english
+=======
+- Gnome Customization: Gnome Shell Theme dialogs
+>>>>>>> 7db55c3934cabaca3413dae4515ebdb870fd5bfe
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
@@ -109,6 +113,7 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 
 ## Credits
 
+- 'Linux Mint' developed by the 'Linux Mint Team' --> [https://github.com/linuxmint](https://github.com/linuxmint)
 - 'Top Indicator extension' forked by 'quiro9' --> [https://github.com/ubuntu/gnome-shell-extension-appindicator](https://github.com/ubuntu/gnome-shell-extension-appindicator)
 - 'Desktop Icons NG extension' created by 'rastersoft' --> [https://gitlab.com/rastersoft/desktop-icons-ng](https://gitlab.com/rastersoft/desktop-icons-ng)
 - 'Dash to Panel extension' created by 'jderose9' --> [https://github.com/home-sweet-gnome/dash-to-panel](https://github.com/home-sweet-gnome/dash-to-panel)
@@ -116,4 +121,9 @@ styles, extensions, appearance, applications grid, user's folders paths, Gnome, 
 - 'Papirus icon theme' created by 'varlesh' --> [https://github.com/PapirusDevelopmentTeam/papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - 'Paper icon theme' created by 'snwh' --> [https://github.com/snwh/paper-icon-theme](https://github.com/snwh/paper-icon-theme)
 - 'Materia GTK theme' created by 'nana-4' --> [https://github.com/nana-4/materia-theme](https://github.com/nana-4/materia-theme)
+
+## Sources of inspiration
+
 - 'Gnome Tweaks' created by 'John Stowers' --> [https://github.com/GNOME/gnome-tweaks](https://github.com/GNOME/gnome-tweaks)
+- 'Gnome Shell Extensions' created by 'gcampax' --> [https://gitlab.gnome.org/GNOME/gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
+- 'Pop!\_OS' developed by 'System76' --> [https://github.com/pop-os/pop](https://github.com/pop-os)
