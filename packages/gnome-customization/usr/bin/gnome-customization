@@ -45,8 +45,10 @@ class MainWindow(Gtk.Window):
 			tab.header.props.title = tab.name
 			self.rhead.add_named(tab.header, tab.name)
 			self.rbody.add_named(tab, tab.name)
+		separator = Gtk.Separator()
+		separator.get_style_context().add_class("sidebar")
 		self.body.pack_start(self.lbody, False, False, 0)
-		self.body.pack_start(Gtk.Separator(), False, False, 0)
+		self.body.pack_start(separator, False, False, 0)
 		self.body.pack_start(self.rbody, True, True, 0)
 		self.lsize = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.HORIZONTAL)
 		self.lsize.add_widget(self.lhead)
@@ -418,7 +420,7 @@ class DesktopTab(Gtk.Box):
 		box.set_margin_bottom(10)
 		box.set_margin_start(10)
 		box.set_margin_end(10)
-		box.pack_start(Gtk.Label(label = "<b>Change the Gnome Shell theme from the login screen</b>\n\n<i>In case of crash or bug, fallback to the default 'Gnome' session.\nTo install themes, see 'More' > 'Manage Gnome Shell themes'.</i>\n", use_markup = True, xalign = 0), False, False, 0)
+		box.pack_start(Gtk.Label(label = "<b>Change the Gnome Shell theme from the login screen</b>\n<i>In case of crash or bug, fallback to the default 'Gnome' session.</i>", use_markup = True, xalign = 0), False, False, 0)
 		box.pack_start(Gtk.Image(file = "/usr/share/gnome-customization/session.png"), False, False, 0)
 		dialog.show_all()
 		dialog.run()
@@ -702,12 +704,40 @@ class LoginScreenTab(Gtk.Box):
 		box.set_margin_bottom(10)
 		box.set_margin_start(10)
 		box.set_margin_end(10)
-		box.pack_start(Gtk.Label(label = "Adapta-Dark\n\nAdapta-Light\n\nMateria-Dark\n\nMateria-Dark-Compact\n\nMateria-Light\n\nMateria-Light-Compact", use_markup = True, xalign = 0), False, False, 0)
+		warning = Gtk.Box()
+		warning.pack_start(Gtk.Image(icon_name = "dialog-warning-symbolic", icon_size = 6), True, True, 0)
+		warning.pack_end(Gtk.Label(label = "<b>This tool can be dangerous!</b>\nIf you select an incompatible theme,\nyou might not be able to login anymore!\nIn this situation you should know how to\nswitch to another TTY and run 'gdm3-reset'.", use_markup = True), True, True, 0)
+		box.pack_start(warning, False, False, 0)
+		scroll = Gtk.ScrolledWindow(min_content_width = 300, max_content_width = 300, min_content_height = 300, max_content_height = 300)
+		listbox = Gtk.ListBox()
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "<i>(Default)</i>", use_markup = True, xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Dark", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Dark-Compact", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Light", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Light-Compact", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Dark", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Dark-Compact", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Light", xalign = 0.0, margin = 10)), -1)
+		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Light-Compact", xalign = 0.0, margin = 10)), -1)
+		scroll.add(listbox)
+		box.pack_start(scroll, False, False, 0)
 		dialog.show_all()
 		response = dialog.run()
-		dialog.destroy()
 		if response == Gtk.ResponseType.APPLY:
-			print("APPLY!")
+			#for gresource in /usr/share/gnome-shell/themes/*.gresource
+			#	do
+			#		if [ -f "$gresource" ]
+			#		then
+			#			sudo update-alternatives --remove gdm3-theme.gresource "$gresource"
+			#		fi
+			#	done
+			row = listbox.get_selected_row()
+			if row.get_index():
+				print("SWITCH TO " + row.get_child().get_label())
+				#sudo update-alternatives --install "/usr/share/gnome-shell/gdm3-theme.gresource" gdm3-theme.gresource "/usr/share/gnome-shell/themes/$1.gresource" 1000
+			else:
+				print("RESTORE TO DEFAULT")
+		dialog.destroy()
 
 	def action_font_reset(self, widget):
 		self.admin.sendline("sudo -u gdm dbus-launch gsettings reset org.gnome.desktop.interface font-name")
@@ -774,46 +804,3 @@ Gtk.main()
 if admin:
 	admin.sendline("exit")
 	admin.expect(EOF)
-
-
-
-"""
-#!/bin/bash
-sudo true
-
-if [ "$#" == "1" ]
-then
-	if [ -f "/usr/share/gnome-shell/themes/$1.gresource" ]
-	then
-		for gresource in /usr/share/gnome-shell/themes/*.gresource
-		do
-			if [ -f "$gresource" ]
-			then
-				sudo update-alternatives --remove gdm3-theme.gresource "$gresource"
-			fi
-		done
-		sudo update-alternatives --install "/usr/share/gnome-shell/gdm3-theme.gresource" gdm3-theme.gresource "/usr/share/gnome-shell/themes/$1.gresource" 1000
-		echo
-		echo
-		echo "/!\\ WARNING /!\\"
-		echo "If the theme is incompatible with GDM3 and causes it to crash,"
-		echo "login to another TTY and run 'gdm3-reset'."
-		echo
-		echo
-		while true
-		do
-			read -p "Restart GDM3? [Y/n] " yn
-			case $yn in
-				[Yy]* ) sudo systemctl restart gdm3.service; break;;
-				[Nn]* ) break;;
-			esac
-		done
-	else
-		echo "This theme doesn't exists!"
-	fi
-else
-	echo "Usage: gnome-custom-theme-apply <theme name>"
-	echo
-	echo "Syntaxt error!"
-fi
-"""
