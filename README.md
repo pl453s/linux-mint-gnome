@@ -64,10 +64,10 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-core: Mint Gnome session, various adjustments, default schemas and default user folder
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
-- mint-gnome-extensions : Dash to Panel and Dash to Dock, Desktop Icons NG and Top Indicator App
+- mint-gnome-extensions : 'Dash to Panel', 'Dash to Dock', 'Desktop Icons NG' and 'Top Indicator App'
 - mint-gnome-theme: 'Materia' theme with some fixes (app folder and on screen keyboard)
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
-- gnome-customization: 'gnome-tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
+- gnome-customization: 'Gnome Tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
 - papirus-cursor-theme: Cursors from 'Paper' icon theme
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
