@@ -88,7 +88,7 @@ class ExtensionsTab(Gtk.Box):
 		self.box.pack_start(self.box_styles, True, False, 0)
 		self.box.pack_start(Gtk.Separator(), False, False, 0)
 		self.box.pack_start(self.scroll_others, True, False, 0)
-		self.box_others = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.VERTICAL, margin_right = 20, margin_top = 10, margin_bottom = 10)
+		self.box_others = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.VERTICAL, margin_end = 20, margin_top = 10, margin_bottom = 10)
 		self.scroll_others.add(self.box_others)
 		self.size_others = Gtk.SizeGroup(mode = Gtk.SizeGroupMode.VERTICAL)
 
@@ -411,7 +411,18 @@ class DesktopTab(Gtk.Box):
 		schema.set_string(key, widget.get_font())
 
 	def action_gnome(self, widget):
-		system("notify-send -i gnome-color-manager 'Desktop Gnome Shell theme dialog' &")
+		dialog = Gtk.Dialog(title = "Information", use_header_bar = True, transient_for = win, resizable = False)
+		box = dialog.get_content_area()
+		box.set_spacing(10)
+		box.set_margin_top(10)
+		box.set_margin_bottom(10)
+		box.set_margin_start(10)
+		box.set_margin_end(10)
+		box.pack_start(Gtk.Label(label = "<b>Change the Gnome Shell theme from the login screen</b>\n\n<i>In case of crash or bug, fallback to the default 'Gnome' session.\nTo install themes, see 'More' > 'Manage Gnome Shell themes'.</i>\n", use_markup = True, xalign = 0), False, False, 0)
+		box.pack_start(Gtk.Image(file = "/usr/share/gnome-customization/session.png"), False, False, 0)
+		dialog.show_all()
+		dialog.run()
+		dialog.destroy()
 
 	def action_font_reset(self, widget):
 		self.org_gnome_desktop_interface.reset("font-name")
@@ -683,7 +694,20 @@ class LoginScreenTab(Gtk.Box):
 		self.admin.expect("#")
 
 	def action_gnome(self, widget):
-		system("notify-send -i gnome-color-manager 'Login screen Gnome Shell theme dialog' &")
+		dialog = Gtk.Dialog(title = "Select a theme (NOT READY!)", use_header_bar = True, transient_for = win, resizable = False)
+		dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_APPLY, Gtk.ResponseType.APPLY)
+		box = dialog.get_content_area()
+		box.set_spacing(10)
+		box.set_margin_top(10)
+		box.set_margin_bottom(10)
+		box.set_margin_start(10)
+		box.set_margin_end(10)
+		box.pack_start(Gtk.Label(label = "Adapta-Dark\n\nAdapta-Light\n\nMateria-Dark\n\nMateria-Dark-Compact\n\nMateria-Light\n\nMateria-Light-Compact", use_markup = True, xalign = 0), False, False, 0)
+		dialog.show_all()
+		response = dialog.run()
+		dialog.destroy()
+		if response == Gtk.ResponseType.APPLY:
+			print("APPLY!")
 
 	def action_font_reset(self, widget):
 		self.admin.sendline("sudo -u gdm dbus-launch gsettings reset org.gnome.desktop.interface font-name")
