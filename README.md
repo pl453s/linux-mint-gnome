@@ -7,37 +7,12 @@ On first login, you can choose between a 'panel style' (Windows-like), a 'dock s
 
 I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any pretension.
 
-## Screenshots
+[**Click here to have a visual overview of this distribution**](github/tour.md)
 
-<table>
-  <tbody>
-    <tr>
-      <td colspan="3" rowspan="2"> <i>Click on one of the three styles below ("Panel", "Dock" and "Dash")</br>
-      Or else, you can also check the <b><a href="github/tour.md">INTERACTIVE TOUR</a></b></i> </td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td> <a href="github/tour_panel.md"><img src="github/tour_panel.png"></a> </td>
-      <td> <a href="github/tour_dock.md"><img src="github/tour_dock.png"></a> </td>
-      <td> <a href="github/tour_dash.md"><img src="github/tour_dash.png"></a> </td>
-    </tr>
-  </tbody>
-</table>
+*Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*
 
-<table>
-  <tbody>
-    <tr>
-      <td colspan="2" rowspan="2"> <b>Developed windows (Python GTK)</b> </td>
-      <td rowspan="3"> <a href="github/screen_customization.png"><img src="github/screen_customization.png"></a> </td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td colspan="2"> <a href="github/screen_welcome.png"><img src="github/screen_welcome.png"></a> </td>
-    </tr>
-  </tbody>
-</table>
+- *Materia: Materia theme with some fixes: app folders, low resolutions and on screen keyboard*
+- *Adapta: The same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
 
 ## Installation (1.6)
 
@@ -73,34 +48,8 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 
-## Gnome Customization
-
-The tabbed GUI is currently in development! The final aim is to create a central GUI to customize:  
-styles, extensions, appearance, applications grid, user's folders paths, Gnome, Qt5, GDM3, Plymouth and Grub.
-
-<table>
-  <tbody>
-    <tr>
-      <td rowspan="2"> <a href="github/screen_beta1.png"><img src="github/screen_beta1.png"></a> </td>
-      <td rowspan="2"> <a href="github/screen_beta2.png"><img src="github/screen_beta2.png"></a> </td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td> <a href="github/screen_beta3.png"><img src="github/screen_beta3.png"></a> </td>
-      <td> <a href="github/screen_beta4.png"><img src="github/screen_beta4.png"></a> </td>
-    </tr>
-  </tbody>
-</table>
-
-Some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:
-
-- Materia: Materia theme with some fixes: app folders, low resolutions and on screen keyboard
-- Adapta: The same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36
-
 ## Remaining work
 
-- Gnome Customization: Gnome Shell theme dialogs
 - Gnome Customization: Check english
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
