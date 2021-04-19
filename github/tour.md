@@ -429,7 +429,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_whl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -446,7 +446,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_whd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -463,7 +463,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_wsl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -480,7 +480,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_wsd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -497,7 +497,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_mhl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -514,7 +514,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_mhd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -531,7 +531,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_msl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -548,7 +548,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_msd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -565,7 +565,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_ghl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -582,7 +582,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_ghd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -599,7 +599,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_gsl.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -616,211 +616,619 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3_gsd.png">
+  <img src="3.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4whl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="panel_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_w.png">
+  <img src="4_whl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4whd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="panel_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_w.png">
+  <img src="4_whd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4wsl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="panel_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_w.png">
+  <img src="4_wsl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4wsd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="panel_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_w.png">
+  <img src="4_wsd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4mhl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="dock_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_m.png">
+  <img src="4_mhl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4mhd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="dock_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_m.png">
+  <img src="4_mhd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4msl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="dock_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_m.png">
+  <img src="4_msl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4msd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="dock_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="dash_off.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_m.png">
+  <img src="4_msd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4ghl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="dash_on.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_g.png">
+  <img src="4_ghl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4ghd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="dash_on.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="icons_off_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="icons_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_g.png">
+  <img src="4_ghd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4gsl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="dash_on.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="dark_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_g.png">
+  <img src="4_gsl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <span id="4gsd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="panel_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="dock_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="dash_on.png"></a>
   &emsp;
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="icons_on_inactive.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="dark_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="icons_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="4_g.png">
+  <img src="4_gsd.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5whl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_w.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5whd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4whd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_w.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5wsl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_w.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5wsd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4wsd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="panel_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_w.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5mhl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_m.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5mhd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4mhd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_m.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5msl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_m.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5msd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4msd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="dock_on.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="dash_off.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_m.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5ghl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_g.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5ghd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4ghd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_g.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5gsl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_g.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="5gsd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#4gsd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="next.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="panel_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="dock_off.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="dash_on.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="5_g.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6whl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="panel_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6whd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5whd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="panel_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6whd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6wsl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="panel_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6wsd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5wsd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="panel_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6wsd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6mhl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="dock_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6mhd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5mhd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="dock_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6mhd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6msl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="dock_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6msd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5msd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="dock_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="dash_off_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6msd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6ghl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="dash_on_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6ghd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5ghd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="dash_on_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="icons_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6ghd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6gsl">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsl"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="dash_on_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsl"><img src="dark_off_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span id="6gsd">
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#5gsd"><img src="back.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="next_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="panel_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="dock_off_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="dash_on_inactive.png"></a>
+  &emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="icons_on_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#6gsd"><img src="dark_on_inactive.png"></a>
+  &emsp;&emsp;
+  <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
+  <img src="6.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
