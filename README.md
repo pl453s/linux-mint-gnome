@@ -7,7 +7,7 @@ On first login, you can choose between a 'panel style' (Windows-like), a 'dock s
 
 I'm not afiliated with Linux Mint, this is a "fan-made" distribution without any pretension.
 
-[**Click here to have a visual overview of this distribution**](github/tour.md)
+**Visual overview of this distribution:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
 *Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*
 
