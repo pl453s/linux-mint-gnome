@@ -3,8 +3,8 @@
 Who needs a description? Everything is in the title!
 
 This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions.  
-On first login, you can choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 'dash style' (Gnome's defaults), whether or not to display desktop icons, and to opt for a light or a dark theme (everything can be changed later in 'Customization').  
-'Customization' is a personalization control center developed for the distribution, but theorically compatible with any distribution using the Gnome desktop.
+On first login, you can choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 'dash style' (Gnome's defaults).  
+You can find a tool called 'Customization'. This is a personalization control center developed for the distribution, but it is theoretically compatible with any distribution using the Gnome desktop.
 
 **Overview of the distribution:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
