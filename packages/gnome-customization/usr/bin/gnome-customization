@@ -261,6 +261,9 @@ class DesktopTab(Gtk.Box):
 						self.themes_icons.append(theme)
 					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
 						self.themes_curs.append(theme)
+		self.themes_gtk.sort()
+		self.themes_icons.sort()
+		self.themes_curs.sort()
 
 		self.name = "Desktop"
 		self.header = Gtk.HeaderBar()
@@ -420,7 +423,7 @@ class DesktopTab(Gtk.Box):
 		box.set_margin_bottom(10)
 		box.set_margin_start(10)
 		box.set_margin_end(10)
-		box.pack_start(Gtk.Label(label = "<b>Change the Gnome Shell theme from the login screen</b>\n<i>In case of crash or bug, fallback to the default 'Gnome' session.</i>", use_markup = True, xalign = 0), False, False, 0)
+		box.pack_start(Gtk.Label(label = "<b>Change the Gnome Shell theme from the login screen</b>\n<i>In case of crash or bug, return to the default 'Gnome' session.</i>", use_markup = True, xalign = 0), False, False, 0)
 		box.pack_start(Gtk.Image(file = "/usr/share/gnome-customization/session.png"), False, False, 0)
 		dialog.show_all()
 		dialog.run()
@@ -450,7 +453,7 @@ class LoginScreenTab(Gtk.Box):
 		self.gsettings += self.getkey("org.gnome.desktop.sound", "allow-volume-above-100-percent")
 		self.theme_gnome = readlink("/etc/alternatives/gdm3-theme.gresource")
 		if self.theme_gnome == "/usr/share/gnome-shell/gnome-shell-theme.gresource":
-			self.theme_gnome = "(Default)"
+			self.theme_gnome = ""
 		else:
 			self.theme_gnome = self.theme_gnome.split("/")[-1][0:-10]
 		self.theme_gtk    = self.getstr("org.gnome.desktop.interface", "gtk-theme")
@@ -472,6 +475,9 @@ class LoginScreenTab(Gtk.Box):
 						self.themes_icons.append(theme)
 					if exists(path + theme + "/cursor.theme") and not theme in self.themes_curs:
 						self.themes_curs.append(theme)
+		self.themes_gtk.sort()
+		self.themes_icons.sort()
+		self.themes_curs.sort()
 
 		self.admin = None
 		self.name = "Login screen"
@@ -516,7 +522,7 @@ class LoginScreenTab(Gtk.Box):
 		self.box_fail  = Gtk.Box(spacing = 10)
 		self.box_logo  = Gtk.Box(spacing = 10)
 
-		self.btn_gnome = Gtk.Button(label = self.theme_gnome)
+		self.btn_gnome = Gtk.Button(label = self.theme_gnome or "(Default)")
 		self.btn_gtk   = Gtk.ComboBoxText(width_request = 200)
 		self.btn_icons = Gtk.ComboBoxText(width_request = 200)
 		self.btn_curs  = Gtk.ComboBoxText(width_request = 200)
@@ -696,7 +702,11 @@ class LoginScreenTab(Gtk.Box):
 		self.admin.expect("#")
 
 	def action_gnome(self, widget):
-		dialog = Gtk.Dialog(title = "Select a theme (NOT READY!)", use_header_bar = True, transient_for = win, resizable = False)
+		themes = []
+		for theme in listdir("/usr/share/gnome-shell/themes/"):
+			themes.append(theme[:-10])
+		themes.sort()
+		dialog = Gtk.Dialog(title = "Select a theme", use_header_bar = True, transient_for = win, resizable = False)
 		dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_APPLY, Gtk.ResponseType.APPLY)
 		box = dialog.get_content_area()
 		box.set_spacing(10)
@@ -704,39 +714,37 @@ class LoginScreenTab(Gtk.Box):
 		box.set_margin_bottom(10)
 		box.set_margin_start(10)
 		box.set_margin_end(10)
-		warning = Gtk.Box()
+		warning = Gtk.Box(spacing = 10)
 		warning.pack_start(Gtk.Image(icon_name = "dialog-warning-symbolic", icon_size = 6), True, True, 0)
 		warning.pack_end(Gtk.Label(label = "<b>This tool can be dangerous!</b>\nIf you select an incompatible theme,\nyou might not be able to login anymore!\nIn this situation you should know how to\nswitch to another TTY and run 'gdm3-reset'.", use_markup = True), True, True, 0)
 		box.pack_start(warning, False, False, 0)
 		scroll = Gtk.ScrolledWindow(min_content_width = 300, max_content_width = 300, min_content_height = 300, max_content_height = 300)
 		listbox = Gtk.ListBox()
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "<i>(Default)</i>", use_markup = True, xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Dark", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Dark-Compact", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Light", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Adapta-Light-Compact", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Dark", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Dark-Compact", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Light", xalign = 0.0, margin = 10)), -1)
-		listbox.insert(Gtk.ListBoxRow(child = Gtk.Label(label = "Materia-Light-Compact", xalign = 0.0, margin = 10)), -1)
+		row = Gtk.ListBoxRow()
+		row.add(Gtk.Label(label = "<i>(Default)</i>", use_markup = True, xalign = 0.0, margin = 10))
+		listbox.insert(row, -1)
+		for theme in themes:
+			row = Gtk.ListBoxRow()
+			row.add(Gtk.Label(label = theme, xalign = 0.0, margin = 10))
+			listbox.insert(row, -1)
+		if self.theme_gnome in themes:
+			listbox.select_row(listbox.get_row_at_index(themes.index(self.theme_gnome)+1))
 		scroll.add(listbox)
 		box.pack_start(scroll, False, False, 0)
 		dialog.show_all()
 		response = dialog.run()
 		if response == Gtk.ResponseType.APPLY:
-			#for gresource in /usr/share/gnome-shell/themes/*.gresource
-			#	do
-			#		if [ -f "$gresource" ]
-			#		then
-			#			sudo update-alternatives --remove gdm3-theme.gresource "$gresource"
-			#		fi
-			#	done
+			for theme in themes:
+				self.admin.sendline("update-alternatives --remove gdm3-theme.gresource '/usr/share/gnome-shell/themes/" + theme + ".gresource'")
+				self.admin.expect("#")
+			self.theme_gnome = ""
+			self.btn_gnome.set_label("(Default)")
 			row = listbox.get_selected_row()
 			if row.get_index():
-				print("SWITCH TO " + row.get_child().get_label())
-				#sudo update-alternatives --install "/usr/share/gnome-shell/gdm3-theme.gresource" gdm3-theme.gresource "/usr/share/gnome-shell/themes/$1.gresource" 1000
-			else:
-				print("RESTORE TO DEFAULT")
+				self.admin.sendline("update-alternatives --install '/usr/share/gnome-shell/gdm3-theme.gresource' gdm3-theme.gresource '/usr/share/gnome-shell/themes/" + row.get_child().get_label() + ".gresource' 1000")
+				self.admin.expect("#")
+				self.theme_gnome = row.get_child().get_label()
+				self.btn_gnome.set_label(row.get_child().get_label())
 		dialog.destroy()
 
 	def action_font_reset(self, widget):
