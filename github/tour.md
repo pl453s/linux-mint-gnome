@@ -21,7 +21,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1whl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -38,7 +38,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1whd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -55,7 +55,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1wsl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -72,7 +72,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1wsd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -89,7 +89,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1mhl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -106,7 +106,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1mhd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -123,7 +123,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1msl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -140,7 +140,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1msd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -157,7 +157,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1ghl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -174,7 +174,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1ghd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -191,7 +191,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1gsl"><img src="dark_off_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -208,7 +208,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#1gsd"><img src="dark_on_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="1.png">
+  <img src="1.gif">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

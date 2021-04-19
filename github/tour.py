@@ -28,7 +28,7 @@ for slide in range(1, 7):
 		for icons in ["h", "s"]:
 			for theme in ["l", "d"]:
 				if slide == 1:
-					screen = "1.png"
+					screen = "1.gif"
 				elif slide == 2:
 					screen = "2.png"
 				elif slide == 3:
