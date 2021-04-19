@@ -7,10 +7,9 @@ On first login, you can choose between a 'panel style' (Windows-like), a 'dock s
 
 **Visual overview of this distribution: [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)**
 
-*Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*
-
-- *Materia: Materia theme with some fixes: app folders, low resolutions and on screen keyboard*
-- *Adapta: The same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
+*Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*  
+*The Materia theme with some fixes: app folders, low resolutions and on screen keyboard*  
+*The same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
 
 ## Installation (1.6)
 
