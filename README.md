@@ -2,14 +2,15 @@
 
 Who needs a description? Everything is in the title!
 
-This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions.
-On first login, you can choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 'dash style' (Gnome's defaults), whether or not to display desktop icons, and to opt for a light or a dark theme (everything can be changed later in 'Customization').
+This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions.  
+On first login, you can choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 'dash style' (Gnome's defaults), whether or not to display desktop icons, and to opt for a light or a dark theme (everything can be changed later in 'Customization').  
+'Customization' is a personalization control center developed for the distribution, but theorically compatible with any distribution using the Gnome desktop.
 
 **Overview of the distribution:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
 *Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*  
 *The Materia theme with some fixes: app folders, low resolutions and on screen keyboard*  
-*The same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
+*And the same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
 
 ## Installation (1.6)
 
@@ -54,9 +55,8 @@ Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open terminal (only background)
 - Nautilus extension: Open as administrator
-- Develop Gnome Customization
 - ISO full test + Test installing updates
-- PUBLISH A NEW ISO FILE
+- Gnome Customization: Continue development
 
 ## Credits
 

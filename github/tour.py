@@ -32,7 +32,7 @@ for slide in range(1, 7):
 				elif slide == 2:
 					screen = "2.png"
 				elif slide == 3:
-					screen = "3.png"
+					screen = "3_{}{}{}.png".format(style, icons, theme)
 				elif slide == 4:
 					screen = "4_{}{}{}.png".format(style, icons, theme)
 				elif slide == 5:

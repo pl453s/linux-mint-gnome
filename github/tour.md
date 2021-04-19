@@ -429,7 +429,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_whl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -446,7 +446,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3whl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_whd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -463,7 +463,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_wsl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -480,7 +480,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3wsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_wsd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -497,7 +497,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_mhl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -514,7 +514,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3mhl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_mhd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -531,7 +531,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_msl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -548,7 +548,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3msl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_msd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -565,7 +565,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_ghl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -582,7 +582,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3ghl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_ghd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -599,7 +599,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsd"><img src="dark_off.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_gsl.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -616,7 +616,7 @@
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md#3gsl"><img src="dark_on.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome"><img src="exit.png"></a>
-  <img src="3.png">
+  <img src="3_gsd.png">
 </span>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
