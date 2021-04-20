@@ -556,6 +556,11 @@ class LoginScreenTab(Gtk.Box):
 		self.btn_fail.set_range(1, 100)
 		self.btn_fail.set_increments(1, 1)
 		self.btn_fail.set_value(self.getint("org.gnome.login-screen", "allowed-failures"))
+		types = Gtk.FileFilter()
+		types.add_mime_type("image/png")
+		types.add_mime_type("image/jpeg")
+		self.btn_logo.set_filter(types)
+		self.btn_logo.set_local_only(True)
 		self.btn_logo.set_uri("file://" + self.getstr("org.gnome.login-screen", "logo"))
 
 		self.btn_gnome.connect("clicked", self.action_gnome)
