@@ -9,10 +9,6 @@ It is developed for the distribution, but is theoretically compatible with any d
 
 **Overview of the distribution:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
-*Also, some forks of the Materia Gnome Shell theme are availables for Gnome 3.36.x:*  
-*The Materia theme with some fixes: app folders, low resolutions and on screen keyboard*  
-*And the same, but with the Adapta colors, because the original one doesn't work on Gnome 3.36*
-
 ## Installation (1.6)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
