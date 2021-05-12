@@ -71,7 +71,7 @@ class ExtensionsTab(Gtk.Box):
 		self.name = "Extensions"
 		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
-		label = Gtk.Label(label = "<b>Warning: Disable all extensions if you experience system issues.</b>\n\nTo add a Gnome extension, install it with your package manager or\nmanually browse, download and install it from <a href='https://extensions.gnome.org'>extensions.gnome.org</a>.\n\nMake sure the extension folder name matches its UUID. You can install\nan extension directly from your browser with the appropriate addon.\n\nValid paths to place extensions are:\n - <tt><a href='file:///usr/share/gnome-shell/extensions'>/usr/share/gnome-shell/extensions</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.local/share/gnome-shell/extensions'>/home/" + getenv("USER") + "/.local/share/gnome-shell/extensions</a></tt>", use_markup = True, margin = 20)
+		label = Gtk.Label(label = "<b>Warning: Disable all extensions if you experience system issues.</b>\n\nTo add a Gnome extension, install it with your package manager or\nmanually browse, download and install it from <a href='https://extensions.gnome.org'>extensions.gnome.org</a>.\n\nMake sure the extension folder name matches its UUID. You can install\nan extension directly from your browser with the appropriate addon.\n\nValid paths to place extensions are:\n - <tt><a href='file:///usr/share/gnome-shell/extensions'>/usr/share/gnome-shell/extensions</a></tt>\n - <tt><a href='file://" + getenv("HOME") + "/.local/share/gnome-shell/extensions'>" + getenv("HOME") + "/.local/share/gnome-shell/extensions</a></tt>", use_markup = True, margin = 20)
 		label.show_all()
 		self.header_popover.add(label)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
@@ -266,7 +266,7 @@ class DesktopTab(Gtk.Box):
 		self.name = "Desktop"
 		self.header = Gtk.HeaderBar()
 		self.header_popover = Gtk.Popover()
-		label = Gtk.Label(label = "To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.themes'>/home/" + getenv("USER") + "/.themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>\n - <tt><a href='file:///home/" + getenv("USER") + "/.icons'>/home/" + getenv("USER") + "/.icons</a></tt>", use_markup = True, margin = 20)
+		label = Gtk.Label(label = "To add a Gnome, GTK, icons or cursors theme, install it with your package\nmanager or manually browse, download and install it from <a href='https://gnome-look.org'>gnome-look.org</a>.\n\nValid paths to place Gnome and GTK themes are:\n - <tt><a href='file:///usr/share/themes'>/usr/share/themes</a></tt>\n - <tt><a href='file://" + getenv("HOME") + "/.themes'>" + getenv("HOME") + "/.themes</a></tt>\n\nValid paths to place icons and cursors themes are:\n - <tt><a href='file:///usr/share/icons'>/usr/share/icons</a></tt>\n - <tt><a href='file://" + getenv("HOME") + "/.icons'>" + getenv("HOME") + "/.icons</a></tt>", use_markup = True, margin = 20)
 		label.show_all()
 		self.header_popover.add(label)
 		self.header_info = Gtk.MenuButton(image = Gtk.Image(icon_name = "dialog-information-symbolic"), popover = self.header_popover)
