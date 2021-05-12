@@ -6,10 +6,8 @@ from gi.repository import Gtk, Gio, Handy, Pango
 from os import system, getenv, listdir, readlink
 from os.path import exists
 from pexpect import runu, spawnu, EOF
-dashtopanel  = "dash-to-panel@jderose9.github.com"
-dashtodock   = "dash-to-dock@micxgx.gmail.com"
-desktopicons = "ding@rastersoft.com"
-topindicator = "topindicatorapp@quiro9.com"
+dashtopanel = "dash-to-panel@jderose9.github.com"
+dashtodock  = "dash-to-dock@micxgx.gmail.com"
 
 
 
