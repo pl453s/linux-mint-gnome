@@ -24,24 +24,21 @@ msgstr "Odustani"
 
 #: askConfirmPopup.js:36
 msgid "Delete"
-msgstr ""
+msgstr "Izbrisati"
 
 #: askNamePopup.js:35
 msgid "OK"
 msgstr "U redu"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Novi naziv mape"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Preimenuj…"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Preimenuj…"
 
@@ -51,24 +48,23 @@ msgstr "Naredba nije pronađena"
 
 #: desktopIconsUtil.js:195
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "Želite li pokrenuti “{0}” ili prikazati njegov sadržaj?"
 
 #: desktopIconsUtil.js:196
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "“{0}” je izvršna tekstualna datoteka."
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Otvori u Terminalu"
 
 #: desktopIconsUtil.js:202
 msgid "Show"
-msgstr ""
+msgstr "Prikaz"
 
 #: desktopIconsUtil.js:206
 msgid "Execute"
-msgstr ""
+msgstr "Izvršiti"
 
 #: desktopManager.js:131
 msgid "Nautilus File Manager not found"
@@ -76,7 +72,7 @@ msgstr ""
 
 #: desktopManager.js:132
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
-msgstr ""
+msgstr "Nautilus File Manager obvezan je za rad s Desktop Icons NG."
 
 #: desktopManager.js:543
 msgid "New Folder"
@@ -84,7 +80,7 @@ msgstr "Nova mapa"
 
 #: desktopManager.js:547
 msgid "New Document"
-msgstr ""
+msgstr "Novi dokument"
 
 #: desktopManager.js:552
 msgid "Paste"
@@ -100,7 +96,7 @@ msgstr "Ponovi"
 
 #: desktopManager.js:566
 msgid "Select all"
-msgstr ""
+msgstr "Odaberi sve"
 
 #: desktopManager.js:572
 msgid "Show Desktop in Files"
@@ -128,29 +124,24 @@ msgstr "Postavke"
 
 #: desktopManager.js:1127 desktopManager.js:1175
 msgid "Error while deleting files"
-msgstr ""
+msgstr "Pogreška prilikom brisanja datoteka"
 
 #: desktopManager.js:1201
 msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
+msgstr "Jeste li sigurni da želite trajno izbrisati ove stavke?"
 
 #: desktopManager.js:1202
 msgid "If you delete an item, it will be permanently lost."
-msgstr ""
-
-#: desktopManager.js:1294
-#, fuzzy
-msgid "New folder"
-msgstr "Nova mapa"
+msgstr "Ako izbrišete stavku, ona će biti trajno izgubljena."
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
-msgstr ""
+msgstr "Osobna mapa"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Smeće"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -161,7 +152,6 @@ msgid "Open"
 msgstr "Otvori"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Otvori s drugom aplikacijom"
 
@@ -171,7 +161,7 @@ msgstr "Otvori s drugom aplikacijom"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Pokrenite pomoću namjenske grafičke kartice"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -191,10 +181,9 @@ msgstr "Premjesti u smeće"
 
 #: fileItem.js:828
 msgid "Delete permanently"
-msgstr ""
+msgstr "Trajno izbriši"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Ne dopuštaj pokretanje"
 
@@ -208,11 +197,11 @@ msgstr "Isprazni smeće"
 
 #: fileItem.js:848
 msgid "Eject"
-msgstr ""
+msgstr "Izbaci"
 
 #: fileItem.js:855
 msgid "Unmount"
-msgstr ""
+msgstr "Izbaci"
 
 #: fileItem.js:869
 #msgid "Send to..."
@@ -231,7 +220,6 @@ msgstr ""
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Svojstva"
 
@@ -240,7 +228,6 @@ msgid "Properties"
 msgstr "Svojstva"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Prikaži u Datotekama"
 
@@ -277,43 +264,40 @@ msgid "Show the trash icon in the desktop"
 msgstr "Prikaži mapu smeća na radnoj površini"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Prikaži osobnu mapu na radnoj površini"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Prikaži osobnu mapu na radnoj površini."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Veličina ikona"
 
 #: preferences.js:102
 msgid "Top-left corner"
-msgstr ""
+msgstr "Gornji lijevi kut"
 
 #: preferences.js:103
 msgid "Top-right corner"
-msgstr ""
+msgstr "Gornji desni kut"
 
 #: preferences.js:104
 msgid "Bottom-left corner"
-msgstr ""
+msgstr "Donji lijevi kut"
 
 #: preferences.js:105
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "Donji desni kut"
 
 #: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+msgstr "Dodajte nove pogone na suprotnu stranu zaslona"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Označite mjesto pada tijekom Drag'n'Drop-a"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"
@@ -332,7 +316,6 @@ msgstr ""
 #msgstr ""
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Prikaži u Datotekama"
 
@@ -403,20 +386,18 @@ msgid "Show the trash icon in the desktop."
 msgstr "Prikaži ikonu smeća na radnoj površini."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Veličina ikona"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:34
 msgid "Set the corner from where the icons will start to be placed."
-msgstr ""
+msgstr "Postavite kut odakle će se ikone početi postavljati."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:39
 msgid "Show the disk drives connected to the computer."
-msgstr ""
+msgstr "Pokažite diskovne pogone povezane s računalom."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Prikaži osobnu mapu na radnoj površini."
 
@@ -436,15 +417,12 @@ msgid ""
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Prikaži osobnu mapu na radnoj površini"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Prikaži osobnu mapu na radnoj površini"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Prikaži u Datotekama"
 
@@ -466,5 +444,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "Mape sa “.” na početku njihovih naziva su skrivene."
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "Već postoji datoteka ili mapa s tim nazivom."

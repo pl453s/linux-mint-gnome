@@ -1222,7 +1222,7 @@ var DesktopManager = class {
         for(let fileItem of this._fileList) {
             fileItem.unsetSelected();
         }
-        let newFolderWindow = new AskNamePopup.AskNamePopup(null, _("New folder"), null);
+        let newFolderWindow = new AskNamePopup.AskNamePopup(null, _("New Folder"), null);
         let newName = newFolderWindow.run();
         if (newName) {
             let dir = DesktopIconsUtil.getDesktopDir().get_child(newName);

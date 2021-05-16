@@ -137,10 +137,6 @@ msgstr "Êtes‑vous sûr de vouloir supprimer définitivement ces éléments 
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Si vous supprimez un élément, il sera définitivement perdu."
 
-#: desktopManager.js:1294
-msgid "New folder"
-msgstr "Nouveau dossier"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
@@ -159,7 +155,6 @@ msgid "Open"
 msgstr "Ouvrir"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Ouvrir avec une autre application"
 
@@ -192,7 +187,6 @@ msgid "Delete permanently"
 msgstr "Supprimer définitivement"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Ne pas autoriser le lancement"
 
@@ -229,7 +223,6 @@ msgstr "Démonter"
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Propriétés"
 
@@ -238,7 +231,6 @@ msgid "Properties"
 msgstr "Propriétés"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Montrer dans Fichiers"
 
@@ -430,10 +422,3 @@ msgstr ""
 "Affiche un rectangle sur l’emplacement de destination lors d’un "
 "glisser‑déposer"
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
-msgid ""
-"When doing a Drag'n'Drop operation, marks the place in the grid where the "
-"icon will be put with a semitransparent rectangle."
-msgstr ""
-"Lors d’un glisser‑déposer, affiche un rectangle semi‑transparent à "
-"l’emplacement de la grille où l’icône sera déposée."

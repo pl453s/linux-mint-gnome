@@ -24,24 +24,21 @@ msgstr "Mégse"
 
 #: askConfirmPopup.js:36
 msgid "Delete"
-msgstr ""
+msgstr "Töröl"
 
 #: askNamePopup.js:35
 msgid "OK"
 msgstr "Rendben"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Új mappa neve"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Átnevezés…"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Átnevezés…"
 
@@ -51,32 +48,31 @@ msgstr "A parancs nem található"
 
 #: desktopIconsUtil.js:195
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "Futtatja a “{0}” fájlt, vagy megjeleníti annak tartalmát?"
 
 #: desktopIconsUtil.js:196
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "1 “{0}” egy futtatható szövegfájl."
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Megnyitás terminálban"
 
 #: desktopIconsUtil.js:202
 msgid "Show"
-msgstr ""
+msgstr "Kijelző"
 
 #: desktopIconsUtil.js:206
 msgid "Execute"
-msgstr ""
+msgstr "Fuss"
 
 #: desktopManager.js:131
 msgid "Nautilus File Manager not found"
-msgstr ""
+msgstr "A Nautilus File Manager nem található"
 
 #: desktopManager.js:132
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
-msgstr ""
+msgstr "A Nautilus File Manager kötelező a Desktop Icons NG használatához."
 
 #: desktopManager.js:543
 msgid "New Folder"
@@ -84,7 +80,7 @@ msgstr "Új mappa"
 
 #: desktopManager.js:547
 msgid "New Document"
-msgstr ""
+msgstr "Új fájl"
 
 #: desktopManager.js:552
 msgid "Paste"
@@ -100,7 +96,7 @@ msgstr "Újra"
 
 #: desktopManager.js:566
 msgid "Select all"
-msgstr ""
+msgstr "Mindet kiválaszt"
 
 #: desktopManager.js:572
 msgid "Show Desktop in Files"
@@ -128,29 +124,24 @@ msgstr "Beállítások"
 
 #: desktopManager.js:1127 desktopManager.js:1175
 msgid "Error while deleting files"
-msgstr ""
+msgstr "Hiba történt a fájlok törlése közben"
 
 #: desktopManager.js:1201
 msgid "Are you sure you want to permanently delete these items?"
-msgstr ""
+msgstr "Biztosan véglegesen törli ezeket az elemeket?"
 
 #: desktopManager.js:1202
 msgid "If you delete an item, it will be permanently lost."
-msgstr ""
-
-#: desktopManager.js:1294
-#, fuzzy
-msgid "New folder"
-msgstr "Új mappa"
+msgstr "Ha töröl egy elemet, az végleg elveszik."
 
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
-msgstr ""
+msgstr "Saját mappa"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Kuka"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -161,7 +152,6 @@ msgid "Open"
 msgstr "Megnyitás"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Megnyitás egyéb alkalmazással"
 
@@ -171,7 +161,7 @@ msgstr "Megnyitás egyéb alkalmazással"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Indítsa el dedikált grafikus kártya használatával"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -191,10 +181,9 @@ msgstr "Áthelyezés a Kukába"
 
 #: fileItem.js:828
 msgid "Delete permanently"
-msgstr ""
+msgstr "Végleges törlés"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Ne engedélyezzen indítást"
 
@@ -208,11 +197,11 @@ msgstr "Kuka ürítése"
 
 #: fileItem.js:848
 msgid "Eject"
-msgstr ""
+msgstr "Kiadás"
 
 #: fileItem.js:855
 msgid "Unmount"
-msgstr ""
+msgstr "Leválaszt"
 
 #: fileItem.js:869
 #msgid "Send to..."
@@ -231,7 +220,6 @@ msgstr ""
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Tulajdonságok"
 
@@ -240,7 +228,6 @@ msgid "Properties"
 msgstr "Tulajdonságok"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Megjelenítés a Fájlokban"
 
@@ -277,43 +264,40 @@ msgid "Show the trash icon in the desktop"
 msgstr "A kuka ikon megjelenítése az asztalon"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "A személyes mappa megjelenítése az asztalon"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "A személyes mappa megjelenítése az asztalon."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Ikonméret"
 
 #: preferences.js:102
 msgid "Top-left corner"
-msgstr ""
+msgstr "Bal felső sarok"
 
 #: preferences.js:103
 msgid "Top-right corner"
-msgstr ""
+msgstr "Jobb felső sarok"
 
 #: preferences.js:104
 msgid "Bottom-left corner"
-msgstr ""
+msgstr "Bal alsó sarok"
 
 #: preferences.js:105
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "Jobb alsó sarok"
 
 #: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+msgstr "Adjon hozzá új meghajtókat a képernyő másik oldalához"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Jelölje ki a dobás helyét a Drag'n'Drop alatt"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"
@@ -332,7 +316,6 @@ msgstr ""
 #msgstr ""
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Megjelenítés a Fájlokban"
 
@@ -403,7 +386,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "A kuka ikon megjelenítése az asztalon."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Ikonméret"
 
@@ -416,7 +398,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr ""
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "A személyes mappa megjelenítése az asztalon."
 
@@ -436,15 +417,12 @@ msgid ""
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "A személyes mappa megjelenítése az asztalon"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "A személyes mappa megjelenítése az asztalon"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Megjelenítés a Fájlokban"
 
@@ -466,5 +444,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "A „.” karakterrel kezdődő nevű mappák rejtettek."
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "Már van egy fájl vagy mappa azzal a névvel."

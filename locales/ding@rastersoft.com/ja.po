@@ -135,10 +135,6 @@ msgstr "これらのアイテムを完全に削除してもよろしいですか
 msgid "If you delete an item, it will be permanently lost."
 msgstr "アイテムを削除すると、永久に失われます。"
 
-#: desktopManager.js:1294
-msgid "New folder"
-msgstr "新しいフォルダー"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"

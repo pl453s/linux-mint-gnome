@@ -137,10 +137,6 @@ msgstr "Вы уверены, что хотите удалить эти файл�
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Если вы удалите файл, он будет навсегда потерян."
 
-#: desktopManager.js:1294
-msgid "New folder"
-msgstr "Создать папку"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"

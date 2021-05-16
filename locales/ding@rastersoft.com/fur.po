@@ -30,17 +30,14 @@ msgid "OK"
 msgstr "Va ben"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Gnûf non de cartele"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Cambie non..."
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Cambie non..."
 
@@ -57,7 +54,6 @@ msgid "“{0}” is an executable text file."
 msgstr ""
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Vierç in Terminâl"
 
@@ -137,11 +133,6 @@ msgstr ""
 msgid "If you delete an item, it will be permanently lost."
 msgstr ""
 
-#: desktopManager.js:1294
-#, fuzzy
-msgid "New folder"
-msgstr "Gnove cartele"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
@@ -160,7 +151,6 @@ msgid "Open"
 msgstr "Vierç"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Vierç cuntune altre aplicazion"
 
@@ -193,7 +183,6 @@ msgid "Delete permanently"
 msgstr ""
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "No sta permeti inviament"
 
@@ -230,7 +219,6 @@ msgstr ""
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Propietâts"
 
@@ -239,7 +227,6 @@ msgid "Properties"
 msgstr "Propietâts"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Mostre in File"
 
@@ -276,17 +263,14 @@ msgid "Show the trash icon in the desktop"
 msgstr "Mostre la icone de scovacere intal scritori"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Mostre la cartele personâl intal scritori"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Mostre la cartele personâl intal scritori."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Dimension icone"
 
@@ -331,7 +315,6 @@ msgstr ""
 #msgstr ""
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Mostre in File"
 
@@ -402,7 +385,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "Mostre la icone de scovacere intal scritori."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Dimension icone"
 
@@ -415,7 +397,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr ""
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Mostre la cartele personâl intal scritori."
 
@@ -435,15 +416,12 @@ msgid ""
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Mostre la cartele personâl intal scritori"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Mostre la cartele personâl intal scritori"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Mostre in File"
 
@@ -465,5 +443,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "Lis cartelis cul “.” al inizi dal lôr non a son platadis."
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "Un file o une cartele cul stes non e esist za."

@@ -138,10 +138,6 @@ msgstr "¿Borrar estos elementos de manera permanente?"
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Si borra un elemento, éste se perderá para siempre."
 
-#: ../desktopManager.js:1310
-msgid "New folder"
-msgstr "Nueva carpeta"
-
 #: ../desktopManager.js:1385
 #msgid "Can not email a Directory"
 #msgstr "No se puede enviar un directorio"
@@ -158,7 +154,7 @@ msgstr "Carpeta personal"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Papelera"
 
 #: ../fileItem.js:794
 #msgid "Open All..."
@@ -455,7 +451,6 @@ msgstr ""
 #~ msgid "There was an error while trying to permanently delete the file {:}."
 #~ msgstr "Se produjo un error al intentar borrar el archivo {:}."
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Mostrar unidades externas"
 
@@ -513,5 +508,3 @@ msgstr ""
 #~ msgid "Shows the Music folder in the desktop."
 #~ msgstr "Muestra la carpeta Música en el escritorio."
 
-#~ msgid "Shows the Pictures folder in the desktop."
-#~ msgstr "Muestra la carpeta Imágenes en el escritorio."

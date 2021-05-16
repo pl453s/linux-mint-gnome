@@ -142,11 +142,6 @@ msgstr "Dosyaları geri dönüşümsüz olarak silmek istediğinizden emin misin
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Bir dosya silerseniz, geri dönüşümü yoktur."
 
-#: desktopManager.js:1294
-#, fuzzy
-msgid "New folder"
-msgstr "Yeni Klasör"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"

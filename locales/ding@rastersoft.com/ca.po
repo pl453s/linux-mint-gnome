@@ -132,10 +132,6 @@ msgstr "Esteu segur que voleu suprimir aquests elements permanentment?"
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Si suprimiu un element, es perdrà definitivament."
 
-#: desktopManager.js:1294
-#msgid "New folder"
-#msgstr "Carpeta nova"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"

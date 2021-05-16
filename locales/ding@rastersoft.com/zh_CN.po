@@ -128,10 +128,6 @@ msgstr "您确定要永久删除这些项目吗？"
 msgid "If you delete an item, it will be permanently lost."
 msgstr "删除一个项目，它将会永远消失"
 
-#: desktopManager.js:1108
-msgid "New folder"
-msgstr "新建文件夹"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:144
 msgid "Home"

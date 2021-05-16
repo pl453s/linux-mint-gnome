@@ -135,10 +135,6 @@ msgstr "Sind Sie sicher, dass Sie diese Dateien dauerhaft löschen wollen?"
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Sobald Sie ein Objekt löschen, geht es dauerhaft verloren."
 
-#: desktopManager.js:1294
-msgid "New folder"
-msgstr "Neuer Ordner"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
@@ -146,7 +142,7 @@ msgstr "Persönlicher Ordner"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Papierkorb"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -157,7 +153,6 @@ msgid "Open"
 msgstr "Öffnen"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Mit anderer Anwendung öffnen"
 
@@ -167,7 +162,7 @@ msgstr "Mit anderer Anwendung öffnen"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Starten Sie mit der dedizierten Grafikkarte"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -190,7 +185,6 @@ msgid "Delete permanently"
 msgstr "Dauerhaft löschen"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Start nicht erlauben"
 
@@ -227,7 +221,6 @@ msgstr "Aushängen"
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Eigenschaften"
 
@@ -236,7 +229,6 @@ msgid "Properties"
 msgstr "Eigenschaften"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "In Dateiverwaltung anzeigen"
 
@@ -425,10 +417,3 @@ msgstr ""
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr "Zeigt ein Rechteck in der Zielposition bei DnD an."
 
-#: schemas/org.gnome.shell.extensions.ding.gschema.xml:54
-msgid ""
-"When doing a Drag'n'Drop operation, marks the place in the grid where the "
-"icon will be put with a semitransparent rectangle."
-msgstr ""
-"Bei einer Drag'n'Drop-Operation wird die Position im Raster, wohin das "
-"Symbol gelegt werden soll, durch ein semitransparentes Rechteck angezeigt."

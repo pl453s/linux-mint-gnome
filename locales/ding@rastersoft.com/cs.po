@@ -135,10 +135,6 @@ msgstr "Opravdu chcete tyto položky trvale smazat?"
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Pokud položku smažete, bude trvale ztracena."
 
-#: desktopManager.js:1294
-#msgid "New folder"
-#msgstr "Nová složka"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"

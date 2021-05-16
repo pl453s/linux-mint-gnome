@@ -139,10 +139,6 @@ msgstr "האם אכן ברצונך למחוק פריטים אלו לצמיתות
 msgid "If you delete an item, it will be permanently lost."
 msgstr ""
 
-#: ../desktopManager.js:1294
-msgid "New folder"
-msgstr "תיקיה חדשה"
-
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: ../fileItem.js:151
 msgid "Home"
@@ -427,8 +423,3 @@ msgstr ""
 msgid "Shows a rectangle in the destination place during DnD"
 msgstr ""
 
-#: ../schemas/org.gnome.shell.extensions.ding.gschema.xml.h:16
-msgid ""
-"When doing a Drag'n'Drop operation, marks the place in the grid where the "
-"icon will be put with a semitransparent rectangle."
-msgstr ""
