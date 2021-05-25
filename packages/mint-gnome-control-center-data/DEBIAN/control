@@ -3,7 +3,6 @@ Source: mint-gnome-control-center
 Version: 1:3.36.4
 Architecture: all
 Maintainer: PL453s <pl453s@github.com>
-Installed-Size: 948
 Depends: dconf-gsettings-backend | gsettings-backend, session-migration
 Section: gnome
 Priority: optional

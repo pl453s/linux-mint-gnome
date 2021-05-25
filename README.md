@@ -35,6 +35,7 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 - mint-gnome-core: Mint Gnome session, various adjustments, default schemas and default user folder
 - mint-gnome-control-center: 'Settings' application with some fixes (remove Appearance + Whoopsie)
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
+- mint-gnome-control-center-faces: 'Settings' application faces with some fixes (less available faces)
 - mint-gnome-extensions : 'Dash to Panel', 'Dash to Dock', 'Desktop Icons NG' and 'Top Indicator App'
 - mint-gnome-theme: 'Materia' theme with some fixes (app folder and on screen keyboard)
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
@@ -46,8 +47,10 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 
 ## Remaining work
 
-- Gnome Customization: Check english
+- Create default faces (anon + mint + gnome)
+- Welcome 2nd screen (face + background + customization + software + search engine + github)
 - Desktop Icons: Improve localization
+- Gnome Customization: Check english
 - PUBLISH A NEW ISO FILE
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug

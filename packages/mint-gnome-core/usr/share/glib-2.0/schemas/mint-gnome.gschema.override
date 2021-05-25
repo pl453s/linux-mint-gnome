@@ -75,6 +75,9 @@ current-workspace-only=true
 [org.gnome.shell.window-switcher]
 current-workspace-only=true
 
+[org.gnome.settings-daemon.plugins.power]
+power-button-action='interactive'
+
 [org.gnome.login-screen]
 logo='/usr/share/plymouth/themes/mint-spinner/watermark.png'
 

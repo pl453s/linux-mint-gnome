@@ -1,0 +1,13 @@
+Package: mint-gnome-control-center-faces
+Source: mint-gnome-control-center
+Version: 1:3.36.4
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Section: gnome
+Priority: optional
+Multi-Arch: foreign
+Description: utilities to configure the GNOME desktop - faces images
+ This package contains images that can be used for user profile's icon
+Provides: gnome-control-center-faces, unity-control-center-faces
+Conflicts: gnome-control-center-faces, unity-control-center-faces
+Replaces: gnome-control-center-faces, unity-control-center-faces
