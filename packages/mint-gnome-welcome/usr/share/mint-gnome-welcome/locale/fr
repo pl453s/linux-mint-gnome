@@ -1,6 +1,8 @@
 Bienvenue
 Ignorer
-Confirmer
+Suivant
+Précédent
+Terminer
 Style panneau (comme Windows)
 Style dock (comme MacOS)
 Style natif (Gnome par défaut)
@@ -9,4 +11,12 @@ Cacher les icônes du bureau
 Afficher les icônes du bureau
 Thème clair
 Thème sombre
+Votre bureau est prêt
+Définir l'avatar
+Définir l'arrière-plan
+Personnaliser bureau
+Parcourir les logiciels
+Gardez à l'esprit que Linux Mint Gnome est un projet bêta. Soyez très prudent lorsque vous effectuez des mises à jour !
+Vérifiez la progression du développement de Linux Mint Gnome ou signalez un bogue sur la
+page du projet GitHub 
 EOF

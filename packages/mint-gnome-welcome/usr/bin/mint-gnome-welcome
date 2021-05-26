@@ -37,24 +37,28 @@ class WelcomeWindow(Gtk.Window):
 		self.set_position(Gtk.WindowPosition.CENTER)
 		self.set_resizable(False)
 		self.set_border_width(32)
-		self.box = Gtk.Box(spacing = 32, orientation = Gtk.Orientation.VERTICAL)
-		self.add(self.box)
+		self.stack = Gtk.Stack(transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+		self.add(self.stack)
+		self.box1 = Gtk.Box(spacing = 32, orientation = Gtk.Orientation.VERTICAL)
+		self.box2 = Gtk.Box(spacing = 32, orientation = Gtk.Orientation.VERTICAL)
+		self.stack.add_named(self.box1, "1")
+		self.stack.add_named(self.box2, "2")
 
 		self.header = Gtk.HeaderBar()
 		self.header.set_title(locale[0])
-		self.button_skip = Gtk.Button(label = locale[1])
-		self.button_skip.connect("clicked", Gtk.main_quit)
-		self.header.pack_start(self.button_skip)
-		self.button_confirm = Gtk.Button(label = locale[2])
-		self.button_confirm.get_style_context().add_class("suggested-action")
-		self.button_confirm.connect("clicked", self.action_confirm)
-		self.header.pack_end(self.button_confirm)
+		self.button_back = Gtk.Button(label = locale[1])
+		self.button_back.connect("clicked", self.action_back)
+		self.header.pack_start(self.button_back)
+		self.button_next = Gtk.Button(label = locale[2])
+		self.button_next.get_style_context().add_class("suggested-action")
+		self.button_next.connect("clicked", self.action_next)
+		self.header.pack_end(self.button_next)
 		self.set_titlebar(self.header)
 
-		self.box_styles = Gtk.Box(spacing = 8)
-		self.box.pack_start(self.box_styles, True, False, 0)
+		self.box_styles = Gtk.Box(spacing = 32)
+		self.box1.pack_start(self.box_styles, True, False, 0)
 		self.box_options = Gtk.Box(spacing = 32)
-		self.box.pack_start(self.box_options, True, False, 0)
+		self.box1.pack_start(self.box_options, True, False, 0)
 		self.box_desktop = Gtk.Box(spacing = 8)
 		self.box_options.pack_start(self.box_desktop, True, False, 0)
 		self.box_theme = Gtk.Box(spacing = 8)
@@ -62,7 +66,7 @@ class WelcomeWindow(Gtk.Window):
 
 		self.image_panel = Gtk.Image()
 		self.image_panel.set_from_file("/usr/share/mint-gnome-welcome/panel.png")
-		self.button_panel = Gtk.Button(label = "\n" + locale[3])
+		self.button_panel = Gtk.Button(label = "\n" + locale[5])
 		self.button_panel.set_always_show_image(True)
 		self.button_panel.set_image(self.image_panel)
 		self.button_panel.set_image_position(Gtk.PositionType.TOP)
@@ -73,7 +77,7 @@ class WelcomeWindow(Gtk.Window):
 
 		self.image_dock = Gtk.Image()
 		self.image_dock.set_from_file("/usr/share/mint-gnome-welcome/dock.png")
-		self.button_dock = Gtk.Button(label = "\n" + locale[4])
+		self.button_dock = Gtk.Button(label = "\n" + locale[6])
 		self.button_dock.set_always_show_image(True)
 		self.button_dock.set_image(self.image_dock)
 		self.button_dock.set_image_position(Gtk.PositionType.TOP)
@@ -84,7 +88,7 @@ class WelcomeWindow(Gtk.Window):
 
 		self.image_dash = Gtk.Image()
 		self.image_dash.set_from_file("/usr/share/mint-gnome-welcome/dash.png")
-		self.button_dash = Gtk.Button(label = "\n" + locale[5])
+		self.button_dash = Gtk.Button(label = "\n" + locale[7])
 		self.button_dash.set_always_show_image(True)
 		self.button_dash.set_image(self.image_dash)
 		self.button_dash.set_image_position(Gtk.PositionType.TOP)
@@ -94,37 +98,100 @@ class WelcomeWindow(Gtk.Window):
 		self.box_styles.pack_start(self.button_dash, True, True, 0)
 
 		if live:
-			self.text_live = Gtk.Label(label = locale[6])
+			self.text_live = Gtk.Label(label = locale[8])
 			self.box_desktop.pack_start(self.text_live, False, False, 0)
 		else:
-			self.text_hide = Gtk.Label(label = locale[7])
+			self.text_hide = Gtk.Label(label = locale[9])
 			self.box_desktop.pack_start(self.text_hide, False, False, 0)
 			self.switch_desktop = Gtk.Switch()
 			if icons:
 				self.switch_desktop.set_state(True)
 			self.switch_desktop.connect("state_set", self.action_desktop)
 			self.box_desktop.pack_start(self.switch_desktop, False, False, 0)
-			self.text_show = Gtk.Label(label = locale[8])
+			self.text_show = Gtk.Label(label = locale[10])
 			self.box_desktop.pack_start(self.text_show, False, False, 0)
 
-		self.text_light = Gtk.Label(label = locale[9])
+		self.text_light = Gtk.Label(label = locale[11])
 		self.box_theme.pack_start(self.text_light, False, False, 0)
 		self.switch_theme = Gtk.Switch()
 		if dark:
 			self.switch_theme.set_state(True)
 		self.switch_theme.connect("state_set", self.action_theme)
 		self.box_theme.pack_start(self.switch_theme, False, False, 0)
-		self.text_dark = Gtk.Label(label = locale[10])
+		self.text_dark = Gtk.Label(label = locale[12])
 		self.box_theme.pack_start(self.text_dark, False, False, 0)
 
+		self.text_header = Gtk.Label(label = "<big><b>" + locale[13] + "</b></big>\n", use_markup = True, justify = Gtk.Justification.CENTER)
+		self.box2.pack_start(self.text_header, True, False, 0)
+		self.box_launch = Gtk.Box(spacing = 8)
+		self.box2.pack_start(self.box_launch, True, False, 0)
+		self.text_footer = Gtk.Label(label = locale[18] + "\n\n<i>" + locale[19] + " <a href='https://github.com/pl453s/linux-mint-gnome'>" + locale[20] + "</a></i>", use_markup = True, justify = Gtk.Justification.CENTER)
+		self.box2.pack_start(self.text_footer, True, False, 0)
+
+		self.image_face = Gtk.Image()
+		self.image_face.set_from_file("/usr/share/mint-gnome-welcome/face.png")
+		self.button_face = Gtk.Button(label = "\n" + locale[14])
+		self.button_face.set_always_show_image(True)
+		self.button_face.set_image(self.image_face)
+		self.button_face.set_image_position(Gtk.PositionType.TOP)
+		self.button_face.connect("clicked", self.action_launch, "gnome-control-center user-accounts")
+		self.box_launch.pack_start(self.button_face, True, False, 0)
+
+		self.image_wall = Gtk.Image()
+		self.image_wall.set_from_file("/usr/share/mint-gnome-welcome/wall.png")
+		self.button_wall = Gtk.Button(label = "\n" + locale[15])
+		self.button_wall.set_always_show_image(True)
+		self.button_wall.set_image(self.image_wall)
+		self.button_wall.set_image_position(Gtk.PositionType.TOP)
+		self.button_wall.connect("clicked", self.action_launch, "gnome-control-center background")
+		self.box_launch.pack_start(self.button_wall, True, False, 0)
+
+		self.image_cust = Gtk.Image()
+		self.image_cust.set_from_file("/usr/share/mint-gnome-welcome/cust.png")
+		self.button_cust = Gtk.Button(label = "\n" + locale[16])
+		self.button_cust.set_always_show_image(True)
+		self.button_cust.set_image(self.image_cust)
+		self.button_cust.set_image_position(Gtk.PositionType.TOP)
+		self.button_cust.connect("clicked", self.action_launch, "gnome-customization")
+		self.box_launch.pack_start(self.button_cust, True, False, 0)
+
+		self.image_soft = Gtk.Image()
+		self.image_soft.set_from_file("/usr/share/mint-gnome-welcome/soft.png")
+		self.button_soft = Gtk.Button(label = "\n" + locale[17])
+		self.button_soft.set_always_show_image(True)
+		self.button_soft.set_image(self.image_soft)
+		self.button_soft.set_image_position(Gtk.PositionType.TOP)
+		self.button_soft.connect("clicked", self.action_launch, "mintinstall")
+		self.box_launch.pack_start(self.button_soft, True, False, 0)
 
 
-	def action_confirm(self, widget):
-		system("mkdir -p ~/.config/autostart")
-		system("cat /etc/xdg/autostart/mint-gnome-welcome.desktop > ~/.config/autostart/mint-gnome-welcome.desktop")
-		system("echo >> ~/.config/autostart/mint-gnome-welcome.desktop")
-		system("echo X-GNOME-Autostart-enabled=false >> ~/.config/autostart/mint-gnome-welcome.desktop")
-		Gtk.main_quit()
+	def action_back(self, widget):
+		page = int(self.stack.get_visible_child_name())
+		if page > 1:
+			page -= 1
+			self.stack.set_visible_child_name(str(page))
+			self.button_back.set_label(locale[3])
+			self.button_next.set_label(locale[2])
+			if page == 1:
+				self.button_back.set_label(locale[1])
+		else:
+			Gtk.main_quit()
+
+	def action_next(self, widget):
+		page = int(self.stack.get_visible_child_name())
+		if page < 2:
+			page += 1
+			self.stack.set_visible_child_name(str(page))
+			self.button_back.set_label(locale[3])
+			self.button_next.set_label(locale[2])
+			if page == 2:
+				self.button_next.set_label(locale[4])
+		else:
+			system("mkdir -p ~/.config/autostart")
+			system("cat /etc/xdg/autostart/mint-gnome-welcome.desktop > ~/.config/autostart/mint-gnome-welcome.desktop")
+			system("echo >> ~/.config/autostart/mint-gnome-welcome.desktop")
+			system("echo X-GNOME-Autostart-enabled=false >> ~/.config/autostart/mint-gnome-welcome.desktop")
+			Gtk.main_quit()
 
 	def action_panel(self, widget):
 		self.button_dock.get_style_context().remove_class("suggested-action")
@@ -166,6 +233,9 @@ class WelcomeWindow(Gtk.Window):
 			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light)
 			system("gsettings set org.gnome.desktop.interface cursor-theme " + theme_curs_light)
 
+	def action_launch(self, widget, command):
+		system(command + " &")
+
 
 
 live = system("df | grep -w / | grep -qv 'cow'")
@@ -176,9 +246,13 @@ if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
 	for line in file:
 		locale.append(line[:-1])
 	file.close()
-if len(locale) < 11:
-	locale = ["Welcome", "Ignore", "Confirm", "Panel style (Windows-like)", "Dock style (MacOS-like)", "Dash style (Gnome's defaults)", \
-	"Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme"]
+if len(locale) < 21:
+	locale = [ \
+	"Welcome", "Ignore", "Next", "Back", "Finish", "Panel style (Windows-like)", "Dock style (MacOS-like)", "Dash style (Gnome's defaults)", \
+	"Can't hide desktop icons in Live session", "Hide desktop icons", "Show desktop icons", "Light theme", "Dark theme", \
+	"Your desktop is ready", "Set profile picture", "Set the background", "Customize desktop", "Browse software", \
+	"Keep in mind that Linux Mint Gnome is beta project. Be very careful when making updates!", \
+	"Check Linux Mint Gnome development progress or report a bug on the", "GitHub project page"]
 
 if exists(getenv("HOME") + "/.config/autostart/mint-gnome-welcome.desktop"):
 	style = "dash"

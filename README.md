@@ -47,9 +47,9 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 
 ## Remaining work
 
+- Firefox: change default search engines
 - Desktop Icons: Improve localization
 - PUBLISH A NEW ISO FILE
-- Welcome 2nd screen (face + background + customization + software + search engine + github)
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open terminal (only background)

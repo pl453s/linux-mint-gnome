@@ -17,7 +17,6 @@ user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1611844341);
 user_pref("browser.cache.disk.amount_written", 1039);
 user_pref("browser.cache.disk.capacity", 163840);
 user_pref("browser.cache.disk.filesystem_reported", 1);
-user_pref("browser.search.region", "FR");
 user_pref("extensions.activeThemeID", "default-theme@mozilla.org");
 user_pref("extensions.blocklist.lastModified", "Fri, 22 Jan 2021 23:33:01 GMT");
 user_pref("extensions.blocklist.pingCountTotal", 2);
