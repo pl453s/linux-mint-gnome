@@ -47,7 +47,6 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 
 ## Remaining work
 
-- Create default faces (anon + mint + gnome)
 - Welcome 2nd screen (face + background + customization + software + search engine + github)
 - Desktop Icons: Improve localization
 - Gnome Customization: Check english
