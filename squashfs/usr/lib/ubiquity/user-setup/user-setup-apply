@@ -149,7 +149,7 @@ if [ "$RET" = true ] && ! is_system_user; then
 		done
 		apt-install ecryptfs-utils 2>/dev/null
 		apt-install cryptsetup 2>/dev/null
-		
+
 		umountproc=false
 		umountsys=false
 		umountdev=false
@@ -254,12 +254,10 @@ if [ "$RET" = true ] && ! is_system_user; then
 		#	$log $chroot $ROOT adduser "$USER" $group >/dev/null 2>&1 || true
 		#done
 
-		echo "[User]"                                             | $log $chroot $ROOT tee    "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
-		echo "Session="                                           | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
-		echo "XSession="                                          | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
-		echo "PasswordHint="                                      | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
-		echo "Icon=/usr/local/share/pixmaps/faces/anon-black.png" | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
-		echo "SystemAccount=false"                                | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
+		$log $chroot $ROOT cp "/usr/local/share/pixmaps/faces/anon-black.png" "/var/lib/AccountsService/icons/$USER" > /dev/null 2>&1 || true
+		echo "[User]"                                    | $log $chroot $ROOT tee    "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
+		echo "Icon=/var/lib/AccountsService/icons/$USER" | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
+		echo "SystemAccount=false"                       | $log $chroot $ROOT tee -a "/var/lib/AccountsService/users/$USER" >/dev/null 2>&1 || true
 
  		# Configure desktop auto-login if instructed by preseeding
  		db_get passwd/auto-login
@@ -287,7 +285,7 @@ AutomaticLogin=$USER\n"
 					sed -i "s/\[daemon\]/\[daemon\]\n$AutologinParameters/" $GDMCustomFile
 				fi
 			fi
-	 
+
 			if $chroot $ROOT [ -f /etc/kde4/kdm/kdmrc ]; then
 				# Configure KDM autologin
 				$log $chroot $ROOT sed -i$BACKUP -r \

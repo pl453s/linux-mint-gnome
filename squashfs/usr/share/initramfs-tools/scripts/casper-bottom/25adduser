@@ -154,7 +154,7 @@ fi
 
 #Linux Mint Gnome --> Default avatar
 if [ -f "/root/usr/local/share/pixmaps/faces/anon-black.png" ]; then
-  cp "/root/usr/local/share/pixmaps/faces/anon-black.png" "/root/home/$USERNAME/.face"
+  chroot /root install -D -o $USERNAME -g $USERNAME /usr/local/share/pixmaps/faces/anon-black.png /home/$USERNAME/.face
 fi
 
 log_end_msg
