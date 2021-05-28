@@ -31,7 +31,6 @@ msgid "OK"
 msgstr "OK"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "新しいフォルダー名"
 
@@ -142,7 +141,7 @@ msgstr "ホーム"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "ゴミ箱"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -219,7 +218,6 @@ msgstr "アンマウント"
 #msgstr[0] "{0}アイテムと新しいフォルダ"
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "プロパティ"
 
@@ -228,7 +226,6 @@ msgid "Properties"
 msgstr "プロパティ"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "“ファイル”で表示する"
 
@@ -265,17 +262,14 @@ msgid "Show the trash icon in the desktop"
 msgstr "デスクトップにゴミ箱を表示する"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "デスクトップにホームフォルダーを表示する"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "デスクトップにホームフォルダーを表示します。"
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "アイコンサイズ"
 
@@ -392,7 +386,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "デスクトップにゴミ箱のアイコンを表示します。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "アイコンサイズ"
 
@@ -405,7 +398,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr "コンピューターに接続されているディスクを表示します。"
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "デスクトップにホームフォルダーを表示します。"
 
@@ -429,15 +421,12 @@ msgstr ""
 "ドラッグアンドドロップをするには、アイコンが配置されているグリッド内を半透明"
 "の長方形でマークします。"
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "デスクトップにホームフォルダーを表示する"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "デスクトップにホームフォルダーを表示する"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "“ファイル”で表示する"
 
@@ -459,5 +448,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "名前が“.”で始まるフォルダーは、隠しフォルダーになります。"
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "その名前のファイルかフォルダーがすでに存在します。"
