@@ -87,7 +87,7 @@ msgstr "Nouveau document"
 
 #: desktopManager.js:552
 msgid "Paste"
-msgstr "Coller"
+msgstr "coller"
 
 #: desktopManager.js:556
 msgid "Undo"
