@@ -68,7 +68,7 @@ msgstr "Izvršiti"
 
 #: desktopManager.js:131
 msgid "Nautilus File Manager not found"
-msgstr ""
+msgstr "Nautilus File Manager nije pronađen"
 
 #: desktopManager.js:132
 msgid "The Nautilus File Manager is mandatory to work with Desktop Icons NG."
