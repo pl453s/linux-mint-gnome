@@ -155,7 +155,6 @@ msgid "Open"
 msgstr "Открыть"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Открыть в другом приложении"
 
@@ -188,7 +187,6 @@ msgid "Delete permanently"
 msgstr "Удалить навсегда"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Не разрешать запуск"
 
@@ -227,7 +225,6 @@ msgstr ""
 #msgstr[2] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Свойства"
 
@@ -236,7 +233,6 @@ msgid "Properties"
 msgstr "Свойства"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Показать в файловом менеджере"
 
@@ -273,12 +269,10 @@ msgid "Show the trash icon in the desktop"
 msgstr "Показывать корзину на рабочем столе"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Показывать домашнюю папку на рабочем столе"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Показывать значок домашней папки на рабочем столе."
 
@@ -411,7 +405,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr ""
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Показывать значок домашней папки на рабочем столе."
 
@@ -438,15 +431,12 @@ msgstr ""
 #~ msgid "There was an error while trying to permanently delete the file {:}."
 #~ msgstr "Произошла ошибка при попытке окончательно удалить файл {:}."
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Показывать домашнюю папку на рабочем столе"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Показывать домашнюю папку на рабочем столе"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Показать в «Файлах»"
 
@@ -456,5 +446,3 @@ msgstr ""
 #~ msgid "Huge"
 #~ msgstr "Огромный"
 
-#~ msgid "Ok"
-#~ msgstr "ОК"

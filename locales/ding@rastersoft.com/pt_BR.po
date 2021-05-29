@@ -33,17 +33,14 @@ msgid "OK"
 msgstr "OK"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Nome da nova pasta"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Renomear…"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Renomear…"
 
@@ -60,7 +57,6 @@ msgid "“{0}” is an executable text file."
 msgstr "“{0}” é um arquivo executável."
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Abrir no terminal"
 
@@ -160,7 +156,6 @@ msgid "Open"
 msgstr "Abrir"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Abrir com outro aplicativo"
 
@@ -193,7 +188,6 @@ msgid "Delete permanently"
 msgstr "Excluir permanentemente"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Não permitir iniciar"
 
@@ -230,7 +224,6 @@ msgstr "Desmontar"
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Propriedades"
 
@@ -239,7 +232,6 @@ msgid "Properties"
 msgstr "Propriedades"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Mostrar no Arquivos"
 
@@ -276,17 +268,14 @@ msgid "Show the trash icon in the desktop"
 msgstr "Mostrar o ícone da lixeira na área de trabalho"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Mostrar dispositivos externos na área de trabalho"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Mostrar dispositivos da rede na área de trabalho."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Posição dos ícones novos"
 
@@ -331,7 +320,6 @@ msgstr "Destacar o local onde o ícone será alocado ao arrastar e soltar"
 #msgstr "Clique duplo"
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Mostrar arquivos ocultos"
 
@@ -404,7 +392,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "Mostra o ícone da lixeira na área de trabalho."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Tamanho do ícone"
 
@@ -417,7 +404,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr "Mostrar as unidades de discos conectadas ao computador."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Mostra a pasta pessoal na área de trabalho."
 
@@ -442,15 +428,12 @@ msgstr ""
 "Ao arrastar, destacar com um retângulo semitransparente o local onde o ícone "
 "ficará alocado."
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Mostrar dispositivos externos na área de trabalho"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Mostrar dispositivos externos"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Mostrar dispositivos da rede"
 
@@ -478,5 +461,3 @@ msgstr ""
 #~ msgid "Huge"
 #~ msgstr "Enorme"
 
-#~ msgid "Ok"
-#~ msgstr "Ok"

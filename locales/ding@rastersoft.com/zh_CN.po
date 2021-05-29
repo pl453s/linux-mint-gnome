@@ -379,17 +379,12 @@ msgid ""
 "icon will be put with a semitransparent rectangle."
 msgstr "当执行拖拽时，在网格中用半透明矩形标记图标将被放置的位置。"
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "在桌面顯示個人資料夾"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "在桌面顯示個人資料夾"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "在《檔案》中顯示"
 
-#~ msgid "Huge"
-#~ msgstr "巨大圖示"

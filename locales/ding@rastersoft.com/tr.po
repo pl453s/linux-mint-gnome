@@ -35,17 +35,14 @@ msgid "OK"
 msgstr "Tamam"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Yeni klasör adı"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Yeniden Adlandır…"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Yeniden Adlandır…"
 
@@ -62,7 +59,6 @@ msgid "“{0}” is an executable text file."
 msgstr "“{0}” dosyası çalıştırılabilir bir metin dosyasıdır."
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Uçbirimde Aç"
 
@@ -160,7 +156,6 @@ msgid "Open"
 msgstr "Aç"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Başka Uygulamayla Aç"
 
@@ -193,7 +188,6 @@ msgid "Delete permanently"
 msgstr "Tamamen Sil"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Başlatmaya İzin Verme"
 
@@ -228,7 +222,6 @@ msgstr ""
 #msgstr[0] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Özellikler"
 
@@ -237,7 +230,6 @@ msgid "Properties"
 msgstr "Özellikler"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Dosyalarʼda Göster"
 
@@ -274,17 +266,14 @@ msgid "Show the trash icon in the desktop"
 msgstr "Çöp kutusunu masaüstünde göster"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Kişisel klasörü masaüstünde göster"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Kişisel klasörü masaüstünde göster."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Simge boyutu"
 
@@ -329,7 +318,6 @@ msgstr ""
 #msgstr "Çift tıklama"
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Dosyalarʼda Göster"
 
@@ -400,7 +388,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "Çöp kutusu simgesini masaüstünde göster."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Simge boyutu"
 
@@ -413,7 +400,6 @@ msgid "Show the disk drives connected to the computer."
 msgstr ""
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Kişisel klasörü masaüstünde göster."
 
@@ -440,15 +426,12 @@ msgstr ""
 #~ msgid "There was an error while trying to permanently delete the file {:}."
 #~ msgstr "{:} Dosyası tamamen silinirken hata oluştu"
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Kişisel klasörü masaüstünde göster"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Kişisel klasörü masaüstünde göster"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Dosyalarʼda Göster"
 
@@ -470,5 +453,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "Adlarının başında “.” bulunan klasörler gizlenir."
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "Zaten bu adda bir dosya veya klasör var."

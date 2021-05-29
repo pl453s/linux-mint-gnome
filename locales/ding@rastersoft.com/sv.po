@@ -32,17 +32,14 @@ msgid "OK"
 msgstr "OK"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "Folder name"
 msgstr "Nytt mappnamn"
 
 #: askRenamePopup.js:40
-#, fuzzy
 msgid "File name"
 msgstr "Byt namn…"
 
 #: askRenamePopup.js:47
-#, fuzzy
 msgid "Rename"
 msgstr "Byt namn…"
 
@@ -59,7 +56,6 @@ msgid "“{0}” is an executable text file."
 msgstr ""
 
 #: desktopIconsUtil.js:200
-#, fuzzy
 msgid "Execute in a terminal"
 msgstr "Öppna i terminal"
 
@@ -157,7 +153,6 @@ msgid "Open"
 msgstr "Öppna"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Öppna med annat program"
 
@@ -190,7 +185,6 @@ msgid "Delete permanently"
 msgstr ""
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Tillåt ej programstart"
 
@@ -227,7 +221,6 @@ msgstr ""
 #msgstr[1] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Egenskaper"
 
@@ -236,7 +229,6 @@ msgid "Properties"
 msgstr "Egenskaper"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Visa i Filer"
 
@@ -276,18 +268,15 @@ msgstr "Visa papperskorgsikonen på skrivbordet"
 
 # TODO: *ON* the desktop?
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
-#, fuzzy
 msgid "Show external drives in the desktop"
 msgstr "Visa den personliga mappen på skrivbordet"
 
 # TODO: *ON* the desktop?
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
-#, fuzzy
 msgid "Show network drives in the desktop"
 msgstr "Visa den personliga mappen på skrivbordet."
 
 #: preferences.js:101
-#, fuzzy
 msgid "New icons alignment"
 msgstr "Ikonstorlek"
 
@@ -332,7 +321,6 @@ msgstr ""
 #msgstr ""
 
 #: preferences.js:119
-#, fuzzy
 #msgid "Show hidden files"
 #msgstr "Visa i Filer"
 
@@ -406,7 +394,6 @@ msgid "Show the trash icon in the desktop."
 msgstr "Visa papperskorgsikonen på skrivbordet."
 
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:33
-#, fuzzy
 msgid "New icons start corner"
 msgstr "Ikonstorlek"
 
@@ -420,7 +407,6 @@ msgstr ""
 
 # TODO: *ON* the desktop?
 #: schemas/org.gnome.shell.extensions.ding.gschema.xml:44
-#, fuzzy
 msgid "Show mounted network volumes in the desktop."
 msgstr "Visa den personliga mappen på skrivbordet."
 
@@ -441,16 +427,13 @@ msgid ""
 msgstr ""
 
 # TODO: *ON* the desktop?
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Visa den personliga mappen på skrivbordet"
 
 # TODO: *ON* the desktop?
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Visa den personliga mappen på skrivbordet"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Visa i Filer"
 
@@ -475,5 +458,3 @@ msgstr ""
 #~ msgid "There is already a file or folder with that name."
 #~ msgstr "Det finns redan en fil eller mapp med det namnet"
 
-#~ msgid "Huge"
-#~ msgstr "Enorm"
