@@ -161,7 +161,7 @@ msgstr "Otvori s drugom aplikacijom"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Pokrenite pomoću namjenske grafičke kartice"
+msgstr "Pokreni pomoću namjenske grafičke kartice"
 
 #: fileItem.js:813
 msgid "Cut"

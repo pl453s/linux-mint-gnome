@@ -160,7 +160,7 @@ msgstr "Buka Dengan Aplikasi Lain"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Luncurkan menggunakan Kartu Grafis Khusus"
+msgstr "Luncurkan menggunakan Kartu Grafis Terdedikasi"
 
 #: fileItem.js:813
 msgid "Cut"

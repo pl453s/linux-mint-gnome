@@ -50,11 +50,11 @@ msgstr "Nie odnaleziono polecenia"
 
 #: desktopIconsUtil.js:195
 msgid "Do you want to run “{0}”, or display its contents?"
-msgstr ""
+msgstr "Chcesz uruchomić “{0}”, czy wyświetlić jego zawartość?"
 
 #: desktopIconsUtil.js:196
 msgid "“{0}” is an executable text file."
-msgstr ""
+msgstr "“{0}” to wykonywalny plik tekstowy."
 
 #: desktopIconsUtil.js:200
 msgid "Execute in a terminal"
@@ -143,7 +143,7 @@ msgstr "Katalog domowy"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Kosz"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -154,7 +154,6 @@ msgid "Open"
 msgstr "Otwórz"
 
 #: fileItem.js:801
-#, fuzzy
 #msgid "Open All With Other Application..."
 #msgstr "Otwórz za pomocą innego programu"
 
@@ -164,7 +163,7 @@ msgstr "Otwórz za pomocą innego programu"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Uruchom za pomocą dedykowanej karty graficznej"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -187,7 +186,6 @@ msgid "Delete permanently"
 msgstr "Usuń trwale"
 
 #: fileItem.js:834
-#, fuzzy
 msgid "Don't Allow Launching"
 msgstr "Nie zezwalaj na uruchamianie"
 
@@ -226,7 +224,6 @@ msgstr "Odmontuj"
 #msgstr[2] ""
 
 #: fileItem.js:881
-#, fuzzy
 #msgid "Common Properties"
 #msgstr "Właściwości"
 
@@ -235,7 +232,6 @@ msgid "Properties"
 msgstr "Właściwości"
 
 #: fileItem.js:885
-#, fuzzy
 #msgid "Show All in Files"
 #msgstr "Wyświetl w menedżerze plików"
 
@@ -305,7 +301,7 @@ msgstr "Dodaj nowe dyski po przeciwnej stronie ekranu"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Podświetl miejsce upuszczenia podczas Drag'n'Drop"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"
@@ -428,15 +424,12 @@ msgid ""
 "icon will be put with a semitransparent rectangle."
 msgstr ""
 
-#, fuzzy
 #~ msgid "Show external disk drives in the desktop"
 #~ msgstr "Katalog domowy na pulpicie"
 
-#, fuzzy
 #~ msgid "Show the external drives"
 #~ msgstr "Katalog domowy na pulpicie"
 
-#, fuzzy
 #~ msgid "Show network volumes"
 #~ msgstr "Wyświetl w menedżerze plików"
 
@@ -458,5 +451,3 @@ msgstr ""
 #~ msgid "Folders with “.” at the beginning of their name are hidden."
 #~ msgstr "Katalogi z „.” na początku nazwy są ukryte."
 
-#~ msgid "There is already a file or folder with that name."
-#~ msgstr "Plik lub katalog o tej nazwie już istnieje."

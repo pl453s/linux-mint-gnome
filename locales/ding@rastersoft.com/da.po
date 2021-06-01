@@ -140,7 +140,7 @@ msgstr "Hjemmappe"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr "Papirkurven"
+msgstr "Papirkurv"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -160,7 +160,7 @@ msgstr "Åbn med et andet program"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Start ved hjælp af dedikeret grafikkort"
+msgstr "Start med dedikeret grafikkort"
 
 #: fileItem.js:813
 msgid "Cut"

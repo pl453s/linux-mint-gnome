@@ -143,7 +143,7 @@ msgstr "Domov"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Kôš"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -163,7 +163,7 @@ msgstr "Otvoriť inou aplikáciou"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Spustiť pomocou prídavnej grafickej karty"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -301,7 +301,7 @@ msgstr "Pridať nové jednotky na opačnú stranu obrazovky"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Zvýraznite miesto preloženia počas Drag'n'Drop"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"

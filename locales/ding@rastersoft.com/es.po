@@ -174,7 +174,7 @@ msgstr "Abrir con otra aplicación"
 
 #: ../fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Lanzar con la Tarjeta Gráfica Dedicada"
+msgstr "Lanzar usando la tarjeta gráfica dedicada"
 
 #: ../fileItem.js:813
 msgid "Cut"

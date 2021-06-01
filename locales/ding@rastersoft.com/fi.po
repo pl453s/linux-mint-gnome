@@ -161,7 +161,7 @@ msgstr "Avaa toisella sovelluksella"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Käynnistä käyttämällä erillistä näytönohjainta"
+msgstr "Käynnistä erillisnäytönohjainta käyttäen"
 
 #: fileItem.js:813
 msgid "Cut"

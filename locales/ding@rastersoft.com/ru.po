@@ -144,7 +144,7 @@ msgstr "Домашняя папка"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Корзина"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -164,7 +164,7 @@ msgstr "Открыть в другом приложении"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Запустить используя дискретную видеокарту"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -200,11 +200,11 @@ msgstr "Очистить корзину"
 
 #: fileItem.js:848
 msgid "Eject"
-msgstr ""
+msgstr "Извлечь"
 
 #: fileItem.js:855
 msgid "Unmount"
-msgstr ""
+msgstr "Размонтировать"
 
 #: fileItem.js:869
 #msgid "Send to..."
@@ -298,11 +298,11 @@ msgstr "Правый нижний угол"
 
 #: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+msgstr "Добавляйте новые диски на противоположную сторону экрана"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Выделите место падения во время Drag'n'Drop"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"

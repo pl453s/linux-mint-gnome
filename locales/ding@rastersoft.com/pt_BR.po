@@ -145,7 +145,7 @@ msgstr "Pasta pessoal"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Lixeira"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -165,7 +165,7 @@ msgstr "Abrir com outro aplicativo"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Inicia usando placa de vídeo dedicada"
 
 #: fileItem.js:813
 msgid "Cut"

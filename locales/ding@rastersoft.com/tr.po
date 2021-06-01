@@ -141,11 +141,11 @@ msgstr "Bir dosya silerseniz, geri dönüşümü yoktur."
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:151
 msgid "Home"
-msgstr ""
+msgstr "Ev"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "Çöp"
 
 #: fileItem.js:794
 #msgid "Open All..."
@@ -165,7 +165,7 @@ msgstr "Başka Uygulamayla Aç"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "Adanmış Ekran Kartıyla Başlat"
 
 #: fileItem.js:813
 msgid "Cut"
@@ -201,11 +201,11 @@ msgstr "Çöpü Boşalt"
 
 #: fileItem.js:848
 msgid "Eject"
-msgstr ""
+msgstr "Çıkar"
 
 #: fileItem.js:855
 msgid "Unmount"
-msgstr ""
+msgstr "Bağlantısını kes"
 
 #: fileItem.js:869
 #msgid "Send to..."
@@ -295,11 +295,11 @@ msgstr "Sağ alt köşe"
 
 #: preferences.js:107 schemas/org.gnome.shell.extensions.ding.gschema.xml:48
 msgid "Add new drives to the opposite side of the screen"
-msgstr ""
+msgstr "Ekranın diğer tarafına yeni sürücüler ekleyin"
 
 #: preferences.js:108
 msgid "Highlight the drop place during Drag'n'Drop"
-msgstr ""
+msgstr "Drag'n'Drop sırasında bırakma yerini vurgulayın"
 
 #: preferences.js:112
 #msgid "Settings shared with Nautilus"

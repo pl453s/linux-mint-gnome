@@ -161,7 +161,7 @@ msgstr "Megnyitás egyéb alkalmazással"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Indítsa el dedikált grafikus kártya használatával"
+msgstr "Futtatás a dedikált videokártyával"
 
 #: fileItem.js:813
 msgid "Cut"

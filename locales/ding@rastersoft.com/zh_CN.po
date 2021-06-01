@@ -131,11 +131,11 @@ msgstr "删除一个项目，它将会永远消失"
 #. TRANSLATORS: "Home" is the text that will be shown in the user's personal folder
 #: fileItem.js:144
 msgid "Home"
-msgstr "Home"
+msgstr "主目录"
 
 # ADD TRASH TRANSLATION
 msgid "Trash"
-msgstr ""
+msgstr "回收站"
 
 #: fileItem.js:756
 msgid "Open"
@@ -147,7 +147,7 @@ msgstr "用其他方式打开"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr ""
+msgstr "使用独立显卡启动"
 
 #: fileItem.js:769
 msgid "Cut"

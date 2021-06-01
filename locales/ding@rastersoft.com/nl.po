@@ -161,7 +161,7 @@ msgstr "Met andere toepassing openen"
 
 #: fileItem.js:805
 msgid "Launch using Dedicated Graphics Card"
-msgstr "Start met een speciale grafische kaart"
+msgstr "Met grafische kaart opstarten"
 
 #: fileItem.js:813
 msgid "Cut"
