@@ -263,11 +263,11 @@ msgstr "デスクトップにゴミ箱を表示する"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "デスクトップにホームフォルダーを表示する"
+msgstr "デスクトップに外付けドライブを表示する"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "デスクトップにホームフォルダーを表示します。"
+msgstr "デスクトップにネットワーク ドライブを表示する"
 
 #: preferences.js:101
 msgid "New icons alignment"

@@ -5,5 +5,5 @@ Essential: yes
 Maintainer: PL453s <pl453s@github.com>
 Description: Linux Mint Gnome base package
  Contains Mint Gnome session, MintTools adjustments, icons, .desktop files, default schemas and default user folder
-Depends: gdm3, gnome-customization, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, libreoffice-style-papirus, mint-artwork, mint-gnome-control-center, mint-gnome-control-center-data, mint-gnome-extensions, mint-gnome-theme, mint-gnome-welcome, mint-info-gnome, nautilus, papirus-cursor-theme, plymouth-theme-mint
+Depends: gdm3, gnome-customization, gnome-session-bin, gnome-session-common, gnome-shell, gnome-shell-common, libreoffice-style-papirus, mint-gnome-artwork, mint-gnome-control-center, mint-gnome-control-center-data, mint-gnome-extensions, mint-gnome-theme, mint-gnome-welcome, mint-info-gnome, nautilus, papirus-cursor-theme, plymouth-theme-mint
 Provides: ubuntu-wallpapers, mint-themes, mint-x-icons, mint-y-icons

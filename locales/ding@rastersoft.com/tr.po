@@ -267,11 +267,11 @@ msgstr "Çöp kutusunu masaüstünde göster"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Kişisel klasörü masaüstünde göster"
+msgstr "Masaüstünde harici sürücüleri göster"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Kişisel klasörü masaüstünde göster."
+msgstr "Ağ sürücülerini masaüstünde göster"
 
 #: preferences.js:101
 msgid "New icons alignment"

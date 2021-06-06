@@ -265,11 +265,11 @@ msgstr "Näytä roskakorin kuvake työpöydällä"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Näytä kotikansio työpöydällä"
+msgstr "Näytä ulkoiset asemat työpöydällä"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Näytä kotikansio työpöydällä."
+msgstr "Näytä verkkoasemat työpöydällä"
 
 #: preferences.js:101
 msgid "New icons alignment"

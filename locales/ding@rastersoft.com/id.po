@@ -264,11 +264,11 @@ msgstr "Tampilkan ikon tong sampah di destop"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Tampilkan folder pribadi di destop"
+msgstr "Tampilkan drive eksternal di desktop"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Tampilkan folder pribadi di destop."
+msgstr "Tampilkan drive jaringan di desktop"
 
 #: preferences.js:101
 msgid "New icons alignment"

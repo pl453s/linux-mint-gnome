@@ -263,11 +263,11 @@ msgstr "Mostra la icona de la paperera a l'escriptori"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Mostra la carpeta personal a l'escriptori"
+msgstr "Mostra les unitats externes a l’escriptori"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Mostra la carpeta personal a l'escriptori."
+msgstr "Mostra les unitats de xarxa a l’escriptori"
 
 #: preferences.js:101
 msgid "New icons alignment"

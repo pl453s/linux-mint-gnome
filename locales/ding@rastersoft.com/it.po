@@ -266,11 +266,11 @@ msgstr "Mostra il cestino sulla scrivania"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Mostra la cartella personale sulla scrivania"
+msgstr "Mostra unità esterne sulla scrivania"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Mostra la cartella personale sulla scrivania."
+msgstr "Mostra le unità di rete sulla scrivania"
 
 #: preferences.js:101
 msgid "New icons alignment"

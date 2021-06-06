@@ -1,0 +1,8 @@
+Package: mint-gnome-artwork
+Version: 2.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Linux Mint Gnome wallpapers
+ Contains Mint wallpapers and Mint icons
+Breaks: mint-artwork
+Replaces: mint-artwork

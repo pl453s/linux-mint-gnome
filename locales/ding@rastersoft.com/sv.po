@@ -269,12 +269,12 @@ msgstr "Visa papperskorgsikonen på skrivbordet"
 # TODO: *ON* the desktop?
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Visa den personliga mappen på skrivbordet"
+msgstr "Visa externa enheter på skrivbordet"
 
 # TODO: *ON* the desktop?
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Visa den personliga mappen på skrivbordet."
+msgstr "Visa nätverksenheter på skrivbordet"
 
 #: preferences.js:101
 msgid "New icons alignment"

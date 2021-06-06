@@ -265,11 +265,11 @@ msgstr "Toon het prullenbakpictogram op het bureaublad"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Toon de persoonlijke map op het bureaublad"
+msgstr "Toon externe schijven op het bureaublad"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Toon de persoonlijke map op het bureaublad."
+msgstr "Toon netwerkschijven op het bureaublad"
 
 #: preferences.js:101
 msgid "New icons alignment"

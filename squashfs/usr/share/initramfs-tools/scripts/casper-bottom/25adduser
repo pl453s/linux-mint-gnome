@@ -152,9 +152,22 @@ if [ -f "/root/home/$USERNAME/Desktop/boot-repair.desktop" ]; then
   sed -i 's/Icon=.*/Icon=mx-boot-repair/' "/root/home/$USERNAME/Desktop/boot-repair.desktop"
 fi
 
-#Linux Mint Gnome --> Default avatar
-if [ -f "/root/usr/local/share/pixmaps/faces/anon-black.png" ]; then
-  chroot /root install -D -o $USERNAME -g $USERNAME /usr/local/share/pixmaps/faces/anon-black.png /home/$USERNAME/.face
-fi
+#Linux Mint Gnome --> Anon black avatar
+cp "/root/usr/local/share/pixmaps/faces/anon-black.png" "/root/var/lib/AccountsService/icons/$USERNAME"
+echo "[User]"                                        | tee    "/root/var/lib/AccountsService/users/$USERNAME"
+echo "Icon=/var/lib/AccountsService/icons/$USERNAME" | tee -a "/root/var/lib/AccountsService/users/$USERNAME"
+echo "SystemAccount=false"                           | tee -a "/root/var/lib/AccountsService/users/$USERNAME"
+
+#Linux Mint Gnome --> English user folders
+chroot /root sudo -i -u $USERNAME xdg-user-dirs-update
+rm "/root/home/$USERNAME/.config/user-dirs.locale"
+
+#Linux Mint Gnome --> Remove extra groups
+chroot /root gpasswd -d $USERNAME adm
+chroot /root gpasswd -d $USERNAME cdrom
+chroot /root gpasswd -d $USERNAME dip
+chroot /root gpasswd -d $USERNAME lpadmin
+chroot /root gpasswd -d $USERNAME plugdev
+chroot /root gpasswd -d $USERNAME sambashare
 
 log_end_msg

@@ -265,11 +265,11 @@ msgstr "A kuka ikon megjelenítése az asztalon"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "A személyes mappa megjelenítése az asztalon"
+msgstr "Külső meghajtók megjelenítése az asztalon"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "A személyes mappa megjelenítése az asztalon."
+msgstr "Hálózati meghajtók megjelenítése az asztalon"
 
 #: preferences.js:101
 msgid "New icons alignment"

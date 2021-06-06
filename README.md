@@ -9,12 +9,12 @@ It is developed for the distribution, but is theoretically compatible with any d
 
 **Overview of the distribution:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
-## Installation (1.6)
+## Installation (2.0)
 
 **WARNING: Your computer may be wiped, depending of what you choose to do at the installation.**  
 **WARNING: Updates has not been tested yet, you are warned, be very careful and know what you do.**
 
-- Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v1.6-mint20/lmg.iso)
+- Download the ISO: [https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v2.0-mint20/lmg.iso](https://github.com/pl453s/linux-mint-gnome/releases/download/ISO-v2.0-mint20/lmg.iso)
 - Burn it on a disk, or flash it on an USB flash drive, or just insert it in a virtual machine
 - Boot your disk or your USB flash drive, and test or install the distribution
 
@@ -27,8 +27,7 @@ Mint Gnome development has become too complex to support scripted migration from
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
 A separate ISO file will be published, once at a time, each time the project has evolved enough and is stable enough.
 
-Latest release (1.7): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.7-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v1.7-mint20)  
-NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0-mint20)
+Latest release (2.0): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v2.0-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v2.0-mint20)
 
 ## Project packages
 
@@ -38,6 +37,7 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 - mint-gnome-control-center-faces: 'Settings' application faces with some fixes (less available faces)
 - mint-gnome-extensions : 'Dash to Panel', 'Dash to Dock', 'Desktop Icons NG' and 'Top Indicator App'
 - mint-gnome-theme: 'Materia' theme with some fixes (app folder and on screen keyboard)
+- mint-gnome-artwork: Mint + Gnome Wallpapers and Mint logos icons
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'Gnome Tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
 - plymouth-theme-mint: Spinner boot screen which supports UEFI manufacturer logo (BGRT)
@@ -47,8 +47,6 @@ NEW beta 2.0: [https://github.com/pl453s/linux-mint-gnome/releases/tag/beta-v2.0
 
 ## Remaining work
 
-- Desktop Icons: Improve localization
-- PUBLISH A NEW ISO FILE (VERSION 2.0)
 - Nautilus extension: Folder color switch
 - Nautilus extension: Fix "Paste Into Folder" bug
 - Nautilus extension: Open terminal (only background)

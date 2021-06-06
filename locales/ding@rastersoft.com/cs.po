@@ -268,11 +268,11 @@ msgstr "Zobrazovat ikonu koše na pracovní ploše"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Zobrazovat osobní složku na pracovní ploše"
+msgstr "Zobrazit externí disky na ploše"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Zobrazovat osobní složku na pracovní ploše."
+msgstr "Zobrazit síťové jednotky na ploše"
 
 #: preferences.js:101
 msgid "New icons alignment"

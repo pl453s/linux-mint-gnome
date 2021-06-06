@@ -264,11 +264,11 @@ msgstr "Vis papirkurvsikonet på skrivebordet"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Vis den personlige mappe på skrivebordet"
+msgstr "Vis eksterne drev på skrivebordet"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Vis den personlige mappe på skrivebordet."
+msgstr "Vis netværksdrev på skrivebordet"
 
 #: preferences.js:101
 msgid "New icons alignment"

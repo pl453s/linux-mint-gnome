@@ -269,11 +269,11 @@ msgstr "Mostrar o ícone da lixeira na área de trabalho"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Mostrar dispositivos externos na área de trabalho"
+msgstr "Mostrar unidades externas na área de trabalho"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Mostrar dispositivos da rede na área de trabalho."
+msgstr "Mostrar unidades de rede na área de trabalho"
 
 #: preferences.js:101
 msgid "New icons alignment"

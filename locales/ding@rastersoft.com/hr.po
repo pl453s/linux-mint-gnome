@@ -265,11 +265,11 @@ msgstr "Prikaži mapu smeća na radnoj površini"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Prikaži osobnu mapu na radnoj površini"
+msgstr "Prikažite vanjske pogone na radnoj površini"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Prikaži osobnu mapu na radnoj površini."
+msgstr "Prikažite mrežne pogone na radnoj površini"
 
 #: preferences.js:101
 msgid "New icons alignment"

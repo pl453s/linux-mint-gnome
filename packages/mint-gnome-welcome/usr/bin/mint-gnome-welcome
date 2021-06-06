@@ -240,6 +240,7 @@ class WelcomeWindow(Gtk.Window):
 
 live = system("df | grep -w / | grep -qv 'cow'")
 lang = getenv("LANG").split("_")[0]
+user = getenv("USER")
 locale = []
 if exists("/usr/share/mint-gnome-welcome/locale/" + lang):
 	file = open("/usr/share/mint-gnome-welcome/locale/" + lang, "r")

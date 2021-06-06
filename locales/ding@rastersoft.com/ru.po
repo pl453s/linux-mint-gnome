@@ -270,11 +270,11 @@ msgstr "Показывать корзину на рабочем столе"
 
 #: preferences.js:97 schemas/org.gnome.shell.extensions.ding.gschema.xml:38
 msgid "Show external drives in the desktop"
-msgstr "Показывать домашнюю папку на рабочем столе"
+msgstr "Показать внешние диски на рабочем столе"
 
 #: preferences.js:98 schemas/org.gnome.shell.extensions.ding.gschema.xml:43
 msgid "Show network drives in the desktop"
-msgstr "Показывать значок домашней папки на рабочем столе."
+msgstr "Показать сетевые диски на рабочем столе"
 
 #: preferences.js:101
 msgid "New icons alignment"
