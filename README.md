@@ -8,8 +8,10 @@
 - Add the ability to change sound theme in Customization (I want to complete the "LinuxMint" theme and add a "Disabled" theme)
 
 <table>
-  <tr>
+  <tr colspan=5>
     <td><img src="upgrade/0.png"></td>
+  </tr>
+  <tr>
     <td><img src="upgrade/1.png"></td>
     <td><img src="upgrade/2.png"></td>
     <td><img src="upgrade/3.png"></td>
