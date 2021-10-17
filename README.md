@@ -9,14 +9,13 @@
 
 <table>
   <tr>
-    <td colspan="5"><img src="upgrade/0.png"></td>
-  </tr>
-  <tr>
+    <td rowspan="2"><img src="upgrade/0.png"></td>
     <td><img src="upgrade/1.png"></td>
     <td><img src="upgrade/2.png"></td>
+  </tr>
+  <tr>
     <td><img src="upgrade/3.png"></td>
     <td><img src="upgrade/4.png"></td>
-    <td><img src="upgrade/5.png"></td>
   </td>
 </table>
     
