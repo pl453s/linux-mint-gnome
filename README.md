@@ -1,3 +1,12 @@
+**INFORMATION: If there is some people which are really interessed in my project (well, firslty, thanks!), I didn't give up this project, with the recent Ubuntu Impish release (and its Gnome 40 version), I downloaded the upgrade and I work again on this project. There is an overview:**
+- Better match the Mint style using the Mint-Y icon theme (with some fixes to the missing Gnome icons)
+- Using Adwaita (light or dark) by default for GTK and Gnome (improve stability)
+- Replace the weird Gnome theme patcher by a simple 'update-alternative' menu in Customization
+- Suggest custom theme (Materia, Yaru...) for Gnome and Plymouth in the form of DEB packages
+- Include "Just Perfection" Gnome extension by default (to remove topbar corner, appmenu and replace 'Activities' by 3 dots)
+- Add a 'Windows' tab in Customization to change GTK and QT theme, and tweak windows
+- Add the ability to change sound theme in Customization (I want to complete the "LinuxMint" theme and add a "Disabled" theme)
+
 # Linux Mint Gnome
 
 Who needs a description? Everything is in the title!
