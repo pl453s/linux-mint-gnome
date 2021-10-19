@@ -9,13 +9,15 @@
 
 <table>
   <tr>
-    <td rowspan="2"><img src="upgrade/0.png"></td>
-    <td><img src="upgrade/1.png"></td>
-    <td><img src="upgrade/2.png"></td>
+    <td><img src="upgrade/app1.png"></td>
+    <td><img src="upgrade/app2.png"></td>
   </tr>
   <tr>
-    <td><img src="upgrade/3.png"></td>
-    <td><img src="upgrade/4.png"></td>
+    <td><img src="upgrade/cust1.png"></td>
+    <td><img src="upgrade/cust2.png"></td>
+    <td><img src="upgrade/cust3.png"></td>
+    <td><img src="upgrade/cust4.png"></td>
+    <td><img src="upgrade/cust5.png"></td>
   </td>
 </table>
     
