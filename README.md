@@ -1,4 +1,4 @@
-**New version based on Ubuntu Impish Indri with Gnome 40 in preparation for the next major Linux Mint release**  
+**New version based on Ubuntu Impish Indri with Gnome 40 in preparation for the next major Linux Mint release.**  
 **- Check the development (new Welcome screen, new Gnome Customization, new themes...) in 'NEXT/packages'**  
 **- Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md)  
 *'Dash to Dock' and 'Dash to Panel' are not included yet, as they are not fully compatible with Gnome 40 yet.*
