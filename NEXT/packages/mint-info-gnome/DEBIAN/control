@@ -2,7 +2,7 @@ Package: mint-info-gnome
 Source: mint-info
 Version: 2020.04.06
 Architecture: all
-Maintainer: nobody-for-now <null@null.null>
+Maintainer: PL453s <pl453s@github.com>
 Provides: mint-info
 Section: admin
 Priority: optional
