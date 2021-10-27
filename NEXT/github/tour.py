@@ -23,15 +23,15 @@ for i in range(0, 16):
 	br += "<br>"
 print(br)
 print()
-for slide in range(1, 13):
+for slide in range(1, 14):
 	for style in ["a", "m", "y"]:
 		for icons in ["h", "s"]:
 			for theme in ["l", "d"]:
 				if slide in [1]:
 					screen = str(slide) + "_{}.gif".format(style)
-				if slide in [2,6]:
+				if slide in [2,6,7]:
 					screen = str(slide) + "_{}.png".format(style)
-				if slide in [3,4,5,7,8,9,10,11,12]:
+				if slide in [3,4,5,8,9,10,11,12,13]:
 					screen = str(slide) + "_{}{}{}.png".format(style, icons, theme)
 				ext_back = ""
 				ext_next = ""
@@ -72,7 +72,7 @@ for slide in range(1, 13):
 					url_dock = url_self
 					ext_dash += "_inactive"
 					url_dash = url_self
-				if slide in [1,2,6]:
+				if slide in [1,2,6,7]:
 					ext_icon += "_inactive"
 					url_icon = url_self
 					ext_dark += "_inactive"
