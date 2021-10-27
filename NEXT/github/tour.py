@@ -62,7 +62,7 @@ for slide in range(1, 14):
 				if slide == 1:
 					ext_back = "_inactive"
 					url_back = url_self
-				if slide == 12:
+				if slide == 13:
 					ext_next = "_inactive"
 					url_next = url_self
 				if slide in []:

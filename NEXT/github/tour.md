@@ -2255,7 +2255,7 @@
 
 <span id="12ahl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11ahl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahl"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhl"><img src="materia_off.png"></a>
@@ -2272,7 +2272,7 @@
 
 <span id="12ahd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11ahd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahd"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhd"><img src="materia_off.png"></a>
@@ -2289,7 +2289,7 @@
 
 <span id="12asl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11asl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asl"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msl"><img src="materia_off.png"></a>
@@ -2306,7 +2306,7 @@
 
 <span id="12asd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11asd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asd"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msd"><img src="materia_off.png"></a>
@@ -2323,7 +2323,7 @@
 
 <span id="12mhl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11mhl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhl"><img src="materia_on.png"></a>
@@ -2340,7 +2340,7 @@
 
 <span id="12mhd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11mhd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhd"><img src="materia_on.png"></a>
@@ -2357,7 +2357,7 @@
 
 <span id="12msl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11msl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msl"><img src="materia_on.png"></a>
@@ -2374,7 +2374,7 @@
 
 <span id="12msd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11msd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msd"><img src="materia_on.png"></a>
@@ -2391,7 +2391,7 @@
 
 <span id="12yhl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11yhl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12yhl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13yhl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhl"><img src="materia_off.png"></a>
@@ -2408,7 +2408,7 @@
 
 <span id="12yhd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11yhd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12yhd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13yhd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhd"><img src="materia_off.png"></a>
@@ -2425,7 +2425,7 @@
 
 <span id="12ysl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11ysl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ysl"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ysl"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msl"><img src="materia_off.png"></a>
@@ -2442,7 +2442,7 @@
 
 <span id="12ysd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#11ysd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ysd"><img src="next_inactive.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ysd"><img src="next.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msd"><img src="materia_off.png"></a>
@@ -2459,7 +2459,7 @@
 
 <span id="13ahl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14ahl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahl"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhl"><img src="materia_off.png"></a>
@@ -2476,7 +2476,7 @@
 
 <span id="13ahd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ahd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14ahd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahd"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhd"><img src="materia_off.png"></a>
@@ -2493,7 +2493,7 @@
 
 <span id="13asl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14asl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asl"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msl"><img src="materia_off.png"></a>
@@ -2510,7 +2510,7 @@
 
 <span id="13asd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12asd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14asd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asd"><img src="adwaita_on.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msd"><img src="materia_off.png"></a>
@@ -2527,7 +2527,7 @@
 
 <span id="13mhl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14mhl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhl"><img src="materia_on.png"></a>
@@ -2544,7 +2544,7 @@
 
 <span id="13mhd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12mhd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14mhd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhd"><img src="materia_on.png"></a>
@@ -2561,7 +2561,7 @@
 
 <span id="13msl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14msl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msl"><img src="materia_on.png"></a>
@@ -2578,7 +2578,7 @@
 
 <span id="13msd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12msd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14msd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msd"><img src="materia_on.png"></a>
@@ -2595,7 +2595,7 @@
 
 <span id="13yhl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12yhl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14yhl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13yhl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhl"><img src="materia_off.png"></a>
@@ -2612,7 +2612,7 @@
 
 <span id="13yhd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12yhd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14yhd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13yhd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ahd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13mhd"><img src="materia_off.png"></a>
@@ -2629,7 +2629,7 @@
 
 <span id="13ysl">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ysl"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14ysl"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ysl"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asl"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msl"><img src="materia_off.png"></a>
@@ -2646,7 +2646,7 @@
 
 <span id="13ysd">
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#12ysd"><img src="back.png"></a>
-  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#14ysd"><img src="next.png"></a>
+  <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13ysd"><img src="next_inactive.png"></a>
   &emsp;&emsp;
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13asd"><img src="adwaita_off.png"></a>
   <a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#13msd"><img src="materia_off.png"></a>
