@@ -1,0 +1,7 @@
+Package: mint-gnome-welcome
+Version: 2.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Linux Mint Gnome welcome screen
+Depends: dconf-cli, gnome-shell, libglib2.0-bin, python3, python3-gi
+

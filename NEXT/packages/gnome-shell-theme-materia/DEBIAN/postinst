@@ -1,0 +1,3 @@
+#!/bin/sh
+set -e
+update-alternatives --install /usr/share/gnome-shell/gdm-theme.gresource gdm-theme.gresource /usr/share/gnome-shell/gnome-shell-theme-materia.gresource 10

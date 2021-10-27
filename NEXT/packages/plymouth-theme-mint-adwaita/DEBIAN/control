@@ -1,0 +1,5 @@
+Package: plymouth-theme-mint-adwaita
+Version: 2.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Adwaita spinner boot animation with BGRT support

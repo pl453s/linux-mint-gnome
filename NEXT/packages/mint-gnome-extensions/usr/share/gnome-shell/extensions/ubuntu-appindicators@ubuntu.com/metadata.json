@@ -1,0 +1,15 @@
+{
+    "shell-version": [
+        "3.33",
+        "3.34",
+        "3.36",
+        "3.38",
+        "40"
+    ],
+    "gettext-domain": "AppIndicatorExtension",
+    "settings-schema": "org.gnome.shell.extensions.appindicator",
+    "uuid": "ubuntu-appindicators@ubuntu.com",
+    "name": "Ubuntu AppIndicators",
+    "description": "Support app indicators and legacy tray icons in top panel, as the default Ubuntu experience. System update of AppIndicator and KStatusNotifierItem Support extension.",
+    "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator"
+}

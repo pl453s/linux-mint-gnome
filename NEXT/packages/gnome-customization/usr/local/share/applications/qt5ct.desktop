@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Qt5 Settings
+Exec=qt5ct
+Icon=qt5ct
+Type=Application

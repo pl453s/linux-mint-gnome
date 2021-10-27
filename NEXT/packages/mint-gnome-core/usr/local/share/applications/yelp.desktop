@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Help
+Exec=yelp %u
+Icon=org.gnome.Yelp
+Type=Application

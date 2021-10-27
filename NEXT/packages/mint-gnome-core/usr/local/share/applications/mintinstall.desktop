@@ -1,0 +1,6 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Software Manager
+Exec=mintinstall
+Icon=mintinstall
+Type=Application
