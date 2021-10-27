@@ -16,14 +16,14 @@ print("<b>Text is boring isn't it?</b>  ")
 print("<b>This is fine, you can also just explore through this \"interactive tour\".</b>  ")
 print("<b>It's a bit more \"concrete\" and visual!</b>")
 print("<br><br>")
-print("<a href=\"{}\"><img src=\"{}\"></a>".format(url + "#1msd", "begin.png"))
+print("<a href=\"{}\"><img src=\"{}\"></a>".format(url + "#1asl", "begin.png"))
 print()
 br = ""
 for i in range(0, 16):
 	br += "<br>"
 print(br)
 print()
-for slide in range(1, 7):
+for slide in range(1, 13):
 	for style in ["a", "m", "y"]:
 		for icons in ["h", "s"]:
 			for theme in ["l", "d"]:
