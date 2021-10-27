@@ -5,7 +5,7 @@
 <b>This is fine, you can also just explore through this "interactive tour".</b>  
 <b>It's a bit more "concrete" and visual!</b>
 <br><br>
-<a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#1asl"><img src="begin.png"></a>
+<a href="https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md#1asd"><img src="begin.png"></a>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
