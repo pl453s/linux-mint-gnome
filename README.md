@@ -50,15 +50,6 @@ Latest release (2.0): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - libreoffice-style-papirus: LibreOffice 'Papirus' style icon pack
 - mint-info-gnome: Necessary information about the Linux Mint release and edition (here Gnome)
 
-## Remaining work
-
-- Nautilus extension: Folder color switch
-- Nautilus extension: Fix "Paste Into Folder" bug
-- Nautilus extension: Open terminal (only background)
-- Nautilus extension: Open as administrator
-- ISO full test + Test installing updates
-- Gnome Customization: Continue development
-
 ## Credits
 
 - 'Linux Mint' developed by the 'Linux Mint Team' --> [https://github.com/linuxmint](https://github.com/linuxmint)
