@@ -26,7 +26,6 @@ It is developed for the distribution, but is theoretically compatible with any d
 <br>
 
 **You can also migrate from an official Mint edition installation or upgrade your Mint Gnome installation:**  
-**WARNING: Some symlinks are missing to avoid breaking GitHub Pages ; refer to the 'symlinks' file**
 
 Mint Gnome development has become too complex to support scripted migration from official Mint editions.  
 Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
