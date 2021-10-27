@@ -79,9 +79,9 @@ for slide in range(1, 13):
 					url_dark = url_self
 				img_back = "back{}.png".format(ext_back)
 				img_next = "next{}.png".format(ext_next)
-				img_pane = "panel{}.png".format(ext_pane)
-				img_dock = "dock{}.png".format(ext_dock)
-				img_dash = "dash{}.png".format(ext_dash)
+				img_pane = "adwaita{}.png".format(ext_pane)
+				img_dock = "materia{}.png".format(ext_dock)
+				img_dash = "yaru{}.png".format(ext_dash)
 				img_icon = "icons{}.png".format(ext_icon)
 				img_dark = "dark{}.png".format(ext_dark)
 				img_exit = "exit.png"
