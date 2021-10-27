@@ -2,21 +2,6 @@
 **Check the development (new Welcome screen, new Gnome Customization, new themes...) in 'NEXT/packages'**  
 **Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md)
 
-<table>
-  <tr>
-    <td colspan=5><img src="upgrade/app1.png"></td>
-    <td colspan=5><img src="upgrade/app2.png"></td>
-  </tr>
-  <tr>
-    <td colspan=2><img src="upgrade/cust1.png"></td>
-    <td colspan=2><img src="upgrade/cust2.png"></td>
-    <td colspan=2><img src="upgrade/cust3.png"></td>
-    <td colspan=2><img src="upgrade/cust4.png"></td>
-    <td colspan=2><img src="upgrade/cust5.png"></td>
-  </td>
-</table>
-    
-
 # Linux Mint Gnome
 
 Who needs a description? Everything is in the title!
