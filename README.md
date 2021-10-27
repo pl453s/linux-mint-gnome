@@ -1,12 +1,6 @@
-**NOTICE: If there're people which are really interested in my project (well, firstly, thanks!), I didn't give up this project, with the recent Ubuntu Impish release (and its Gnome 40 version), I downloaded the upgrade and I'm working again on this project. There is an overview:**
-- Matches better the Mint style by using the Mint-Y icon theme (with some fixes to the missing Gnome icons)
-- Uses 'Adwaita' (light or dark) by default for GTK and Gnome (improve stability)
-- Includes 'Materia/Papirus' and 'Yaru' for cursors, GTK, Gnome, Kvantum and Plymouth
-- Includes 'Just Perfection' Gnome extension by default (to remove topbar corner, appmenu and replace 'Activities' by 3 dots)
-- Replaces the weird Gnome theme patcher by a simple 'update-alternative' menu in Customization
-- Adds a 'Windows' tab in Customization to change GTK and QT theme, and tweak windows
-- Adds a 'Boot' tab in Customization to change Plymouth theme and boot options
-- Adds the ability to change the sound theme in Customization
+**New version based on Ubuntu Impish Indri with Gnome 40 in preparation for the next major Linux Mint release**  
+**Check the development (new Welcome screen, new Gnome Customization, new themes...) in 'NEXT/packages'**  
+**Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md)
 
 <table>
   <tr>
