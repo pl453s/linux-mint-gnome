@@ -7,15 +7,6 @@ from os.path import exists
 
 
 
-utility      = "" \
-"'gnome-system-monitor.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'mintbackup.py.desktop', 'org.gnome.baobab.desktop', " \
-"'org.gnome.Characters.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', " \
-"'org.gnome.font-viewer.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop'"
-system_tools = "" \
-"'ca.desrt.dconf-editor.desktop', 'gparted.desktop', 'gufw.py.desktop', 'mintdrivers.py.desktop', " \
-"'mintreport.py.desktop', 'mintsources.py.desktop', 'mintstick.py.desktop', 'org.gnome.DiskUtility.desktop', " \
-"'org.gnome.Logs.desktop', 'org.gnome.seahorse.Application.desktop', 'synaptic.desktop', 'timeshift-gtk.desktop'"
-
 dashtopanel  = "dash-to-panel@jderose9.github.com"
 dashtodock   = "dash-to-dock@micxgx.gmail.com"
 desktopicons = "ding@rastersoft.com"
@@ -146,8 +137,6 @@ class WelcomeWindow(Gtk.Window):
 		self.box3.pack_start(self.text_header, True, False, 0)
 		self.box_launch = Gtk.Box(spacing = 8)
 		self.box3.pack_start(self.box_launch, True, False, 0)
-		#self.text_footer = Gtk.Label(label = locale[18] + "\n\n<i>" + locale[19] + " <a href='https://github.com/pl453s/linux-mint-gnome'>" + locale[20] + "</a></i>", use_markup = True, justify = Gtk.Justification.CENTER)
-		#self.box3.pack_start(self.text_footer, True, False, 0)
 
 		self.image_face = Gtk.Image()
 		self.image_face.set_from_file("/usr/share/icons/Mint-Y/apps/64@2x/preferences-desktop-user.png")
@@ -274,7 +263,6 @@ class WelcomeWindow(Gtk.Window):
 
 
 
-#live = system("df | grep -w / | grep -qv 'cow'")
 lang = getenv("LANG").split("_")[0]
 home = getenv("HOME")
 
@@ -309,13 +297,6 @@ for theme in theme_icons_colors:
 		color = theme
 
 if not exists(home + "/.config/autostart/mint-gnome-welcome.desktop"):
-	#system("dconf write /org/gnome/desktop/app-folders/folder-children \"['Utility', 'System-Tools']\"")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/Utility/name \"'Utility.directory'\"")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/Utility/translate true")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/Utility/apps \"[" + utility + "]\"")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/name \"'System-Tools.directory'\"")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/translate true")
-	#system("dconf write /org/gnome/desktop/app-folders/folders/System-Tools/apps \"[" + system_tools + "]\"")
 	system("mkdir -p ~/.config/autostart")
 	system("cat /etc/xdg/autostart/mint-gnome-welcome.desktop > ~/.config/autostart/mint-gnome-welcome.desktop")
 
