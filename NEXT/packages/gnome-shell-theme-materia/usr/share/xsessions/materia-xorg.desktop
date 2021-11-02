@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Materia on Xorg
 Comment=This session logs you into GNOME
-Exec=env GNOME_SHELL_SESSION_MODE=gnome-materia /usr/bin/gnome-session --session=gnome
+Exec=env GNOME_SHELL_SESSION_MODE=gnome-materia /usr/bin/gnome-session --session=gnome-materia
 TryExec=/usr/bin/gnome-session
 Type=Application
 DesktopNames=GNOME

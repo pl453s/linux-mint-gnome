@@ -1,0 +1,6 @@
+Package: gnome-shell-theme-adwaita
+Version: 3.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Adwaita theme for GDM and Gnome Shell
+

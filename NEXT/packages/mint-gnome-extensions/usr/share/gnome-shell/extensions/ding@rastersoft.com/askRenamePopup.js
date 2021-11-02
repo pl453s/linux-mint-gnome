@@ -27,8 +27,10 @@ const _ = Gettext.gettext;
 
 var AskRenamePopup = class {
 
-    constructor(fileItem) {
+    constructor(fileItem, allowReturnOnSameName, closeCB) {
 
+        this._closeCB = closeCB;
+        this._allowReturnOnSameName = allowReturnOnSameName;
         this._desktopPath = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP);
         this._fileItem = fileItem;
         this._popover = new Gtk.Popover({relative_to: fileItem.container,
@@ -44,7 +46,7 @@ var AskRenamePopup = class {
         this._textArea = new Gtk.Entry();
         this._textArea.text = fileItem.fileName;
         contentBox.attach(this._textArea, 0, 1, 1, 1);
-        this._button = new Gtk.Button({label: _("Rename")});
+        this._button = new Gtk.Button({label: allowReturnOnSameName ? _("OK") : _("Rename")});
         contentBox.attach(this._button, 1, 1, 1, 1);
         this._button.connect('clicked', () => {
             this._do_rename();
@@ -57,10 +59,15 @@ var AskRenamePopup = class {
                 this._do_rename();
             }
         });
+        this._popover.connect('closed', () => {
+            closeCB();
+        });
         this._textArea.set_can_default(true);
         this._popover.set_default_widget(this._textArea);
         this._button.get_style_context().add_class("suggested-action");
-        this._popover.show_all();
+        contentBox.show_all();
+        this._popover.popup();
+        this._popover.set_relative_to(this._fileItem._iconContainer);
         this._validate();
         this._textArea.grab_focus_without_selecting();
         this._textArea.select_region(0, DesktopIconsUtil.getFileExtensionOffset(fileItem.fileName, fileItem.isDirectory));
@@ -70,7 +77,9 @@ var AskRenamePopup = class {
         let text = this._textArea.text;
         let final_path = this._desktopPath + '/' + text;
         let final_file = Gio.File.new_for_commandline_arg(final_path);
-        if ((text == '') || (-1 != text.indexOf('/')) || (text == this._fileItem.fileName) || final_file.query_exists(null)) {
+        if ((text == '') || (-1 != text.indexOf('/')) ||
+           ((text == this._fileItem.fileName) && (!this._allowReturnOnSameName)) ||
+           (final_file.query_exists(null) && (text != this._fileItem.fileName))) {
             this._button.sensitive = false;
         } else {
             this._button.sensitive = true;
@@ -78,6 +87,11 @@ var AskRenamePopup = class {
     }
 
     _do_rename() {
+        this._popover.popdown();
+        this._closeCB();
+        if (this._fileItem.fileName == this._textArea.text) {
+            return;
+        }
         DBusUtils.NautilusFileOperations2Proxy.RenameURIRemote(
             this._fileItem.file.get_uri(), this._textArea.text,
             DBusUtils.NautilusFileOperations2Proxy.platformData(),

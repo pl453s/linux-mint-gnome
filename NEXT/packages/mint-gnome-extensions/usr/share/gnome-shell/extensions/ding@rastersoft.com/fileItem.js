@@ -25,7 +25,6 @@ const GLib = imports.gi.GLib;
 const Pango = imports.gi.Pango;
 const GdkPixbuf = imports.gi.GdkPixbuf;
 const Cairo = imports.gi.cairo;
-const GnomeDesktop = imports.gi.GnomeDesktop;
 const DesktopIconsUtil = imports.desktopIconsUtil;
 
 const Prefs = imports.preferences;
@@ -41,13 +40,12 @@ const _ = Gettext.gettext;
 
 var FileItem = class {
 
-    constructor(desktopManager, file, fileInfo, fileExtra, codePath, custom) {
+    constructor(desktopManager, file, fileInfo, fileExtra, custom) {
+        this._destroyed = false;
         this._custom = custom;
-        this._codePath = codePath;
         this._desktopManager = desktopManager;
         this._fileExtra = fileExtra;
         this._loadThumbnailDataCancellable = null;
-        this._thumbnailScriptWatch = 0;
         this._queryFileInfoCancellable = null;
         this._isSpecial = this._fileExtra != Enums.FileType.NONE;
         this._grid = null;
@@ -61,7 +59,7 @@ var FileItem = class {
         this._dropCoordinates = this._readCoordinatesFromAttribute(fileInfo, 'metadata::nautilus-drop-position');
 
         this.container = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL, halign: Gtk.Align.CENTER});
-        this.container.connect('destroy', () => this._onDestroy());
+        this._containerId = this.container.connect('destroy', () => this._onDestroy());
         this._eventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
         this._sheildEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
         this._labelEventBox = new Gtk.EventBox({visible: true, halign: Gtk.Align.CENTER});
@@ -111,26 +109,48 @@ var FileItem = class {
         this._eventBox.connect('enter-notify-event', (actor, event) => this._onEnter(actor, event));
         this._eventBox.connect('leave-notify-event', (actor, event) => this._onLeave(actor, event));
         this._eventBox.connect('button-release-event', (actor, event) => this._onReleaseButton(actor, event));
-        this._eventBox.connect('drag-motion', () => this._labelEventBox.drag_highlight());
-        this._eventBox.connect('drag-leave', () => this._labelEventBox.drag_unhighlight());
+        this._eventBox.connect('drag-motion', (widget, context, x, y, time) => {
+            this.highLightDropTarget(x, y);
+        });
+        this._eventBox.connect('drag-leave', () => {
+            this.unHighLightDropTarget();
+        });
         this._eventBox.connect('size-allocate', () => this._calculateIconRectangle());
         this._labelEventBox.connect('button-press-event', (actor, event) => this._onPressButton(actor, event));
         this._labelEventBox.connect('enter-notify-event', (actor, event) => this._onEnter(actor, event));
         this._labelEventBox.connect('leave-notify-event', (actor, event) => this._onLeave(actor, event));
         this._labelEventBox.connect('button-release-event', (actor, event) => this._onReleaseButton(actor, event));
-        this._labelEventBox.connect('drag-motion', () => this._eventBox.drag_highlight());
-        this._labelEventBox.connect('drag-leave', () => this._eventBox.drag_unhighlight());
-        this._labelEventBox.connect('size-allocate', () => this._calculateLabelRectangle());
+        this._labelEventBox.connect('drag-motion', (widget, context, x, y, time) => {
+            this.highLightDropTarget(x, y);
+        });
+        this._labelEventBox.connect('drag-leave', () => {
+            this.unHighLightDropTarget();
+        });
+        this._labelEventBox.connect('size-allocate', () => {
+            this._calculateLabelRectangle();
+            this.checkForRename();
+        });
+        this.container.connect('drag-motion', (widget, context, x, y, time) => {
+            this.highLightDropTarget(x, y);
+        });
+        this.container.connect('drag-leave', () => {
+            this.unHighLightDropTarget();
+        });
 
         /* Set the metadata and update relevant UI */
         this._updateMetadataFromFileInfo(fileInfo);
 
-        this._setDropDestination(this._eventBox);
-        this._setDropDestination(this._labelEventBox);
+        if (this._desktopManager.showDropPlace) {
+            this._setDropDestination(this.container);
+        } else {
+            this._setDropDestination(this._eventBox);
+            this._setDropDestination(this._labelEventBox);
+        }
         this._setDragSource(this._eventBox);
         this._setDragSource(this._labelEventBox);
-        this._menu = null;
-        this._updateIcon();
+        this._updateIcon().catch((e) => {
+            print(`Exception while updating an icon: ${e.message}\n${e.stack}`);
+        });
         this._isSelected = false;
         this._primaryButtonPressed = false;
 
@@ -150,8 +170,13 @@ var FileItem = class {
                     case Gio.FileMonitorEvent.CREATED:
                     case Gio.FileMonitorEvent.MOVED_IN:
                         if (this._queryTrashInfoCancellable || this._scheduleTrashRefreshId) {
-                            if (this._scheduleTrashRefreshId)
+                            if (this._scheduleTrashRefreshId) {
                                 GLib.source_remove(this._scheduleTrashRefreshId);
+                            }
+                            if (this._queryTrashInfoCancellable) {
+                                this._queryTrashInfoCancellable.cancel();
+                                this._queryTrashInfoCancellable = null;
+                            }
                             this._scheduleTrashRefreshId = Mainloop.timeout_add(200, () => this._refreshTrashIcon());
                         } else {
                             this._refreshTrashIcon();
@@ -159,6 +184,8 @@ var FileItem = class {
                     break;
                 }
             });
+        } else {
+            this._monitorTrashId = 0;
         }
         this.container.show_all();
         this._updateName();
@@ -215,13 +242,13 @@ var FileItem = class {
         return null;
     }
 
-    removeFromGrid() {
+    removeFromGrid(callOnDestroy) {
         if (this._grid) {
             this._grid.removeItem(this);
             this._grid = null;
         }
-        if (this._menu) {
-            this._menu.popdown();
+        if (callOnDestroy) {
+            this._onDestroy();
         }
     }
 
@@ -285,7 +312,7 @@ var FileItem = class {
     }
 
     _setDropDestination(dropDestination) {
-        dropDestination.drag_dest_set(Gtk.DestDefaults.ALL, null, Gdk.DragAction.MOVE);
+        dropDestination.drag_dest_set(Gtk.DestDefaults.MOTION | Gtk.DestDefaults.DROP, null, Gdk.DragAction.MOVE);
         if ((this._fileExtra == Enums.FileType.USER_DIRECTORY_TRASH) ||
             (this._fileExtra == Enums.FileType.USER_DIRECTORY_HOME) ||
             (this._fileExtra != Enums.FileType.EXTERNAL_DRIVE) ||
@@ -298,6 +325,10 @@ var FileItem = class {
                     if ((info == 1) || (info == 2)) {
                         let fileList = DesktopIconsUtil.getFilesFromNautilusDnD(selection, info);
                         if (fileList.length != 0) {
+                            if (this._hasToRouteDragToGrid()) {
+                                this._grid.receiveDrop(this._x1 + x, this._y1 + y, selection, info, true);
+                                return;
+                            }
                             if (this._desktopManager.dragItem && ((this._desktopManager.dragItem.uri == this._file.get_uri()) || !(this._isValidDesktopFile || this.isDirectory))) {
                                 // Dragging a file/folder over itself or over another file will do nothing, allow drag to directory or validdesktop file
                                 return;
@@ -349,6 +380,9 @@ var FileItem = class {
     }
 
     onAttributeChanged() {
+        if (this._destroyed) {
+            return;
+        }
         if (this._isDesktopFile) {
             this._refreshMetadataAsync(true);
         }
@@ -373,6 +407,14 @@ var FileItem = class {
         this._calculateLabelRectangle();
     }
 
+    checkForRename() {
+        if (this._desktopManager.newFolderDoRename) {
+            if (this._desktopManager.newFolderDoRename == this.fileName) {
+                this._desktopManager.doRename(this, true);
+            }
+        }
+    }
+
     getCoordinates() {
         return [this._x1, this._y1, this._x2, this._y2, this._grid];
     }
@@ -384,30 +426,41 @@ var FileItem = class {
         }
 
         /* Thumbnailing */
-        if (this._thumbnailScriptWatch) {
-            GLib.source_remove(this._thumbnailScriptWatch);
-        }
         if (this._loadThumbnailDataCancellable) {
             this._loadThumbnailDataCancellable.cancel();
         }
 
         /* Trash */
-        if (this._monitorTrashDir) {
+        if (this._monitorTrashId) {
             this._monitorTrashDir.disconnect(this._monitorTrashId);
             this._monitorTrashDir.cancel();
+            this._monitorTrashId = 0;
         }
+
         if (this._queryTrashInfoCancellable) {
             this._queryTrashInfoCancellable.cancel();
         }
+
         if (this._scheduleTrashRefreshId) {
             GLib.source_remove(this._scheduleTrashRefreshId);
+            this._scheduleTrashRefreshId = 0;
         }
-        if (this._menuId) {
-            this._menu.disconnect(this._menuId);
+
+        if (this._containerId) {
+            this.container.disconnect(this._containerId);
+            this._containerId = 0;
         }
+        if (this._setMetadataTrustedCancellable) {
+            this._setMetadataTrustedCancellable.cancel();
+        }
+        this._destroyed = true;
     }
 
     _refreshMetadataAsync(rebuild) {
+        if (this._destroyed) {
+            return;
+        }
+
         if (this._queryFileInfoCancellable)
             this._queryFileInfoCancellable.cancel();
         this._queryFileInfoCancellable = new Gio.Cancellable();
@@ -417,11 +470,13 @@ var FileItem = class {
                                     this._queryFileInfoCancellable,
             (source, result) => {
                 try {
-                    let newFileInfo = source.query_info_finish(result);
                     this._queryFileInfoCancellable = null;
+                    let newFileInfo = source.query_info_finish(result);
                     this._updateMetadataFromFileInfo(newFileInfo);
                     if (rebuild) {
-                        this._updateIcon();
+                        this._updateIcon().catch((e) => {
+                            print(`Exception while updating the icon after a metadata update: ${e.message}\n${e.stack}`);
+                        });
                     }
                     this._updateName();
                 } catch(error) {
@@ -453,12 +508,16 @@ var FileItem = class {
             log(`desktop-icons: File ${this._displayName} is writable by others - will not allow launching`);
 
         if (this._isDesktopFile) {
-            this._desktopFile = Gio.DesktopAppInfo.new_from_filename(this._file.get_path());
-            if (!this._desktopFile) {
-                log(`Couldn’t parse ${this._displayName} as a desktop file, will treat it as a regular file.`);
-                this._isValidDesktopFile = false;
-            } else {
-                this._isValidDesktopFile = true;
+            try {
+                this._desktopFile = Gio.DesktopAppInfo.new_from_filename(this._file.get_path());
+                if (!this._desktopFile) {
+                    log(`Couldn’t parse ${this._displayName} as a desktop file, will treat it as a regular file.`);
+                    this._isValidDesktopFile = false;
+                } else {
+                    this._isValidDesktopFile = true;
+                }
+            } catch(e) {
+                print(`Error reading Desktop file ${this.uri}: ${e}`);
             }
         } else {
             this._isValidDesktopFile = false;
@@ -488,20 +547,25 @@ var FileItem = class {
         this._refreshMetadataAsync(false);
     }
 
-    _updateIcon() {
+    async _updateIcon() {
+        if (this._destroyed) {
+            return;
+        }
+
         this._icon.set_padding(0,0);
         try {
             let customIcon = this._fileInfo.get_attribute_as_string('metadata::custom-icon');
             if (customIcon && (customIcon != '')) {
                 let customIconFile = Gio.File.new_for_uri(customIcon);
                 if (customIconFile.query_exists(null)) {
-                    if (this._loadImageAsIcon(customIconFile)) {
+                    let loadedImage = await this._loadImageAsIcon(customIconFile);
+                    if (loadedImage | this._destroyed) {
                         return;
                     }
                 }
             }
         } catch (error) {
-            print(error);
+            print(`Error while updating icon: ${error.message}.\n${error.stack}`);
         }
 
         if (this._fileExtra == Enums.FileType.USER_DIRECTORY_TRASH) {
@@ -512,53 +576,16 @@ var FileItem = class {
             return;
         }
         let icon_set = false;
-
-        let thumbnailFactory = GnomeDesktop.DesktopThumbnailFactory.new(GnomeDesktop.DesktopThumbnailSize.LARGE);
         if ((Prefs.nautilusSettings.get_string('show-image-thumbnails') != 'never') &&
-            (thumbnailFactory.can_thumbnail(this._file.get_uri(),
-                                            this._attributeContentType,
-                                            this._modifiedTime))) {
-            let thumbnail = thumbnailFactory.lookup(this._file.get_uri(), this._modifiedTime);
-            if (thumbnail == null) {
-                if (!thumbnailFactory.has_valid_failed_thumbnail(this._file.get_uri(),
-                                                                 this._modifiedTime)) {
-                    let argv = [];
-                    argv.push(GLib.build_filenamev([this._codePath, 'createThumbnail.js']));
-                    argv.push(this._file.get_path());
-                    let [success, pid] = GLib.spawn_async(null, argv, null,
-                                                          GLib.SpawnFlags.SEARCH_PATH | GLib.SpawnFlags.DO_NOT_REAP_CHILD, null);
-                    if (this._thumbnailScriptWatch)
-                        GLib.source_remove(this._thumbnailScriptWatch);
-                    this._thumbnailScriptWatch = GLib.child_watch_add(GLib.PRIORITY_DEFAULT,
-                                                                      pid,
-                        (pid, exitCode) => {
-                            this._thumbnailScriptWatch = 0;
-                            if (exitCode == 0)
-                                this._updateIcon();
-                            else
-                                print('Failed to generate thumbnail for ' + this._filePath);
-                            GLib.spawn_close_pid(pid);
-                            return false;
-                        }
-                    );
-                }
-            } else {
-                if (this._loadThumbnailDataCancellable)
-                    this._loadThumbnailDataCancellable.cancel();
-                this._loadThumbnailDataCancellable = new Gio.Cancellable();
-                let thumbnailFile = Gio.File.new_for_path(thumbnail);
-                try {
-                    icon_set = this._loadImageAsIcon(thumbnailFile);
-                } catch (error) {
-                    if (!error.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED)) {
-                        print('Error while loading thumbnail: ' + error);
-                        let pixbuf = this._createEmblemedIcon(this._fileInfo.get_icon());
-                        const scale = this._icon.get_scale_factor();
-                        let surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale, null);
-                        this._icon.set_from_surface(surface);
+            (this._desktopManager.thumbnailLoader.canThumbnail(this))) {
+                let thumbnail = this._desktopManager.thumbnailLoader.getThumbnail(this, this._updateIcon.bind(this));
+                if (thumbnail != null) {
+                    let thumbnailFile = Gio.File.new_for_path(thumbnail);
+                    icon_set = await this._loadImageAsIcon(thumbnailFile);
+                    if (this._destroyed) {
+                        return;
                     }
                 }
-            }
         }
 
         if (!icon_set) {
@@ -578,6 +605,22 @@ var FileItem = class {
         }
     }
 
+    eject() {
+        if (this._custom) {
+            this._custom.eject_with_operation(Gio.MountUnmountFlags.NONE, null, null, (obj, res) => {
+                obj.eject_with_operation_finish(res);
+            });
+        }
+    }
+
+    unmount() {
+        if (this._custom) {
+            this._custom.unmount_with_operation(Gio.MountUnmountFlags.NONE, null, null, (obj, res) => {
+                obj.unmount_with_operation_finish(res);
+            });
+        }
+    }
+
     _getDefaultIcon() {
         if (this._fileExtra == Enums.FileType.EXTERNAL_DRIVE) {
             return this._custom.get_icon();
@@ -586,30 +629,43 @@ var FileItem = class {
     }
 
     _loadImageAsIcon(imageFile) {
-        let [thumbnailData, etag_out] = imageFile.load_bytes(this._loadThumbnailDataCancellable);
-        this._loadThumbnailDataCancellable = null;
-        let thumbnailStream = Gio.MemoryInputStream.new_from_bytes(thumbnailData);
-        let thumbnailPixbuf = GdkPixbuf.Pixbuf.new_from_stream(thumbnailStream, null);
 
-        if (thumbnailPixbuf != null) {
-            let width = Prefs.get_desired_width() - 8;
-            let height = Prefs.get_icon_size() - 8;
-            let aspectRatio = thumbnailPixbuf.width / thumbnailPixbuf.height;
-            if ((width / height) > aspectRatio)
-                width = height * aspectRatio;
-            else
-                height = width / aspectRatio;
-            const scale = this._icon.get_scale_factor();
-            width *= scale;
-            height *= scale;
-            let pixbuf = thumbnailPixbuf.scale_simple(Math.floor(width), Math.floor(height), GdkPixbuf.InterpType.BILINEAR);
-            pixbuf = this._addEmblemsToPixbufIfNeeded(pixbuf);
-            let surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale, null);
-            this._icon.set_from_surface(surface);
-            this._icon.set_padding(4,4)
-            return true;
-        }
-        return false;
+        if (this._loadThumbnailDataCancellable)
+            this._loadThumbnailDataCancellable.cancel();
+        this._loadThumbnailDataCancellable = new Gio.Cancellable();
+
+        return new Promise( (resolve, reject) => {
+            imageFile.load_bytes_async(this._loadThumbnailDataCancellable, (source, result) => {
+                this._loadThumbnailDataCancellable = null;
+                try {
+                    let [thumbnailData, etag_out] = source.load_bytes_finish(result);
+                    let thumbnailStream = Gio.MemoryInputStream.new_from_bytes(thumbnailData);
+                    let thumbnailPixbuf = GdkPixbuf.Pixbuf.new_from_stream(thumbnailStream, null);
+
+                    if (thumbnailPixbuf != null) {
+                        let width = Prefs.get_desired_width() - 8;
+                        let height = Prefs.get_icon_size() - 8;
+                        let aspectRatio = thumbnailPixbuf.width / thumbnailPixbuf.height;
+                        if ((width / height) > aspectRatio)
+                            width = height * aspectRatio;
+                        else
+                            height = width / aspectRatio;
+                        const scale = this._icon.get_scale_factor();
+                        width *= scale;
+                        height *= scale;
+                        let pixbuf = thumbnailPixbuf.scale_simple(Math.floor(width), Math.floor(height), GdkPixbuf.InterpType.BILINEAR);
+                        pixbuf = this._addEmblemsToPixbufIfNeeded(pixbuf);
+                        let surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale, null);
+                        this._icon.set_from_surface(surface);
+                        this._icon.set_padding(4,4)
+                        resolve(true);
+                    }
+                    resolve(false);
+                } catch(e) {
+                    resolve(false);
+                }
+            });
+        });
     }
 
     _copyAndResizeIfNeeded(pixbuf) {
@@ -667,8 +723,14 @@ var FileItem = class {
     }
 
     _refreshTrashIcon() {
-        if (this._queryTrashInfoCancellable)
+        if (this._queryTrashInfoCancellable) {
             this._queryTrashInfoCancellable.cancel();
+            this._queryTrashInfoCancellable = null;
+        }
+        if (! this._file.query_exists(null)) {
+            this._scheduleTrashRefreshId = 0
+            return false;
+        }
         this._queryTrashInfoCancellable = new Gio.Cancellable();
 
         this._file.query_info_async(Enums.DEFAULT_ATTRIBUTES,
@@ -677,9 +739,11 @@ var FileItem = class {
                                     this._queryTrashInfoCancellable,
             (source, result) => {
                 try {
-                    this._fileInfo = source.query_info_finish(result);
                     this._queryTrashInfoCancellable = null;
-                    this._updateIcon();
+                    this._fileInfo = source.query_info_finish(result);
+                    this._updateIcon().catch((e) => {
+                        print(`Exception while updating the trash icon: ${e.message}\n${e.stack}`);
+                    });
                 } catch(error) {
                     if (!error.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
                         print('Error getting the number of files in the trash: ' + error);
@@ -687,14 +751,6 @@ var FileItem = class {
             });
         this._scheduleTrashRefreshId = 0;
         return false;
-    }
-
-    get file() {
-        return this._file;
-    }
-
-    get isHidden() {
-        return this._isHidden;
     }
 
     _createEmblemedIcon(icon, iconName) {
@@ -719,15 +775,6 @@ var FileItem = class {
         itemIcon = this._addEmblemsToPixbufIfNeeded(itemIcon);
 
         return itemIcon;
-    }
-
-    doRename() {
-        if (!this.canRename()) {
-            log (`Error: ${this.file.get_uri()} cannot be renamed`);
-            return;
-        }
-
-        this._desktopManager.doRename(this);
     }
 
     doOpen(fileList) {
@@ -777,50 +824,6 @@ var FileItem = class {
         );
     }
 
-    _onShowInFilesClicked() {
-        let showInFilesList = this._desktopManager.getCurrentSelection(true);
-        DBusUtils.FreeDesktopFileManagerProxy.ShowItemsRemote(showInFilesList, '',
-            (result, error) => {
-                if (error)
-                    log('Error showing file on desktop: ' + error.message);
-            }
-        );
-    }
-
-    _onPropertiesClicked() {
-        let propertiesFileList = this._desktopManager.getCurrentSelection(true);
-        DBusUtils.FreeDesktopFileManagerProxy.ShowItemPropertiesRemote(propertiesFileList, '',
-            (result, error) => {
-                if (error)
-                    log('Error showing properties: ' + error.message);
-            }
-        );
-    }
-
-    get metadataTrusted() {
-        return this._trusted;
-    }
-
-    set metadataTrusted(value) {
-        this._trusted = value;
-
-        let info = new Gio.FileInfo();
-        info.set_attribute_string('metadata::trusted',
-                                  value ? 'true' : 'false');
-        this._file.set_attributes_async(info,
-                                        Gio.FileQueryInfoFlags.NONE,
-                                        GLib.PRIORITY_LOW,
-                                        null,
-            (source, result) => {
-                try {
-                    source.set_attributes_finish(result);
-                    this._refreshMetadataAsync(true);
-                } catch(e) {
-                    log(`Failed to set metadata::trusted: ${e.message}`);
-                }
-        });
-    }
-
     _updateName() {
         if (this._isValidDesktopFile && !this._desktopManager.writableByOthers && !this._writableByOthers && this.trustedDesktopFile) {
             this._setFileName(this._desktopFile.get_locale_string("Name"));
@@ -829,7 +832,7 @@ var FileItem = class {
         }
     }
 
-    _onAllowDisallowLaunchingClicked() {
+    onAllowDisallowLaunchingClicked() {
         this.metadataTrusted = !this.trustedDesktopFile;
 
         /*
@@ -848,11 +851,7 @@ var FileItem = class {
         this._updateName();
     }
 
-    canRename() {
-        return !this.trustedDesktopFile && this._fileExtra == Enums.FileType.NONE;
-    }
-
-    _doDiscreteGpu() {
+    doDiscreteGpu() {
         if (!DBusUtils.SwitcherooControlProxy) {
             log('Could not apply discrete GPU environment, switcheroo-control not available');
             return;
@@ -886,125 +885,6 @@ var FileItem = class {
         log('Could not find discrete GPU data in switcheroo-control');
     }
 
-    _createMenu() {
-        this._selectedItemsNum = this._desktopManager.getNumberOfSelectedItems();
-        this._menu = new Gtk.Menu();
-        this._menuId = this._menu.connect('hide', () => {
-            this._menu.disconnect(this._menuId);
-            this._menu = null;
-            this._menuId = null;
-        });
-        let open = new Gtk.MenuItem({label: (this._selectedItemsNum > 1 ? _("Open All...") : _("Open"))});
-        open.connect('activate', () => {this._desktopManager.doMultiOpen();});
-        this._menu.add(open);
-        this._desktopManager._createScriptsMenu(this._menu);
-        switch (this._fileExtra) {
-        case Enums.FileType.NONE:
-            if (!this._isDirectory) {
-                this._actionOpenWith = new Gtk.MenuItem({label: this._selectedItemsNum > 1 ? _("Open All With Other Application...") : _("Open With Other Application")});
-                this._actionOpenWith.connect('activate', () => this._desktopManager.doOpenWith());
-                this._menu.add(this._actionOpenWith);
-                if (DBusUtils.discreteGpuAvailable && this.trustedDesktopFile) {
-                    this._actionDedicatedGPU = new Gtk.MenuItem({label:_('Launch using Dedicated Graphics Card')});
-                    this._actionDedicatedGPU.connect('activate', () => this._doDiscreteGpu());
-                    this._menu.add(this._actionDedicatedGPU);
-                }
-            } else {
-                this._actionOpenWith = null;
-            }
-            this._menu.add(new Gtk.SeparatorMenuItem());
-            this._actionCut = new Gtk.MenuItem({label:_('Cut')});
-            this._actionCut.connect('activate', () => {this._desktopManager.doCut();});
-            this._menu.add(this._actionCut);
-            this._actionCopy = new Gtk.MenuItem({label:_('Copy')});
-            this._actionCopy.connect('activate', () => {this._desktopManager.doCopy();});
-            this._menu.add(this._actionCopy);
-            if (this.canRename() && (this._selectedItemsNum == 1)) {
-                let rename = new Gtk.MenuItem({label:_('Rename…')});
-                rename.connect('activate', () => this.doRename());
-                this._menu.add(rename);
-            }
-            this._actionTrash = new Gtk.MenuItem({label:_('Move to Trash')});
-            this._actionTrash.connect('activate', () => {this._desktopManager.doTrash();});
-            this._menu.add(this._actionTrash);
-            if (Prefs.nautilusSettings.get_boolean('show-delete-permanently')) {
-                this._actionDelete = new Gtk.MenuItem({label:_('Delete permanently')});
-                this._actionDelete.connect('activate', () => {this._desktopManager.doDeletePermanently();});
-                this._menu.add(this._actionDelete);
-            }
-            if (this._isValidDesktopFile && !this._desktopManager.writableByOthers && !this._writableByOthers && (this._selectedItemsNum == 1 )) {
-                this._menu.add(new Gtk.SeparatorMenuItem());
-                this._allowLaunchingMenuItem = new Gtk.MenuItem({label: this.trustedDesktopFile ? _("Don't Allow Launching") : _("Allow Launching")});
-                this._allowLaunchingMenuItem.connect('activate', () => this._onAllowDisallowLaunchingClicked());
-                this._menu.add(this._allowLaunchingMenuItem);
-            }
-            break;
-        case Enums.FileType.USER_DIRECTORY_TRASH:
-            this._menu.add(new Gtk.SeparatorMenuItem());
-            let trashItem = new Gtk.MenuItem({label: _('Empty Trash')});
-            trashItem.connect('activate', () => {this._desktopManager.doEmptyTrash();});
-            this._menu.add(trashItem);
-            break;
-        case Enums.FileType.EXTERNAL_DRIVE:
-            this._menu.add(new Gtk.SeparatorMenuItem());
-            if (this._custom.can_eject()) {
-                this._volumeItem = new Gtk.MenuItem({label: _('Eject')});
-                this._volumeItem.connect('activate', () => {
-                    this._custom.eject_with_operation(Gio.MountUnmountFlags.NONE, null, null, (obj, res) => {
-                        obj.eject_with_operation_finish(res);
-                    });
-                });
-            } else if (this._custom.can_unmount()) {
-                this._volumeItem = new Gtk.MenuItem({label: _('Unmount')});
-                this._volumeItem.connect('activate', () => {
-                    this._custom.unmount_with_operation(Gio.MountUnmountFlags.NONE, null, null, (obj, res) => {
-                        obj.unmount_with_operation_finish(res);
-                    });
-                });
-            }
-            this._menu.add(this._volumeItem);
-            break;
-        default:
-            break;
-        }
-        this._menu.add(new Gtk.SeparatorMenuItem());
-        if ( (! this._desktopManager.checkIfSpecialFilesAreSelected()) && (this._selectedItemsNum >= 1 )) {
-            if (this._selectedItemsNum == 1 && this._desktopManager.getExtractable()) {
-                let extractFileHereFromSelection = new Gtk.MenuItem({label:  _("Extract Here")});
-                extractFileHereFromSelection.connect('activate', () => {this._desktopManager.extractFileFromSelection(true);});
-                this._menu.add(extractFileHereFromSelection);
-                let extractFileToFromSelection  = new Gtk.MenuItem({label:  _("Extract To...")});
-                extractFileToFromSelection.connect('activate', () => {this._desktopManager.extractFileFromSelection();});
-                this._menu.add(extractFileToFromSelection);
-            }
-            if (! this._isDirectory) {
-                let mailFilesFromSelection = new Gtk.MenuItem({label: _('Send to...')});
-                mailFilesFromSelection.connect('activate', () => {this._desktopManager.mailFilesFromSelection();});
-                this._menu.add(mailFilesFromSelection);
-            }
-            let compressFilesFromSelection = new Gtk.MenuItem({label: Gettext.ngettext('Compress {0} file', 'Compress {0} files', this._selectedItemsNum).replace('{0}', this._selectedItemsNum)});
-            compressFilesFromSelection.connect('activate', () => {this._desktopManager.doCompressFilesFromSelection();});
-            this._menu.add(compressFilesFromSelection);
-            let newFolderFromSelection = new Gtk.MenuItem({label:  Gettext.ngettext('New Folder with {0} item', 'New Folder with {0} items' , this._selectedItemsNum).replace('{0}', this._selectedItemsNum)});
-            newFolderFromSelection.connect('activate', () => {this._desktopManager.doNewFolderFromSelection(this._savedCoordinates);});
-            this._menu.add(newFolderFromSelection);
-            this._menu.add(new Gtk.SeparatorMenuItem());
-        }
-        let properties = new Gtk.MenuItem({label: this._selectedItemsNum > 1 ? _('Common Properties') : _('Properties') });
-        properties.connect('activate', () => this._onPropertiesClicked());
-        this._menu.add(properties);
-        this._menu.add(new Gtk.SeparatorMenuItem());
-        let showInFiles = new Gtk.MenuItem({label: this._selectedItemsNum > 1 ? _('Show All in Files') : _('Show in Files')});
-        showInFiles.connect('activate', () => this._onShowInFilesClicked());
-        this._menu.add(showInFiles);
-        if (this._isDirectory && this.file.get_path() != null && this._selectedItemsNum == 1) {
-            let openInTerminal = new Gtk.MenuItem({label: _('Open in Terminal')});
-            openInTerminal.connect('activate', () => this._onOpenTerminalClicked());
-            this._menu.add(openInTerminal);
-        }
-        this._menu.show_all();
-    }
-
     _onOpenTerminalClicked () {
         DesktopIconsUtil.launchTerminal(this.file.get_path(), null);
     }
@@ -1033,19 +913,7 @@ var FileItem = class {
             if (!this._isSelected) {
                 this._desktopManager.selected(this, Enums.Selection.RIGHT_BUTTON);
             }
-            this._createMenu();
-            this._menu.popup_at_pointer(event);
-            if (this._actionOpenWith) {
-                let allowOpenWith = (this._selectedItemsNum > 0);
-                this._actionOpenWith.set_sensitive(allowOpenWith);
-            }
-            let allowCutCopyTrash = this._desktopManager.checkIfSpecialFilesAreSelected();
-            if (this._actionCut)
-                this._actionCut.set_sensitive(!allowCutCopyTrash);
-            if (this._actionCopy)
-                this._actionCopy.set_sensitive(!allowCutCopyTrash);
-            if (this._actionTrash)
-                this._actionTrash.set_sensitive(!allowCutCopyTrash);
+            this._desktopManager.fileItemMenu.showMenu(this, event);
         } else if (button == 1) {
             if (this._getClickCount() == 1) {
                 let [a, x, y] = event.get_coords();
@@ -1095,20 +963,32 @@ var FileItem = class {
         this._setSelectedStatus();
     }
 
-    get isSelected() {
-        return this._isSelected;
+    _hasToRouteDragToGrid() {
+        return this._isSelected && (this._desktopManager.dragItem.uri !== this._file.get_uri());
     }
 
-    get isAllSelectable() {
-        return this._fileExtra == Enums.FileType.NONE;
+    highLightDropTarget(x, y) {
+        if (this._hasToRouteDragToGrid()) {
+            this._grid.receiveMotion(this._x1, this._y1, true);
+            return;
+        }
+        if (! this._styleContext.has_class('desktop-icons-selected')) {
+            this._styleContext.add_class('desktop-icons-selected');
+            this._labelStyleContext.add_class('desktop-icons-selected');
+        }
+        this._grid.highLightGridAt(this._x1, this._y1);
     }
 
-    get isDrive() {
-        return this._fileExtra == Enums.FileType.EXTERNAL_DRIVE;
-    }
-
-    get isTrash() {
-        return this._fileExtra === Enums.FileType.USER_DIRECTORY_TRASH;
+    unHighLightDropTarget() {
+        if (this._hasToRouteDragToGrid()) {
+            this._grid.receiveLeave();
+            return;
+        }
+        if (! this._isSelected && this._styleContext.has_class('desktop-icons-selected')) {
+            this._styleContext.remove_class('desktop-icons-selected');
+            this._labelStyleContext.remove_class('desktop-icons-selected');
+        }
+        this._grid.unHighLightGrids();
     }
 
     _onReleaseButton(actor, event) {
@@ -1160,17 +1040,142 @@ var FileItem = class {
         return false;
     }
 
-    get savedCoordinates() {
-        return this._savedCoordinates;
+    /***********************
+     * Getters and setters *
+     ***********************/
+
+    get attributeContentType() {
+        return this._attributeContentType;
     }
 
-    _onSetMetadataFileFinished(source, result) {
-        try {
-            let [success, info] = source.set_attributes_finish(result);
-        } catch (error) {
-            if (!error.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
-                log('Error setting metadata to desktop files ', error);
+    get canEject() {
+        if (this._custom) {
+            return this._custom.can_eject();
+        } else {
+            return false;
         }
+    }
+
+    get canRename() {
+        return !this.trustedDesktopFile && (this._fileExtra == Enums.FileType.NONE);
+    }
+
+    get canUnmount() {
+        if (this._custom) {
+            return this._custom.can_unmount();
+        } else {
+            return false;
+        }
+    }
+
+    get displayName() {
+        if (this.trustedDesktopFile) {
+            return this._desktopFile.get_name();
+        }
+        return this._displayName || null;
+    }
+
+    get dropCoordinates() {
+        return this._dropCoordinates;
+    }
+
+    set dropCoordinates(pos) {
+        try {
+            let info = new Gio.FileInfo();
+            if (pos != null) {
+                this._dropCoordinates = [pos[0], pos[1]];
+                info.set_attribute_string('metadata::nautilus-drop-position', `${pos[0]},${pos[1]}`);
+            } else {
+                this._dropCoordinates = null;
+                info.set_attribute_string('metadata::nautilus-drop-position', '');
+            }
+            this.file.set_attributes_from_info(info, Gio.FileQueryInfoFlags.NONE, null);
+        } catch(e) {
+            print(`Failed to store the desktop coordinates for ${this.uri}: ${e}`);
+        }
+    }
+
+    get file() {
+        return this._file;
+    }
+
+    get fileName() {
+        return this._fileInfo.get_name();
+    }
+
+    get fileSize() {
+        return this._fileInfo.get_size();
+    }
+
+    get isAllSelectable() {
+        return this._fileExtra == Enums.FileType.NONE;
+    }
+
+    get isDirectory() {
+        return this._isDirectory;
+    }
+
+    get isDrive() {
+        return this._fileExtra == Enums.FileType.EXTERNAL_DRIVE;
+    }
+
+    get isHidden() {
+        return this._isHidden;
+    }
+
+    get isSelected() {
+        return this._isSelected;
+    }
+
+    get isSpecial() {
+        return this._isSpecial;
+    }
+
+    get isTrash() {
+        return this._fileExtra === Enums.FileType.USER_DIRECTORY_TRASH;
+    }
+
+    get metadataTrusted() {
+        return this._trusted;
+    }
+
+    set metadataTrusted(value) {
+        this._trusted = value;
+
+        if (this._setMetadataTrustedCancellable) {
+            this._setMetadataTrustedCancellable.cancel();
+        }
+        this._setMetadataTrustedCancellable = new Gio.Cancellable()
+        let info = new Gio.FileInfo();
+        info.set_attribute_string('metadata::trusted',
+                                  value ? 'true' : 'false');
+        this._file.set_attributes_async(info,
+                                        Gio.FileQueryInfoFlags.NONE,
+                                        GLib.PRIORITY_LOW,
+                                        this._setMetadataTrustedCancellable,
+            (source, result) => {
+                try {
+                    this._setMetadataTrustedCancellable = null;
+                    source.set_attributes_finish(result);
+                    this._refreshMetadataAsync(true);
+                } catch(error) {
+                    if (!error.matches(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED)) {
+                        log(`Failed to set metadata::trusted: ${error.message}`);
+                    }
+                }
+        });
+    }
+
+    get modifiedTime() {
+        return this._modifiedTime;
+    }
+
+    get path() {
+        return this._file.get_path();
+    }
+
+    get savedCoordinates() {
+        return this._savedCoordinates;
     }
 
     set savedCoordinates(pos) {
@@ -1189,26 +1194,6 @@ var FileItem = class {
         }
     }
 
-    get dropCoordinates() {
-        return this._dropCoordinates;
-    }
-
-    set dropCoordinates(pos) {
-        let info = new Gio.FileInfo();
-        if (pos != null) {
-            this._dropCoordinates = [pos[0], pos[1]];
-            info.set_attribute_string('metadata::nautilus-drop-position', `${pos[0]},${pos[1]}`);
-        } else {
-            this._dropCoordinates = null;
-            info.set_attribute_string('metadata::nautilus-drop-position', '');
-        }
-        this.file.set_attributes_from_info(info, Gio.FileQueryInfoFlags.NONE, null);
-    }
-
-    get isSpecial() {
-        return this._isSpecial;
-    }
-
     get state() {
         return this._state;
     }
@@ -1220,10 +1205,6 @@ var FileItem = class {
         this._state = state;
     }
 
-    get isDirectory() {
-        return this._isDirectory;
-    }
-
     get trustedDesktopFile() {
         return this._isValidDesktopFile &&
                this._attributeCanExecute &&
@@ -1232,24 +1213,16 @@ var FileItem = class {
                !this._writableByOthers;
     }
 
-    get fileName() {
-        return this._fileInfo.get_name();
-    }
-
     get uri() {
         return this._file.get_uri();
     }
 
-    get displayName() {
-        if (this.trustedDesktopFile) {
-            return this._desktopFile.get_name();
-        }
-        return this._displayName || null;
+    get isValidDesktopFile() {
+        return this._isValidDesktopFile;
     }
 
-    get fileSize() {
-        return this._fileInfo.get_size();
+    get writableByOthers() {
+        return this._writableByOthers;
     }
-
 };
 Signals.addSignalMethods(FileItem.prototype);

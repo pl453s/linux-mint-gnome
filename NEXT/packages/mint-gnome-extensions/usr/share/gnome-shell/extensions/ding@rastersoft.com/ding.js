@@ -78,15 +78,41 @@ if (desktops.length == 0) {
 
 imports.searchPath.unshift(codePath);
 
+const DBusUtils = imports.dbusUtils;
 const Prefs = imports.preferences;
+const Gettext = imports.gettext;
+
+let localePath = GLib.build_filenamev([codePath, "locale"]);
+if (Gio.File.new_for_path(localePath).query_exists(null)) {
+    Gettext.bindtextdomain("ding", localePath);
+}
 
 const DesktopManager = imports.desktopManager;
 
+var desktopManager = null;
+
 if (!errorFound) {
-    Gtk.init(null);
-    Prefs.init(codePath);
-    var desktopManager = new DesktopManager.DesktopManager(desktops, codePath, asDesktop, primaryIndex);
-    Gtk.main();
+
+    // Use different AppIDs to allow to test it from a command line while the main desktop is also running from the extension
+    const dingApp = new Gtk.Application({application_id: asDesktop ? 'com.rastersoft.ding' : 'com.rastersoft.dingtest',
+                                         flags: Gio.ApplicationFlags.FLAGS_NONE});
+
+    dingApp.connect('startup', () => {
+        Prefs.init(codePath);
+        DBusUtils.init();
+    });
+
+    dingApp.connect('activate', () => {
+        if (!desktopManager) {
+            desktopManager = new DesktopManager.DesktopManager(dingApp,
+                                                               desktops,
+                                                               codePath,
+                                                               asDesktop,
+                                                               primaryIndex);
+        }
+    });
+
+    dingApp.run(null);
     // return value
     0;
 } else {

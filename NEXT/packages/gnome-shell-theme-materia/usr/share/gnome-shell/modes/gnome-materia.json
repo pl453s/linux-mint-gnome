@@ -1,5 +1,10 @@
 {
     "parentMode": "user",
     "stylesheetName": "gnome-shell.css",
-    "themeResourceName": "gnome-shell-theme-materia.gresource"
+    "themeResourceName": "gnome-shell-theme-materia.gresource",
+    "enabledExtensions": [],
+    "panel": { "left": ["activities"],
+               "center": ["dateMenu"],
+               "right": ["dwellClick", "a11y", "keyboard", "aggregateMenu"]
+    }
 }

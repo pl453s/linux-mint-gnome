@@ -36,6 +36,14 @@ function getScriptsDir() {
     return Gio.File.new_for_commandline_arg(scriptsDir);
 }
 
+function getTemplatesDir() {
+    let templatesDir = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_TEMPLATES);
+    if (templatesDir == GLib.get_home_dir()) {
+        return null;
+    }
+    return Gio.File.new_for_commandline_arg(templatesDir)
+}
+
 function clamp(value, min, max) {
     return Math.max(Math.min(value, max), min);
 };
@@ -254,10 +262,13 @@ function windowHidePagerTaskbarModal(window, modal) {
         window.set_skip_pager_hint(true);
     } else {
         let title = window.get_title();
+        if (title == null) {
+            title = "";
+        }
         if (modal) {
-            title = title + '@!HTD';
+            title = title + '  ';
         } else {
-            title = title + '@!H';
+            title = title + ' ';
         }
         window.set_title(title);
     }
@@ -269,4 +280,12 @@ function windowHidePagerTaskbarModal(window, modal) {
         });
         window.grab_focus();
     }
+}
+
+function waitDelayMs(ms) {
+    return new Promise( (resolve, reject) => {
+        GLib.timeout_add(GLib.PRIORITY_DEFAULT, ms, () => {
+            resolve();
+        });
+    });
 }

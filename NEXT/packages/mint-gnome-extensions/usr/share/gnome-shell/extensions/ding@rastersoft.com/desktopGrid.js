@@ -62,7 +62,7 @@ var DesktopGrid = class {
         this._elementWidth = Math.floor(this._width / this._maxColumns);
         this._elementHeight = Math.floor(this._height / this._maxRows);
 
-        this._window = new Gtk.Window({"title": desktopName});
+        this._window = new Gtk.ApplicationWindow({application: desktopManager.mainApp, "title": desktopName});
         if (asDesktop) {
             this._window.set_decorated(false);
             this._window.set_deletable(false);
@@ -83,7 +83,7 @@ var DesktopGrid = class {
                 return true;
             } else {
                 // Exit if this instance is working as an stand-alone window
-                Gtk.main_quit();
+                return false;
             }
         });
 
@@ -167,21 +167,73 @@ var DesktopGrid = class {
         targets.add(Gdk.atom_intern('text/plain', false), 0, 3);
         dropDestination.drag_dest_set_target_list(targets);
         dropDestination.connect('drag-motion', (widget, context, x, y, time) => {
-            x = this._elementWidth * Math.floor(x / this._elementWidth);
-            y = this._elementHeight * Math.floor(y / this._elementHeight);
-            [x, y] = this._coordinatesLocalToGlobal(x, y);
-            this._desktopManager.onDragMotion(x, y);
+            this.receiveMotion(x, y);
         });
         this._eventBox.connect('drag-leave', (widget, context, time) => {
-            this._desktopManager.onDragLeave();
+            this.receiveLeave();
         });
         dropDestination.connect('drag-data-received', (widget, context, x, y, selection, info, time) => {
+            this.receiveDrop(x, y, selection, info, false);
+        });
+    }
+
+    receiveLeave() {
+        this._desktopManager.onDragLeave();
+    }
+
+    receiveMotion(x, y, global) {
+        if (! global) {
             x = this._elementWidth * Math.floor(x / this._elementWidth);
             y = this._elementHeight * Math.floor(y / this._elementHeight);
             [x, y] = this._coordinatesLocalToGlobal(x, y);
-            this._desktopManager.onDragDataReceived(x, y, selection, info);
-            this._window.queue_draw();
-        });
+        }
+        this._desktopManager.onDragMotion(x, y);
+    }
+
+    receiveDrop(x, y, selection, info, forceLocal) {
+        if (! forceLocal) {
+            x = this._elementWidth * Math.floor(x / this._elementWidth);
+            y = this._elementHeight * Math.floor(y / this._elementHeight);
+            [x, y] = this._coordinatesLocalToGlobal(x, y);
+        }
+        this._desktopManager.onDragDataReceived(x, y, selection, info, forceLocal);
+        this._window.queue_draw();
+    }
+
+    highLightGridAt(x,y) {
+        let selected = this.getGridAt(x, y, false);
+        this._selectedList = [selected];
+        this._window.queue_draw();
+    }
+
+    unHighLightGrids() {
+        this._selectedList = null;
+        this._window.queue_draw();
+    }
+
+    _getGridCoordinates(x, y, clamp) {
+        let placeX = Math.floor(x / this._elementWidth);
+        let placeY = Math.floor(y / this._elementHeight);
+        placeX = DesktopIconsUtil.clamp(placeX, 0, this._maxColumns - 1);
+        placeY = DesktopIconsUtil.clamp(placeY, 0, this._maxRows - 1);
+        return [placeX, placeY];
+    }
+
+    gridInUse(x, y) {
+        let [placeX, placeY] = this._getGridCoordinates(x, y);
+        return !this._isEmptyAt(placeX, placeY);
+    }
+
+    getGridLocalCoordinates(x, y) {
+        let [column, row] = this._getGridCoordinates(x, y);
+        let localX = Math.floor(this._width * column / this._maxColumns);
+        let localY = Math.floor(this._height * row / this._maxRows);
+        return [localX, localY];
+    }
+
+    _fileAt(x,y) {
+        let [placeX, placeY] = this._getGridCoordinates(x, y);
+        return this._gridStatus[placeY * this._maxColumns + placeX];
     }
 
     refreshDrag(selectedList, ox, oy) {
@@ -194,8 +246,8 @@ var DesktopGrid = class {
         for (let [x, y] of selectedList) {
             x += ox;
             y += oy;
-            let r = this.getGridAt(x, y, false);
-            if (r !== null) {
+            let r = this.getGridAt(x, y);
+            if ((r !== null) && ((!this.gridInUse(r[0], r[1])) || this._fileAt(r[0], r[1]).isSelected)) {
                 newSelectedList.push(r);
             }
         }
@@ -301,10 +353,13 @@ var DesktopGrid = class {
 
     _addFileItemTo(fileItem, column, row, coordinatesAction) {
 
+        if (this._destroying) {
+            return;
+        }
         let localX = Math.floor(this._width * column / this._maxColumns);
         let localY = Math.floor(this._height * row / this._maxRows);
         this._container.put(fileItem.container, localX + elementSpacing, localY + elementSpacing);
-        this._setGridUse(column, row, true);
+        this._setGridUse(column, row, fileItem);
         this._fileItems[fileItem.uri] = [column, row, fileItem];
         let [x, y] = this._coordinatesLocalToGlobal(localX + elementSpacing, localY + elementSpacing);
         fileItem.setCoordinates(x,
@@ -344,7 +399,7 @@ var DesktopGrid = class {
     }
 
     _isEmptyAt(x,y) {
-        return !this._gridStatus[y * this._maxColumns + x];
+        return (this._gridStatus[y * this._maxColumns + x] === false);
     }
 
     _setGridUse(x, y, inUse) {
@@ -354,12 +409,14 @@ var DesktopGrid = class {
     getGridAt(x, y, globalCoordinates) {
         if (this._coordinatesBelongToThisGrid(x, y)) {
             [x, y] = this._coordinatesGlobalToLocal(x, y);
-            x = this._elementWidth * Math.floor((x / this._elementWidth) + 0.5);
-            y = this._elementHeight * Math.floor((y / this._elementHeight) + 0.5);
             if (globalCoordinates) {
+                x = this._elementWidth * Math.floor((x / this._elementWidth) + 0.5);
+                y = this._elementHeight * Math.floor((y / this._elementHeight) + 0.5);
                 [x, y] = this._coordinatesLocalToGlobal(x, y);
+                return [x, y];
+            } else {
+                return this.getGridLocalCoordinates(x, y);
             }
-            return [x, y];
         } else {
             return null;
         }

@@ -1,0 +1,10 @@
+{
+    "parentMode": "user",
+    "stylesheetName": "gnome-shell.css",
+    "themeResourceName": "gnome-shell-theme-adwaita.gresource",
+    "enabledExtensions": [],
+    "panel": { "left": ["activities"],
+               "center": ["dateMenu"],
+               "right": ["dwellClick", "a11y", "keyboard", "aggregateMenu"]
+    }
+}

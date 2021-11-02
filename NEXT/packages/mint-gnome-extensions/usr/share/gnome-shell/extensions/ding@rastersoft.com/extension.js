@@ -359,10 +359,10 @@ var LaunchSubprocess = class {
         } else {
             this.subprocess = this._launcher.spawnv(argv);
         }
-        /* This is for GLib 2.68
+        // This is for GLib 2.68 or greater
         if (this._launcher.close) {
             this._launcher.close();
-        }*/
+        }
         this._launcher = null;
         if (this.subprocess) {
                 /*

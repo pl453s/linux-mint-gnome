@@ -2,5 +2,5 @@ Package: gnome-shell-theme-materia
 Version: 3.0
 Architecture: all
 Maintainer: PL453s <pl453s@github.com>
-Description: Linux Mint Gnome default extensions
+Description: Materia theme for GDM and Gnome Shell
 
