@@ -6,4 +6,3 @@ Maintainer: PL453s <pl453s@github.com>
 Description: Linux Mint Gnome base package
  Contains Mint Gnome session, MintTools adjustments, icons, .desktop files, default schemas and default user folder
 Depends: mint-info-gnome
-Provides: ubuntu-wallpapers

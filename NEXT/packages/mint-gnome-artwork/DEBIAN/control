@@ -4,9 +4,9 @@ Architecture: all
 Maintainer: PL453s <pl453s@github.com>
 Installed-Size: 14752
 Depends: mint-y-icons
-Conflicts: mint-artwork, ldm-mint-theme, mint-artwork-cinnamon, mint-artwork-common, mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce
-Replaces: mint-artwork, ldm-mint-theme, mint-artwork-cinnamon, mint-artwork-common, mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce
-Provides: mint-artwork, mint-mate-default-settings
+Conflicts: mint-artwork, ubuntu-wallpapers, gnome-icon-theme, ldm-mint-theme, mint-artwork-cinnamon, mint-artwork-common, mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce
+Replaces: mint-artwork, ubuntu-wallpapers, gnome-icon-theme, ldm-mint-theme, mint-artwork-cinnamon, mint-artwork-common, mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce
+Provides: mint-artwork, ubuntu-wallpapers, gnome-icon-theme, mint-mate-default-settings
 Section: gnome
 Priority: optional
 Description: Linux Mint Artwork and Resources
