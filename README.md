@@ -1,7 +1,6 @@
 **New version based on Ubuntu 21.10 (with Gnome 40) in preparation for the next major Linux Mint release.**  
-**- Check the development (new Welcome screen, new Gnome Customization, new themes...) in 'NEXT/packages'**  
-**- Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/NEXT/github/tour.md)  
-*'Dash to Dock' and 'Dash to Panel' are not included yet, as they are not fully compatible with Gnome 40 yet.*
+**- Check the development (new Welcome screen, new Gnome Customization, new themes...) in the 'next' branch**  
+**- Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/next/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/next/github/tour.md)  
 
 # Linux Mint Gnome
 
