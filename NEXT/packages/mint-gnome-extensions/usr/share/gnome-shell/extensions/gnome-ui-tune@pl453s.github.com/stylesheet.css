@@ -1,4 +1,0 @@
-#panel .panel-corner { -panel-corner-radius: 0; }
-.tile-preview-left.on-primary { border-radius: 0px 0 0 0; }
-.tile-preview-right.on-primary { border-radius: 0 0px 0 0; }
-.tile-preview-left.tile-preview-right.on-primary { border-radius: 0px 0px 0 0; }

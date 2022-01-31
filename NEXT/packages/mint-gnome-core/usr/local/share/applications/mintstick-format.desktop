@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Name=USB Stick Formatter
-Exec=mintstick -m format
-Icon=mintstick
-Type=Application

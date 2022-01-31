@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Name=Synaptic Package Manager
-Exec=synaptic-pkexec
-Icon=synaptic
-Type=Application

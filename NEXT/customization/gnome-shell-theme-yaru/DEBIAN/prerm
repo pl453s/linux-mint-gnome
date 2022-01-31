@@ -1,3 +1,0 @@
-#!/bin/sh
-set -e
-update-alternatives --remove gdm-theme.gresource /usr/share/gnome-shell/gnome-shell-theme-yaru.gresource

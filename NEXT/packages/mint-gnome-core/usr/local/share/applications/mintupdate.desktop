@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Name=Update Manager
-Exec=mintupdate
-Icon=mintupdate
-Type=Application

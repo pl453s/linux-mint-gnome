@@ -1,3 +1,0 @@
-#!/bin/sh
-set -e
-update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/mint-yaru-bgrt/mint-yaru-bgrt.plymouth 300

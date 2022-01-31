@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Name=Welcome
-Exec=mint-gnome-welcome
-Icon=mintwelcome
-Type=Application

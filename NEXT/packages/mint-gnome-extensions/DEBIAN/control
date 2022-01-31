@@ -1,8 +1,0 @@
-Package: mint-gnome-extensions
-Version: 3.0
-Architecture: all
-Maintainer: PL453s <pl453s@github.com>
-Conflicts: gnome-shell-extension-desktop-icons-ng
-Replaces: gnome-shell-extension-desktop-icons-ng
-Description: Linux Mint Gnome default extensions
-

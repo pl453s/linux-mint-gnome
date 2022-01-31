@@ -1,3 +1,0 @@
-#!/bin/sh
-set -e
-update-alternatives --remove default.plymouth /usr/share/plymouth/themes/mint-yaru-bgrt/mint-yaru-bgrt.plymouth

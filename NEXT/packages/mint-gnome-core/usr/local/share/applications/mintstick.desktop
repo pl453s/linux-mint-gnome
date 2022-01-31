@@ -1,6 +1,0 @@
-[Desktop Entry]
-NoDisplay=true
-Name=USB Image Writer
-Exec=mintstick -m iso
-Icon=mintstick
-Type=Application
