@@ -15,9 +15,8 @@ theme_gtk_light    = "Adwaita"
 theme_gtk_dark     = "Adwaita-dark"
 theme_kv_light     = "KvGnome"
 theme_kv_dark      = "KvGnomeDark"
-theme_icons_light  = "Mint-Y"
-theme_icons_dark   = "Mint-Y-Dark"
-theme_icons_colors = ["-Grey", "-Brown", "-Sand", "", "-Teal", "-Aqua", "-Blue", "-Purple", "-Pink", "-Red", "-Orange", "-Yellow"]
+theme_icons_light  = "Gnomint"
+theme_icons_dark   = "Gnomint-dark"
 
 
 
@@ -27,7 +26,6 @@ class WelcomeWindow(Gtk.Window):
 		self.style = style
 		self.icons = icons
 		self.dark  = dark
-		self.color = color
 
 		Gtk.Window.__init__(self, title = "Welcome")
 		self.set_icon_name("mintwelcome")
@@ -96,8 +94,6 @@ class WelcomeWindow(Gtk.Window):
 		self.box2.pack_start(self.box_desktop, True, False, 0)
 		self.box_theme = Gtk.Box(spacing = 8)
 		self.box2.pack_start(self.box_theme, True, False, 0)
-		self.box_colors = Gtk.Box(spacing = 8)
-		self.box2.pack_start(self.box_colors, True, False, 0)
 
 		self.text_hide = Gtk.Label(label = locale[9])
 		self.text_hide.set_xalign(1)
@@ -121,17 +117,6 @@ class WelcomeWindow(Gtk.Window):
 		self.text_dark.set_xalign(0)
 		self.box_theme.pack_end(self.text_dark, True, True, 0)
 
-		self.button_colors = Gtk.ButtonBox(layout_style = Gtk.ButtonBoxStyle.EXPAND)
-		self.list_colors = []
-		for theme in theme_icons_colors:
-			button = Gtk.Button(image = Gtk.Image(file = "/usr/share/icons/Mint-Y" + theme + "/places/48/folder.png"))
-			self.button_colors.pack_start(button, False, False, 0)
-			if theme == self.color:
-				button.get_style_context().add_class("suggested-action")
-			button.connect("clicked", self.action_color, theme)
-			self.list_colors.append(button)
-		self.box_colors.pack_start(self.button_colors, True, False, 0)
-
 		#PAGE3
 		self.text_header = Gtk.Label(label = "<big><b>" + locale[13] + "</b></big>", use_markup = True, justify = Gtk.Justification.CENTER)
 		self.box3.pack_start(self.text_header, True, False, 0)
@@ -139,7 +124,7 @@ class WelcomeWindow(Gtk.Window):
 		self.box3.pack_start(self.box_launch, True, False, 0)
 
 		self.image_face = Gtk.Image()
-		self.image_face.set_from_file("/usr/share/icons/Mint-Y/apps/64@2x/preferences-desktop-user.png")
+		self.image_face.set_from_file("/usr/share/icons/Gnomint/apps/64@2x/preferences-desktop-user.png")
 		self.button_face = Gtk.Button(label = "\n" + locale[14])
 		self.button_face.set_always_show_image(True)
 		self.button_face.set_image(self.image_face)
@@ -148,7 +133,7 @@ class WelcomeWindow(Gtk.Window):
 		self.box_launch.pack_start(self.button_face, True, False, 0)
 
 		self.image_wall = Gtk.Image()
-		self.image_wall.set_from_file("/usr/share/icons/Mint-Y/apps/64@2x/preferences-desktop-wallpaper.png")
+		self.image_wall.set_from_file("/usr/share/icons/Gnomint/apps/64@2x/preferences-desktop-wallpaper.png")
 		self.button_wall = Gtk.Button(label = "\n" + locale[15])
 		self.button_wall.set_always_show_image(True)
 		self.button_wall.set_image(self.image_wall)
@@ -157,7 +142,7 @@ class WelcomeWindow(Gtk.Window):
 		self.box_launch.pack_start(self.button_wall, True, False, 0)
 
 		self.image_soft = Gtk.Image()
-		self.image_soft.set_from_file("/usr/share/icons/Mint-Y/apps/64@2x/mintinstall.png")
+		self.image_soft.set_from_file("/usr/share/icons/Gnomint/apps/64@2x/mintinstall.png")
 		self.button_soft = Gtk.Button(label = "\n" + locale[16])
 		self.button_soft.set_always_show_image(True)
 		self.button_soft.set_image(self.image_soft)
@@ -166,7 +151,7 @@ class WelcomeWindow(Gtk.Window):
 		self.box_launch.pack_start(self.button_soft, True, False, 0)
 
 		self.image_drvr = Gtk.Image()
-		self.image_drvr.set_from_file("/usr/share/icons/Mint-Y/apps/64@2x/mintdrivers.png")
+		self.image_drvr.set_from_file("/usr/share/icons/Gnomint/apps/64@2x/mintdrivers.png")
 		self.button_drvr = Gtk.Button(label = "\n" + locale[17])
 		self.button_drvr.set_always_show_image(True)
 		self.button_drvr.set_image(self.image_drvr)
@@ -238,25 +223,14 @@ class WelcomeWindow(Gtk.Window):
 		self.dark = state
 		if self.dark:
 			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_dark)
-			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark + self.color)
+			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark)
 			system("sed -i 's/theme=.*/theme=" + theme_kv_dark + "/' '" + home + "/.config/Kvantum/kvantum.kvconfig'")
-			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_dark + self.color + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
+			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_dark + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
 		else:
 			system("gsettings set org.gnome.desktop.interface gtk-theme " + theme_gtk_light)
-			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light + self.color)
+			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light)
 			system("sed -i 's/theme=.*/theme=" + theme_kv_light + "/' '" + home + "/.config/Kvantum/kvantum.kvconfig'")
-			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_light + self.color + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
-
-	def action_color(self, widget, theme):
-		self.list_colors[theme_icons_colors.index(self.color)].get_style_context().remove_class("suggested-action")
-		self.color = theme
-		widget.get_style_context().add_class("suggested-action")
-		if self.dark:
-			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_dark + self.color)
-			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_dark + self.color + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
-		else:
-			system("gsettings set org.gnome.desktop.interface icon-theme " + theme_icons_light + self.color)
-			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_light + self.color + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
+			system("sed -i 's/icon_theme=.*/icon_theme=" + theme_icons_light + "/' '" + home + "/.config/qt5ct/qt5ct.conf'")
 
 	def action_launch(self, widget, command):
 		system(command + " &")
@@ -283,7 +257,6 @@ if len(locale) < 21:
 style = "dash"
 icons = False
 dark  = False
-color = ""
 if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + dashtopanel + "'"):
 	style = "panel"
 if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + dashtodock + "'"):
@@ -292,9 +265,6 @@ if system("gsettings get org.gnome.shell enabled-extensions | grep -qv '" + desk
 	icons = True
 if system("gsettings get org.gnome.desktop.interface gtk-theme | grep -qv '" + theme_gtk_dark + "'"):
 	dark = True
-for theme in theme_icons_colors:
-	if theme and (system("gsettings get org.gnome.desktop.interface icon-theme | grep -qv '" + theme_icons_light + theme + "'") or system("gsettings get org.gnome.desktop.interface icon-theme | grep -qv '" + theme_icons_dark + theme + "'")):
-		color = theme
 
 if not exists(home + "/.config/autostart/mint-gnome-welcome.desktop"):
 	system("mkdir -p ~/.config/autostart")

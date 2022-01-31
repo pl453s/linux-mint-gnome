@@ -4,7 +4,7 @@ document-font-name="Sans 10"
 monospace-font-name="Monospace 10"
 gtk-key-theme='Default'
 gtk-theme='Adwaita'
-icon-theme='Mint-Y'
+icon-theme='Gnomint'
 cursor-theme='Adwaita'
 avatar-directories=['/usr/share/pixmaps/faces-gnome']
 clock-show-date=true
@@ -77,7 +77,7 @@ report-technical-problems=false
 center-new-windows=true
 
 [org.gnome.shell]
-enabled-extensions=['trayIconsReloaded@selfmade.pl']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'trayIconsReloaded@selfmade.pl', 'gnome-ui-tune@pl453s.github.com']
 favorite-apps=['ubiquity.desktop', 'boot-repair.desktop']
 app-picker-layout=[{'org.gnome.Nautilus.desktop': <{'position': <0>}>, 'org.gnome.Calculator.desktop': <{'position': <1>}>, 'org.gnome.Notes.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Calendar.desktop': <{'position': <4>}>, 'org.gnome.Weather.desktop': <{'position': <5>}>, 'org.gnome.Maps.desktop': <{'position': <6>}>, 'mintinstall.py.desktop': <{'position': <7>}>, 'firefox.desktop': <{'position': <8>}>, 'thunderbird.desktop': <{'position': <9>}>, 'libreoffice-startcenter.desktop': <{'position': <10>}>, 'libreoffice-writer.desktop': <{'position': <11>}>, 'libreoffice-calc.desktop': <{'position': <12>}>, 'libreoffice-draw.desktop': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'libreoffice-math.desktop': <{'position': <15>}>, 'com.github.maoschanz.drawing.desktop': <{'position': <16>}>, 'org.gnome.Screenshot.desktop': <{'position': <17>}>, 'simple-scan.desktop': <{'position': <18>}>, 'org.gnome.Cheese.desktop': <{'position': <19>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <20>}>, 'org.gnome.FileRoller.desktop': <{'position': <21>}>, 'org.gnome.gedit.desktop': <{'position': <22>}>, 'org.gnome.Characters.desktop': <{'position': <23>}>}, {'org.gnome.Evince.desktop': <{'position': <0>}>, 'org.gnome.eog.desktop': <{'position': <1>}>, 'io.github.celluloid_player.Celluloid.desktop': <{'position': <2>}>, 'org.gnome.Terminal.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'org.gnome.baobab.desktop': <{'position': <5>}>, 'gnome-control-center.desktop': <{'position': <6>}>, 'gnome-customization.desktop': <{'position': <7>}>, 'mintupdate.py.desktop': <{'position': <8>}>, 'mintdrivers.py.desktop': <{'position': <9>}>, 'mintsources.py.desktop': <{'position': <10>}>, 'timeshift-gtk.desktop': <{'position': <11>}>, 'mintbackup.py.desktop': <{'position': <12>}>, 'mintreport.py.desktop': <{'position': <13>}>, 'mintstick.py.desktop': <{'position': <14>}>, 'org.x.Warpinator.desktop': <{'position': <15>}>, 'org.gnome.font-viewer.desktop': <{'position': <16>}>, 'org.gnome.seahorse.Application.desktop': <{'position': <17>}>, 'gufw.py.desktop': <{'position': <18>}>, 'synaptic.desktop': <{'position': <19>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <20>}>, 'org.gnome.Logs.desktop': <{'position': <21>}>, 'org.gnome.DiskUtility.desktop': <{'position': <22>}>, 'gparted.desktop': <{'position': <23>}>}]
 always-show-log-out=true
