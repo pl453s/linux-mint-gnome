@@ -1,5 +1,5 @@
 **New version based on Ubuntu 21.10 (with Gnome 40) in preparation for the next major Linux Mint release.**  
-**- Check the development (new Welcome screen, new Gnome Customization, new themes...) in the ['next' branch](https://github.com/pl453s/linux-mint-gnome/tree/next)**  
+**- Check the development (new Welcome screen, new Gnome Customization, new themes...) in the '[next](https://github.com/pl453s/linux-mint-gnome/tree/next)' branch**  
 **- Or just take the tour here:** [https://github.com/pl453s/linux-mint-gnome/blob/next/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/next/github/tour.md)  
 
 # Linux Mint Gnome
