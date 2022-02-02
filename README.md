@@ -4,6 +4,10 @@
 
 # Linux Mint Gnome
 
+![GitHub all releases](https://img.shields.io/github/downloads/pl453s/linux-mint-gnome/total)
+![GitHub last commit](https://img.shields.io/github/last-commit/pl453s/linux-mint-gnome)
+![GitHub repo size](https://img.shields.io/github/repo-size/pl453s/linux-mint-gnome)
+
 Who needs a description? Everything is in the title!
 
 This distribution embeds 'Dash to Panel', 'Dash to Dock' and other Gnome extensions. On first login, you can  
