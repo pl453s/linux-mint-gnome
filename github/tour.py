@@ -8,7 +8,7 @@ def inv(letter):
 		return "s"
 	if letter == "s":
 		return "h"
-url_exit = "https://github.com/pl453s/linux-mint-gnome"
+url_exit = "https://github.com/pl453s/linux-mint-gnome/tree/main"
 url = "https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md"
 print("# Interactive tour\n")
 print("<br><br>")
