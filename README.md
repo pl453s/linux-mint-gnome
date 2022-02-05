@@ -30,7 +30,7 @@ It is developed for the distribution, but is theoretically compatible with any d
 **You can also migrate from an official Mint edition installation or upgrade your Mint Gnome installation:**  
 
 Mint Gnome development has become too complex to support scripted migration from official Mint editions.  
-Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your Mint Gnome installation.  
+Now, the DEB files will be released "as is", use them to migrate by yourself or to upgrade your installation.  
 A separate ISO file will be published, once at a time, each time the project has evolved enough and is stable enough.
 
 Latest release (2.0): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v2.0-mint20](https://github.com/pl453s/linux-mint-gnome/releases/tag/v2.0-mint20)
