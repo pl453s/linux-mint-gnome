@@ -5,7 +5,7 @@
 
 ![GitHub all releases](https://img.shields.io/github/downloads/pl453s/linux-mint-gnome/total)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pl453s/linux-mint-gnome)
-![GitHub last commit](https://img.shields.io/github/last-commit/pl453s/linux-mint-gnome)
+![GitHub last commit](https://img.shields.io/github/last-commit/pl453s/linux-mint-gnome/main)
 
 Who needs a description? Everything is in the title!
 
