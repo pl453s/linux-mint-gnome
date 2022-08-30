@@ -40,7 +40,6 @@ Latest release (2.0): [https://github.com/pl453s/linux-mint-gnome/releases/tag/v
 - mint-gnome-control-center-data: 'Settings' application data with some fixes (use Linux Mint logo icon)
 - mint-gnome-control-center-faces: 'Settings' application faces with some fixes (less available faces)
 - mint-gnome-extensions : 'Dash to Panel', 'Dash to Dock', 'Desktop Icons NG' and 'Top Indicator App'
-- mint-gnome-theme: 'Materia' theme with some fixes (app folder and on screen keyboard)
 - mint-gnome-artwork: Mint + Gnome Wallpapers and Mint logos icons
 - mint-gnome-welcome: First login Python GTK welcome screen (change style, desktop and theme)
 - gnome-customization: 'Gnome Tweaks', only better (customize Gnome, Qt5, GDM3, Plymouth and Grub)
