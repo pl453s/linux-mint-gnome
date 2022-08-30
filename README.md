@@ -11,7 +11,7 @@ choose between a 'panel style' (Windows-like), a 'dock style' (macOS-like) or a 
 You can find a tool called 'Customization'. This is a personalization control center for the Gnome desktop.  
 It is developed for the distribution, but is theoretically compatible with any distribution using Gnome.
 
-**Overview of the distribution 2.0:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
+**Overview of the distribution 2.0:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)  
 **Overview of the distribution 3.0:** [https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md](https://github.com/pl453s/linux-mint-gnome/blob/main/github/tour.md)
 
 ## Installation (2.0)
