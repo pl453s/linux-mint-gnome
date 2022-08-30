@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=TeXInfo
+Exec=info
+TryExec=info
+Icon=dialog-information
+Type=Application

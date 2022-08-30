@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Hypnotix
+Exec=hypnotix
+TryExec=hypnotix
+Icon=hypnotix
+Type=Application

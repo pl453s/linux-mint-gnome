@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Web Apps
+Exec=webapp-manager
+TryExec=webapp-manager
+Icon=webapp-manager
+Type=Application

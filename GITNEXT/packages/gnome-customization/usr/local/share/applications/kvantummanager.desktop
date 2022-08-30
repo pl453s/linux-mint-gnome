@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Kvantum Manager
+Exec=kvantummanager
+TryExec=kvantummanager
+Icon=kvantum
+Type=Application

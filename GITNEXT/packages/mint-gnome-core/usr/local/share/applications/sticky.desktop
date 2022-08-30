@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Notes
+Exec=sticky
+TryExec=sticky
+Icon=sticky
+Type=Application

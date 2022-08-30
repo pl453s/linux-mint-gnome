@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Type=Application
+Name=AppEditor
+Icon=app-launcher
+Exec=appeditor
+TryExec=appeditor

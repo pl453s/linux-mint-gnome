@@ -1,0 +1,9 @@
+Package: gnome-customization
+Version: 3.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Gnome Tweaks ++
+Depends: chrome-gnome-shell, dbus-x11, gir1.2-gtk-3.0, gir1.2-handy-1, gir1.2-pango-1.0, libglib2.0-bin, libnotify-bin, python3, python3-gi, python3-pexpect, qt5ct, qt5-style-kvantum
+Conflicts: gnome-startup-applications, appeditor, libgranite6, dynamic-wallpaper-editor
+Provides: x-session-manager
+Section: gnome

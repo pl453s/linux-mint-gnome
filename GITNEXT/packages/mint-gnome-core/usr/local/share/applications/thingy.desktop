@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Library
+Exec=thingy
+TryExec=thingy
+Icon=thingy
+Type=Application

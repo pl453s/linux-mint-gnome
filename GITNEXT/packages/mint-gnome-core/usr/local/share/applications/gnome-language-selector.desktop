@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Language Support
+Exec=gnome-language-selector
+TryExec=gnome-language-selector
+Icon=preferences-desktop-locale
+Type=Application

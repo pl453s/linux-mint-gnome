@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Backup Tool
+Exec=mintbackup
+TryExec=mintbackup
+Icon=mintbackup
+Type=Application

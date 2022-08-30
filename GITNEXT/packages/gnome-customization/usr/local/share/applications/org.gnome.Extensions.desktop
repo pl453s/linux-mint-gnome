@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Type=Application
+Name=Extensions
+Icon=org.gnome.Extensions
+Exec=gnome-extensions-app
+TryExec=gnome-extensions-app

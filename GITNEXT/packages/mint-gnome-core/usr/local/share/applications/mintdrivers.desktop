@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Driver Manager
+Exec=pkexec driver-manager
+TryExec=driver-manager
+Icon=mintdrivers
+Type=Application

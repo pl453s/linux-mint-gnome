@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Welcome
+Icon=mintwelcome
+Exec=mint-gnome-welcome
+Terminal=false
+Type=Application
+OnlyShowIn=GNOME;

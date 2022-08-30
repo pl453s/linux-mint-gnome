@@ -1,0 +1,6 @@
+Package: mint-gnome-extensions
+Version: 3.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Conflicts: gnome-shell-extension-dash-to-panel, gnome-shell-extension-ubuntu-dock, gnome-shell-extension-desktop-icons-ng
+Description: Default Gnome extensions for Linux Mint Gnome

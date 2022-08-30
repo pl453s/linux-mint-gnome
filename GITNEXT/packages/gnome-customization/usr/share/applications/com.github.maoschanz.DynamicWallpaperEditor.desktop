@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Dynamic Wallpaper Editor
+Exec=dynamic-wallpaper-editor %U
+TryExec=dynamic-wallpaper-editor
+Type=Application
+Icon=preferences-desktop-wallpaper

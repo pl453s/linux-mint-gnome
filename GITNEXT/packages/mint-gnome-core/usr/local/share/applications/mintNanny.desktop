@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Domain Blocker
+Exec=pkexec mintnanny
+TryExec=mintnanny
+Icon=mintnanny
+Type=Application

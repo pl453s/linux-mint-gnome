@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Exec=mintwelcome
+TryExec=mintwelcome
+Icon=mintwelcome
+Type=Application
+Name=Welcome Screen

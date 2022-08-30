@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Startup Applications
+Exec=gnome-session-properties
+TryExec=gnome-session-properties
+Icon=session-properties
+Type=Application

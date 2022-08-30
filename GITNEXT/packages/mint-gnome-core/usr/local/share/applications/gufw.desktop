@@ -1,0 +1,7 @@
+[Desktop Entry]
+NoDisplay=true
+Name=Firewall Configuration
+Exec=gufw
+TryExec=gufw
+Icon=gufw
+Type=Application

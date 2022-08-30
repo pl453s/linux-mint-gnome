@@ -1,0 +1,6 @@
+Package: mint-gnome-welcome
+Version: 3.0
+Architecture: all
+Maintainer: PL453s <pl453s@github.com>
+Description: Welcome screen for Linux Mint Gnome
+Depends: dconf-cli, libglib2.0-bin, python3, python3-gi

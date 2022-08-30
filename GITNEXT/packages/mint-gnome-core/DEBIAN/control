@@ -1,0 +1,8 @@
+Package: mint-gnome-core
+Version: 3.0
+Architecture: all
+Essential: yes
+Maintainer: PL453s <pl453s@github.com>
+Description: Various adjustments for Linux Mint Gnome
+ Contains Mint Gnome session, MintTools adjustments, icons, .desktop files, default schemas and default user folder
+Depends: mint-info-gnome, mint-gnome-artwork
